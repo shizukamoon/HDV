@@ -5,23 +5,22 @@ const movieData = [
         model: "Kanon",
         studio: "FC2PPV",
         region: "Japan",
-        releaseDate: "2025-09-26",
-        duration: "54:16",
+        releaseDate: "2025-11-15",
+        duration: "39:51",
         imgurl: "img/fc2ppv/4797631.webp",
-        vidurl: "https://www.tokyomotion.net/embed/18760e41a36fd6eb8f0b",
-        bio: "これで抜かずに何で抜く？【無】【中出し】18歳スレンダー美巨乳のおっぱいやアナルを舐めた後に中出し。『イかせてください』とおねだりが可愛い。※特典あり",
+        vidurl: "https://samples.movies/4797631/",
+        bio: "《最後》これで抜かなきゃ男じゃない！【無】【中出し】18歳スレンダー美巨乳ちゃんとマイクロビキニSEX。キス、乳首舐めで我慢できずに生ちん挿入。『イク～』と叫びまくり中出しされる。※特典あり",
         tags: ["Uncensored", "Creampie", "Masked", "Big Tits"],
         downloads: {
             original: "https://adult.contents.fc2.com/article/4797631/",
-            alt1: "https://supjav.com/375710.html",
+            alt1: "https://supjav.com/386194.html",
             alt2: "https://javfc2.xyz/watch/fc2ppv-4797631.html",
             alt3: "https://missav.ws/fc2-ppv-4797631",
             alt4: "https://123av.com/en/v/fc2-ppv-4797631",
             alt5: "https://javgg.net/jav/fc2-ppv-4768873/"
         },
         comments: [
-            { user: "Dax", text: "https://www.tokyomotion.net/embed/18760e41a36fd6eb8f0b", date: "now" },
-            { user: "Dax", text: "http://avlang.com/thread-2003195-1-1.html", date: "now" },
+            { user: "Dax", text: "https://javct.net/v/fc2ppv-4797631", date: "now" },
             { user: "Dax", text: "https://ppvdatabank.com/article/4768873/", date: "now" }
 		]
     },
@@ -46,6 +45,7 @@ const movieData = [
             alt5: "https://javgg.net/jav/fc2-ppv-4768873/"
         },
         comments: [
+            { user: "Dax", text: "1 crt", date: "now" },
             { user: "Dax", text: "https://www.tokyomotion.net/embed/18760e41a36fd6eb8f0b", date: "now" },
             { user: "Dax", text: "http://avlang.com/thread-2003195-1-1.html", date: "now" },
             { user: "Dax", text: "https://ppvdatabank.com/article/4768873/", date: "now" },
