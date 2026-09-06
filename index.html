@@ -490,7 +490,6 @@
             object-fit: cover;
             object-position: top;
             background-color: #ddd;
-            /* Diagonal corner effect using clip-path */
             clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
             transition: transform 0.3s ease;
         }
@@ -499,7 +498,6 @@
             transform: scale(1.03);
         }
 
-        /* Completed badge on card (shown when the card's status is completed) */
         .card-completed-badge {
             position: absolute;
             top: 10px;
@@ -519,14 +517,13 @@
         .card.is-completed .card-completed-badge {
             display: flex;
         }
-        /* ------------------------------------------------------------------ */
 
         .card-content {
             padding: 15px;
             display: flex;
             flex-direction: column;
             flex-grow: 1;
-            margin-top: -10px; /* Menyesuaikan efek miring clip-path */
+            margin-top: -10px;
         }
 
         .card-tags {
@@ -966,6 +963,95 @@
             transform: translateY(-2px);
         }
 
+        /* --- STYLING KOLOM KOMENTAR --- */
+        .comments-section {
+            margin-top: 25px;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
+        .comments-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .comment-input-box {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .comment-input-box input {
+            flex: 1;
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            outline: none;
+            font-size: 0.9rem;
+        }
+
+        .comment-input-box input:focus {
+            border-color: #e94560;
+        }
+
+        .comment-submit-btn {
+            background-color: #e94560;
+            color: white;
+            border: none;
+            padding: 0 18px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .comment-submit-btn:hover {
+            background-color: #d63853;
+        }
+
+        .comments-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .comment-item {
+            background-color: #f8f9fa;
+            padding: 12px 15px;
+            border-radius: 8px;
+            border: 1px solid #eee;
+        }
+
+        .comment-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .comment-author {
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: #1a1a2e;
+        }
+
+        .comment-date {
+            font-size: 0.75rem;
+            color: #888;
+        }
+
+        .comment-text {
+            font-size: 0.9rem;
+            color: #444;
+            line-height: 1.4;
+        }
+
         .related-section {
             background-color: white;
             border-radius: 10px;
@@ -1202,7 +1288,6 @@
     <!-- AUTH OVERLAY (LOGIN & REGISTER SPA) -->
     <div id="authOverlay">
         <div class="auth-container">
-            <!-- Form Login -->
             <div id="loginBox">
                 <h2>Login HDV</h2>
                 <div id="loginAlert" class="alert"></div>
@@ -1222,7 +1307,6 @@
                 </div>
             </div>
 
-            <!-- Form Register -->
             <div id="registerBox" style="display: none;">
                 <h2>Register Account</h2>
                 <div id="regAlert" class="alert"></div>
@@ -1305,21 +1389,21 @@
             </div>
 
             <div class="dropdown right-align profile-menu">
-				<button class="dots-btn" title="More Menu">
-					<i class="fa-solid fa-ellipsis-vertical"></i>
-				</button>
-				<ul class="dropdown-content">
-					<li><a href="#" onclick="switchView('home', 'All')"><i class="fa-solid fa-user"></i> <span id="welcomeUserText">Welcome</span></a></li>
-					<li id="masterTokenMenu" style="display: none;"><button type="button" onclick="showMasterTokenModal()"><i class="fa-solid fa-key"></i> Generate Token</button></li>
-					<li><button type="button" onclick="filterView('favorites')"><i class="fa-solid fa-heart"></i> My Favorites</button></li>
-					<li><button type="button" onclick="filterView('recent')"><i class="fa-solid fa-clock-rotate-left"></i> Recent Watch</button></li>
-					<li><button type="button" onclick="exportUserData()"><i class="fa-solid fa-file-arrow-down"></i> Export Data</button></li>
-					<li><button type="button" onclick="triggerImportData()"><i class="fa-solid fa-file-arrow-up"></i> Import Data</button></li>
-					<li><a href="#" onclick="logoutUser()" style="color: #e94560;"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
-				</ul>
-			</div>
+                <button class="dots-btn" title="More Menu">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </button>
+                <ul class="dropdown-content">
+                    <li><a href="#" onclick="switchView('home', 'All')"><i class="fa-solid fa-user"></i> <span id="welcomeUserText">Welcome</span></a></li>
+                    <li id="masterTokenMenu" style="display: none;"><button type="button" onclick="showMasterTokenModal()"><i class="fa-solid fa-key"></i> Generate Token</button></li>
+                    <li><button type="button" onclick="filterView('favorites')"><i class="fa-solid fa-heart"></i> My Favorites</button></li>
+                    <li><button type="button" onclick="filterView('recent')"><i class="fa-solid fa-clock-rotate-left"></i> Recent Watch</button></li>
+                    <li><button type="button" onclick="exportUserData()"><i class="fa-solid fa-file-arrow-down"></i> Export Data</button></li>
+                    <li><button type="button" onclick="triggerImportData()"><i class="fa-solid fa-file-arrow-up"></i> Import Data</button></li>
+                    <li><a href="#" onclick="logoutUser()" style="color: #e94560;"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+                </ul>
+            </div>
 
-			<input type="file" id="importFileinput" accept=".json" style="display: none;" onchange="importUserData(event)">
+            <input type="file" id="importFileinput" accept=".json" style="display: none;" onchange="importUserData(event)">
 
             <button class="mobile-icon-btn" id="menuToggle" aria-label="Toggle Menu">
                 <i class="fa-solid fa-bars"></i>
@@ -1345,12 +1429,12 @@
                 <div style="display: flex; align-items: center; gap: 10px;">
                     <button id="resetFilterBtn" style="display:none; background:#e94560; color:white; border:none; padding:5px 10px; border-radius:4px; cursor:pointer;" onclick="filterView('all')">Show All</button>
                     <div style="display: flex; align-items: center; gap: 5px; background: white; padding: 4px 8px; border-radius: 6px; border: 1px solid #ddd; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
-						<span style="font-size: 0.85rem; font-weight: 600; color: #555;"><i class="fa-solid fa-sort"></i> Sort:</span>
-						<select id="sortSelect" onchange="handleSortChange()" style="border: none; background: transparent; font-size: 0.85rem; font-weight: 600; color: #1a1a2e; outline: none; cursor: pointer;">
-							<option value="new" selected>New</option>
-							<option value="older">Older</option>
-						</select>
-					</div>
+                        <span style="font-size: 0.85rem; font-weight: 600; color: #555;"><i class="fa-solid fa-sort"></i> Sort:</span>
+                        <select id="sortSelect" onchange="handleSortChange()" style="border: none; background: transparent; font-size: 0.85rem; font-weight: 600; color: #1a1a2e; outline: none; cursor: pointer;">
+                            <option value="new" selected>New</option>
+                            <option value="older">Older</option>
+                        </select>
+                    </div>
                 </div>
             </div>
 
@@ -1438,6 +1522,20 @@
                         <div class="download-section">
                             <div class="download-title"><i class="fa-solid fa-download"></i> Download Links</div>
                             <div class="download-buttons" id="downloadButtonsContainer"></div>
+
+                            <!-- Kolom Komentar Default dibawah Tombol Link -->
+                            <div class="comments-section">
+                                <div class="comments-title">
+                                    <i class="fa-solid fa-comments"></i> Komentar (<span id="commentCount">0</span>)
+                                </div>
+                                
+                                <div class="comment-input-box">
+                                    <input type="text" id="commentInput" placeholder="Tulis komentar...">
+                                    <button type="button" class="comment-submit-btn" id="commentSubmitBtn">Kirim</button>
+                                </div>
+
+                                <div class="comments-list" id="commentsList"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1471,12 +1569,12 @@
         </div>
     </footer>
 
-    <!-- Panggil File Data Eksternal -->
     <script src="data.js"></script>
     <script src="moredata.js"></script>
 
     <script>
-        // --- AUTHENTICATION & SPA SYSTEM ---
+        let currentWatchingMovie = null;
+
         function getUsers() {
             return JSON.parse(localStorage.getItem('hdv_users')) || [];
         }
@@ -1493,11 +1591,7 @@
                     welcomeUserText.innerText = `Welcome, ${session.username}`;
                 }
                 if (masterTokenMenu) {
-                    if (session.role === 'master') {
-                        masterTokenMenu.style.display = 'block';
-                    } else {
-                        masterTokenMenu.style.display = 'none';
-                    }
+                    masterTokenMenu.style.display = session.role === 'master' ? 'block' : 'none';
                 }
             } else {
                 authOverlay.style.display = 'flex';
@@ -1615,7 +1709,6 @@
             }
         }
 
-        // --- APP LOGIC ---
         const menuToggle = document.getElementById('menuToggle');
         const navbar = document.getElementById('navbar');
         const mobileSearchModal = document.getElementById('mobileSearchModal');
@@ -1648,69 +1741,67 @@
             'Korea': 'img/flag-south-korea.png',
             'Indonesia': 'img/flag-indonesia.png'
         };
-		
-		function triggerImportData() {
-			const fileInput = document.getElementById('importFileinput');
-			if (fileInput) {
-				fileInput.click();
-			}
-		}
+        
+        function triggerImportData() {
+            const fileInput = document.getElementById('importFileinput');
+            if (fileInput) fileInput.click();
+        }
 
-		function exportUserData() {
-			try {
-				const userData = {
-					favorites: JSON.parse(localStorage.getItem('favorites')) || [],
-					completedVideos: JSON.parse(localStorage.getItem('completedVideos')) || [],
-					recentWatch: JSON.parse(localStorage.getItem('recentWatch')) || [],
-					movieRatings: JSON.parse(localStorage.getItem('movieRatings')) || {}
-				};
+        function exportUserData() {
+            try {
+                const userData = {
+                    favorites: JSON.parse(localStorage.getItem('favorites')) || [],
+                    completedVideos: JSON.parse(localStorage.getItem('completedVideos')) || [],
+                    recentWatch: JSON.parse(localStorage.getItem('recentWatch')) || [],
+                    movieRatings: JSON.parse(localStorage.getItem('movieRatings')) || {}
+                };
 
-				const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(userData, null, 2));
-				const downloadAnchor = document.createElement('a');
-				downloadAnchor.setAttribute("href", dataStr);
-				downloadAnchor.setAttribute("download", `hdv_backup_${new Date().toISOString().slice(0, 10)}.json`);
-				document.body.appendChild(downloadAnchor);
-				downloadAnchor.click();
-				downloadAnchor.remove();
-			} catch (error) {
-				console.error("Failed to export data:", error);
-				alert("An error occurred while exporting the data.");
-			}
-		}
+                const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(userData, null, 2));
+                const downloadAnchor = document.createElement('a');
+                downloadAnchor.setAttribute("href", dataStr);
+                downloadAnchor.setAttribute("download", `hdv_backup_${new Date().toISOString().slice(0, 10)}.json`);
+                document.body.appendChild(downloadAnchor);
+                downloadAnchor.click();
+                downloadAnchor.remove();
+            } catch (error) {
+                console.error("Failed to export data:", error);
+                alert("An error occurred while exporting the data.");
+            }
+        }
 
-		function importUserData(event) {
-			const fileReader = new FileReader();
-			if (event.target.files && event.target.files[0]) {
-				fileReader.readAsText(event.target.files[0], "UTF-8");
-				fileReader.onload = (e) => {
-					try {
-						const parsedData = JSON.parse(e.target.result);
-						if (parsedData.favorites && Array.isArray(parsedData.favorites)) {
-							localStorage.setItem('favorites', JSON.stringify(parsedData.favorites));
-						}
-						if (parsedData.completedVideos && Array.isArray(parsedData.completedVideos)) {
-							localStorage.setItem('completedVideos', JSON.stringify(parsedData.completedVideos));
-						}
-						if (parsedData.recentWatch && Array.isArray(parsedData.recentWatch)) {
-							localStorage.setItem('recentWatch', JSON.stringify(parsedData.recentWatch));
-						}
-						if (parsedData.movieRatings && typeof parsedData.movieRatings === 'object') {
-							localStorage.setItem('movieRatings', JSON.stringify(parsedData.movieRatings));
-						}
+        function importUserData(event) {
+            const fileReader = new FileReader();
+            if (event.target.files && event.target.files[0]) {
+                fileReader.readAsText(event.target.files[0], "UTF-8");
+                fileReader.onload = (e) => {
+                    try {
+                        const parsedData = JSON.parse(e.target.result);
+                        if (parsedData.favorites && Array.isArray(parsedData.favorites)) {
+                            localStorage.setItem('favorites', JSON.stringify(parsedData.favorites));
+                        }
+                        if (parsedData.completedVideos && Array.isArray(parsedData.completedVideos)) {
+                            localStorage.setItem('completedVideos', JSON.stringify(parsedData.completedVideos));
+                        }
+                        if (parsedData.recentWatch && Array.isArray(parsedData.recentWatch)) {
+                            localStorage.setItem('recentWatch', JSON.stringify(parsedData.recentWatch));
+                        }
+                        if (parsedData.movieRatings && typeof parsedData.movieRatings === 'object') {
+                            localStorage.setItem('movieRatings', JSON.stringify(parsedData.movieRatings));
+                        }
 
-						alert("Data imported successfully! The page will reload.");
-						window.location.reload();
-					} catch (error) {
-						console.error("Failed to parse JSON file:", error);
-						alert("Invalid or corrupted file format.");
-					}
-				};
-			}
-		}
+                        alert("Data imported successfully! The page will reload.");
+                        window.location.reload();
+                    } catch (error) {
+                        console.error("Failed to parse JSON file:", error);
+                        alert("Invalid or corrupted file format.");
+                    }
+                };
+            }
+        }
 
         let current_page = 1;
         let model_current_page = 1;
-        const rows_per_page = 12; // Universal Pagination 12
+        const rows_per_page = 12;
         let filteredData = typeof movieData !== 'undefined' ? movieData : [];
 
         const cardContainer = document.getElementById('cardContainer');
@@ -1737,7 +1828,6 @@
             return JSON.parse(localStorage.getItem('completedVideos')) || [];
         }
 
-        // Helper Universal Pagination
         function getPaginatedData(data, page, rowsPerPage) {
             let start = rowsPerPage * (page - 1);
             let end = start + rowsPerPage;
@@ -1905,7 +1995,6 @@
             });
 
             renderModelPagination(sortedModels);
-
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
@@ -2148,7 +2237,6 @@
             const flagSrc = regionFlags[movie.region] || 'img/japan.png';
             let currentRating = ratingsMap[movie.title] !== undefined ? ratingsMap[movie.title] : 0.0;
             
-            // Cek status completed dari localStorage
             const completedList = getStoredCompleted();
             const isCompleted = completedList.includes(movie.title);
             if (isCompleted) {
@@ -2316,6 +2404,65 @@
             searchInput.focus();
         });
 
+        /* --- MANAJEMEN KOMENTAR --- */
+        function renderComments(movie) {
+            currentWatchingMovie = movie;
+            const commentsContainer = document.getElementById('commentsList');
+            const commentCountEl = document.getElementById('commentCount');
+            
+            if (!movie.comments) {
+                movie.comments = [];
+            }
+
+            commentCountEl.innerText = movie.comments.length;
+            commentsContainer.innerHTML = "";
+
+            if (movie.comments.length === 0) {
+                commentsContainer.innerHTML = `<p style="font-size: 0.85rem; color: #888;">Belum ada komentar.</p>`;
+                return;
+            }
+
+            movie.comments.forEach(c => {
+                const item = document.createElement('div');
+                item.className = "comment-item";
+                item.innerHTML = `
+                    <div class="comment-header">
+                        <span class="comment-author">${c.user}</span>
+                        <span class="comment-date">${c.date || 'Baru saja'}</span>
+                    </div>
+                    <div class="comment-text">${c.text}</div>
+                `;
+                commentsContainer.appendChild(item);
+            });
+        }
+
+        function addComment() {
+            const input = document.getElementById('commentInput');
+            const text = input.value.trim();
+
+            if (!text) return;
+
+            const session = JSON.parse(localStorage.getItem('hdv_logged_in'));
+            const currentUser = session ? session.username : 'User';
+
+            if (currentWatchingMovie) {
+                if (!currentWatchingMovie.comments) {
+                    currentWatchingMovie.comments = [];
+                }
+
+                currentWatchingMovie.comments.unshift({
+                    user: currentUser,
+                    text: text,
+                    date: "Baru saja"
+                });
+
+                input.value = "";
+                renderComments(currentWatchingMovie);
+            }
+        }
+
+        document.getElementById('commentSubmitBtn').onclick = addComment;
+
         function loadPlayer(title) {
             let currentMovie = movieData.find(m => m.title === title) || movieData[0];
 
@@ -2381,7 +2528,9 @@
                 downloadContainer.innerHTML = `<span style="font-size: 0.85rem; color: #777;">Download link not available.</span>`;
             }
 
-            // --- TOMBOL COMPLETED (MARK AS COMPLETED) ---
+            /* Muat Komentar untuk Movie ini */
+            renderComments(currentMovie);
+
             const completedBtn = document.getElementById('completedBtn');
             const completedIcon = document.getElementById('completedIcon');
             const completedText = document.getElementById('completedText');
@@ -2411,7 +2560,6 @@
                 checkCompletedStatus();
             };
             checkCompletedStatus();
-            // ---------------------------------------------
 
             const favBtn = document.getElementById('favBtn');
             const favIcon = document.getElementById('favIcon');
@@ -2480,10 +2628,10 @@
             });
 
             let relatedData = movieData.filter(m => m.model === currentMovie.model && m.title !== currentMovie.title);
-			if (relatedData.length < 5) {
-				const extraData = movieData.filter(m => m.title !== currentMovie.title && !relatedData.includes(m));
-				relatedData = [...relatedData, ...extraData];
-			}
+            if (relatedData.length < 5) {
+                const extraData = movieData.filter(m => m.title !== currentMovie.title && !relatedData.includes(m));
+                relatedData = [...relatedData, ...extraData];
+            }
 
             let visibleCount = 5;
             const relatedListContainer = document.getElementById('relatedListContainer');
@@ -2512,11 +2660,7 @@
                     relatedListContainer.appendChild(rCard);
                 });
 
-                if (visibleCount >= relatedData.length) {
-                    viewMoreBtn.style.display = "none";
-                } else {
-                    viewMoreBtn.style.display = "block";
-                }
+                viewMoreBtn.style.display = visibleCount >= relatedData.length ? "none" : "block";
             }
 
             viewMoreBtn.onclick = () => {
@@ -2535,17 +2679,15 @@
         }
 
         function init() {
-			if (typeof movieData !== 'undefined' && movieData.length > 0) {
-				generateNavigationMenus();
-				
-				filteredData = sortByCurrentSort(movieData);
-
-				displayCards(filteredData, cardContainer, rows_per_page, current_page, "", 'all');
-				setupPagination(filteredData, paginationContainer, rows_per_page, "");
-			} else {
-				cardContainer.innerHTML = `<p style="grid-column: 1/-1; text-align:center; color:#777; padding:40px;">Movie data not found.</p>`;
-			}
-		}
+            if (typeof movieData !== 'undefined' && movieData.length > 0) {
+                generateNavigationMenus();
+                filteredData = sortByCurrentSort(movieData);
+                displayCards(filteredData, cardContainer, rows_per_page, current_page, "", 'all');
+                setupPagination(filteredData, paginationContainer, rows_per_page, "");
+            } else {
+                cardContainer.innerHTML = `<p style="grid-column: 1/-1; text-align:center; color:#777; padding:40px;">Movie data not found.</p>`;
+            }
+        }
 
         updateLoginUI();
         if (localStorage.getItem('hdv_logged_in')) {

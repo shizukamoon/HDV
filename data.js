@@ -1,5 +1,154 @@
 const movieData = [
     {
+        title: "FC2-PPV-4768873",
+        code: "Full Uncensored",
+        model: "Kanon",
+        studio: "FC2PPV",
+        region: "Japan",
+        releaseDate: "2025-09-26",
+        duration: "54:16",
+        imgurl: "img/fc2ppv/4768873.webp",
+        vidurl: "https://www.tokyomotion.net/embed/18760e41a36fd6eb8f0b",
+        bio: "これで抜かずに何で抜く？【無】【中出し】18歳スレンダー美巨乳のおっぱいやアナルを舐めた後に中出し。『イかせてください』とおねだりが可愛い。※特典あり",
+        tags: ["Uncensored", "Creampie", "Masked", "Big Tits"],
+        downloads: {
+            original: "https://adult.contents.fc2.com/article/4768873/",
+            alt1: "https://supjav.com/375710.html",
+            alt2: "https://javfc2.xyz/watch/fc2ppv-4768873.html",
+            alt3: "https://missav.ws/fc2-ppv-4768873",
+            alt4: "https://123av.com/en/v/fc2-ppv-4768873",
+            alt5: "https://javgg.net/jav/fc2-ppv-4768873/"
+        },
+        comments: [
+            { user: "Dax", text: "https://www.tokyomotion.net/embed/18760e41a36fd6eb8f0b", date: "now" },
+            { user: "Dax", text: "http://avlang.com/thread-2003195-1-1.html", date: "now" },
+            { user: "Dax", text: "https://ppvdatabank.com/article/4768873/", date: "now" },
+            { user: "Dax", text: "https://avjb.com/en/video/111353/fc2-ppv-4768873/", date: "now" },
+            { user: "Dax", text: "https://www.tokyomotion.net/video/6651920/18%E3%81%AEf%E3%82%AB%E3%83%83%E3%83%97%E7%A5%9E%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%ABmomo%E3%81%A1%E3%82%83%E3%82%93-%E7%84%A1%E9%99%90%E3%82%A4%E3%82%AD%E3%81%BE%E3%81%8F%E3%82%8A%E7%94%9F%E4%B8%AD%E5%87%BA%E3%81%97sex", date: "now" }
+        ]
+    },
+    {
+        title: "enc_AKO_o0_Stripchat_2025-11-22-19_10",
+        code: "Full Uncensored",
+        model: "AKO_o0",
+        studio: "Stripchat",
+        region: "Japan",
+        releaseDate: "2026-09-03",
+        duration: "01:03:43",
+        imgurl: "img/livecam/20260903.webp",
+        vidurl: "https://streamtape.com/e/2WZAvvw4k4Sjg6/",
+        bio: "新作★イマドキな19歳巨乳美少女がジョリマン広げてオナニー見せる微エロいライブ動画",
+        tags: ["Uncensored", "Livecam", "Big Tits"],
+        downloads: {
+            original: "https://streamtape.com/v/2WZAvvw4k4Sjg6/enc_AKO_o0_Stripchat_2025-11-22-19_10.mp4",
+            alt1: "https://alive-video.com/livechat/trendy-busty-19-year-old-beauty-spreads-her-shaved-pussy-and-masturbates-in-a-mildly-erotic-live-stream-video/",
+            alt2: "#",
+            alt3: "#",
+            alt4: "#",
+            alt5: "#"
+        },
+        comments: [
+            { user: "Dax", text: "https://stripchat.com/AKO_o0", date: "now" },
+            { user: "Dax", text: "https://archivebate.com/profile/AKO_o0", date: "now" },
+            { user: "Dax", text: "https://www.camshowrecordings.com/model/AKO_o0", date: "now" }
+        ]
+    },
+    {
+        title: "Arachuu",
+        code: "Full Uncensored",
+        model: "Arachuu",
+        studio: "Live",
+        region: "Indonesia",
+        releaseDate: "2026-09-07",
+        duration: "00:00",
+        imgurl: "img/av/Arachuu.jpg",
+        vidurl: "https://.mp4",
+        bio: "Masturbation & Nude Content",
+        tags: ["Uncensored", "Big Tits"],
+        downloads: {
+            original: "#",
+            alt1: "#",
+            alt2: "#",
+            alt3: "#",
+            alt4: "#",
+            alt5: "#"
+        },
+        comments: [
+            { user: "Dax", text: "1 crt", date: "now" },
+            { user: "Dax", text: "http://eporner.com/gallery/cVTGBYXEp6R/Arachu-viral-baby-girls/", date: "now" },
+            { user: "Dax", text: "https://www.eporner.com/gallery/o05Lk4MTp8o/Arachuu/", date: "now" },
+            { user: "Dax", text: "http://eporner.com/gallery/D4ZmFymHKQZ/Arachuu/", date: "now" },
+            { user: "Dax", text: "https://www.eporner.com/gallery/J7rSlAM0GjM/a0/", date: "now" },
+            { user: "Dax", text: "https://www.eporner.com/gallery/8O8hDKsmAhs/pap-arachuu/", date: "now" },
+            { user: "Dax", text: "http://eporner.com/gallery/J7rSlAM0GjM/a0/", date: "now" },
+            { user: "Dax", text: "http://ocosplay.com/es/g/92020", date: "now" },
+            { user: "Dax", text: "https://kittykawai.com/tag/arachuu-porn/", date: "now" },
+            { user: "Dax", text: "https://www.eporner.com/video-rzSvPJLccVp/arachu-sebelum-masak-horny-colmek/", date: "now" },
+            { user: "Dax", text: "https://www.eporner.com/video-PCjwvBbnX4y/bokep-arachu-pamer-tt/", date: "now" },
+            { user: "Dax", text: "https://www.eporner.com/video-nLGm6x34n83/arachu-pamer-toket-gede/", date: "now" },
+            { user: "Dax", text: "https://www.eporner.com/video-6X5OtqTyisp/arachuu-bikini-pikachu-omek-di-kolam-renang/", date: "now" },
+            { user: "Dax", text: "http://eporner.com/video-traD8Vlu2El/arachuu-pap-toket-mantul/", date: "now" },
+            { user: "Dax", text: "https://indoporn.mobi/bokep-indo-arachu-colmek-kangen-kontol-asli/", date: "now" },
+            { user: "Dax", text: "https://indoporn.mobi/arachu-gak-pernah-mengecewakan-pap-colmek-terbaru/", date: "now" },
+            { user: "Dax", text: "https://indoporn.mobi/bokep-indo-arachu-cantik-mulus-pamer-tobrut-dan-colmek/", date: "now" },
+            { user: "Dax", text: "http://indoporn.mobi/bokep-indo-arachu-colmek-pakai-vibrator-mendesah-bikin-sange/", date: "now" },
+            { user: "Dax", text: "https://indoporn.mobi/bokep-indo-arachu-colmek-cosplay-bunnies-pakai-dildo/", date: "now" },
+            { user: "Dax", text: "https://indoporn.mobi/dea-arachu-kolab-versi-kebaya-jepit-dildo-remas-susu/", date: "now" },
+            { user: "Dax", text: "https://indoporn.mobi/arachu-live-sama-tante-mancing-pascol-ngaceng-instagram/", date: "now" },
+            { user: "Dax", text: "http://erome.com/search?q=arachuu", date: "now" }
+        ]
+    },
+    {
+        title: "FC2-PPV-4972410",
+        code: "Full Uncensored",
+        model: "",
+        studio: "FC2PPV",
+        region: "Japan",
+        releaseDate: "2026-09-05",
+        duration: "56:16",
+        imgurl: "img/fc2ppv/4972410.webp",
+        vidurl: "https://smovie.caribbeancom.com/sample/movies/101521-001/480p.mp4",
+        bio: "【初撮り】卒◯したて！現1.8歳の白肌未経験♡未/.成/.熟/.生えかけのピンクマンコの中に初老オジサンのチンポ生挿入！10だいの締まりに我慢できず濃厚ザーメンを膣奥にドピュらせて大量種付け♡",
+        tags: ["Uncensored", "Creampie", "Small Tits"],
+        downloads: {
+            original: "https://adult.contents.fc2.com/article/4883692/",
+            alt1: "https://javgg.net/jav/fc2-ppv-4972410/",
+            alt2: "https://javfc2.xyz/watch/fc2ppv-4972410.html",
+            alt3: "https://123av.com/en/v/fc2-ppv-4972410",
+            alt4: "#",
+            alt5: "https://missav.ws/en/fc2-ppv-4972410"
+        },
+        comments: [
+            { user: "Dax", text: "https://supjav.com/455869.html", date: "now" },
+            { user: "Dax", text: "https://ppvdatabank.com/article/4972410/", date: "now" }
+        ]
+    },
+    {
+        title: "FC2-PPV-4883692",
+        code: "Full Uncensored",
+        model: "",
+        studio: "FC2PPV",
+        region: "Japan",
+        releaseDate: "2026-04-18",
+        duration: "36:19",
+        imgurl: "img/fc2ppv/4883692.webp",
+        vidurl: "https://smovie.caribbeancom.com/sample/movies/101521-001/480p.mp4",
+        bio: "【無修正】キャバ嬢マリン23歳、最初は軽いつもりだったのに、気づけば抜け出せない濃厚SEXになっていた",
+        tags: ["Uncensored", "Creampie", "Big Tits"],
+        downloads: {
+            original: "https://adult.contents.fc2.com/article/4883692/",
+            alt1: "https://javgg.net/jav/fc2-ppv-4883692/",
+            alt2: "https://javfc2.xyz/watch/fc2ppv-4883692.html",
+            alt3: "https://123av.com/en/v/fc2-ppv-4883692",
+            alt4: "https://jav.sb/en/jav/fc2-ppv-4883692-23-sex-1-1.html",
+            alt5: "https://missav.ws/en/fc2-ppv-4883692"
+        },
+        comments: [
+            { user: "Dax", text: "https://supjav.com/421735.html", date: "now" },
+            { user: "Dax", text: "https://ppvdatabank.com/article/4972410/", date: "now" }
+        ]
+    },
+    {
         title: "Caribbeancom-101521-001",
         code: "Full Uncensored",
         model: "穂高ひな Hina Hodaka",
@@ -228,7 +377,10 @@ const movieData = [
             alt3: "https://example.com/download/alt3-001",
             alt4: "https://example.com/download/alt4-001",
             alt5: "https://example.com/download/alt5-001"
-        }
+        },
+        comments: [
+            { user: "Dax", text: "1 crt", date: "now" }
+        ]
     },
     {
         title: "【自慰肛交】姨妈期爆菊自插 假肉棒狠插菊花",
@@ -480,7 +632,10 @@ const movieData = [
             alt3: "https://example.com/download/alt3-001",
             alt4: "https://example.com/download/alt4-001",
             alt5: "https://example.com/download/alt5-001"
-        }
+        },
+        comments: [
+            { user: "Dax", text: "1 crt", date: "now" }
+        ]
     },
     {
         title: "1pondo-050726_001",
@@ -566,7 +721,6 @@ const movieData = [
             alt5: "https://example.com/download/alt5-001"
         }
     },
-	
     {
         title: "1pondo-081226_001",
         code: "Full Uncensored",
