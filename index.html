@@ -1150,53 +1150,53 @@
         <div class="auth-container">
             <!-- Form Login -->
             <div id="loginBox">
-                <h2>Login HDV.com</h2>
+                <h2>Login HDV</h2>
                 <div id="loginAlert" class="alert"></div>
                 <form id="loginForm" onsubmit="handleLogin(event)">
                     <div class="form-group">
                         <label>Username</label>
-                        <input type="text" id="loginUser" required placeholder="Masukkan username">
+                        <input type="text" id="loginUser" required placeholder="Input username">
                     </div>
                     <div class="form-group">
                         <label>Password</label>
-                        <input type="password" id="loginPass" required placeholder="Masukkan password">
+                        <input type="password" id="loginPass" required placeholder="Input password">
                     </div>
                     <button type="submit" class="auth-btn">Login</button>
                 </form>
                 <div class="toggle-link">
-                    Belum punya akun? <span onclick="switchAuthMode('register')">Register di sini</span>
+                    Not have account? <span onclick="switchAuthMode('register')">Register here</span>
                 </div>
             </div>
 
             <!-- Form Register -->
             <div id="registerBox" style="display: none;">
-                <h2>Register Akun</h2>
+                <h2>Register Account/h2>
                 <div id="regAlert" class="alert"></div>
                 <form id="registerForm" onsubmit="handleRegister(event)">
                     <div class="form-group">
-                        <label>Username Baru</label>
-                        <input type="text" id="regUser" required placeholder="Buat username">
+                        <label>New Username</label>
+                        <input type="text" id="regUser" required placeholder="Create username">
                     </div>
                     <div class="form-group">
-                        <label>Password Baru</label>
-                        <input type="password" id="regPass" required placeholder="Buat password">
+                        <label>New Password</label>
+                        <input type="password" id="regPass" required placeholder="Create password">
                     </div>
                     <div class="form-group" id="tokenGroup">
                         <label id="tokenLabel">Token Master</label>
-                        <input type="text" id="regToken" placeholder="Masukkan token master">
+                        <input type="text" id="regToken" placeholder="Input token master">
                         <small id="tokenInfo" style="color: #888; font-size: 0.75rem; display: block; margin-top: 4px;"></small>
                     </div>
-                    <button type="submit" class="auth-btn">Daftar</button>
+                    <button type="submit" class="auth-btn">Create Now</button>
                 </form>
                 <div class="toggle-link">
-                    Sudah punya akun? <span onclick="switchAuthMode('login')">Login di sini</span>
+                    Have any account? <span onclick="switchAuthMode('login')">Login here</span>
                 </div>
             </div>
         </div>
     </div>
 
     <nav class="navbar" id="navbar">
-        <a class="nav-brand" onclick="switchView('home', 'All')">HDV.com</a>
+        <a class="nav-brand" onclick="switchView('home', 'All')">HDV</a>
         
         <ul class="nav-menu">
             <li><a href="#" onclick="switchView('home', 'All')">Home</a></li>
@@ -1236,7 +1236,7 @@
 
             <div class="dropdown right-align">
                 <button class="flag-btn">
-                    <img src="img/all.png" alt="Region" class="flag-icon" id="currentFlag"> 
+                    <img src="img/all.png" alt="Regions" class="flag-icon" id="currentFlag"> 
                     <span id="currentRegionText">Regions</span>
                 </button>
                 <ul class="dropdown-content">
@@ -1397,7 +1397,7 @@
 
     <footer class="footer">
         <div class="footer-content">
-            <div class="footer-logo">HDV.com</div>
+            <div class="footer-logo">HDV</div>
             <p class="footer-desc">Your ultimate video and movie gallery platform. Easily discover exciting content from various regions, categories, and exclusive studios.</p>
             
             <div class="social-icons">
@@ -1411,7 +1411,7 @@
             </div>
 
             <hr class="footer-divider">
-            <p class="footer-copyright">&copy; 2026 HDV.com. All rights reserved.</p>
+            <p class="footer-copyright">&copy; 2026 HDV. All rights reserved.</p>
         </div>
     </footer>
 
@@ -1458,11 +1458,11 @@
             if (users.length === 0) {
                 tokenGroup.style.display = 'none';
                 tokenInput.removeAttribute('required');
-                tokenInfo.innerText = "*Akun pertama yang dibuat akan otomatis menjadi Master.";
+                tokenInfo.innerText = "*No 1 account automatic change to master.";
             } else {
                 tokenGroup.style.display = 'block';
                 tokenInput.setAttribute('required', 'true');
-                tokenInfo.innerText = "*Pendaftaran memerlukan Token Master dari akun Master.";
+                tokenInfo.innerText = "*Token master required.";
             }
         }
 
@@ -1498,7 +1498,7 @@
             let users = getUsers();
 
             if (users.some(u => u.username === username)) {
-                showAuthAlert('regAlert', 'Username sudah digunakan!', 'error');
+                showAuthAlert('regAlert', 'Username not ready!', 'error');
                 return;
             }
 
@@ -1510,7 +1510,7 @@
             } else {
                 const savedToken = localStorage.getItem('hdv_master_token') || 'MASTERKEY123';
                 if (tokenInput !== savedToken) {
-                    showAuthAlert('regAlert', 'Token Master salah!', 'error');
+                    showAuthAlert('regAlert', 'Token Master Not Ready!', 'error');
                     return;
                 }
             }
@@ -1518,7 +1518,7 @@
             users.push({ username, password, role });
             localStorage.setItem('hdv_users', JSON.stringify(users));
 
-            showAuthAlert('regAlert', `Registrasi berhasil! (${role === 'master' ? 'Akun Master' : 'Akun Member'}). Silakan login.`, 'success');
+            showAuthAlert('regAlert', `Register Succesfull! (${role === 'master' ? 'Akun Master' : 'Akun Member'}). Silakan login.`, 'success');
             document.getElementById('registerForm').reset();
             setTimeout(() => switchAuthMode('login'), 1500);
         }
