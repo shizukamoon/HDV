@@ -1277,13 +1277,13 @@
 
         <div class="nav-right-group">
             <div class="nav-actions">
-                <div class="search-group">
+                <form class="search-group" id="searchForm">
                     <div class="search-container">
                         <input type="text" id="searchInput" placeholder="Search & press Enter...">
                         <button type="button" id="clearSearchBtn" class="clear-search-btn" title="Clear search"><i class="fa-solid fa-xmark"></i></button>
                     </div>
-                    <button type="button" id="searchIconBtn" class="search-btn" title="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </div>
+                    <button type="submit" id="searchIconBtn" class="search-btn" title="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
             </div>
 
             <button class="mobile-icon-btn" id="mobileSearchToggle" title="Search">
@@ -1326,10 +1326,10 @@
             </button>
         </div>
 
-        <div class="mobile-search-modal" id="mobileSearchModal">
+        <form class="mobile-search-modal" id="mobileSearchModal">
             <input type="text" id="mobileSearchInput" placeholder="Search movies, codes, models...">
-            <button type="button" id="mobileSearchSubmitBtn">Search</button>
-        </div>
+            <button type="submit" id="mobileSearchSubmitBtn">Search</button>
+        </form>
     </nav>
 
     <!-- Home View -->
@@ -2268,20 +2268,16 @@
             }
         }
 
-        searchInput.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter') executeSearch(searchInput.value);
+        const searchForm = document.getElementById('searchForm');
+        searchForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            executeSearch(searchInput.value);
         });
-        searchIconBtn.addEventListener('click', () => executeSearch(searchInput.value));
 
-        mobileSearchSubmitBtn.addEventListener('click', () => {
+        mobileSearchModal.addEventListener('submit', (e) => {
+            e.preventDefault();
             executeSearch(mobileSearchInput.value);
             mobileSearchModal.classList.remove('active');
-        });
-        mobileSearchInput.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter') {
-                executeSearch(mobileSearchInput.value);
-                mobileSearchModal.classList.remove('active');
-            }
         });
 
         function executeSearch(query) {
@@ -2292,7 +2288,7 @@
                 filteredData = sortByCurrentSort(movieData);
                 clearSearchBtn.style.display = "none";
             } else {
-                filteredData = movieData.filter(movie => {
+                filteredData = sortByCurrentSort(movieData.filter(movie => {
                     return (
                         movie.title.toLowerCase().includes(searchString) ||
                         movie.code.toLowerCase().includes(searchString) ||
@@ -2300,7 +2296,7 @@
                         movie.region.toLowerCase().includes(searchString) ||
                         (movie.studio && movie.studio.toLowerCase().includes(searchString))
                     );
-                });
+                }));
                 clearSearchBtn.style.display = "block";
             }
 
