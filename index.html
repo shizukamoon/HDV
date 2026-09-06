@@ -151,7 +151,7 @@
         }
 
         .nav-brand-domain {
-            color: #000;
+            color: #fff;
         }
 
         .nav-menu {
@@ -275,7 +275,8 @@
         }
 
         .mobile-search-modal input {
-            flex-grow: 1;
+            flex: 1 1 auto;
+            min-width: 0;
             padding: 10px 15px;
             border: none;
             border-radius: 20px;
@@ -287,10 +288,12 @@
             background-color: #e94560;
             color: white;
             border: none;
-            padding: 0 20px;
+            padding: 0 16px;
             border-radius: 20px;
             font-weight: 600;
             cursor: pointer;
+            flex-shrink: 0;
+            white-space: nowrap;
         }
 
         .dropdown {
@@ -1069,7 +1072,10 @@
             font-weight: 700;
             color: #e94560;
             margin-bottom: 15px;
-            text-transform: uppercase;
+        }
+
+        .footer-logo-domain {
+            color: #fff;
         }
 
         .footer-desc {
@@ -1286,11 +1292,11 @@
 
             <div class="dropdown right-align">
                 <button class="flag-btn">
-                    <img src="img/all.png" alt="Regions" class="flag-icon" id="currentFlag"> 
-                    <span id="currentRegionText">All Regions</span>
+                    <img src="img/all.png" alt="Regions" class="flag-icon" id="currentFlag" style="display:none;"> 
+                    <span id="currentRegionText">All</span>
                 </button>
                 <ul class="dropdown-content">
-                    <li><a href="#" onclick="filterByRegion('All')"><img src="img/all.png" class="flag-icon"> All Regions</a></li>
+                    <li><a href="#" onclick="filterByRegion('All')">All</a></li>
                     <li><a href="#" onclick="filterByRegion('Japan')"><img src="img/flag-japan.png" class="flag-icon"> Japan</a></li>
                     <li><a href="#" onclick="filterByRegion('China')"><img src="img/flag-china.png" class="flag-icon"> China</a></li>
                     <li><a href="#" onclick="filterByRegion('Korea')"><img src="img/flag-south-korea.png" class="flag-icon"> Korea</a></li>
@@ -1447,7 +1453,7 @@
 
     <footer class="footer">
         <div class="footer-content">
-            <div class="footer-logo">HDV</div>
+            <div class="footer-logo">HDV<span class="footer-logo-domain">.com</span></div>
             <p class="footer-desc">Your ultimate video and movie gallery platform. Easily discover exciting content from various regions, categories, and exclusive studios.</p>
             
             <div class="social-icons">
@@ -1640,8 +1646,7 @@
             'Japan': 'img/flag-japan.png',
             'China': 'img/flag-china.png',
             'Korea': 'img/flag-south-korea.png',
-            'Indonesia': 'img/flag-indonesia.png',
-            'All': 'img/all.png'
+            'Indonesia': 'img/flag-indonesia.png'
         };
 		
 		function triggerImportData() {
@@ -1996,13 +2001,14 @@
             
             if (regionName === 'All') {
                 filteredData = movieData;
-                currentRegionText.innerText = "All Regions";
-                currentFlag.src = "img/all.png";
+                currentRegionText.innerText = "All";
+                currentFlag.style.display = "none";
                 searchInfoText.innerHTML = `Showing all items`;
             } else {
                 filteredData = movieData.filter(movie => movie.region && movie.region.toLowerCase() === regionName.toLowerCase());
                 currentRegionText.innerText = regionName;
                 currentFlag.src = regionFlags[regionName] || 'img/japan.png';
+                currentFlag.style.display = "";
                 searchInfoText.innerHTML = `Showing items for region: "<strong>${regionName}</strong>"`;
             }
 
