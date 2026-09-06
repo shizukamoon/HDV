@@ -1188,7 +1188,7 @@
             .nav-brand {
                 font-size: 1.2rem;
             }
-            #currentRegionText {
+            .flag-btn:not(.region-all) #currentRegionText {
                 display: none;
             }
             .flag-btn {
@@ -1291,7 +1291,7 @@
             </button>
 
             <div class="dropdown right-align">
-                <button class="flag-btn">
+                <button class="flag-btn region-all" id="flagBtn">
                     <img src="img/all.png" alt="Regions" class="flag-icon" id="currentFlag" style="display:none;"> 
                     <span id="currentRegionText">All</span>
                 </button>
@@ -1721,6 +1721,7 @@
         const mobileSearchInput = document.getElementById('mobileSearchInput');
         const mobileSearchSubmitBtn = document.getElementById('mobileSearchSubmitBtn');
         const currentFlag = document.getElementById('currentFlag');
+        const flagBtn = document.getElementById('flagBtn');
         const currentRegionText = document.getElementById('currentRegionText');
         const searchInfoText = document.getElementById('searchInfoText');
         const resetFilterBtn = document.getElementById('resetFilterBtn');
@@ -1950,6 +1951,16 @@
             switchView('model', modelName);
         }
 
+        function sortByCurrentSort(dataArray) {
+            const sortSelectEl = document.getElementById('sortSelect');
+            const sortValue = sortSelectEl ? sortSelectEl.value : 'new';
+            return [...dataArray].sort((a, b) => {
+                let dateA = new Date(a.releaseDate || '2020-01-01');
+                let dateB = new Date(b.releaseDate || '2020-01-01');
+                return sortValue === 'new' ? dateB - dateA : dateA - dateB;
+            });
+        }
+
         function filterByCategory(categoryName) {
             current_page = 1;
             allCategoriesBox.classList.remove('active');
@@ -1961,6 +1972,7 @@
                 filteredData = movieData.filter(movie => movie.tags && movie.tags.includes(categoryName));
                 searchInfoText.innerHTML = `Showing items for category: "<strong>${categoryName}</strong>"`;
             }
+            filteredData = sortByCurrentSort(filteredData);
             
             document.querySelectorAll('.view-section').forEach(el => el.classList.remove('active'));
             document.getElementById('homeView').classList.add('active');
@@ -1985,6 +1997,7 @@
                 });
                 searchInfoText.innerHTML = `Showing items for studio: "<strong>${studioName}</strong>"`;
             }
+            filteredData = sortByCurrentSort(filteredData);
             
             document.querySelectorAll('.view-section').forEach(el => el.classList.remove('active'));
             document.getElementById('homeView').classList.add('active');
@@ -2003,14 +2016,17 @@
                 filteredData = movieData;
                 currentRegionText.innerText = "All";
                 currentFlag.style.display = "none";
+                flagBtn.classList.add('region-all');
                 searchInfoText.innerHTML = `Showing all items`;
             } else {
                 filteredData = movieData.filter(movie => movie.region && movie.region.toLowerCase() === regionName.toLowerCase());
                 currentRegionText.innerText = regionName;
                 currentFlag.src = regionFlags[regionName] || 'img/japan.png';
                 currentFlag.style.display = "";
+                flagBtn.classList.remove('region-all');
                 searchInfoText.innerHTML = `Showing items for region: "<strong>${regionName}</strong>"`;
             }
+            filteredData = sortByCurrentSort(filteredData);
 
             searchInput.value = "";
             mobileSearchInput.value = "";
@@ -2032,7 +2048,7 @@
                 document.getElementById('homeView').classList.add('active');
                 if (param === 'All' || !param) {
                     allCategoriesBox.classList.remove('active');
-                    filteredData = movieData;
+                    filteredData = sortByCurrentSort(movieData);
                     displayCards(filteredData, cardContainer, rows_per_page, current_page, "", 'all');
                     setupPagination(filteredData, paginationContainer, rows_per_page, "");
                 }
@@ -2063,7 +2079,7 @@
             profileBioEl.innerText = modelDataInfo.bio;
             profileImgEl.src = modelDataInfo.photo;
 
-            let matchingMovies = movieData.filter(m => m.model.trim().toLowerCase() === modelName.trim().toLowerCase());
+            let matchingMovies = sortByCurrentSort(movieData.filter(m => m.model.trim().toLowerCase() === modelName.trim().toLowerCase()));
             modelCardContainer.innerHTML = "";
             const ratingsMap = getStoredRatings();
 
@@ -2246,7 +2262,7 @@
                 displayCards(filtered, cardContainer, rows_per_page, 1, "", 'recent');
             } else {
                 allCategoriesBox.classList.remove('active');
-                filteredData = movieData;
+                filteredData = sortByCurrentSort(movieData);
                 displayCards(filteredData, cardContainer, rows_per_page, current_page, "", 'all');
                 setupPagination(filteredData, paginationContainer, rows_per_page, "");
             }
@@ -2273,7 +2289,7 @@
             switchView('home');
             allCategoriesBox.classList.remove('active');
             if (searchString === "") {
-                filteredData = movieData;
+                filteredData = sortByCurrentSort(movieData);
                 clearSearchBtn.style.display = "none";
             } else {
                 filteredData = movieData.filter(movie => {
@@ -2297,7 +2313,7 @@
             searchInput.value = "";
             mobileSearchInput.value = "";
             clearSearchBtn.style.display = "none";
-            filteredData = movieData;
+            filteredData = sortByCurrentSort(movieData);
             current_page = 1;
             displayCards(filteredData, cardContainer, rows_per_page, current_page, "", 'all');
             setupPagination(filteredData, paginationContainer, rows_per_page, "");
@@ -2516,19 +2532,7 @@
         }
 
         function handleSortChange() {
-            const sortValue = document.getElementById('sortSelect').value;
-            
-            filteredData.sort((a, b) => {
-                let dateA = new Date(a.releaseDate || '2020-01-01');
-                let dateB = new Date(b.releaseDate || '2020-01-01');
-                
-                if (sortValue === 'new') {
-                    return dateB - dateA;
-                } else {
-                    return dateA - dateB;
-                }
-            });
-
+            filteredData = sortByCurrentSort(filteredData);
             current_page = 1;
             displayCards(filteredData, cardContainer, rows_per_page, current_page, "", 'all');
             setupPagination(filteredData, paginationContainer, rows_per_page, "");
@@ -2538,11 +2542,7 @@
 			if (typeof movieData !== 'undefined' && movieData.length > 0) {
 				generateNavigationMenus();
 				
-				filteredData = [...movieData].sort((a, b) => {
-					let dateA = new Date(a.releaseDate || '2020-01-01');
-					let dateB = new Date(b.releaseDate || '2020-01-01');
-					return dateB - dateA;
-				});
+				filteredData = sortByCurrentSort(movieData);
 
 				displayCards(filteredData, cardContainer, rows_per_page, current_page, "", 'all');
 				setupPagination(filteredData, paginationContainer, rows_per_page, "");
