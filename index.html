@@ -150,13 +150,6 @@
             text-decoration: none;
         }
 
-        .nav-brand-icon {
-            width: 24px;
-            height: 24px;
-            border-radius: 6px;
-            flex-shrink: 0;
-        }
-
         .nav-brand-domain {
             color: #000;
         }
@@ -266,13 +259,14 @@
         .mobile-search-modal {
             display: none;
             position: absolute;
-            top: 70px;
+            top: 100%;
             left: 0;
             width: 100%;
             background-color: #1a1a2e;
             padding: 15px 20px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.3);
             z-index: 99;
+            box-sizing: border-box;
         }
 
         .mobile-search-modal.active {
@@ -1136,6 +1130,12 @@
             .nav-actions {
                 display: none; 
             }
+            .nav-right-group {
+                gap: 8px;
+            }
+            .nav-brand {
+                font-size: 1.4rem;
+            }
             .nav-menu {
                 display: none;
                 width: 100%;
@@ -1175,6 +1175,18 @@
             }
             .watch-layout {
                 grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .nav-brand {
+                font-size: 1.2rem;
+            }
+            #currentRegionText {
+                display: none;
+            }
+            .flag-btn {
+                padding: 6px;
             }
         }
     </style>
@@ -1233,7 +1245,6 @@
 
     <nav class="navbar" id="navbar">
         <a class="nav-brand" onclick="switchView('home', 'All')">
-            <img class="nav-brand-icon" src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231a1a2e'/><text x='50%25' y='57%25' dominant-baseline='middle' text-anchor='middle' font-family='Poppins, sans-serif' font-weight='700' font-size='40' fill='%23e94560'>HDV</text></svg>" alt="HDV">
             <span>HDV</span><span class="nav-brand-domain">.com</span>
         </a>
         
