@@ -781,6 +781,7 @@
             margin: 30px auto;
             padding: 0 20px;
             width: 100%;
+            min-width: 0;
         }
 
         .watch-layout {
@@ -2236,6 +2237,9 @@
                 document.getElementById('playerView').classList.add('active');
                 loadPlayer(param);
                 window.scrollTo({ top: 0, behavior: 'smooth' });
+                if (!isBack) {
+                    history.pushState({ hdvPlayer: true }, '', '#watch');
+                }
             }
         }
 
@@ -2246,6 +2250,12 @@
                 switchView('home', 'All', true);
             }
         }
+
+        window.addEventListener('popstate', () => {
+            if (document.getElementById('playerView').classList.contains('active')) {
+                goBackFromPlayer();
+            }
+        });
 
         function loadModelProfile(modelName) {
             const profileNameEl = document.getElementById('modelProfileName');
