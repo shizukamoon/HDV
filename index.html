@@ -1440,7 +1440,7 @@
             <div class="nav-actions">
                 <form class="search-group" id="searchForm">
                     <div class="search-container">
-                        <input type="text" id="searchInput" placeholder="Search . . .">
+                        <input type="text" id="searchInput" placeholder="Search">
                         <button type="button" id="clearSearchBtn" class="clear-search-btn" title="Clear search"><i class="fa-solid fa-xmark"></i></button>
                     </div>
                     <button type="submit" id="searchIconBtn" class="search-btn" title="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -1488,7 +1488,7 @@
         </div>
 
         <form class="mobile-search-modal" id="mobileSearchModal">
-            <input type="text" id="mobileSearchInput" placeholder="Search movies, codes, models...">
+            <input type="text" id="mobileSearchInput" placeholder="Search">
             <button type="submit" id="mobileSearchSubmitBtn">Search</button>
         </form>
     </nav>
@@ -1633,7 +1633,8 @@
         <div class="footer-content">
             <div class="footer-logo">HDV<span class="footer-logo-domain">.com</span></div>
             <p class="footer-desc">Your ultimate video and movie gallery platform. Easily discover exciting content from various regions, categories, and exclusive studios.</p>
-            
+            <br>
+			
             <div class="social-icons">
                 <a href="#" title="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
                 <a href="#" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
@@ -2058,7 +2059,7 @@
             paginatedModels.forEach(modelName => {
                 let profileInfo = (typeof modelProfiles !== 'undefined' && modelProfiles[modelName])
                     ? modelProfiles[modelName]
-                    : { photo: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=60", bio: "No biography available." };
+                    : { photo: "img/unknown.webp", bio: "No biography available." };
 
                 let modelCard = document.createElement('div');
                 modelCard.className = "model-card-item";
