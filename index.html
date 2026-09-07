@@ -1307,7 +1307,15 @@
             }
             .fav-action-btn, .completed-action-btn {
                 flex: 1;
+                min-width: 0;
                 justify-content: center;
+                white-space: normal;
+                text-align: center;
+                font-size: 0.8rem;
+                padding: 8px 6px;
+            }
+            .fav-action-btn span, .completed-action-btn span {
+                overflow-wrap: break-word;
             }
             .comment-input-box {
                 gap: 8px;
@@ -2645,7 +2653,7 @@
             function updateStarDisplay(score) {
                 const numScore = Number(score) || 0;
                 ratingScoreText.innerText = numScore.toFixed(1);
-                stars.forEach(star => {
+                document.querySelectorAll('#starContainer i').forEach(star => {
                     const val = parseInt(star.getAttribute('data-value'));
                     if (val <= numScore) {
                         star.classList.add('rated');
