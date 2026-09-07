@@ -1308,12 +1308,23 @@
             .dropdown.right-align .dropdown-content {
                 max-width: calc(100vw - 40px);
             }
+            
+            /* PERBAIKAN TAMPILAN MOBILE PLAYER VIEW */
+            .watch-container {
+                max-width: 100%;
+                padding: 0 10px;
+                margin: 15px auto;
+                overflow-x: hidden;
+            }
             .watch-layout {
                 grid-template-columns: 1fr;
                 gap: 15px;
+                width: 100%;
             }
             .player-wrapper {
                 padding: 12px;
+                width: 100%;
+                box-sizing: border-box;
             }
             .video-box {
                 margin-bottom: 15px;
@@ -1325,20 +1336,23 @@
                 gap: 12px;
                 font-size: 0.85rem;
             }
+            .video-header-flex {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 10px;
+            }
             .action-btns-group {
                 width: 100%;
+                display: flex;
+                gap: 8px;
             }
             .fav-action-btn, .completed-action-btn {
                 flex: 1;
                 min-width: 0;
                 justify-content: center;
-                white-space: normal;
-                text-align: center;
-                font-size: 0.8rem;
-                padding: 8px 6px;
-            }
-            .fav-action-btn span, .completed-action-btn span {
-                overflow-wrap: break-word;
+                padding: 8px 4px;
+                font-size: 0.75rem;
+                white-space: nowrap;
             }
             .comment-input-box {
                 gap: 8px;
