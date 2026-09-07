@@ -477,7 +477,7 @@
             transform: translateY(-5px);
         }
 
-        /* --- CSS SERONG / MIRING EFFECT PADA GAMBAR CARD & BADGE COMPLETED --- */
+        /* --- Diagonal/slanted effect for card image & completed badge --- */
         .card-image-wrapper {
             position: relative;
             width: 100%;
@@ -963,7 +963,7 @@
             transform: translateY(-2px);
         }
 
-        /* --- STYLING KOLOM KOMENTAR --- */
+        /* --- COMMENTS SECTION STYLING --- */
         .comments-section {
             margin-top: 25px;
             border-top: 1px solid #eee;
@@ -988,6 +988,7 @@
 
         .comment-input-box input {
             flex: 1;
+            min-width: 0;
             padding: 10px 15px;
             border: 1px solid #ddd;
             border-radius: 6px;
@@ -1009,6 +1010,8 @@
             font-size: 0.9rem;
             cursor: pointer;
             transition: background 0.2s;
+            flex-shrink: 0;
+            white-space: nowrap;
         }
 
         .comment-submit-btn:hover {
@@ -1267,6 +1270,30 @@
             }
             .watch-layout {
                 grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            .player-wrapper {
+                padding: 12px;
+            }
+            .video-box {
+                margin-bottom: 15px;
+            }
+            .video-title {
+                font-size: 1.2rem;
+            }
+            .video-meta {
+                gap: 12px;
+                font-size: 0.85rem;
+            }
+            .action-btns-group {
+                width: 100%;
+            }
+            .fav-action-btn, .completed-action-btn {
+                flex: 1;
+                justify-content: center;
+            }
+            .comment-input-box {
+                gap: 8px;
             }
         }
 
@@ -1523,15 +1550,15 @@
                             <div class="download-title"><i class="fa-solid fa-download"></i> Download Links</div>
                             <div class="download-buttons" id="downloadButtonsContainer"></div>
 
-                            <!-- Kolom Komentar Default dibawah Tombol Link -->
+                            <!-- Default comments section below the download links -->
                             <div class="comments-section">
                                 <div class="comments-title">
-                                    <i class="fa-solid fa-comments"></i> Komentar (<span id="commentCount">0</span>)
+                                    <i class="fa-solid fa-comments"></i> Comments (<span id="commentCount">0</span>)
                                 </div>
                                 
                                 <div class="comment-input-box">
-                                    <input type="text" id="commentInput" placeholder="Tulis komentar...">
-                                    <button type="button" class="comment-submit-btn" id="commentSubmitBtn">Kirim</button>
+                                    <input type="text" id="commentInput" placeholder="Write a comment...">
+                                    <button type="button" class="comment-submit-btn" id="commentSubmitBtn">Send</button>
                                 </div>
 
                                 <div class="comments-list" id="commentsList"></div>
@@ -2404,7 +2431,7 @@
             searchInput.focus();
         });
 
-        /* --- MANAJEMEN KOMENTAR --- */
+        /* --- COMMENTS MANAGEMENT --- */
         function renderComments(movie) {
             currentWatchingMovie = movie;
             const commentsContainer = document.getElementById('commentsList');
@@ -2418,7 +2445,7 @@
             commentsContainer.innerHTML = "";
 
             if (movie.comments.length === 0) {
-                commentsContainer.innerHTML = `<p style="font-size: 0.85rem; color: #888;">Belum ada komentar.</p>`;
+                commentsContainer.innerHTML = `<p style="font-size: 0.85rem; color: #888;">No comments yet.</p>`;
                 return;
             }
 
@@ -2428,7 +2455,7 @@
                 item.innerHTML = `
                     <div class="comment-header">
                         <span class="comment-author">${c.user}</span>
-                        <span class="comment-date">${c.date || 'Baru saja'}</span>
+                        <span class="comment-date">${c.date || 'Just now'}</span>
                     </div>
                     <div class="comment-text">${c.text}</div>
                 `;
@@ -2453,7 +2480,7 @@
                 currentWatchingMovie.comments.unshift({
                     user: currentUser,
                     text: text,
-                    date: "Baru saja"
+                    date: "Just now"
                 });
 
                 input.value = "";
@@ -2462,6 +2489,9 @@
         }
 
         document.getElementById('commentSubmitBtn').onclick = addComment;
+        document.getElementById('commentInput').addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') addComment();
+        });
 
         function loadPlayer(title) {
             let currentMovie = movieData.find(m => m.title === title) || movieData[0];
@@ -2528,7 +2558,7 @@
                 downloadContainer.innerHTML = `<span style="font-size: 0.85rem; color: #777;">Download link not available.</span>`;
             }
 
-            /* Muat Komentar untuk Movie ini */
+            /* Load comments for this movie */
             renderComments(currentMovie);
 
             const completedBtn = document.getElementById('completedBtn');
