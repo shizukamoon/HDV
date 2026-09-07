@@ -1,5 +1,77 @@
 const movieData = [
 	{
+        title: "FC2-PPV-4938500",
+        code: "Full Uncensored",
+        model: "Kasumi Takase",
+        studio: "FC2PPV",
+        region: "Japan",
+        releaseDate: "2026-07-17",
+        duration: "01:00:27",
+        imgurl: "img/fc2ppv/4938500.webp",
+        vidurl: "https://samples.movies/4938500/",
+        bio: "【無】大反響の女子アナ系色白美女降臨！上品な語り口調と見た目清楚系に反して隠語連発ドスケベ丸出し⤴網タイのナースコスが似合い過ぎ！　中だし2発　※特典高画質",
+        tags: ["Uncensored", "Creampie", "Small Tits", "Real Sperm Pussy Filled"],
+        downloads: {
+            original: "https://adult.contents.fc2.com/article/4938500/",
+            alt1: "https://supjav.com/443372.html",
+            alt2: "https://javfc2.xyz/watch/fc2ppv-4938500.html",
+            alt3: "https://missav.ws/fc2-ppv-4938500",
+            alt4: "https://123av.com/en/v/fc2-ppv-4938500",
+            alt5: "https://javgg.net/jav/fc2-ppv-4938500/"
+        },
+        comments: [
+            { user: "Dax", text: "https://ppvdatabank.com/article/4938500/", date: "now" }
+		]
+    },
+	{
+        title: "FC2-PPV-4934852",
+        code: "Full Uncensored",
+        model: "Natsuko",
+        studio: "FC2PPV",
+        region: "Japan",
+        releaseDate: "2026-07-07",
+        duration: "01:04:50",
+        imgurl: "img/fc2ppv/4934852.webp",
+        vidurl: "https://samples.movies/4934852/",
+        bio: "【7/28迄1290pt】【初撮】※19歳 グラビアアイドルに負けない美ボディムスメ。「あぁ、気持ちいい！」グチョグチョマンコに激ピストンで突っ込みまくり、喘ぎながらビクビク痙攣。締め付け膣奥に中出し",
+        tags: ["Uncensored", "Creampie", "Big Tits"],
+        downloads: {
+            original: "https://adult.contents.fc2.com/article/4934852/",
+            alt1: "https://supjav.com/440798.html",
+            alt2: "https://javfc2.xyz/watch/fc2ppv-4934852.html",
+            alt3: "https://missav.ws/fc2-ppv-4934852",
+            alt4: "https://123av.com/en/v/fc2-ppv-4934852",
+            alt5: "https://javgg.net/jav/fc2-ppv-4934852/"
+        },
+        comments: [
+            { user: "Dax", text: "https://ppvdatabank.com/article/4934852/", date: "now" }
+		]
+    },
+	{
+        title: "FC2-PPV-4926801",
+        code: "Full Uncensored",
+        model: "G-cup beauty from Kansai",
+        studio: "FC2PPV",
+        region: "Japan",
+        releaseDate: "2026-07-07",
+        duration: "01:07:04",
+        imgurl: "img/fc2ppv/4926801.webp",
+        vidurl: "https://samples.movies/4926801/",
+        bio: "※再販修正版 70％OFF【複数】好評複数企画。エッチ大好きGカップSS級関西美人をじゃんけんでまわす順番決めて好き放題やってみました！",
+        tags: ["Uncensored", "Creampie", "Big Tits"],
+        downloads: {
+            original: "https://adult.contents.fc2.com/article/4926801/",
+            alt1: "https://supjav.com/440792.html",
+            alt2: "https://javfc2.xyz/watch/fc2ppv-4926801.html",
+            alt3: "https://missav.ws/fc2-ppv-4926801",
+            alt4: "https://123av.com/en/v/fc2-ppv-4926801",
+            alt5: "https://javgg.net/jav/fc2-ppv-4926801/"
+        },
+        comments: [
+            { user: "Dax", text: "https://ppvdatabank.com/article/4926801/", date: "now" }
+		]
+    },
+	{
         title: "FC2-PPV-4929512",
         code: "Full Uncensored",
         model: "Nozomi-chan",
