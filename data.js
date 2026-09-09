@@ -1,5 +1,176 @@
 const movieData = [
 	{
+        title: "Arachuu Pramuka",
+        code: "Full Uncensored",
+        model: "Arachuu",
+        studio: "Live",
+        region: "Indonesia",
+        releaseDate: "2024-05-05",
+        duration: "01:00",
+        imgurl: "img/live/arachuu.webp",
+        vidurl: "https://samples.movies/arachuu/",
+        bio: "Arachu Pamer Aset Toket Gede Pink Eksib di Apartemen",
+        tags: ["Uncensored", "Live", "Big Tits"],
+        downloads: {
+            original: "https://www.indoav.com/video/pamer-toket-gede-arachuuu-part-1",
+            alt1: "#",
+            alt2: "#",
+            alt3: "#",
+            alt4: "#",
+            alt5: "#"
+        },
+        comments: [
+            { user: "Dax", text: "1 crt", date: "now" }
+		]
+    },
+	{
+        title: "Arachuu Outdoor",
+        code: "Full Uncensored",
+        model: "Arachuu",
+        studio: "Live",
+        region: "Indonesia",
+        releaseDate: "2026-05-05",
+        duration: "05:50",
+        imgurl: "img/live/arachuu6.webp",
+        vidurl: "https://samples.movies/arachuu/",
+        bio: "Arachuu bugil meki outdoor",
+        tags: ["Uncensored", "Live", "Big Tits"],
+        downloads: {
+            original: "https://www.indoav.com/video/arachu-eksib-susu-pink-colmek-di-teras-rumah",
+            alt1: "https://www.avtub.net/217911/eksib-ala-chindo-arachu-menunggu-ada-yang-grepe-doi/",
+            alt2: "https://bitchcinema.com/arachuu-bugil-show-meki-outdoor/",
+            alt3: "#",
+            alt4: "#",
+            alt5: "#"
+        },
+        comments: [
+            { user: "Dax", text: "https://ystream.id/download/a143ejtvk7hl", date: "now" }
+		]
+    },
+	{
+        title: "Arachuu Sexy",
+        code: "Full Uncensored",
+        model: "Arachuu",
+        studio: "Live",
+        region: "Indonesia",
+        releaseDate: "2026-05-05",
+        duration: "09:04",
+        imgurl: "img/live/arachuu5.webp",
+        vidurl: "https://samples.movies/arachuu/",
+        bio: "Koleksi Lengkap Arachu Chindo Terbaru Menemani",
+        tags: ["Uncensored", "Live", "Big Tits"],
+        downloads: {
+            original: "https://www.avtub.net/218271/koleksi-lengkap-arachu-chindo-terbaru-menemani-bacol/",
+            alt1: "#",
+            alt2: "#",
+            alt3: "#",
+            alt4: "#",
+            alt5: "#"
+        },
+        comments: [
+            { user: "Dax", text: "https://ystream.id/download/fdxog2k2wimy", date: "now" }
+		]
+    },
+	{
+        title: "Arachuu live Instagram",
+        code: "Full Uncensored",
+        model: "Arachuu",
+        studio: "Live",
+        region: "Indonesia",
+        releaseDate: "2026-05-05",
+        duration: "01:50",
+        imgurl: "img/live/arachuu4.webp",
+        vidurl: "https://samples.movies/arachuu/",
+        bio: "Live Instagram bareng tante",
+        tags: ["Uncensored", "Live", "Big Tits"],
+        downloads: {
+            original: "http://64.112.43.172/index.php/bokep-indo/arachu-live-sama-tante-mancing-pascol-ngaceng-instagram/",
+            alt1: "https://www.avtub.net/211078/arachu-live-sama-tante-mancing-pascol-ngaceng-instagram/",
+            alt2: "https://igo.desu.xxx/arachu-live-sama-tante-mancing-pascol-ngaceng-instagram/",
+            alt3: "#",
+            alt4: "#",
+            alt5: "#"
+        },
+        comments: [
+            { user: "Dax", text: "https://ystream.id/download/bhemm6unebsr", date: "now" }
+		]
+    },
+	{
+        title: "Arachuu in Kitchen",
+        code: "Full Uncensored",
+        model: "Arachuu",
+        studio: "Live",
+        region: "Indonesia",
+        releaseDate: "2026-05-05",
+        duration: "01:50",
+        imgurl: "img/live/arachuu3.webp",
+        vidurl: "https://samples.movies/arachuu/",
+        bio: "Mau Masak Horny Dulu",
+        tags: ["Uncensored", "Live", "Big Tits"],
+        downloads: {
+            original: "https://www.indoav.com/video/arachu-episode-mau-masak-horny-babe-colmek-dulu-koleksi-dr-pinguin-bokep-m-s-b",
+            alt1: "https://www.avtub.net/210871/arachu-episode-mau-masak-horny-babe-colmek-dulu/",
+            alt2: "https://www.eporner.com/video-rzSvPJLccVp/arachu-sebelum-masak-horny-colmek/",
+            alt3: "#",
+            alt4: "#",
+            alt5: "#"
+        },
+        comments: [
+            { user: "Dax", text: "1 crt", date: "now" },
+            { user: "Dax", text: "https://ystream.id/download/4qbddq6jewya", date: "now" }
+		]
+    },
+	{
+        title: "Arachuu Pink Tiktoker",
+        code: "Full Uncensored",
+        model: "Arachuu",
+        studio: "Live",
+        region: "Indonesia",
+        releaseDate: "2026-06-24",
+        duration: "01:50",
+        imgurl: "img/live/arachuu2.webp",
+        vidurl: "https://samples.movies/arachuu/",
+        bio: "Bokep Indo Chindo Arachu Pap Toket Pink Gede Remesin Dong",
+        tags: ["Uncensored", "Live", "Big Tits"],
+        downloads: {
+            original: "https://www.indoav.com/video/bokep-chindo-arachu-pap-toket-pink-gede",
+            alt1: "https://www.avtub.net/214220/bokep-chindo-arachu-pap-toket-pink-gede-remesin-dong/",
+            alt2: "https://xbokepindoh.com/bokep-indo-chindo-arachu-pap-toket-pink-gede-remesin-dong/#",
+            alt3: "https://www.avbokep.cc/27575-bokep-indo-chindo-arachu-pap-toket-pink-gede-remesin-dong.html",
+            alt4: "https://igo.desu.xxx/nonton-chindo-arachu-pap-toket-pink-gede-remesin-dong/",
+            alt5: "https://indoporn.mobi/bokep-chindo-arachu-pap-toket-pink-gede-remesin-dong/"
+        },
+        comments: [
+            { user: "Dax", text: "https://havenfile.cc/d/taM1azslLFZenoNl", date: "now" }
+		]
+    },
+	{
+        title: "Arachuu in Bedroom",
+        code: "Full Uncensored",
+        model: "Arachuu",
+        studio: "Live",
+        region: "Indonesia",
+        releaseDate: "2026-04-10",
+        duration: "05:15",
+        imgurl: "img/live/arachuu1.webp",
+        vidurl: "https://samples.movies/arachuu/",
+        bio: "Ayo Main Sama Arachu Sini Ngangkang Masukin Dong",
+        tags: ["Uncensored", "Live", "Big Tits"],
+        downloads: {
+            original: "https://www.indoav.com/video/arachuu-mulus-banget-jirr-sambil-mainin-memek",
+            alt1: "https://nobokepz.com/ayo-main-sama-arachu-sini-ngangkang-masukin-dong-209545/",
+            alt2: "https://xbokepindoh.com/bokep-indo-ayo-main-sama-arachu-sini-ngangkang-masukin-dong/",
+            alt3: "http://64.112.43.172/index.php/bokep-indo/ayo-main-sama-arachu-sini-ngangkang-masukin-dong/",
+            alt4: "https://igo.desu.xxx/ayo-main-sama-arachu-sini-ngangkang-masukin-dong/",
+            alt5: "https://indoporn.mobi/ayo-main-sama-arachu-sini-ngangkang-masukin-dong/"
+        },
+        comments: [
+            { user: "Dax", text: "1 crt", date: "now" },
+            { user: "Dax", text: "https://www.avbokep.cc/26800-bokep-indo-ayo-main-sama-arachu-sini-ngangkang-masukin-dong.html", date: "now" },
+            { user: "Dax", text: "https://havenfile.cc/d/FcXgKCeE6inpFKOF", date: "now" }
+		]
+    },
+	{
         title: "FC2-PPV-4938500",
         code: "Full Uncensored",
         model: "Kasumi Takase",
@@ -170,7 +341,7 @@ const movieData = [
 	{
         title: "FC2-PPV-3695183",
         code: "Full Uncensored",
-        // model: "",
+        model: "",
         studio: "FC2PPV",
         region: "Japan",
         releaseDate: "2023-08-23",
@@ -390,7 +561,6 @@ const movieData = [
             alt5: "#"
         },
         comments: [
-            { user: "Dax", text: "1 crt", date: "now" },
             { user: "Dax", text: "http://eporner.com/gallery/cVTGBYXEp6R/Arachu-viral-baby-girls/", date: "now" },
             { user: "Dax", text: "https://www.eporner.com/gallery/o05Lk4MTp8o/Arachuu/", date: "now" },
             { user: "Dax", text: "http://eporner.com/gallery/D4ZmFymHKQZ/Arachuu/", date: "now" },
@@ -399,7 +569,6 @@ const movieData = [
             { user: "Dax", text: "http://eporner.com/gallery/J7rSlAM0GjM/a0/", date: "now" },
             { user: "Dax", text: "http://ocosplay.com/es/g/92020", date: "now" },
             { user: "Dax", text: "https://kittykawai.com/tag/arachuu-porn/", date: "now" },
-            { user: "Dax", text: "https://www.eporner.com/video-rzSvPJLccVp/arachu-sebelum-masak-horny-colmek/", date: "now" },
             { user: "Dax", text: "https://www.eporner.com/video-PCjwvBbnX4y/bokep-arachu-pamer-tt/", date: "now" },
             { user: "Dax", text: "https://www.eporner.com/video-nLGm6x34n83/arachu-pamer-toket-gede/", date: "now" },
             { user: "Dax", text: "https://www.eporner.com/video-6X5OtqTyisp/arachuu-bikini-pikachu-omek-di-kolam-renang/", date: "now" },
@@ -417,7 +586,7 @@ const movieData = [
     {
         title: "FC2-PPV-4972410",
         code: "Full Uncensored",
-        // model: "",
+        model: "",
         studio: "FC2PPV",
         region: "Japan",
         releaseDate: "2026-09-05",
@@ -835,7 +1004,7 @@ const movieData = [
         imgurl: "https://img.11yun.xyz/ETAV1/37512/37512.jpg",
         vidurl: "#",
         bio: "Onlyfans极品白虎网红小姐姐NANA让妈妈来满足一下儿子的好奇心一定要保密哦",
-        tags: ["Uncensored", "Creampie", "Small Tits"],
+        tags: ["Uncensored", "Creampie", "Small Tits", "Real Sperm Pussy Filled"],
 		downloads: {
             original: "https://example.com/download/original-001",
             alt1: "https://kanav.ad/index.php/vod/play/id/26586/sid/1/nid/1.html",

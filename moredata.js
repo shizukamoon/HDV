@@ -1,4 +1,8 @@
 const modelProfiles = {
+    "Arachuu": {
+        photo: "img/av/Arachuu0.png",
+        bio: ""
+    },
     "穂高ひな Hina Hodaka": {
         photo: "img/av/穂高ひな Hina Hodaka.webp",
         bio: "DOB: 2001-10-30 Measurements: 79-57-83 - Cup: G - Height: 156 cm"

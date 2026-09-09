@@ -1207,9 +1207,6 @@
             text-decoration: none;
         }
 
-        /* ====================================================
-            RESPONSIVE KHUSUS HP (MAX-WIDTH: 1024px)
-            ==================================================== */
         @media (max-width: 1024px) {
             .navbar {
                 flex-wrap: wrap;
@@ -1264,7 +1261,6 @@
                 display: grid;
             }
 
-            /* FIX UTAMA PLAYER & LAYOUT HP */
             .watch-container {
                 width: 100% !important;
                 max-width: 100% !important;
@@ -1288,7 +1284,6 @@
                 overflow-x: hidden !important;
             }
 
-            /* FIX VIDEO BOX AGAR PAS 16:9 DAN TIDAK MELUBER */
             .video-box {
                 position: relative !important;
                 width: 100% !important;
@@ -1339,7 +1334,6 @@
                 font-size: 0.85rem !important;
             }
 
-            /* FIX KOMENTAR & INPUT DI HP */
             .comment-input-box {
                 display: flex !important;
                 width: 100% !important;
@@ -1356,7 +1350,6 @@
                 font-size: 0.85rem !important;
             }
 
-            /* FIX RELATED SECTION DI HP */
             .related-section {
                 width: 100% !important;
                 max-width: 100% !important;
@@ -2667,7 +2660,6 @@
                 downloadContainer.innerHTML = `<span style="font-size: 0.85rem; color: #777;">Download link not available.</span>`;
             }
 
-            /* Load comments for this movie */
             renderComments(currentMovie);
 
             const completedBtn = document.getElementById('completedBtn');
@@ -2748,7 +2740,6 @@
 
             let ratingsMap = getStoredRatings();
             let initialScore = ratingsMap[currentMovie.title] !== undefined ? ratingsMap[currentMovie.title] : 0.0;
-            updateStarDialog(initialScore); // fallback fix or function call updateStarDisplay
             updateStarDisplay(initialScore);
 
             stars.forEach(star => {
@@ -2767,11 +2758,14 @@
                 });
             });
 
+            // --- PERBAIKAN LOGIC RELATED VIDEO SUPAYA JALAN & BERFUNGSI ---
             let relatedData = movieData.filter(m => {
                 let m1 = (m.model && m.model.trim() !== "") ? m.model.trim() : "General";
                 let m2 = (currentMovie.model && currentMovie.model.trim() !== "") ? currentMovie.model.trim() : "General";
                 return m1 === m2 && m.title !== currentMovie.title;
             });
+            
+            // Jika data model terkait kurang, isi dengan video lain agar section tetap penuh
             if (relatedData.length < 5) {
                 const extraData = movieData.filter(m => m.title !== currentMovie.title && !relatedData.includes(m));
                 relatedData = [...relatedData, ...extraData];
@@ -2784,6 +2778,12 @@
             function renderRelatedVideos() {
                 relatedListContainer.innerHTML = "";
                 const itemsToShow = relatedData.slice(0, visibleCount);
+
+                if (itemsToShow.length === 0) {
+                    relatedListContainer.innerHTML = `<p style="font-size: 0.85rem; color: #888;">No related videos.</p>`;
+                    viewMoreBtn.style.display = "none";
+                    return;
+                }
 
                 itemsToShow.forEach(video => {
                     const rCard = document.createElement('div');
