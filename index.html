@@ -8,6 +8,7 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231a1a2e'/><text x='50%' y='57%' dominant-baseline='middle' text-anchor='middle' font-family='Poppins, sans-serif' font-weight='700' font-size='40' fill='%23e94560'>HDV</text></svg>">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
         * {
@@ -15,6 +16,27 @@
             padding: 0;
             box-sizing: border-box;
             font-family: 'Poppins', sans-serif;
+        }
+
+        /* Custom Scrollbar Modern untuk Seluruh Browser */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+        /* Untuk Firefox */
+        * {
+            scrollbar-width: thin;
+            scrollbar-color: #cbd5e1 #f1f1f1;
         }
 
         html, body {
@@ -991,8 +1013,10 @@
             font-size: 0.85rem;
             font-weight: 600;
             text-decoration: none;
-            background-color: #1a1a2e;
-            color: white;
+            transition: opacity 0.2s;
+        }
+        .download-btn:hover {
+            opacity: 0.85;
         }
 
         /* Comments Section */
@@ -1479,6 +1503,7 @@
                     <li><button type="button" onclick="filterView('recent')"><i class="fa-solid fa-clock-rotate-left"></i> Recent Watch</button></li>
                     <li><button type="button" onclick="exportUserData()"><i class="fa-solid fa-file-arrow-down"></i> Export Data</button></li>
                     <li><button type="button" onclick="triggerImportData()"><i class="fa-solid fa-file-arrow-up"></i> Import Data</button></li>
+                    <li><button type="button" onclick="openLocalStorageEditorModal()"><i class="fa-solid fa-database"></i> Editor LocalStorage</button></li>
                     <li><a href="#" onclick="logoutUser()" style="color: #e94560;"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
                 </ul>
             </div>
@@ -1587,13 +1612,7 @@
                             <span><i class="fa-regular fa-clock"></i> <span id="videoDuration">--</span> Min</span>
                             
                             <div class="rating-widget">
-                                <div class="stars-container" id="starContainer">
-                                    <i class="fa-solid fa-star" data-value="1"></i>
-                                    <i class="fa-solid fa-star" data-value="2"></i>
-                                    <i class="fa-solid fa-star" data-value="3"></i>
-                                    <i class="fa-solid fa-star" data-value="4"></i>
-                                    <i class="fa-solid fa-star" data-value="5"></i>
-                                </div>
+                                <div class="stars-container" id="starContainer"></div>
                                 <span id="ratingScoreText" style="font-size: 0.85rem; font-weight: 600; color: #333;">0.0</span>
                             </div>
                         </div>
@@ -1632,6 +1651,78 @@
         </div>
     </div>
 
+    <!-- MODAL NOTEPAD EDITOR LOCALSTORAGE (LATAR LIGHT) -->
+    <div id="localStorageEditorModal" class="fixed inset-0 z-[99999] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4" style="display: none;">
+        <div class="bg-white border border-gray-300 w-full max-w-3xl rounded-xl shadow-2xl flex flex-col overflow-hidden">
+            
+            <!-- Modal Header (Light Theme) -->
+            <div class="bg-slate-100 px-6 py-4 border-b border-gray-200 flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <span class="w-3 h-3 bg-red-400 rounded-full inline-block"></span>
+                    <span class="w-3 h-3 bg-yellow-400 rounded-full inline-block"></span>
+                    <span class="w-3 h-3 bg-green-400 rounded-full inline-block"></span>
+                    <span class="text-sm font-semibold text-slate-700 ml-2">Notepad LocalStorage Editor</span>
+                </div>
+                <button type="button" onclick="closeLocalStorageEditorModal()" class="text-slate-400 hover:text-slate-700 text-xl font-bold">&times;</button>
+            </div>
+
+            <!-- Modal Body (Light Theme) -->
+            <div class="p-6 flex-1 flex flex-col space-y-4 bg-white">
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
+                    <div class="w-full sm:w-auto flex-1">
+                        <label class="block text-xs font-semibold text-slate-600 mb-1">Pilih Key LocalStorage:</label>
+                        <select id="localStorageKeySelect" onchange="loadLocalStorageKeyContent()" class="w-full bg-slate-50 text-slate-800 border border-slate-300 rounded-lg p-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                            <!-- Diisi via Javascript berdasarkan isi localStorage -->
+                        </select>
+                    </div>
+                    <span id="lsStatusBadge" class="text-xs px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-700 font-medium self-end sm:self-center">Format Valid</span>
+                </div>
+
+                <div class="flex flex-col flex-1">
+                    <label class="block text-xs font-semibold text-slate-600 mb-1">Isi Data (Format JSON):</label>
+                    <textarea 
+                        id="localStorageTextarea" 
+                        oninput="validateLocalStorageInput()"
+                        class="w-full h-72 bg-slate-50 text-slate-900 font-mono text-sm p-4 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 resize-none shadow-inner"
+                        placeholder="Data localStorage..."></textarea>
+                    <p id="lsErrorMsg" class="text-xs text-red-500 mt-2 font-medium" style="display: none;"></p>
+                </div>
+            </div>
+
+            <!-- Modal Footer (Light Theme) -->
+            <div class="bg-slate-100 px-6 py-4 border-t border-gray-200 flex justify-end space-x-3">
+                <button type="button" onclick="closeLocalStorageEditorModal()" class="px-4 py-2 bg-slate-200 hover:bg-slate-300 text-slate-700 text-sm font-medium rounded-lg transition">Batal</button>
+                <button type="button" id="saveLsBtn" onclick="saveLocalStorageChanges()" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-medium rounded-lg transition shadow cursor-pointer">Simpan ke LocalStorage</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- CUSTOM ALERT MODAL (Menggantikan alert bawaan browser) -->
+    <div id="customAlertModal" class="fixed inset-0 z-[100000] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4" style="display: none;">
+        <div class="bg-white border border-gray-300 w-full max-w-sm rounded-xl shadow-2xl flex flex-col overflow-hidden text-center p-6">
+            <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
+                <i class="fa-solid fa-circle-info"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-800 mb-2">Informasi</h3>
+            <p id="customAlertMessage" class="text-sm text-slate-600 mb-6 leading-relaxed">Pesan notifikasi...</p>
+            <button type="button" onclick="closeCustomAlert()" class="w-full py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-sm rounded-lg transition shadow">OK</button>
+        </div>
+    </div>
+
+    <!-- CUSTOM PROMPT MODAL (Menggantikan prompt bawaan browser) -->
+    <div id="customPromptModal" class="fixed inset-0 z-[100000] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4" style="display: none;">
+        <div class="bg-white border border-gray-300 w-full max-w-sm rounded-xl shadow-2xl flex flex-col p-6">
+            <h3 id="customPromptTitle" class="text-base font-bold text-slate-800 mb-2">Masukkan Nilai</h3>
+            <p id="customPromptMessage" class="text-xs text-slate-500 mb-4 leading-relaxed"></p>
+            <input type="text" id="customPromptInput" class="w-full bg-slate-50 text-slate-900 border border-slate-300 rounded-lg p-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 mb-6" placeholder="Ketik di sini...">
+            <div class="flex justify-end space-x-2">
+                <button type="button" onclick="resolveCustomPrompt(false)" class="px-4 py-2 bg-slate-200 hover:bg-slate-300 text-slate-700 text-sm font-medium rounded-lg transition">Batal</button>
+                <button type="button" onclick="resolveCustomPrompt(true)" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-medium rounded-lg transition shadow">OK</button>
+            </div>
+        </div>
+    </div>
+
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-logo">HDV<span class="footer-logo-domain">.com</span></div>
@@ -1656,6 +1747,43 @@
 
     <script>
         let currentWatchingMovie = null;
+
+        /* --- FUNGSI CUSTOM ALERT & PROMPT (Menggantikan alert & prompt browser) --- */
+        let promptCallback = null;
+
+        function showCustomAlert(message) {
+            document.getElementById('customAlertMessage').innerText = message;
+            document.getElementById('customAlertModal').style.display = 'flex';
+        }
+
+        function closeCustomAlert() {
+            document.getElementById('customAlertModal').style.display = 'none';
+        }
+
+        function showCustomPrompt(title, message, defaultValue = "", callback) {
+            document.getElementById('customPromptTitle').innerText = title;
+            document.getElementById('customPromptMessage').innerText = message;
+            const inputEl = document.getElementById('customPromptInput');
+            inputEl.value = defaultValue;
+            document.getElementById('customPromptModal').style.display = 'flex';
+            inputEl.focus();
+            promptCallback = callback;
+        }
+
+        function resolveCustomPrompt(isConfirm) {
+            const val = document.getElementById('customPromptInput').value;
+            document.getElementById('customPromptModal').style.display = 'none';
+            if (promptCallback) {
+                promptCallback(isConfirm ? val : null);
+                promptCallback = null;
+            }
+        }
+
+        document.getElementById('customPromptInput').addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') resolveCustomPrompt(true);
+            if (e.key === 'Escape') resolveCustomPrompt(false);
+        });
+        /* ------------------------------------------------------------- */
 
         function getUsers() {
             return JSON.parse(localStorage.getItem('hdv_users')) || [];
@@ -1783,12 +1911,12 @@
 
         function showMasterTokenModal() {
             let currentToken = localStorage.getItem('hdv_master_token') || 'MASTERKEY123';
-            let action = prompt(`Current Master Token: [ ${currentToken} ]\n\nType a new token if you want to change it, or press OK to keep it.`);
-            
-            if (action !== null && action.trim() !== "") {
-                localStorage.setItem('hdv_master_token', action.trim());
-                alert(`Master Token successfully updated to: ${action.trim()}`);
-            }
+            showCustomPrompt("Pengaturan Master Token", `Token Saat Ini: [ ${currentToken} ]\nMasukkan token baru jika ingin mengubahnya:`, currentToken, (newVal) => {
+                if (newVal !== null && newVal.trim() !== "") {
+                    localStorage.setItem('hdv_master_token', newVal.trim());
+                    showCustomAlert(`Master Token berhasil diperbarui ke: ${newVal.trim()}`);
+                }
+            });
         }
 
         const menuToggle = document.getElementById('menuToggle');
@@ -1847,7 +1975,7 @@
                 downloadAnchor.remove();
             } catch (error) {
                 console.error("Failed to export data:", error);
-                alert("An error occurred while exporting the data.");
+                showCustomAlert("Terjadi kesalahan saat mengekspor data.");
             }
         }
 
@@ -1871,13 +1999,101 @@
                             localStorage.setItem('movieRatings', JSON.stringify(parsedData.movieRatings));
                         }
 
-                        alert("Data imported successfully! The page will reload.");
-                        window.location.reload();
+                        showCustomAlert("Data berhasil diimpor! Halaman akan dimuat ulang.");
+                        setTimeout(() => window.location.reload(), 1500);
                     } catch (error) {
                         console.error("Failed to parse JSON file:", error);
-                        alert("Invalid or corrupted file format.");
+                        showCustomAlert("Format file tidak valid atau rusak.");
                     }
                 };
+            }
+        }
+
+        /* --- NOTEPAD EDITOR LOCALSTORAGE FUNCTIONS --- */
+        function openLocalStorageEditorModal() {
+            const modal = document.getElementById('localStorageEditorModal');
+            const selectEl = document.getElementById('localStorageKeySelect');
+            
+            selectEl.innerHTML = "";
+            let keys = [];
+            for (let i = 0; i < localStorage.length; i++) {
+                keys.push(localStorage.key(i));
+            }
+
+            if (keys.length === 0) {
+                keys = ['favorites', 'completedVideos', 'recentWatch', 'movieRatings'];
+            }
+
+            keys.forEach(k => {
+                let opt = document.createElement('option');
+                opt.value = k;
+                opt.innerText = k;
+                selectEl.appendChild(opt);
+            });
+
+            modal.style.display = 'flex';
+            loadLocalStorageKeyContent();
+        }
+
+        function closeLocalStorageEditorModal() {
+            document.getElementById('localStorageEditorModal').style.display = 'none';
+        }
+
+        function loadLocalStorageKeyContent() {
+            const selectEl = document.getElementById('localStorageKeySelect');
+            const textarea = document.getElementById('localStorageTextarea');
+            const selectedKey = selectEl.value;
+
+            const rawVal = localStorage.getItem(selectedKey);
+            if (rawVal !== null) {
+                try {
+                    const parsed = JSON.parse(rawVal);
+                    textarea.value = JSON.stringify(parsed, null, 4);
+                } catch (e) {
+                    textarea.value = rawVal;
+                }
+            } else {
+                textarea.value = "[]";
+            }
+            validateLocalStorageInput();
+        }
+
+        function validateLocalStorageInput() {
+            const textarea = document.getElementById('localStorageTextarea');
+            const badge = document.getElementById('lsStatusBadge');
+            const errorMsg = document.getElementById('lsErrorMsg');
+            const saveBtn = document.getElementById('saveLsBtn');
+
+            try {
+                JSON.parse(textarea.value);
+                badge.innerText = "Format Valid";
+                badge.className = "text-xs px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-700 font-medium self-end sm:self-center";
+                errorMsg.style.display = 'none';
+                saveBtn.disabled = false;
+                saveBtn.className = "px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-medium rounded-lg transition shadow cursor-pointer";
+            } catch (e) {
+                badge.innerText = "Format Tidak Valid";
+                badge.className = "text-xs px-2.5 py-1 rounded-full bg-red-100 text-red-700 font-medium self-end sm:self-center";
+                errorMsg.innerText = "Kesalahan Sintaks JSON: " + e.message;
+                errorMsg.style.display = 'block';
+                saveBtn.disabled = true;
+                saveBtn.className = "px-4 py-2 bg-slate-300 text-slate-500 text-sm font-medium rounded-lg transition shadow cursor-not-allowed";
+            }
+        }
+
+        function saveLocalStorageChanges() {
+            const selectEl = document.getElementById('localStorageKeySelect');
+            const textarea = document.getElementById('localStorageTextarea');
+            const selectedKey = selectEl.value;
+
+            try {
+                const parsedData = JSON.parse(textarea.value);
+                localStorage.setItem(selectedKey, JSON.stringify(parsedData));
+                closeLocalStorageEditorModal();
+                showCustomAlert(`Key "${selectedKey}" berhasil disimpan ke LocalStorage! Halaman akan dimuat ulang.`);
+                setTimeout(() => window.location.reload(), 1500);
+            } catch (e) {
+                showCustomAlert("Gagal menyimpan, pastikan format JSON valid.");
             }
         }
 
@@ -1914,6 +2130,19 @@
             let start = rowsPerPage * (page - 1);
             let end = start + rowsPerPage;
             return data.slice(start, end);
+        }
+
+        /* --- HELPER MENGAMBIL ARRAY MODEL (Mendukung String, Array, atau Properti Tunggal/Jamak) --- */
+        function getMovieModels(movie) {
+            let rawModels = movie.models || movie.model;
+            if (!rawModels) return [];
+            if (Array.isArray(rawModels)) {
+                return rawModels.map(m => m.trim()).filter(m => m !== "" && m.toLowerCase() !== "general");
+            }
+            if (typeof rawModels === 'string') {
+                return rawModels.split(',').map(m => m.trim()).filter(m => m !== "" && m.toLowerCase() !== "general");
+            }
+            return [];
         }
 
         function generateNavigationMenus() {
@@ -1966,10 +2195,10 @@
             const modelDropdown = document.getElementById('modelDropdown');
             let modelCounts = {};
             movieData.forEach(movie => {
-                let modelName = (movie.model && movie.model.trim() !== "") ? movie.model.trim() : "General";
-                if (modelName.toLowerCase() !== 'general') {
+                let models = getMovieModels(movie);
+                models.forEach(modelName => {
                     modelCounts[modelName] = (modelCounts[modelName] || 0) + 1;
-                }
+                });
             });
             let sortedModels = Object.keys(modelCounts).sort((a, b) => modelCounts[b] - modelCounts[a]);
 
@@ -2055,10 +2284,10 @@
 
             let modelCounts = {};
             movieData.forEach(movie => {
-                let modelName = (movie.model && movie.model.trim() !== "") ? movie.model.trim() : "General";
-                if (modelName.toLowerCase() !== 'general') {
+                let models = getMovieModels(movie);
+                models.forEach(modelName => {
                     modelCounts[modelName] = (modelCounts[modelName] || 0) + 1;
-                }
+                });
             });
             let sortedModels = Object.keys(modelCounts).sort((a, b) => modelCounts[b] - modelCounts[a]);
 
@@ -2286,8 +2515,8 @@
             profileImgEl.src = modelDataInfo.photo;
 
             let matchingMovies = sortByCurrentSort(movieData.filter(m => {
-                let mName = (m.model && m.model.trim() !== "") ? m.model.trim() : "General";
-                return mName.toLowerCase() === modelName.trim().toLowerCase();
+                let models = getMovieModels(m);
+                return models.some(mod => mod.toLowerCase() === modelName.trim().toLowerCase());
             }));
             modelCardContainer.innerHTML = "";
             const ratingsMap = getStoredRatings();
@@ -2356,7 +2585,6 @@
             
             const flagSrc = regionFlags[movie.region] || 'img/japan.png';
             let currentRating = ratingsMap[movie.title] !== undefined ? ratingsMap[movie.title] : 0.0;
-            let displayModel = (movie.model && movie.model.trim() !== "") ? movie.model.trim() : "General";
             
             const completedList = getStoredCompleted();
             const isCompleted = completedList.includes(movie.title);
@@ -2365,8 +2593,6 @@
             }
 
             card.addEventListener('click', (e) => {
-                if(e.target.classList.contains('model-link-tag')) return;
-
                 let recent = JSON.parse(localStorage.getItem('recentWatch')) || [];
                 recent = recent.filter(t => t !== movie.title);
                 recent.unshift(movie.title);
@@ -2375,11 +2601,6 @@
                 switchView('player', movie.title);
             });
 
-            let modelTagHtml = "";
-            if (displayModel.toLowerCase() !== 'general') {
-                modelTagHtml = `<span class="tag model-link-tag" onclick="filterByModel('${displayModel}')">${displayModel}</span>`;
-            }
-
             card.innerHTML = `
                 <div class="card-image-wrapper">
                     <span class="card-completed-badge"><i class="fa-solid fa-check"></i> Completed</span>
@@ -2387,7 +2608,6 @@
                 </div>
                 <div class="card-content">
                     <div class="card-tags">
-                        ${modelTagHtml}
                         <span class="tag" style="background:#0f3460">${movie.code}</span>
                         <span class="tag-region"><img src="${flagSrc}" class="flag-icon" style="width:14px; height:10px;"> ${movie.region}</span>
                     </div>
@@ -2503,11 +2723,12 @@
                 clearSearchBtn.style.display = "none";
             } else {
                 filteredData = sortByCurrentSort(movieData.filter(movie => {
-                    let mName = (movie.model && movie.model.trim() !== "") ? movie.model : "";
+                    let models = getMovieModels(movie);
+                    let matchModel = models.some(m => m.toLowerCase().includes(searchString));
                     return (
                         movie.title.toLowerCase().includes(searchString) ||
                         movie.code.toLowerCase().includes(searchString) ||
-                        mName.toLowerCase().includes(searchString) ||
+                        matchModel ||
                         movie.region.toLowerCase().includes(searchString) ||
                         (movie.studio && movie.studio.toLowerCase().includes(searchString))
                     );
@@ -2612,9 +2833,14 @@
             videoSource.src = currentMovie.vidurl;
             mainVideo.load();
 
-            let playerModel = (currentMovie.model && currentMovie.model.trim() !== "") ? currentMovie.model.trim() : "General";
+            let models = getMovieModels(currentMovie);
+            let modelTagsHtml = "";
+            models.forEach(modelName => {
+                modelTagsHtml += `<span class="tag" style="cursor:pointer;" onclick="filterByModel('${modelName}')">${modelName}</span> `;
+            });
+
             document.getElementById('videoTagsContainer').innerHTML = `
-                <span class="tag" style="cursor:pointer;" onclick="filterByModel('${playerModel}')">${playerModel}</span>
+                ${modelTagsHtml}
                 <span class="tag" style="background:#0f3460">${currentMovie.code}</span>
                 ${currentMovie.studio ? `<span class="tag" style="background:#555; cursor:pointer;" onclick="filterByStudio('${currentMovie.studio}')">${currentMovie.studio}</span>` : ''}
                 ${currentMovie.region ? `<span class="tag" style="background:#16213e; cursor:pointer; display:inline-flex; align-items:center; gap:5px;" onclick="filterByRegion('${currentMovie.region}')">${regionFlags[currentMovie.region] ? `<img src="${regionFlags[currentMovie.region]}" style="width:14px;height:10px;object-fit:cover;border-radius:2px;">` : ''} ${currentMovie.region}</span>` : ''}
@@ -2635,27 +2861,17 @@
             const downloadContainer = document.getElementById('downloadButtonsContainer');
             downloadContainer.innerHTML = "";
 
-            if (currentMovie.downloads) {
-                const d = currentMovie.downloads;
-                
-                const addDownloadBtn = (label, url, iconClass, bgColor = "#1a1a2e") => {
-                    if (url) {
-                        const a = document.createElement('a');
-                        a.href = url;
-                        a.className = "download-btn";
-                        a.target = "_blank";
-                        a.style.backgroundColor = bgColor;
-                        a.innerHTML = `<i class="${iconClass}"></i> ${label}`;
-                        downloadContainer.appendChild(a);
-                    }
-                };
-
-                addDownloadBtn("Original", d.original, "fa-solid fa-cloud-arrow-down", "#1a1a2e");
-                addDownloadBtn("Alt 1", d.alt1, "fa-solid fa-download");
-                addDownloadBtn("Alt 2", d.alt2, "fa-solid fa-download");
-                addDownloadBtn("Alt 3", d.alt3, "fa-solid fa-download");
-                addDownloadBtn("Alt 4", d.alt4, "fa-solid fa-download");
-                addDownloadBtn("Alt 5", d.alt5, "fa-solid fa-download");
+            if (currentMovie.downloads && Array.isArray(currentMovie.downloads)) {
+                currentMovie.downloads.forEach(dl => {
+                    const a = document.createElement('a');
+                    a.href = dl.url || '#';
+                    a.className = `download-btn ${dl.btnClass || 'bg-black'} ${dl.textClass || 'text-white'}`;
+                    if(dl.bgHex) a.style.backgroundColor = dl.bgHex;
+                    if(dl.textHex) a.style.color = dl.textHex;
+                    a.target = "_blank";
+                    a.innerHTML = `<i class="fa-solid fa-download"></i> ${dl.label || 'Download'}`;
+                    downloadContainer.appendChild(a);
+                });
             } else {
                 downloadContainer.innerHTML = `<span style="font-size: 0.85rem; color: #777;">Download link not available.</span>`;
             }
@@ -2722,50 +2938,83 @@
             };
             checkFavoriteStatus();
 
-            const stars = document.querySelectorAll('#starContainer i');
+            // --- RATING SYSTEM (Skala 10 -> 5 Bintang) [Reaktif] ---
+            const starContainerEl = document.getElementById('starContainer');
             const ratingScoreText = document.getElementById('ratingScoreText');
+
+            starContainerEl.innerHTML = `
+                <i class="fa-solid fa-star" data-value="1"></i>
+                <i class="fa-solid fa-star" data-value="2"></i>
+                <i class="fa-solid fa-star" data-value="3"></i>
+                <i class="fa-solid fa-star" data-value="4"></i>
+                <i class="fa-solid fa-star" data-value="5"></i>
+            `;
+
+            function getActiveMovieScore() {
+                const ratingsMap = getStoredRatings();
+                return ratingsMap[currentMovie.title] !== undefined ? ratingsMap[currentMovie.title] : 0.0;
+            }
 
             function updateStarDisplay(score) {
                 const numScore = Number(score) || 0;
-                ratingScoreText.innerText = numScore.toFixed(1);
-                document.querySelectorAll('#starContainer i').forEach(star => {
-                    const val = parseInt(star.getAttribute('data-value'));
-                    if (val <= numScore) {
-                        star.classList.add('rated');
+                const starValue = numScore / 2;
+                
+                ratingScoreText.innerText = `${numScore.toFixed(1)} / 10`;
+
+                const stars = starContainerEl.querySelectorAll('i');
+                stars.forEach((star, index) => {
+                    const starNum = index + 1;
+                    star.className = "";
+
+                    if (starValue >= starNum) {
+                        star.className = "fa-solid fa-star rated";
+                    } else if (starValue >= starNum - 0.5) {
+                        star.className = "fa-solid fa-star-half-stroke rated";
                     } else {
-                        star.classList.remove('rated');
+                        star.className = "fa-regular fa-star";
                     }
                 });
             }
 
-            let ratingsMap = getStoredRatings();
-            let initialScore = ratingsMap[currentMovie.title] !== undefined ? ratingsMap[currentMovie.title] : 0.0;
-            updateStarDisplay(initialScore);
+            updateStarDisplay(getActiveMovieScore());
 
-            stars.forEach(star => {
-                let newStar = star.cloneNode(true);
-                star.parentNode.replaceChild(newStar, star);
-            });
+            const activeStars = starContainerEl.querySelectorAll('i');
 
-            document.querySelectorAll('#starContainer i').forEach(star => {
-                star.addEventListener('click', () => {
-                    const userRating = parseInt(star.getAttribute('data-value'));
-                    let ratingsMap = getStoredRatings();
-                    ratingsMap[currentMovie.title] = userRating;
-                    localStorage.setItem('movieRatings', JSON.stringify(ratingsMap));
+            activeStars.forEach((star, index) => {
+                const starNum = index + 1;
+
+                star.addEventListener('mousemove', (e) => {
+                    const rect = star.getBoundingClientRect();
+                    const isLeftHalf = (e.clientX - rect.left) < (rect.width / 2);
+                    const hoverScore = isLeftHalf ? (starNum * 2 - 1) : (starNum * 2);
+                    updateStarDisplay(hoverScore);
+                });
+
+                star.addEventListener('click', (e) => {
+                    const rect = star.getBoundingClientRect();
+                    const isLeftHalf = (e.clientX - rect.left) < (rect.width / 2);
+                    const userRating = isLeftHalf ? (starNum * 2 - 1) : (starNum * 2);
+                    
+                    let currentRatingsMap = getStoredRatings();
+                    currentRatingsMap[currentMovie.title] = userRating;
+                    localStorage.setItem('movieRatings', JSON.stringify(currentRatingsMap));
                     
                     updateStarDisplay(userRating);
                 });
             });
 
-            // --- PERBAIKAN LOGIC RELATED VIDEO SUPAYA JALAN & BERFUNGSI ---
+            starContainerEl.addEventListener('mouseleave', () => {
+                updateStarDisplay(getActiveMovieScore());
+            });
+
+            // --- RELATED VIDEO ---
+            let currentModels = getMovieModels(currentMovie);
             let relatedData = movieData.filter(m => {
-                let m1 = (m.model && m.model.trim() !== "") ? m.model.trim() : "General";
-                let m2 = (currentMovie.model && currentMovie.model.trim() !== "") ? currentMovie.model.trim() : "General";
-                return m1 === m2 && m.title !== currentMovie.title;
+                let mModels = getMovieModels(m);
+                let hasCommonModel = mModels.some(mod => currentModels.includes(mod));
+                return hasCommonModel && m.title !== currentMovie.title;
             });
             
-            // Jika data model terkait kurang, isi dengan video lain agar section tetap penuh
             if (relatedData.length < 5) {
                 const extraData = movieData.filter(m => m.title !== currentMovie.title && !relatedData.includes(m));
                 relatedData = [...relatedData, ...extraData];

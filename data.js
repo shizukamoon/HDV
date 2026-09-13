@@ -1,5 +1,168 @@
 const movieData = [
 	{
+        title: "FC2-PPV-4974582",
+        code: "Full Uncensored",
+        model: ["H-Cup Beauty Contest Finalist"],
+        studio: "Fc2ppv",
+        region: "Japan",
+        releaseDate: "2026-09-11",
+        duration: "01:02:07",
+        imgurl: "img/fc2ppv/4974582.webp",
+        vidurl: "",
+        bio: "30日迄 1490pt!!【神】※特典 SNSで万バズ！話題の㊎欠. 裏垢女ㇱ.カレンちゃん(20.)と密会。高級美女に交渉成立。中だし許可いただきました",
+        tags: ["Uncensored", "Creampie", "Small Tits"],
+		downloads: [
+            { label: "Fc2 Artcle", url: "https://adult.contents.fc2.com/article/4974582/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Ppvdatabank", url: "https://adult.contents.fc2.com/article/4974582/", bgHex: "#2626d1", textHex: "#ffffff" },
+            { label: "123av", url: "https://123av.com/en/v/fc2-ppv-4974582", bgHex: "#e94560", textHex: "#ffffff" },
+            { label: "Javfc2", url: "https://javfc2.xyz/watch/fc2ppv-4974582.html", bgHex: "#00ff4c", textHex: "#ffffff" },
+            { label: "Supjav", url: "https://supjav.com/457287.html", bgHex: "#f70000", textHex: "#ffffff" }
+        ],
+        comments: [
+            { user: "Dax", text: "", date: "now" }
+		]
+    },
+	{
+        title: "FC2-PPV-4973988",
+        code: "Full Uncensored",
+        model: ["Sakuragi Nagisa"],
+        studio: "Fc2ppv",
+        region: "Japan",
+        releaseDate: "2026-09-11",
+        duration: "01:17:08",
+        imgurl: "img/fc2ppv/4973988.webp",
+        vidurl: "",
+        bio: "[14-Day Limited Sale] An extremely beautiful massage therapist reaches orgasm with erotic sounds! Intense penetration and creampie until satisfied. [Uncensored, Creampie]",
+        tags: ["Uncensored", "Creampie", "Small Tits"],
+		downloads: [
+            { label: "Fc2 Artcle", url: "https://adult.contents.fc2.com/article/4973988/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Ppvdatabank", url: "https://adult.contents.fc2.com/article/4973988/", bgHex: "#2626d1", textHex: "#ffffff" },
+            { label: "123av", url: "https://123av.com/en/v/fc2-ppv-4973988", bgHex: "#e94560", textHex: "#ffffff" },
+            { label: "Javfc2", url: "https://javfc2.xyz/watch/fc2ppv-4973988.html", bgHex: "#00ff4c", textHex: "#ffffff" },
+            { label: "Supjav", url: "https://supjav.com/457285.html", bgHex: "#f70000", textHex: "#ffffff" }
+        ],
+        comments: [
+            { user: "Dax", text: "", date: "now" }
+		]
+    },
+	{
+        title: "FC2-PPV-4975150",
+        code: "Full Uncensored",
+        model: [""],
+        studio: "Fc2ppv",
+        region: "Japan",
+        releaseDate: "2026-09-10",
+        duration: "44:42",
+        imgurl: "img/fc2ppv/4975150.webp",
+        vidurl: "",
+        bio: "※9月20日まで半額※これは出会ってしまったかもしれない※ガチ惚れ※純粋無垢なプリ尻美容師・２３歳★160cm・Eカップ★腰ふりがかわいすぎて射精するのをひたすら我慢しました（れんれん）",
+        tags: ["Uncensored", "Creampie", "Small Tits"],
+		downloads: [
+            { label: "Fc2 Artcle", url: "https://adult.contents.fc2.com/article/4975150/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Ppvdatabank", url: "https://adult.contents.fc2.com/article/4975150/", bgHex: "#2626d1", textHex: "#ffffff" },
+            { label: "123av", url: "https://123av.com/en/v/fc2-ppv-4975150", bgHex: "#e94560", textHex: "#ffffff" },
+            { label: "Javfc2", url: "https://javfc2.xyz/watch/fc2ppv-4975150.html", bgHex: "#00ff4c", textHex: "#ffffff" },
+            { label: "Supjav", url: "https://supjav.com/457079.html", bgHex: "#f70000", textHex: "#ffffff" }
+        ],
+        comments: [
+            { user: "Dax", text: "", date: "now" }
+		]
+    },
+	{
+        title: "FC2-PPV-4975046",
+        code: "Full Uncensored",
+        model: ["Black-haired concept cafe hostess"],
+        studio: "Fc2ppv",
+        region: "Japan",
+        releaseDate: "2026-09-12",
+        duration: "44:12",
+        imgurl: "img/fc2ppv/4975046.webp",
+        vidurl: "",
+        bio: "※唯一無二【神作】破壊力やばいおっぱいｺﾝｶﾌｪ嬢。女子交上がりの生意気18歳に巨根大量中出しで黙らせる。。",
+        tags: ["Uncensored", "Creampie", "Big Tits"],
+		downloads: [
+            { label: "Fc2 Artcle", url: "https://adult.contents.fc2.com/article/4975046/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Ppvdatabank", url: "https://adult.contents.fc2.com/article/4975046/", bgHex: "#2626d1", textHex: "#ffffff" },
+            { label: "123av", url: "https://123av.com/en/v/fc2-ppv-4975046", bgHex: "#e94560", textHex: "#ffffff" },
+            { label: "Javfc2", url: "https://javfc2.xyz/watch/fc2ppv-4975046.html", bgHex: "#00ff4c", textHex: "#ffffff" },
+            { label: "Supjav", url: "https://supjav.com/457392.html", bgHex: "#f70000", textHex: "#ffffff" }
+        ],
+        comments: [
+            { user: "Dax", text: "", date: "now" }
+		]
+    },
+	{
+        title: "FC2-PPV-4975986",
+        code: "Full Uncensored",
+        model: ["H-Cup Beauty Contest Finalist"],
+        studio: "Fc2ppv",
+        region: "Japan",
+        releaseDate: "2026-09-13",
+        duration: "51:03",
+        imgurl: "img/fc2ppv/4975986.webp",
+        vidurl: "",
+        bio: "【初回70%オフ】 0387_006 れいらちゃん19歳 顔射解禁！元ミスコン代表＋ご当地アイドルの可愛いお顔をオジサンザーメンで汚す！堕ち切った末路はAV女優としての人生しか残されていないのか！？",
+        tags: ["Uncensored", "Creampie", "Small Tits"],
+		downloads: [
+            { label: "Fc2 Artcle", url: "https://adult.contents.fc2.com/article/4975986/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Ppvdatabank", url: "https://adult.contents.fc2.com/article/4975986/", bgHex: "#2626d1", textHex: "#ffffff" },
+            { label: "123av", url: "https://123av.com/en/v/fc2-ppv-4975986", bgHex: "#e94560", textHex: "#ffffff" },
+            { label: "Javfc2", url: "https://javfc2.xyz/watch/fc2ppv-4975986.html", bgHex: "#00ff4c", textHex: "#ffffff" },
+            { label: "Supjav", url: "https://supjav.com/457536.html", bgHex: "#f70000", textHex: "#ffffff" }
+        ],
+        comments: [
+            { user: "Dax", text: "", date: "now" }
+		]
+    },
+	{
+        title: "PRPM-002",
+        code: "Uncensored Leaks",
+        model: ["彩月七緒 Nao Satsuki", "逢沢みゆ Miyu Aizawa"],
+        studio: "Moodyz",
+        region: "Japan",
+        releaseDate: "2026-09-11",
+        duration: "02:04:18",
+        imgurl: "img/mosaic/prpm00002pl.webp",
+        vidurl: "https://cc3001.dmm.co.jp/pv/OCEQP2IRAfYJ1uXkl2xxGdJRlIfZHS2oV1ZibnbX7NMSlJdWwi2ZAwMxo_NKCS/prpm00002mhb.mp4",
+        bio: "【独占】【先行公開】濃厚親父×姉妹洗脳 私達、新しいお義父さんの性玩具。 逢沢みゆ 彩月七緒",
+        tags: ["Uncensored", "Creampie", "Big Tits"],
+		downloads: [
+            {
+                label: "Fanza", url: "https://video.dmm.co.jp/av/content/?id=prpm00002", bgHex: "#1a1a2e", textHex: "#ffffff"
+            },
+            {
+                label: "123av", url: "https://123av.com/en/v/prpm-002-uncensored-leaked", bgHex: "#e94560", textHex: "#ffffff"
+            }
+        ],
+        comments: [
+            { user: "Dax", text: "", date: "now" }
+		]
+    },
+	{
+        title: "MIDA-790",
+        code: "Uncensored Leaks",
+        model: ["うんぱい Unpai", "松本いちか Ichika Matsumoto"],
+        studio: "Moodyz",
+        region: "Japan",
+        releaseDate: "2026-09-11",
+        duration: "02:16:37",
+        imgurl: "img/mosaic/mida00790pl.webp",
+        vidurl: "https://cc3001.dmm.co.jp/pv/DRMTRx8ptTZ2LM7j8qlWweAZMrraZGtp5pJI2Ket6at7HIIHN41DZzu5CeUJ4I/mida00790mhb.mp4",
+        bio: "【独占】【先行公開】二股学園-SIDEうんぱい- 2つの物語が交わる青春三角関係中出し 2作品連動企画・第1弾 うんぱい 松本いちか",
+        tags: ["Uncensored", "Creampie", "Big Tits", "Small Tits"],
+		downloads: [
+            {
+                label: "Fanza", url: "https://video.dmm.co.jp/av/content/?id=mida00790", bgHex: "#1a1a2e", textHex: "#ffffff"
+            },
+            {
+                label: "123av", url: "https://123av.com/en/v/mida-790-uncensored-leaked", bgHex: "#e94560", textHex: "#ffffff"
+            }
+        ],
+        comments: [
+            { user: "Dax", text: "", date: "now" }
+		]
+    },
+	{
         title: "3165",
         code: "Full Uncensored",
         model: "伊藤美桜 Mio Ito",
@@ -11,14 +174,26 @@ const movieData = [
         vidurl: "https://trailers.tenshigao.com/PxjPGcNYy1KfIktOgSh4zg/1789204633/content/videos/Mio_Ito/01/tenshigao_Mio_Ito_01_trailer_hd.mp4",
         bio: "Mio Ito is a cute Japanese candy store girl who comes to learn how to fuck!",
         tags: ["Uncensored", "Creampie", "Small Tits"],
-        downloads: {
-            original: "https://tenshigao.com/3165/mio-ito-is-a-cute-japanese-candy-store-girl-who-comes-to-learn-how-to-fuck/?nats=NTk0NC4yLjE2LjE2LjAuMC4wLjAuMA",
-            alt1: "https://jav.sb/ja/jav/fc2-ppv-4073255-1-1.html",
-            alt2: "https://www.javdock.com/video/fc2-ppv-4073255/",
-            alt3: "#",
-            alt4: "#",
-            alt5: "#"
-        },
+		downloads: [
+            {
+                label: "Tenshigao",
+                url: "https://tenshigao.com/3165/mio-ito-is-a-cute-japanese-candy-store-girl-who-comes-to-learn-how-to-fuck/?nats=NTk0NC4yLjE2LjE2LjAuMC4wLjAuMA",
+                bgHex: "#1a1a2e",
+                textHex: "#ffffff"
+            },
+            {
+                label: "Javsb",
+                url: "https://jav.sb/ja/jav/fc2-ppv-4073255-1-1.html",
+                bgHex: "#e94560",
+                textHex: "#ffffff"
+            },
+            {
+                label: "Javdock",
+                url: "https://www.javdock.com/video/fc2-ppv-4073255/",
+                bgHex: "#14e7cb",
+                textHex: "#ffffff"
+            }
+        ],
         comments: [
             { user: "Dax", text: "4 crt", date: "now" },
             { user: "Dax", text: "https://adult.contents.fc2.com/article/4073255/", date: "now" },
