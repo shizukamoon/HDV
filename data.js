@@ -1,5 +1,117 @@
 const movieData = [
 	{
+        title: "Pacopacomama-072221_112",
+        code: "Full Uncensored",
+        model: ["古瀬玲 Rei Furuse"],
+        studio: "Pacopacomama",
+        region: "Japan",
+        releaseDate: "2021-07-22",
+        duration: "01:13:01",
+        imgurl: "img/pacopacomama/4724358.webp",
+        vidurl: "https://smovie.pacopacomama.com/sample/movies/072221_112/1080p.mp4",
+        bio: "古き良き時代の女 Lady's Good Old Days ～古瀬玲～ Rei Furuse",
+        tags: ["Uncensored", "Creampie", "Big Tits", "Real Sperm Pussy Filled"],
+		downloads: [
+            { label: "Original", url: "https://en.pacopacomama.com/movies/072221_112/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "123av", url: "https://123av.com/en/v/pacopacomama-072221_112", bgHex: "#e94560", textHex: "#ffffff" }
+        ],
+        comments: [
+            { user: "Dax", text: "", date: "now" }
+		]
+    },
+	{
+        title: "FC2-PPV-4724358",
+        code: "Full Uncensored",
+        model: ["Legally slacking JD Ayu-chan"],
+        studio: "Fc2ppv",
+        region: "Japan",
+        releaseDate: "2026-07-14",
+        duration: "01:58:49",
+        imgurl: "img/fc2ppv/4724358.webp",
+        vidurl: "",
+        bio: "Gカップ♡黒髪爆美女りさほちゃん♡ 感度抜群♡合計5体位♡ 名器ミミズ千匹オマンコに2回たっぷり中.出し♡お掃.除フェラまで♡",
+        tags: ["Uncensored", "Creampie", "Big Tits"],
+		downloads: [
+            { label: "Original", url: "https://adult.contents.fc2.com/article/4724358/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Ppvdatabank", url: "https://ppvdatabank.com/article/4724358/", bgHex: "#0ca5e2", textHex: "#ffffff" },
+            { label: "123av", url: "https://123av.com/en/v/fc2-ppv-4724358", bgHex: "#e94560", textHex: "#ffffff" },
+            { label: "Javfc2", url: "https://javfc2.xyz/watch/fc2ppv-4724358.html", bgHex: "#14f557", textHex: "#ffffff" },
+            { label: "Supjav", url: "https://supjav.com/361033.html", bgHex: "#e94560", textHex: "#ffffff" }
+        ],
+        comments: [
+            { user: "Dax", text: "", date: "now" }
+		]
+    },
+	{
+        title: "FC2-PPV-4966117",
+        code: "Full Uncensored",
+        model: ["My favorite former idol"],
+        studio: "Fc2ppv",
+        region: "Japan",
+        releaseDate: "2026-08-25",
+        duration: "01:11:22",
+        imgurl: "img/fc2ppv/4966117.webp",
+        vidurl: "",
+        bio: "[No/Creampie/Face Cam] Sauna with an extremely cute woman ♡ Endless sweaty and immersive creampie *",
+        tags: ["Uncensored", "Creampie", "Big Tits"],
+		downloads: [
+            { label: "Original", url: "https://adult.contents.fc2.com/article/4966117/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Ppvdatabank", url: "https://ppvdatabank.com/article/4966117/", bgHex: "#0ca5e2", textHex: "#ffffff" },
+            { label: "123av", url: "https://123av.com/en/v/fc2-ppv-4966117", bgHex: "#e94560", textHex: "#ffffff" },
+            { label: "Javfc2", url: "https://javfc2.xyz/watch/fc2ppv-4966117.html", bgHex: "#14f557", textHex: "#ffffff" },
+            { label: "Supjav", url: "https://supjav.com/452895.html", bgHex: "#e94560", textHex: "#ffffff" }
+        ],
+        comments: [
+            { user: "Dax", text: "", date: "now" }
+		]
+    },
+	{
+        title: "FC2-PPV-4941884",
+        code: "Full Uncensored",
+        model: ["Asahi Kumagai"],
+        studio: "Fc2ppv",
+        region: "Japan",
+        releaseDate: "2026-09-14",
+        duration: "01:23:00",
+        imgurl: "img/fc2ppv/4941884.webp",
+        vidurl: "",
+        bio: "【初撮り】エキゾチックな見た目がそそる原宿で有名なクレー.プ屋の店長さん。抱き心地の良いカラダの奥に濃厚クリームをトッピング。",
+        tags: ["Uncensored", "Creampie", "Big Tits"],
+		downloads: [
+            { label: "Original", url: "https://adult.contents.fc2.com/article/4941884/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Ppvdatabank", url: "https://ppvdatabank.com/article/4941884/", bgHex: "#0ca5e2", textHex: "#ffffff" },
+            { label: "123av", url: "https://123av.com/en/v/fc2-ppv-4941884", bgHex: "#e94560", textHex: "#ffffff" },
+            { label: "Javfc2", url: "https://javfc2.xyz/watch/fc2ppv-4941884.html", bgHex: "#14f557", textHex: "#ffffff" },
+            { label: "Supjav", url: "https://supjav.com/457957.html", bgHex: "#e94560", textHex: "#ffffff" }
+        ],
+        comments: [
+            { user: "Dax", text: "", date: "now" }
+		]
+    },
+	{
+        title: "FC2-PPV-4975586",
+        code: "Full Uncensored",
+        model: [""],
+        studio: "Fc2ppv",
+        region: "Japan",
+        releaseDate: "2026-09-14",
+        duration: "01:09:15",
+        imgurl: "img/fc2ppv/4975586.webp",
+        vidurl: "",
+        bio: "【完全素人&初撮り】S級！神スタイル巨乳19歳♡恥ずかしがり屋で初々しくて超敏感で可愛すぎる♡膣奥中出しハメ※特典有り※",
+        tags: ["Uncensored", "Creampie", "Big Tits"],
+		downloads: [
+            { label: "Original", url: "https://adult.contents.fc2.com/article/4975586/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Ppvdatabank", url: "https://ppvdatabank.com/article/4975586/", bgHex: "#0ca5e2", textHex: "#ffffff" },
+            { label: "123av", url: "https://123av.com/en/v/fc2-ppv-4975586", bgHex: "#e94560", textHex: "#ffffff" },
+            { label: "Javfc2", url: "https://javfc2.xyz/watch/fc2ppv-4975586.html", bgHex: "#14f557", textHex: "#ffffff" },
+            { label: "Supjav", url: "https://supjav.com/457980.html", bgHex: "#e94560", textHex: "#ffffff" }
+        ],
+        comments: [
+            { user: "Dax", text: "", date: "now" }
+		]
+    },
+	{
         title: "1pondo-090126_001",
         code: "Full Uncensored",
         model: ["小島あゆ Ayumi Kojima"],
@@ -10,14 +122,14 @@ const movieData = [
         imgurl: "img/1pondo/090126_001.webp",
         vidurl: "https://sample-1pondo.eroxjapanz.com/sample/movies/090126_001/720p.mp4",
         bio: "騎乗位タイムトライアル！ Cowgirl time trial!",
-        tags: ["Uncensored", "Creampie", "Time Trial", "Small Tits"],
+        tags: ["Uncensored", "Creampie", "Time Trial", "Small Tits", "Real Sperm Pussy Filled"],
 		downloads: [
-            { label: "Fc2 Artcle", url: "https://en.1pondo.tv/movies/090126_001/", bgHex: "#1a1a2e", textHex: "#ffffff" },
-            { label: "Hiyopi", url: "https://dream.hiyopi.com/090126_001/", bgHex: "#e20c82", textHex: "#ffffff" },
+            { label: "Original", url: "https://en.1pondo.tv/movies/090126_001/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Dream Hiyopi", url: "https://dream.hiyopi.com/090126_001/", bgHex: "#e20c82", textHex: "#ffffff" },
             { label: "123av", url: "https://123av.com/en/v/1pondo-090126_001", bgHex: "#e94560", textHex: "#ffffff" }
         ],
         comments: [
-            { user: "Dax", text: "", date: "now" }
+            { user: "Dax", text: "1 crt", date: "now" }
 		]
     },
 	{
@@ -33,8 +145,8 @@ const movieData = [
         bio: "騎乗位タイムトライアル！ Cowgirl time trial!",
         tags: ["Uncensored", "Creampie", "Time Trial", "Big Tits"],
 		downloads: [
-            { label: "Fc2 Artcle", url: "https://en.1pondo.tv/movies/062923_001/", bgHex: "#1a1a2e", textHex: "#ffffff" },
-            { label: "Hiyopi", url: "https://dream.hiyopi.com/062923_001/", bgHex: "#e20c82", textHex: "#ffffff" },
+            { label: "Original", url: "https://en.1pondo.tv/movies/062923_001/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Dream Hiyopi", url: "https://dream.hiyopi.com/062923_001/", bgHex: "#e20c82", textHex: "#ffffff" },
             { label: "123av", url: "https://123av.com/en/v/1pondo-062923_001", bgHex: "#e94560", textHex: "#ffffff" }
         ],
         comments: [
@@ -54,8 +166,8 @@ const movieData = [
         bio: "騎乗位タイムトライアル！ Cowgirl time trial!",
         tags: ["Uncensored", "Time Trial", "Big Tits"],
 		downloads: [
-            { label: "Fc2 Artcle", url: "https://en.1pondo.tv/movies/110524_001/", bgHex: "#1a1a2e", textHex: "#ffffff" },
-            { label: "Hiyopi", url: "https://dream.hiyopi.com/110524_001/", bgHex: "#e20c82", textHex: "#ffffff" },
+            { label: "Original", url: "https://en.1pondo.tv/movies/110524_001/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Dream Hiyopi", url: "https://dream.hiyopi.com/110524_001/", bgHex: "#e20c82", textHex: "#ffffff" },
             { label: "123av", url: "https://123av.com/en/v/1pondo-110524_001", bgHex: "#e94560", textHex: "#ffffff" }
         ],
         comments: [
@@ -75,7 +187,7 @@ const movieData = [
         bio: "いつでもどこでもエッチなことができちゃう家事代行サービス A housekeeping service that allows you to have sex anytime, anywhere.",
         tags: ["Uncensored", "Creampie", "Big Tits"],
 		downloads: [
-            { label: "Fc2 Artcle", url: "https://www.caribbeancom.com/eng/moviepages/020626-001/index.html", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Original", url: "https://www.caribbeancom.com/eng/moviepages/020626-001/index.html", bgHex: "#1a1a2e", textHex: "#ffffff" },
             { label: "Hiyopi", url: "https://caribbeancom.hiyopi.com/020626-001/", bgHex: "#0ce24c", textHex: "#ffffff" },
             { label: "123av", url: "https://123av.com/en/v/caribbeancom-020626-001", bgHex: "#e94560", textHex: "#ffffff" }
         ],
@@ -96,7 +208,7 @@ const movieData = [
         bio: "PtoMでゆるかわ娘をイカせる～美女コレクションVol.126～ Beauty Collection Vol.126 ",
         tags: ["Uncensored", "Creampie", "Small Tits"],
 		downloads: [
-            { label: "Fc2 Artcle", url: "https://www.heyzo.com/moviepages/3879/index.html", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Original", url: "https://www.heyzo.com/moviepages/3879/index.html", bgHex: "#1a1a2e", textHex: "#ffffff" },
             { label: "123av", url: "https://123av.com/en/v/heyzo-3879", bgHex: "#e94560", textHex: "#ffffff" }
         ],
         comments: [
@@ -116,7 +228,8 @@ const movieData = [
         bio: "秘蔵マンコセレクション ~森優奈のおまんこ見てください~ Treasured Pussy Selection: Yuna Mori",
         tags: ["Uncensored", "Small Tits"],
 		downloads: [
-            { label: "Fc2 Artcle", url: "https://en.10musume.com/movies/091326_01/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Original", url: "https://en.10musume.com/movies/091326_01/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Nurse Hiyopi", url: "https://nurse.hiyopi.com/091326_01/", bgHex: "#e7900d", textHex: "#ffffff" },
             { label: "123av", url: "https://123av.com/en/v/10musume-091326_01", bgHex: "#e94560", textHex: "#ffffff" }
         ],
         comments: [
@@ -136,7 +249,7 @@ const movieData = [
         bio: "30日迄 1490pt!!【神】※特典 SNSで万バズ！話題の㊎欠. 裏垢女ㇱ.カレンちゃん(20.)と密会。高級美女に交渉成立。中だし許可いただきました",
         tags: ["Uncensored", "Creampie", "Small Tits"],
 		downloads: [
-            { label: "Fc2 Artcle", url: "https://adult.contents.fc2.com/article/4974582/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Original", url: "https://adult.contents.fc2.com/article/4974582/", bgHex: "#1a1a2e", textHex: "#ffffff" },
             { label: "Ppvdatabank", url: "https://adult.contents.fc2.com/article/4974582/", bgHex: "#2626d1", textHex: "#ffffff" },
             { label: "123av", url: "https://123av.com/en/v/fc2-ppv-4974582", bgHex: "#e94560", textHex: "#ffffff" },
             { label: "Javfc2", url: "https://javfc2.xyz/watch/fc2ppv-4974582.html", bgHex: "#00ff4c", textHex: "#ffffff" },
@@ -159,7 +272,7 @@ const movieData = [
         bio: "[14-Day Limited Sale] An extremely beautiful massage therapist reaches orgasm with erotic sounds! Intense penetration and creampie until satisfied. [Uncensored, Creampie]",
         tags: ["Uncensored", "Creampie", "Small Tits"],
 		downloads: [
-            { label: "Fc2 Artcle", url: "https://adult.contents.fc2.com/article/4973988/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Original", url: "https://adult.contents.fc2.com/article/4973988/", bgHex: "#1a1a2e", textHex: "#ffffff" },
             { label: "Ppvdatabank", url: "https://adult.contents.fc2.com/article/4973988/", bgHex: "#2626d1", textHex: "#ffffff" },
             { label: "123av", url: "https://123av.com/en/v/fc2-ppv-4973988", bgHex: "#e94560", textHex: "#ffffff" },
             { label: "Javfc2", url: "https://javfc2.xyz/watch/fc2ppv-4973988.html", bgHex: "#00ff4c", textHex: "#ffffff" },
@@ -182,7 +295,7 @@ const movieData = [
         bio: "※9月20日まで半額※これは出会ってしまったかもしれない※ガチ惚れ※純粋無垢なプリ尻美容師・２３歳★160cm・Eカップ★腰ふりがかわいすぎて射精するのをひたすら我慢しました（れんれん）",
         tags: ["Uncensored", "Creampie", "Small Tits"],
 		downloads: [
-            { label: "Fc2 Artcle", url: "https://adult.contents.fc2.com/article/4975150/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Original", url: "https://adult.contents.fc2.com/article/4975150/", bgHex: "#1a1a2e", textHex: "#ffffff" },
             { label: "Ppvdatabank", url: "https://adult.contents.fc2.com/article/4975150/", bgHex: "#2626d1", textHex: "#ffffff" },
             { label: "123av", url: "https://123av.com/en/v/fc2-ppv-4975150", bgHex: "#e94560", textHex: "#ffffff" },
             { label: "Javfc2", url: "https://javfc2.xyz/watch/fc2ppv-4975150.html", bgHex: "#00ff4c", textHex: "#ffffff" },
@@ -205,7 +318,7 @@ const movieData = [
         bio: "※唯一無二【神作】破壊力やばいおっぱいｺﾝｶﾌｪ嬢。女子交上がりの生意気18歳に巨根大量中出しで黙らせる。。",
         tags: ["Uncensored", "Creampie", "Big Tits"],
 		downloads: [
-            { label: "Fc2 Artcle", url: "https://adult.contents.fc2.com/article/4975046/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Original", url: "https://adult.contents.fc2.com/article/4975046/", bgHex: "#1a1a2e", textHex: "#ffffff" },
             { label: "Ppvdatabank", url: "https://adult.contents.fc2.com/article/4975046/", bgHex: "#2626d1", textHex: "#ffffff" },
             { label: "123av", url: "https://123av.com/en/v/fc2-ppv-4975046", bgHex: "#e94560", textHex: "#ffffff" },
             { label: "Javfc2", url: "https://javfc2.xyz/watch/fc2ppv-4975046.html", bgHex: "#00ff4c", textHex: "#ffffff" },
@@ -228,7 +341,7 @@ const movieData = [
         bio: "【初回70%オフ】 0387_006 れいらちゃん19歳 顔射解禁！元ミスコン代表＋ご当地アイドルの可愛いお顔をオジサンザーメンで汚す！堕ち切った末路はAV女優としての人生しか残されていないのか！？",
         tags: ["Uncensored", "Creampie", "Small Tits"],
 		downloads: [
-            { label: "Fc2 Artcle", url: "https://adult.contents.fc2.com/article/4975986/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Original", url: "https://adult.contents.fc2.com/article/4975986/", bgHex: "#1a1a2e", textHex: "#ffffff" },
             { label: "Ppvdatabank", url: "https://adult.contents.fc2.com/article/4975986/", bgHex: "#2626d1", textHex: "#ffffff" },
             { label: "123av", url: "https://123av.com/en/v/fc2-ppv-4975986", bgHex: "#e94560", textHex: "#ffffff" },
             { label: "Javfc2", url: "https://javfc2.xyz/watch/fc2ppv-4975986.html", bgHex: "#00ff4c", textHex: "#ffffff" },
@@ -242,7 +355,7 @@ const movieData = [
         title: "PRPM-002",
         code: "Uncensored Leaks",
         model: ["彩月七緒 Nao Satsuki", "逢沢みゆ Miyu Aizawa"],
-        studio: "Moodyz",
+        studio: "Premium",
         region: "Japan",
         releaseDate: "2026-09-11",
         duration: "02:04:18",

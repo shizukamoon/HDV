@@ -33,7 +33,6 @@
         ::-webkit-scrollbar-thumb:hover {
             background: #94a3b8;
         }
-        /* Untuk Firefox */
         * {
             scrollbar-width: thin;
             scrollbar-color: #cbd5e1 #f1f1f1;
@@ -53,7 +52,6 @@
             min-height: 100vh;
         }
 
-        /* Auth Overlay Styling (Login & Register SPA) */
         #authOverlay {
             position: fixed;
             top: 0;
@@ -150,7 +148,6 @@
             border: 1px solid #2ecc71;
         }
 
-        /* Navbar Styling */
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -465,7 +462,6 @@
             text-align: center;
         }
 
-        /* Views */
         .view-section {
             display: none;
             flex: 1;
@@ -475,7 +471,6 @@
             display: block;
         }
 
-        /* Container & Grid (Home View) */
         .container {
             max-width: 1200px;
             margin: 30px auto;
@@ -801,7 +796,6 @@
             cursor: not-allowed;
         }
 
-        /* Watch Layout (Player View) Desktop Default */
         .watch-container {
             max-width: 1300px;
             margin: 30px auto;
@@ -1019,7 +1013,6 @@
             opacity: 0.85;
         }
 
-        /* Comments Section */
         .comments-section {
             margin-top: 25px;
             border-top: 1px solid #eee;
@@ -1103,7 +1096,6 @@
             line-height: 1.4;
         }
 
-        /* Related Section */
         .related-section {
             background-color: white;
             border-radius: 10px;
@@ -1184,7 +1176,6 @@
             cursor: pointer;
         }
 
-        /* Footer */
         .footer {
             background-color: #1a1a2e;
             color: #fff;
@@ -1521,7 +1512,6 @@
         </form>
     </nav>
 
-    <!-- Home View -->
     <div id="homeView" class="view-section active">
         <main class="container">
             <div class="categories-grid-container" id="allCategoriesBox">
@@ -1578,7 +1568,6 @@
         </main>
     </div>
 
-    <!-- Player View -->
     <div id="playerView" class="view-section">
         <div class="watch-container">
             <div class="watch-layout">
@@ -1625,7 +1614,6 @@
                             <div class="download-title"><i class="fa-solid fa-download"></i> Download Links</div>
                             <div class="download-buttons" id="downloadButtonsContainer"></div>
 
-                            <!-- Default comments section below the download links -->
                             <div class="comments-section">
                                 <div class="comments-title">
                                     <i class="fa-solid fa-comments"></i> Comments (<span id="commentCount">0</span>)
@@ -1654,8 +1642,6 @@
     <!-- MODAL NOTEPAD EDITOR LOCALSTORAGE (LATAR LIGHT) -->
     <div id="localStorageEditorModal" class="fixed inset-0 z-[99999] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4" style="display: none;">
         <div class="bg-white border border-gray-300 w-full max-w-3xl rounded-xl shadow-2xl flex flex-col overflow-hidden">
-            
-            <!-- Modal Header (Light Theme) -->
             <div class="bg-slate-100 px-6 py-4 border-b border-gray-200 flex justify-between items-center">
                 <div class="flex items-center space-x-2">
                     <span class="w-3 h-3 bg-red-400 rounded-full inline-block"></span>
@@ -1666,13 +1652,11 @@
                 <button type="button" onclick="closeLocalStorageEditorModal()" class="text-slate-400 hover:text-slate-700 text-xl font-bold">&times;</button>
             </div>
 
-            <!-- Modal Body (Light Theme) -->
             <div class="p-6 flex-1 flex flex-col space-y-4 bg-white">
                 <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
                     <div class="w-full sm:w-auto flex-1">
                         <label class="block text-xs font-semibold text-slate-600 mb-1">Pilih Key LocalStorage:</label>
                         <select id="localStorageKeySelect" onchange="loadLocalStorageKeyContent()" class="w-full bg-slate-50 text-slate-800 border border-slate-300 rounded-lg p-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                            <!-- Diisi via Javascript berdasarkan isi localStorage -->
                         </select>
                     </div>
                     <span id="lsStatusBadge" class="text-xs px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-700 font-medium self-end sm:self-center">Format Valid</span>
@@ -1689,16 +1673,14 @@
                 </div>
             </div>
 
-            <!-- Modal Footer (Light Theme) -->
             <div class="bg-slate-100 px-6 py-4 border-t border-gray-200 flex justify-end space-x-3">
                 <button type="button" onclick="closeLocalStorageEditorModal()" class="px-4 py-2 bg-slate-200 hover:bg-slate-300 text-slate-700 text-sm font-medium rounded-lg transition">Batal</button>
                 <button type="button" id="saveLsBtn" onclick="saveLocalStorageChanges()" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-medium rounded-lg transition shadow cursor-pointer">Simpan ke LocalStorage</button>
             </div>
-
         </div>
     </div>
 
-    <!-- CUSTOM ALERT MODAL (Menggantikan alert bawaan browser) -->
+    <!-- CUSTOM ALERT MODAL -->
     <div id="customAlertModal" class="fixed inset-0 z-[100000] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4" style="display: none;">
         <div class="bg-white border border-gray-300 w-full max-w-sm rounded-xl shadow-2xl flex flex-col overflow-hidden text-center p-6">
             <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
@@ -1710,7 +1692,7 @@
         </div>
     </div>
 
-    <!-- CUSTOM PROMPT MODAL (Menggantikan prompt bawaan browser) -->
+    <!-- CUSTOM PROMPT MODAL -->
     <div id="customPromptModal" class="fixed inset-0 z-[100000] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4" style="display: none;">
         <div class="bg-white border border-gray-300 w-full max-w-sm rounded-xl shadow-2xl flex flex-col p-6">
             <h3 id="customPromptTitle" class="text-base font-bold text-slate-800 mb-2">Masukkan Nilai</h3>
@@ -1748,7 +1730,6 @@
     <script>
         let currentWatchingMovie = null;
 
-        /* --- FUNGSI CUSTOM ALERT & PROMPT (Menggantikan alert & prompt browser) --- */
         let promptCallback = null;
 
         function showCustomAlert(message) {
@@ -1783,7 +1764,6 @@
             if (e.key === 'Enter') resolveCustomPrompt(true);
             if (e.key === 'Escape') resolveCustomPrompt(false);
         });
-        /* ------------------------------------------------------------- */
 
         function getUsers() {
             return JSON.parse(localStorage.getItem('hdv_users')) || [];
@@ -2009,7 +1989,6 @@
             }
         }
 
-        /* --- NOTEPAD EDITOR LOCALSTORAGE FUNCTIONS --- */
         function openLocalStorageEditorModal() {
             const modal = document.getElementById('localStorageEditorModal');
             const selectEl = document.getElementById('localStorageKeySelect');
@@ -2132,7 +2111,6 @@
             return data.slice(start, end);
         }
 
-        /* --- HELPER MENGAMBIL ARRAY MODEL (Mendukung String, Array, atau Properti Tunggal/Jamak) --- */
         function getMovieModels(movie) {
             let rawModels = movie.models || movie.model;
             if (!rawModels) return [];
@@ -2537,14 +2515,14 @@
             
             if (viewMode === 'favorites') {
                 allCategoriesBox.classList.remove('active');
-                searchInfoText.innerHTML = `Showing <strong>Favorite</strong> videos`;
+                searchInfoText.innerHTML = `Showing <strong>Favorite</strong> videos (${data.length} items)`;
                 resetFilterBtn.style.display = "block";
-                paginationContainer.style.display = "none";
+                paginationContainer.style.display = "flex";
             } else if (viewMode === 'recent') {
                 allCategoriesBox.classList.remove('active');
-                searchInfoText.innerHTML = `Showing <strong>Recent Watch</strong> history`;
+                searchInfoText.innerHTML = `Showing <strong>Recent Watch</strong> history (${data.length} items)`;
                 resetFilterBtn.style.display = "block";
-                paginationContainer.style.display = "none";
+                paginationContainer.style.display = "flex";
             } else if (viewMode === 'category' || viewMode === 'studio') {
                 paginationContainer.style.display = "flex";
             } else {
@@ -2561,18 +2539,11 @@
                 }
             }
 
-            if (viewMode !== 'all' && viewMode !== 'category' && viewMode !== 'studio') {
-                if (data.length === 0) {
-                    wrapper.innerHTML = `<p style="grid-column: 1/-1; text-align:center; color:#777; padding:40px;">No items found in this section.</p>`;
-                }
-                data.forEach(movie => renderCardItem(movie, wrapper, ratingsMap));
-                return;
-            }
-
             let paginatedItems = getPaginatedData(data, page, rowsPerPage);
 
             if (paginatedItems.length === 0) {
-                wrapper.innerHTML = `<p style="grid-column: 1/-1; text-align:center; color:#777; padding:40px;">No items found.</p>`;
+                wrapper.innerHTML = `<p style="grid-column: 1/-1; text-align:center; color:#777; padding:40px;">No items found in this section.</p>`;
+                paginationContainer.style.display = "none";
                 return;
             }
 
@@ -2623,18 +2594,22 @@
             wrapper.appendChild(card);
         }
 
-        function setupPagination(data, wrapper, rowsPerPage, searchTerm = "") {
+        function setupPagination(data, wrapper, rowsPerPage, searchTerm = "", viewMode = 'all') {
             wrapper.innerHTML = "";
             let pageCount = Math.ceil(data.length / rowsPerPage);
 
-            if (pageCount <= 1) return;
+            if (pageCount <= 1) {
+                wrapper.style.display = "none";
+                return;
+            }
+            wrapper.style.display = "flex";
 
             let prevBtn = document.createElement('button');
             prevBtn.innerHTML = '<i class="fa-solid fa-chevron-left"></i>';
             prevBtn.classList.add('page-btn');
             prevBtn.disabled = current_page === 1;
             prevBtn.addEventListener('click', () => {
-                if (current_page > 1) goToPage(current_page - 1, data, searchTerm);
+                if (current_page > 1) goToPage(current_page - 1, data, searchTerm, viewMode);
             });
             wrapper.appendChild(prevBtn);
 
@@ -2662,7 +2637,7 @@
                     btn.innerText = p;
                     btn.classList.add('page-btn');
                     if (current_page === p) btn.classList.add('active');
-                    btn.addEventListener('click', () => goToPage(p, data, searchTerm));
+                    btn.addEventListener('click', () => goToPage(p, data, searchTerm, viewMode));
                     wrapper.appendChild(btn);
                 }
             });
@@ -2672,33 +2647,36 @@
             nextBtn.classList.add('page-btn');
             nextBtn.disabled = current_page === pageCount;
             nextBtn.addEventListener('click', () => {
-                if (current_page < pageCount) goToPage(current_page + 1, data, searchTerm);
+                if (current_page < pageCount) goToPage(current_page + 1, data, searchTerm, viewMode);
             });
             wrapper.appendChild(nextBtn);
         }
 
-        function goToPage(pageNumber, data, searchTerm) {
+        function goToPage(pageNumber, data, searchTerm, viewMode = 'all') {
             current_page = pageNumber;
-            displayCards(data, cardContainer, rows_per_page, current_page, searchTerm, 'all');
-            setupPagination(data, paginationContainer, rows_per_page, searchTerm);
+            displayCards(data, cardContainer, rows_per_page, current_page, searchTerm, viewMode);
+            setupPagination(data, paginationContainer, rows_per_page, searchTerm, viewMode);
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         function filterView(type) {
             switchView('home');
+            current_page = 1;
             if (type === 'favorites') {
                 const favs = JSON.parse(localStorage.getItem('favorites')) || [];
-                const filtered = movieData.filter(m => favs.includes(m.title));
-                displayCards(filtered, cardContainer, rows_per_page, 1, "", 'favorites');
+                filteredData = movieData.filter(m => favs.includes(m.title));
+                displayCards(filteredData, cardContainer, rows_per_page, current_page, "", 'favorites');
+                setupPagination(filteredData, paginationContainer, rows_per_page, "", 'favorites');
             } else if (type === 'recent') {
                 const recent = JSON.parse(localStorage.getItem('recentWatch')) || [];
-                const filtered = recent.map(title => movieData.find(m => m.title === title)).filter(Boolean);
-                displayCards(filtered, cardContainer, rows_per_page, 1, "", 'recent');
+                filteredData = recent.map(title => movieData.find(m => m.title === title)).filter(Boolean);
+                displayCards(filteredData, cardContainer, rows_per_page, current_page, "", 'recent');
+                setupPagination(filteredData, paginationContainer, rows_per_page, "", 'recent');
             } else {
                 allCategoriesBox.classList.remove('active');
                 filteredData = sortByCurrentSort(movieData);
                 displayCards(filteredData, cardContainer, rows_per_page, current_page, "", 'all');
-                setupPagination(filteredData, paginationContainer, rows_per_page, "");
+                setupPagination(filteredData, paginationContainer, rows_per_page, "", 'all');
             }
         }
 
@@ -2725,10 +2703,13 @@
                 filteredData = sortByCurrentSort(movieData.filter(movie => {
                     let models = getMovieModels(movie);
                     let matchModel = models.some(m => m.toLowerCase().includes(searchString));
+                    let matchTags = movie.tags && movie.tags.some(t => t.toLowerCase().includes(searchString));
+
                     return (
                         movie.title.toLowerCase().includes(searchString) ||
                         movie.code.toLowerCase().includes(searchString) ||
                         matchModel ||
+                        matchTags ||
                         movie.region.toLowerCase().includes(searchString) ||
                         (movie.studio && movie.studio.toLowerCase().includes(searchString))
                     );
@@ -2738,7 +2719,7 @@
 
             current_page = 1;
             displayCards(filteredData, cardContainer, rows_per_page, current_page, searchString, 'all');
-            setupPagination(filteredData, paginationContainer, rows_per_page, searchString);
+            setupPagination(filteredData, paginationContainer, rows_per_page, searchString, 'all');
         }
 
         clearSearchBtn.addEventListener('click', () => {
@@ -2748,11 +2729,10 @@
             filteredData = sortByCurrentSort(movieData);
             current_page = 1;
             displayCards(filteredData, cardContainer, rows_per_page, current_page, "", 'all');
-            setupPagination(filteredData, paginationContainer, rows_per_page, "");
+            setupPagination(filteredData, paginationContainer, rows_per_page, "", 'all');
             searchInput.focus();
         });
 
-        /* --- COMMENTS MANAGEMENT --- */
         function renderComments(movie) {
             currentWatchingMovie = movie;
             const commentsContainer = document.getElementById('commentsList');
@@ -2938,7 +2918,6 @@
             };
             checkFavoriteStatus();
 
-            // --- RATING SYSTEM (Skala 10 -> 5 Bintang) [Reaktif] ---
             const starContainerEl = document.getElementById('starContainer');
             const ratingScoreText = document.getElementById('ratingScoreText');
 
@@ -3007,7 +2986,6 @@
                 updateStarDisplay(getActiveMovieScore());
             });
 
-            // --- RELATED VIDEO ---
             let currentModels = getMovieModels(currentMovie);
             let relatedData = movieData.filter(m => {
                 let mModels = getMovieModels(m);
@@ -3068,7 +3046,7 @@
             filteredData = sortByCurrentSort(filteredData);
             current_page = 1;
             displayCards(filteredData, cardContainer, rows_per_page, current_page, "", 'all');
-            setupPagination(filteredData, paginationContainer, rows_per_page, "");
+            setupPagination(filteredData, paginationContainer, rows_per_page, "", 'all');
         }
 
         function init() {
@@ -3076,7 +3054,7 @@
                 generateNavigationMenus();
                 filteredData = sortByCurrentSort(movieData);
                 displayCards(filteredData, cardContainer, rows_per_page, current_page, "", 'all');
-                setupPagination(filteredData, paginationContainer, rows_per_page, "");
+                setupPagination(filteredData, paginationContainer, rows_per_page, "", 'all');
             } else {
                 cardContainer.innerHTML = `<p style="grid-column: 1/-1; text-align:center; color:#777; padding:40px;">Movie data not found.</p>`;
             }
