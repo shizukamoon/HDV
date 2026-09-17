@@ -212,7 +212,7 @@ const movieData = [
             { label: "123av", url: "https://123av.com/en/v/heyzo-3879", bgHex: "#e94560", textHex: "#ffffff" }
         ],
         comments: [
-            { user: "Dax", text: "", date: "now" }
+            { user: "Dax", text: "1 crt", date: "now" }
 		]
     },
 	{
