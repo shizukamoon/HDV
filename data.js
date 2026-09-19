@@ -1,5 +1,97 @@
 const movieData = [
 	{
+        title: "FC2-PPV-4977924",
+        code: "Full Uncensored",
+        model: ["Pubic hair JD fair skin beauty"],
+        studio: "Fc2ppv",
+        region: "Japan",
+        releaseDate: "2026-09-17",
+        duration: "01:21:12",
+        imgurl: "img/fc2ppv/4977924.webp",
+        vidurl: "",
+        bio: "色白でスレンダーな笑顔が似合うインテリ美女！まだ東京に慣れていない純粋な女におじさんがイロイロ教えてあげます♡「東京では中出しが当たり前なんですか？♡」",
+        tags: ["Uncensored", "Creampie", "Small Tits", "Real Sperm Pussy Filled"],
+		downloads: [
+            { label: "Original", url: "https://adult.contents.fc2.com/article/4977924/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Ppvdatabank", url: "https://ppvdatabank.com/article/4977924/", bgHex: "#0ca5e2", textHex: "#ffffff" },
+            { label: "123av", url: "https://123av.com/en/v/fc2-ppv-4977924", bgHex: "#e94560", textHex: "#ffffff" },
+            { label: "Javfc2", url: "https://javfc2.xyz/watch/Fc2ppv-4977924.html", bgHex: "#14f557", textHex: "#ffffff" },
+            { label: "Supjav", url: "https://supjav.com/458584.html", bgHex: "#e94560", textHex: "#ffffff" }
+        ],
+        comments: [
+            { user: "Dax", text: "1 crt", date: "now" }
+		]
+    },
+	{
+        title: "FC2-PPV-4979292",
+        code: "Full Uncensored",
+        model: ["Tanuki face, smooth long black hair"],
+        studio: "Fc2ppv",
+        region: "Japan",
+        releaseDate: "2026-09-18",
+        duration: "57:17",
+        imgurl: "img/fc2ppv/4979292.webp",
+        vidurl: "",
+        bio: "【無修正ｘ個人撮影】ザーメンコントロール!?スレンダー美女のきれいなカラダに大量発射！でもまだ出そう…そのまま再挿入して残ザーをそのまま中出ししてみたｗ",
+        tags: ["Uncensored", "Creampie", "Small Tits"],
+		downloads: [
+            { label: "Original", url: "https://adult.contents.fc2.com/article/4979292/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Ppvdatabank", url: "https://ppvdatabank.com/article/4979292/", bgHex: "#0ca5e2", textHex: "#ffffff" },
+            { label: "123av", url: "https://123av.com/en/v/fc2-ppv-4979292", bgHex: "#e94560", textHex: "#ffffff" },
+            { label: "Javfc2", url: "https://javfc2.xyz/watch/Fc2ppv-4979292.html", bgHex: "#14f557", textHex: "#ffffff" },
+            { label: "Supjav", url: "https://supjav.com/458889.html", bgHex: "#e94560", textHex: "#ffffff" }
+        ],
+        comments: [
+            { user: "Dax", text: "", date: "now" }
+		]
+    },
+	{
+        title: "FC2-PPV-4977133",
+        code: "Full Uncensored",
+        model: ["Kasumi Takase"],
+        studio: "Fc2ppv",
+        region: "Japan",
+        releaseDate: "2026-09-18",
+        duration: "41:59",
+        imgurl: "img/fc2ppv/4977133.webp",
+        vidurl: "",
+        bio: "【無】見た目は女子アナ系の清楚系色白美女！中身はエロの化身の様な超絶エロテクと隠語全開でスパイダー騎乗位でガンガン腰振る肉食痴女⤴　ゴックン　中だし　※特典高画質",
+        tags: ["Uncensored", "Creampie", "Small Tits"],
+		downloads: [
+            { label: "Original", url: "https://adult.contents.fc2.com/article/4977133/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Ppvdatabank", url: "https://ppvdatabank.com/article/4977133/", bgHex: "#0ca5e2", textHex: "#ffffff" },
+            { label: "123av", url: "https://123av.com/en/v/fc2-ppv-4977133", bgHex: "#e94560", textHex: "#ffffff" },
+            { label: "Javfc2", url: "https://javfc2.xyz/watch/Fc2ppv-4977133.html", bgHex: "#14f557", textHex: "#ffffff" },
+            { label: "Supjav", url: "https://supjav.com/458881.html", bgHex: "#e94560", textHex: "#ffffff" }
+        ],
+        comments: [
+            { user: "Dax", text: "", date: "now" }
+		]
+    },
+	{
+        title: "FC2-PPV-4973445",
+        code: "Full Uncensored",
+        model: ["Mirai Imada"],
+        studio: "Fc2ppv",
+        region: "Japan",
+        releaseDate: "2026-09-15",
+        duration: "01:12:02",
+        imgurl: "img/fc2ppv/4973445.webp",
+        vidurl: "",
+        bio: "[9/29 1281pt] Big Tits ♡ Marunouchi MILF's sex with creampie until ejaculation drips from her wide-open vagina [Bonus included/Face shown/Uncensored]",
+        tags: ["Uncensored", "Creampie", "Big Tits"],
+		downloads: [
+            { label: "Original", url: "https://adult.contents.fc2.com/article/4973445/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Ppvdatabank", url: "https://ppvdatabank.com/article/4973445/", bgHex: "#0ca5e2", textHex: "#ffffff" },
+            { label: "123av", url: "https://123av.com/en/v/fc2-ppv-4973445", bgHex: "#e94560", textHex: "#ffffff" },
+            { label: "Javfc2", url: "https://javfc2.xyz/watch/Fc2ppv-4973445.html", bgHex: "#14f557", textHex: "#ffffff" },
+            { label: "Supjav", url: "https://supjav.com/458179.html", bgHex: "#e94560", textHex: "#ffffff" }
+        ],
+        comments: [
+            { user: "Dax", text: "", date: "now" }
+		]
+    },
+	{
         title: "Pacopacomama-072221_112",
         code: "Full Uncensored",
         model: ["古瀬玲 Rei Furuse"],
@@ -35,7 +127,7 @@ const movieData = [
             { label: "Original", url: "https://adult.contents.fc2.com/article/4724358/", bgHex: "#1a1a2e", textHex: "#ffffff" },
             { label: "Ppvdatabank", url: "https://ppvdatabank.com/article/4724358/", bgHex: "#0ca5e2", textHex: "#ffffff" },
             { label: "123av", url: "https://123av.com/en/v/fc2-ppv-4724358", bgHex: "#e94560", textHex: "#ffffff" },
-            { label: "Javfc2", url: "https://javfc2.xyz/watch/fc2ppv-4724358.html", bgHex: "#14f557", textHex: "#ffffff" },
+            { label: "Javfc2", url: "https://javfc2.xyz/watch/Fc2ppv-4724358.html", bgHex: "#14f557", textHex: "#ffffff" },
             { label: "Supjav", url: "https://supjav.com/361033.html", bgHex: "#e94560", textHex: "#ffffff" }
         ],
         comments: [
@@ -58,7 +150,7 @@ const movieData = [
             { label: "Original", url: "https://adult.contents.fc2.com/article/4966117/", bgHex: "#1a1a2e", textHex: "#ffffff" },
             { label: "Ppvdatabank", url: "https://ppvdatabank.com/article/4966117/", bgHex: "#0ca5e2", textHex: "#ffffff" },
             { label: "123av", url: "https://123av.com/en/v/fc2-ppv-4966117", bgHex: "#e94560", textHex: "#ffffff" },
-            { label: "Javfc2", url: "https://javfc2.xyz/watch/fc2ppv-4966117.html", bgHex: "#14f557", textHex: "#ffffff" },
+            { label: "Javfc2", url: "https://javfc2.xyz/watch/Fc2ppv-4966117.html", bgHex: "#14f557", textHex: "#ffffff" },
             { label: "Supjav", url: "https://supjav.com/452895.html", bgHex: "#e94560", textHex: "#ffffff" }
         ],
         comments: [
@@ -81,7 +173,7 @@ const movieData = [
             { label: "Original", url: "https://adult.contents.fc2.com/article/4941884/", bgHex: "#1a1a2e", textHex: "#ffffff" },
             { label: "Ppvdatabank", url: "https://ppvdatabank.com/article/4941884/", bgHex: "#0ca5e2", textHex: "#ffffff" },
             { label: "123av", url: "https://123av.com/en/v/fc2-ppv-4941884", bgHex: "#e94560", textHex: "#ffffff" },
-            { label: "Javfc2", url: "https://javfc2.xyz/watch/fc2ppv-4941884.html", bgHex: "#14f557", textHex: "#ffffff" },
+            { label: "Javfc2", url: "https://javfc2.xyz/watch/Fc2ppv-4941884.html", bgHex: "#14f557", textHex: "#ffffff" },
             { label: "Supjav", url: "https://supjav.com/457957.html", bgHex: "#e94560", textHex: "#ffffff" }
         ],
         comments: [
@@ -104,7 +196,7 @@ const movieData = [
             { label: "Original", url: "https://adult.contents.fc2.com/article/4975586/", bgHex: "#1a1a2e", textHex: "#ffffff" },
             { label: "Ppvdatabank", url: "https://ppvdatabank.com/article/4975586/", bgHex: "#0ca5e2", textHex: "#ffffff" },
             { label: "123av", url: "https://123av.com/en/v/fc2-ppv-4975586", bgHex: "#e94560", textHex: "#ffffff" },
-            { label: "Javfc2", url: "https://javfc2.xyz/watch/fc2ppv-4975586.html", bgHex: "#14f557", textHex: "#ffffff" },
+            { label: "Javfc2", url: "https://javfc2.xyz/watch/Fc2ppv-4975586.html", bgHex: "#14f557", textHex: "#ffffff" },
             { label: "Supjav", url: "https://supjav.com/457980.html", bgHex: "#e94560", textHex: "#ffffff" }
         ],
         comments: [
@@ -252,7 +344,7 @@ const movieData = [
             { label: "Original", url: "https://adult.contents.fc2.com/article/4974582/", bgHex: "#1a1a2e", textHex: "#ffffff" },
             { label: "Ppvdatabank", url: "https://adult.contents.fc2.com/article/4974582/", bgHex: "#2626d1", textHex: "#ffffff" },
             { label: "123av", url: "https://123av.com/en/v/fc2-ppv-4974582", bgHex: "#e94560", textHex: "#ffffff" },
-            { label: "Javfc2", url: "https://javfc2.xyz/watch/fc2ppv-4974582.html", bgHex: "#00ff4c", textHex: "#ffffff" },
+            { label: "Javfc2", url: "https://javfc2.xyz/watch/Fc2ppv-4974582.html", bgHex: "#00ff4c", textHex: "#ffffff" },
             { label: "Supjav", url: "https://supjav.com/457287.html", bgHex: "#f70000", textHex: "#ffffff" }
         ],
         comments: [
@@ -275,7 +367,7 @@ const movieData = [
             { label: "Original", url: "https://adult.contents.fc2.com/article/4973988/", bgHex: "#1a1a2e", textHex: "#ffffff" },
             { label: "Ppvdatabank", url: "https://adult.contents.fc2.com/article/4973988/", bgHex: "#2626d1", textHex: "#ffffff" },
             { label: "123av", url: "https://123av.com/en/v/fc2-ppv-4973988", bgHex: "#e94560", textHex: "#ffffff" },
-            { label: "Javfc2", url: "https://javfc2.xyz/watch/fc2ppv-4973988.html", bgHex: "#00ff4c", textHex: "#ffffff" },
+            { label: "Javfc2", url: "https://javfc2.xyz/watch/Fc2ppv-4973988.html", bgHex: "#00ff4c", textHex: "#ffffff" },
             { label: "Supjav", url: "https://supjav.com/457285.html", bgHex: "#f70000", textHex: "#ffffff" }
         ],
         comments: [
@@ -298,7 +390,7 @@ const movieData = [
             { label: "Original", url: "https://adult.contents.fc2.com/article/4975150/", bgHex: "#1a1a2e", textHex: "#ffffff" },
             { label: "Ppvdatabank", url: "https://adult.contents.fc2.com/article/4975150/", bgHex: "#2626d1", textHex: "#ffffff" },
             { label: "123av", url: "https://123av.com/en/v/fc2-ppv-4975150", bgHex: "#e94560", textHex: "#ffffff" },
-            { label: "Javfc2", url: "https://javfc2.xyz/watch/fc2ppv-4975150.html", bgHex: "#00ff4c", textHex: "#ffffff" },
+            { label: "Javfc2", url: "https://javfc2.xyz/watch/Fc2ppv-4975150.html", bgHex: "#00ff4c", textHex: "#ffffff" },
             { label: "Supjav", url: "https://supjav.com/457079.html", bgHex: "#f70000", textHex: "#ffffff" }
         ],
         comments: [
@@ -321,7 +413,7 @@ const movieData = [
             { label: "Original", url: "https://adult.contents.fc2.com/article/4975046/", bgHex: "#1a1a2e", textHex: "#ffffff" },
             { label: "Ppvdatabank", url: "https://adult.contents.fc2.com/article/4975046/", bgHex: "#2626d1", textHex: "#ffffff" },
             { label: "123av", url: "https://123av.com/en/v/fc2-ppv-4975046", bgHex: "#e94560", textHex: "#ffffff" },
-            { label: "Javfc2", url: "https://javfc2.xyz/watch/fc2ppv-4975046.html", bgHex: "#00ff4c", textHex: "#ffffff" },
+            { label: "Javfc2", url: "https://javfc2.xyz/watch/Fc2ppv-4975046.html", bgHex: "#00ff4c", textHex: "#ffffff" },
             { label: "Supjav", url: "https://supjav.com/457392.html", bgHex: "#f70000", textHex: "#ffffff" }
         ],
         comments: [
@@ -344,7 +436,7 @@ const movieData = [
             { label: "Original", url: "https://adult.contents.fc2.com/article/4975986/", bgHex: "#1a1a2e", textHex: "#ffffff" },
             { label: "Ppvdatabank", url: "https://adult.contents.fc2.com/article/4975986/", bgHex: "#2626d1", textHex: "#ffffff" },
             { label: "123av", url: "https://123av.com/en/v/fc2-ppv-4975986", bgHex: "#e94560", textHex: "#ffffff" },
-            { label: "Javfc2", url: "https://javfc2.xyz/watch/fc2ppv-4975986.html", bgHex: "#00ff4c", textHex: "#ffffff" },
+            { label: "Javfc2", url: "https://javfc2.xyz/watch/Fc2ppv-4975986.html", bgHex: "#00ff4c", textHex: "#ffffff" },
             { label: "Supjav", url: "https://supjav.com/457536.html", bgHex: "#f70000", textHex: "#ffffff" }
         ],
         comments: [
@@ -613,7 +705,7 @@ const movieData = [
         title: "FC2-PPV-4938500",
         code: "Full Uncensored",
         model: "Kasumi Takase",
-        studio: "FC2PPV",
+        studio: "Fc2ppv",
         region: "Japan",
         releaseDate: "2026-07-17",
         duration: "01:00:27",
@@ -624,7 +716,7 @@ const movieData = [
         downloads: {
             original: "https://adult.contents.fc2.com/article/4938500/",
             alt1: "https://supjav.com/443372.html",
-            alt2: "https://javfc2.xyz/watch/fc2ppv-4938500.html",
+            alt2: "https://javfc2.xyz/watch/Fc2ppv-4938500.html",
             alt3: "https://missav.ws/fc2-ppv-4938500",
             alt4: "https://123av.com/en/v/fc2-ppv-4938500",
             alt5: "https://javgg.net/jav/fc2-ppv-4938500/"
@@ -637,7 +729,7 @@ const movieData = [
         title: "FC2-PPV-4934852",
         code: "Full Uncensored",
         model: "Natsuko",
-        studio: "FC2PPV",
+        studio: "Fc2ppv",
         region: "Japan",
         releaseDate: "2026-07-07",
         duration: "01:04:50",
@@ -648,7 +740,7 @@ const movieData = [
         downloads: {
             original: "https://adult.contents.fc2.com/article/4934852/",
             alt1: "https://supjav.com/440798.html",
-            alt2: "https://javfc2.xyz/watch/fc2ppv-4934852.html",
+            alt2: "https://javfc2.xyz/watch/Fc2ppv-4934852.html",
             alt3: "https://missav.ws/fc2-ppv-4934852",
             alt4: "https://123av.com/en/v/fc2-ppv-4934852",
             alt5: "https://javgg.net/jav/fc2-ppv-4934852/"
@@ -661,7 +753,7 @@ const movieData = [
         title: "FC2-PPV-4926801",
         code: "Full Uncensored",
         model: "G-cup beauty from Kansai",
-        studio: "FC2PPV",
+        studio: "Fc2ppv",
         region: "Japan",
         releaseDate: "2026-07-07",
         duration: "01:07:04",
@@ -672,7 +764,7 @@ const movieData = [
         downloads: {
             original: "https://adult.contents.fc2.com/article/4926801/",
             alt1: "https://supjav.com/440792.html",
-            alt2: "https://javfc2.xyz/watch/fc2ppv-4926801.html",
+            alt2: "https://javfc2.xyz/watch/Fc2ppv-4926801.html",
             alt3: "https://missav.ws/fc2-ppv-4926801",
             alt4: "https://123av.com/en/v/fc2-ppv-4926801",
             alt5: "https://javgg.net/jav/fc2-ppv-4926801/"
@@ -685,7 +777,7 @@ const movieData = [
         title: "FC2-PPV-4929512",
         code: "Full Uncensored",
         model: "Nozomi-chan",
-        studio: "FC2PPV",
+        studio: "Fc2ppv",
         region: "Japan",
         releaseDate: "2026-06-28",
         duration: "42:03",
@@ -696,7 +788,7 @@ const movieData = [
         downloads: {
             original: "https://adult.contents.fc2.com/article/4929512/",
             alt1: "https://supjav.com/438857.html",
-            alt2: "https://javfc2.xyz/watch/fc2ppv-4929512.html",
+            alt2: "https://javfc2.xyz/watch/Fc2ppv-4929512.html",
             alt3: "https://missav.ws/fc2-ppv-4929512",
             alt4: "https://123av.com/en/v/fc2-ppv-4929512",
             alt5: "https://javgg.net/jav/fc2-ppv-4929512/"
@@ -709,7 +801,7 @@ const movieData = [
         title: "FC2-PPV-4922837",
         code: "Full Uncensored",
         model: "Pubic hair JD fair skin beauty",
-        studio: "FC2PPV",
+        studio: "Fc2ppv",
         region: "Japan",
         releaseDate: "2026-06-18",
         duration: "01:00:52",
@@ -720,7 +812,7 @@ const movieData = [
         downloads: {
             original: "https://adult.contents.fc2.com/article/4922837/",
             alt1: "https://supjav.com/436488.html",
-            alt2: "https://javfc2.xyz/watch/fc2ppv-4922837.html",
+            alt2: "https://javfc2.xyz/watch/Fc2ppv-4922837.html",
             alt3: "https://missav.ws/fc2-ppv-4922837",
             alt4: "https://123av.com/en/v/fc2-ppv-4922837",
             alt5: "https://javgg.net/jav/fc2-ppv-4922837/"
@@ -733,7 +825,7 @@ const movieData = [
         title: "FC2-PPV-4907364",
         code: "Full Uncensored",
         model: "Kurumi Haruno",
-        studio: "FC2PPV",
+        studio: "Fc2ppv",
         region: "Japan",
         releaseDate: "2026-05-24",
         duration: "01:45:04",
@@ -744,7 +836,7 @@ const movieData = [
         downloads: {
             original: "https://adult.contents.fc2.com/article/4907364/",
             alt1: "https://supjav.com/430678.html",
-            alt2: "https://javfc2.xyz/watch/fc2ppv-4907364.html",
+            alt2: "https://javfc2.xyz/watch/Fc2ppv-4907364.html",
             alt3: "https://missav.ws/fc2-ppv-4907364",
             alt4: "https://123av.com/en/v/fc2-ppv-4907364",
             alt5: "https://javgg.net/jav/fc2-ppv-4907364/"
@@ -757,7 +849,7 @@ const movieData = [
         title: "FC2-PPV-4885388",
         code: "Full Uncensored",
         model: "Marshmallow Body Yuri-chan",
-        studio: "FC2PPV",
+        studio: "Fc2ppv",
         region: "Japan",
         releaseDate: "2026-04-24",
         duration: "01:29:49",
@@ -768,7 +860,7 @@ const movieData = [
         downloads: {
             original: "https://adult.contents.fc2.com/article/4885388/",
             alt1: "https://supjav.com/423435.html",
-            alt2: "https://javfc2.xyz/watch/fc2ppv-4885388.html",
+            alt2: "https://javfc2.xyz/watch/Fc2ppv-4885388.html",
             alt3: "https://missav.ws/fc2-ppv-4885388",
             alt4: "https://123av.com/en/v/fc2-ppv-4885388",
             alt5: "https://javgg.net/jav/fc2-ppv-4885388/"
@@ -781,7 +873,7 @@ const movieData = [
         title: "FC2-PPV-3695183",
         code: "Full Uncensored",
         model: "",
-        studio: "FC2PPV",
+        studio: "Fc2ppv",
         region: "Japan",
         releaseDate: "2023-08-23",
         duration: "50:16",
@@ -792,7 +884,7 @@ const movieData = [
         downloads: {
             original: "https://adult.contents.fc2.com/article/3695183/",
             alt1: "https://supjav.com/227826.html",
-            alt2: "https://javfc2.xyz/watch/fc2ppv-3695183.html",
+            alt2: "https://javfc2.xyz/watch/Fc2ppv-3695183.html",
             alt3: "https://missav.ws/fc2-ppv-3695183",
             alt4: "https://123av.com/en/v/fc2-ppv-3695183",
             alt5: "https://javgg.net/jav/fc2-ppv-3695183/"
@@ -805,7 +897,7 @@ const movieData = [
         title: "FC2-PPV-4936500",
         code: "Full Uncensored",
         model: "Yui-chan SSS-class , School Student Yui-chan",
-        studio: "FC2PPV",
+        studio: "Fc2ppv",
         region: "Japan",
         releaseDate: "2026-07-10",
         duration: "58:31",
@@ -816,7 +908,7 @@ const movieData = [
         downloads: {
             original: "https://adult.contents.fc2.com/article/4936500/",
             alt1: "https://supjav.com/441856.html",
-            alt2: "https://javfc2.xyz/watch/fc2ppv-4936500.html",
+            alt2: "https://javfc2.xyz/watch/Fc2ppv-4936500.html",
             alt3: "https://missav.ws/fc2-ppv-4936500",
             alt4: "https://123av.com/en/v/fc2-ppv-4936500",
             alt5: "https://javgg.net/jav/fc2-ppv-4936500/"
@@ -829,7 +921,7 @@ const movieData = [
         title: "FC2-PPV-4932682",
         code: "Full Uncensored",
         model: "Pale-skinned, hairless nurse",
-        studio: "FC2PPV",
+        studio: "Fc2ppv",
         region: "Japan",
         releaseDate: "2026-07-10",
         duration: "01:07:58",
@@ -840,7 +932,7 @@ const movieData = [
         downloads: {
             original: "https://adult.contents.fc2.com/article/4932682/",
             alt1: "https://supjav.com/441769.html",
-            alt2: "https://javfc2.xyz/watch/fc2ppv-4932682.html",
+            alt2: "https://javfc2.xyz/watch/Fc2ppv-4932682.html",
             alt3: "https://missav.ws/fc2-ppv-4932682",
             alt4: "https://123av.com/en/v/fc2-ppv-4932682",
             alt5: "https://javgg.net/jav/fc2-ppv-4932682/"
@@ -854,7 +946,7 @@ const movieData = [
         title: "FC2-PPV-4936069",
         code: "Full Uncensored",
         model: "Sakuragi Nagisa",
-        studio: "FC2PPV",
+        studio: "Fc2ppv",
         region: "Japan",
         releaseDate: "2026-07-10",
         duration: "49:15",
@@ -865,7 +957,7 @@ const movieData = [
         downloads: {
             original: "https://adult.contents.fc2.com/article/4936069/",
             alt1: "https://supjav.com/441854.html",
-            alt2: "https://javfc2.xyz/watch/fc2ppv-4936069.html",
+            alt2: "https://javfc2.xyz/watch/Fc2ppv-4936069.html",
             alt3: "https://missav.ws/fc2-ppv-4936069",
             alt4: "https://123av.com/en/v/fc2-ppv-4936069",
             alt5: "https://javgg.net/jav/fc2-ppv-4936069/"
@@ -878,7 +970,7 @@ const movieData = [
         title: "FC2-PPV-4721502",
         code: "Full Uncensored",
         model: "Kanon",
-        studio: "FC2PPV",
+        studio: "Fc2ppv",
         region: "Japan",
         releaseDate: "2025-07-09",
         duration: "02:16:12",
@@ -889,13 +981,13 @@ const movieData = [
         downloads: {
             original: "https://adult.contents.fc2.com/article/4721502/",
             alt1: "https://supjav.com/360102.html",
-            alt2: "https://javfc2.xyz/watch/fc2ppv-4721502.html",
+            alt2: "https://javfc2.xyz/watch/Fc2ppv-4721502.html",
             alt3: "https://missav.ws/fc2-ppv-4721502",
             alt4: "https://123av.com/en/v/fc2-ppv-4721502",
             alt5: "https://javgg.net/jav/fc2-ppv-4721502/"
         },
         comments: [
-            { user: "Dax", text: "https://javct.net/v/fc2ppv-4721502", date: "now" },
+            { user: "Dax", text: "https://javct.net/v/Fc2ppv-4721502", date: "now" },
             { user: "Dax", text: "https://ppvdatabank.com/article/4721502/", date: "now" }
 		]
     },
@@ -903,7 +995,7 @@ const movieData = [
         title: "FC2-PPV-4797631",
         code: "Full Uncensored",
         model: "Kanon",
-        studio: "FC2PPV",
+        studio: "Fc2ppv",
         region: "Japan",
         releaseDate: "2025-11-15",
         duration: "39:51",
@@ -914,13 +1006,13 @@ const movieData = [
         downloads: {
             original: "https://adult.contents.fc2.com/article/4797631/",
             alt1: "https://supjav.com/386194.html",
-            alt2: "https://javfc2.xyz/watch/fc2ppv-4797631.html",
+            alt2: "https://javfc2.xyz/watch/Fc2ppv-4797631.html",
             alt3: "https://missav.ws/fc2-ppv-4797631",
             alt4: "https://123av.com/en/v/fc2-ppv-4797631",
             alt5: "https://javgg.net/jav/fc2-ppv-4768873/"
         },
         comments: [
-            { user: "Dax", text: "https://javct.net/v/fc2ppv-4797631", date: "now" },
+            { user: "Dax", text: "https://javct.net/v/Fc2ppv-4797631", date: "now" },
             { user: "Dax", text: "https://ppvdatabank.com/article/4768873/", date: "now" }
 		]
     },
@@ -928,7 +1020,7 @@ const movieData = [
         title: "FC2-PPV-4768873",
         code: "Full Uncensored",
         model: "Kanon",
-        studio: "FC2PPV",
+        studio: "Fc2ppv",
         region: "Japan",
         releaseDate: "2025-09-26",
         duration: "54:16",
@@ -939,7 +1031,7 @@ const movieData = [
         downloads: {
             original: "https://adult.contents.fc2.com/article/4768873/",
             alt1: "https://supjav.com/375710.html",
-            alt2: "https://javfc2.xyz/watch/fc2ppv-4768873.html",
+            alt2: "https://javfc2.xyz/watch/Fc2ppv-4768873.html",
             alt3: "https://missav.ws/fc2-ppv-4768873",
             alt4: "https://123av.com/en/v/fc2-ppv-4768873",
             alt5: "https://javgg.net/jav/fc2-ppv-4768873/"
@@ -1026,7 +1118,7 @@ const movieData = [
         title: "FC2-PPV-4972410",
         code: "Full Uncensored",
         model: "",
-        studio: "FC2PPV",
+        studio: "Fc2ppv",
         region: "Japan",
         releaseDate: "2026-09-05",
         duration: "56:16",
@@ -1037,7 +1129,7 @@ const movieData = [
         downloads: {
             original: "https://adult.contents.fc2.com/article/4883692/",
             alt1: "https://javgg.net/jav/fc2-ppv-4972410/",
-            alt2: "https://javfc2.xyz/watch/fc2ppv-4972410.html",
+            alt2: "https://javfc2.xyz/watch/Fc2ppv-4972410.html",
             alt3: "https://123av.com/en/v/fc2-ppv-4972410",
             alt4: "#",
             alt5: "https://missav.ws/en/fc2-ppv-4972410"
@@ -1051,7 +1143,7 @@ const movieData = [
         title: "FC2-PPV-4883692",
         code: "Full Uncensored",
         model: "",
-        studio: "FC2PPV",
+        studio: "Fc2ppv",
         region: "Japan",
         releaseDate: "2026-04-18",
         duration: "36:19",
@@ -1062,7 +1154,7 @@ const movieData = [
         downloads: {
             original: "https://adult.contents.fc2.com/article/4883692/",
             alt1: "https://javgg.net/jav/fc2-ppv-4883692/",
-            alt2: "https://javfc2.xyz/watch/fc2ppv-4883692.html",
+            alt2: "https://javfc2.xyz/watch/Fc2ppv-4883692.html",
             alt3: "https://123av.com/en/v/fc2-ppv-4883692",
             alt4: "https://jav.sb/en/jav/fc2-ppv-4883692-23-sex-1-1.html",
             alt5: "https://missav.ws/en/fc2-ppv-4883692"

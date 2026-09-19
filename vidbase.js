@@ -1,5 +1,141 @@
 const vidbase = [
     {
+        title: "【Full-view erotic live chat 】 Black hair braids estimated G cup whip beautiful big tits girl erotic chat! The second half concludes! A naked M-shaped toy masturbation that desperately tries to hide its face! Image quality ◎horizontal screen◎",
+        bio: "【丸見えエロライブチャット】黒髪三つ編み推定Ｇカップムチ美巨乳女子エロチャット！続き後半完結編！顔を必死で隠そうとする裸Ｍ字おもちゃオナ！画質◎横画面◎",
+        release: "2025-12-05",
+        category: "Full Uncensored",
+        tags: ["SSS Class", "Big Breast", "Livecam"],
+        duration: "22:28",
+        country: "Japan",
+        models: ["JP-NAO"],
+        imgurl: "img/live/a70518413a64fb894288bc4e43657f94.jpg",
+        vidurl: "https://streamtape.com/e/GpgVx4WjJatA0O/",
+		star: true,
+        links: [
+            { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/124118" },
+            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/GpgVx4WjJatA0O/3679_J" }
+        ]
+    },
+    {
+        title: "【Full-view erotic live chat 】 Black-haired braid, estimated G-cup busty busty girl has erotic chat! Suddenly, the naked toy masturbation begins! Don't miss the end of the second half! High-quality ◎horizontal screen◎",
+        bio: "【丸見えエロライブチャット】黒髪三つ編み推定Ｇカップむち美巨乳女子がエロチャット！いきなり裸おもちゃオナ開始！続き後半最後まで見逃すな！高画質◎横画面◎",
+        release: "2025-08-05",
+        category: "Full Uncensored",
+        tags: ["SSS Class", "Big Breast", "Livecam"],
+        duration: "22:31",
+        country: "Japan",
+        models: ["JP-NAO"],
+        imgurl: "img/live/Gx4PIOsbsAIqO7E.jpg",
+        vidurl: "https://streamtape.com/e/zkkGyqvr1euoWL/",
+		star: true,
+        links: [
+            { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/119986" },
+            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/zkkGyqvr1euoWL/3501_J" }
+        ]
+    },
+    {
+        title: "【Full-view erotic live chat 】 high quality! Horizontal screen! Legal loli black hair mask pure girl suddenly crotch indirect photo picha ✕ 2 fingers tease! Super close-up photo ○ Nko jet black double toy second half!",
+        bio: "【丸見えエロライブチャット】高画質！横画面！合法ロリ黒髪マスク清純女子いきなり股間接写ピチャ✕２クリ指イジり！超接写お○んこ真っ黒ダブルおもちゃ後半編！",
+        release: "2025-09-18",
+        category: "Full Uncensored",
+        tags: ["SSS Class", "Cute", "Small Breast", "Livecam"],
+        duration: "19:23",
+        country: "Japan",
+        models: ["none"],
+        imgurl: "img/live/3b71699538a5d71a689cfc4ff6245fae.jpg",
+        vidurl: "https://streamtape.com/e/goQ1xyZrKvTqpKJ/",
+		star: true,
+        links: [
+            { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/121426" },
+            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/goQ1xyZrKvTqpKJ/3554_J" }
+        ]
+    },
+    {
+        title: "【Full-view erotic live chat 】 high quality! Black hair, twin tails, legal lolita, female navy blue sailor, half-removed, M-shaped Cusco, vaginal inside, fully visible! Double-piece shaved bun ○ Nkoda! The seller has been deleted◎",
+        bio: "【丸見えエロライブチャット】高画質！黒髪ツインテ合法ロリ女子紺セーラー半脱ぎＭ字クスコ膣奥丸見えくぱぁ！ダブルピースでパイパンお○んこだ！販売元削除済◎",
+        release: "2025-03-07",
+        category: "Full Uncensored",
+        tags: ["SSS Class", "Cute", "Small Breast", "Livecam"],
+        duration: "09:29",
+        country: "Japan",
+        models: ["none"],
+        imgurl: "img/live/a61042ab9f04f183be3ec85060c96acf.jpg",
+        vidurl: "https://streamtape.com/e/BeyPqAo4ZvU9Yw/",
+		star: true,
+        links: [
+            { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/115263" },
+            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/BeyPqAo4ZvU9Yw/3319_J" }
+        ]
+    },
+    {
+        title: "【Full-view erotic live chat 】 Luso green che red ribbon strongest cosplay black hair twin-tailed girl! The second installment continues! Face revealed & shaved head ○ full view of the pussy revealed! Dildo insertion masturbation too! Long time◎",
+        bio: "【丸見えエロライブチャット】ルーソ緑チェ赤リボン最強コス黒髪ツインテ女子！続きの第二弾！顔出し＆パイパンお○んこ出し丸見え！ディルド挿入オナも！長時間◎",
+        release: "2025-03-07",
+        category: "Full Uncensored",
+        tags: ["SSS Class", "Cute", "Small Breast", "Livecam"],
+        duration: "02:15:30",
+        country: "Japan",
+        models: ["none"],
+        imgurl: "img/live/faf4be6b73736f8bd3c915df2e2f8f7e.jpg",
+        vidurl: "https://streamtape.com/e/g2eOjd2K1Ktq1yd/",
+		star: true,
+        links: [
+            { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/115458" },
+            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/g2eOjd2K1Ktq1yd/3330_J" }
+        ]
+    },
+    {
+        title: "【Full-view erotic live chat 】 Luso Green Choi & Red Ribbon Strongest Cosmetics Black Hair Twintails Girls Descend Erotic Chat! First installment! シシシシシシススススス High image quality◎",
+        bio: "【丸見えエロライブチャット】ルーソ緑チェ＆赤リボン最強コス黒髪ツインテ女子降臨エロチャット！第一弾！エチエチ太ももと白パンからはみ出るお○んこ！高画質◎",
+        release: "2025-03-07",
+        category: "Full Uncensored",
+        tags: ["SSS Class", "Cute", "Small Breast", "Livecam"],
+        duration: "40:27",
+        country: "Japan",
+        models: ["none"],
+        imgurl: "img/live/4d0e750312ac980b2d41df50aa63d05e.jpg",
+        vidurl: "https://streamtape.com/e/8XQkQJrVoAiJrA/",
+		star: true,
+        links: [
+            { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/115459" },
+            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/8XQkQJrVoAiJrA/3329_J" }
+        ]
+    },
+    {
+        title: "【Full-view erotic live chat 】 Yellow underwear, long brown hair, twin tails, moe voice, SSS-class style, outstanding girls descend into erotic chat! It's M-shaped shaved pussy and ona with her face exposed! High definition ◎horizontal screen◎",
+        bio: "【丸見えエロライブチャット】黄色下着ロング茶髪ツインテ萌え声ＳＳＳ級スタイル抜群女子御降臨エロチャット！顔出しＭ字パイパンくぱぁオナだ！高精細◎横画面◎",
+        release: "2026-09-19",
+        category: "Full Uncensored",
+        tags: ["SSS Class", "Cute", "Small Breast", "Livecam"],
+        duration: "30:35",
+        country: "Japan",
+        models: ["none"],
+        imgurl: "img/live/9734530ba29a7430b95d4d87b944519b.jpg",
+        vidurl: "https://streamtape.com/e/Xovm0oK1QPI3lP/",
+		star: true,
+        links: [
+            { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/132095" },
+            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/Xovm0oK1QPI3lP/4130_J" }
+        ]
+    },
+    {
+        title: "【Full-view erotic live chat 】 White cat ears, long brown hair, pure and innocent female erotic chat! From the middle, M-shaped shaved close-up lovens hits the gasp and says Oona! Sold by ◎long time ◎ landscape screen◎",
+        bio: "【丸見えエロライブチャット】白猫耳装着ロング茶髪清楚系女子エロチャット！中盤からＭ字パイパン接写ラブンス当て喘ぎ声オナだ！販売元削除済◎長時間◎横画面◎",
+        release: "2026-09-14",
+        category: "Full Uncensored",
+        tags: ["SSS Class", "Cute", "Small Breast", "Livecam"],
+        duration: "01:09:24",
+        country: "Japan",
+        models: ["none"],
+        imgurl: "img/live/5f6efffaec982d674a7e3bb1818386f6.jpg",
+        vidurl: "https://streamtape.com/e/GkWD7vApxYu1xR0/",
+		star: true,
+        links: [
+            { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/132006" },
+            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/GkWD7vApxYu1xR0/4125_J" }
+        ]
+    },
+    {
         title: "【Erotic Live Chat 】Seller deleted! A super time blockbuster! Long twin-tailed black-haired amateur girl can do whatever she wants in a necafe & karaoke box! The second installment is complete! Beautiful big breasts & toys!",
         bio: "【エロライブチャット】販売元削除済！超時間大作！ネカフェ＆カラオケＢＯＸで好き放題するロングツインテ黒髪チャット素人女子！第二弾完結！美巨乳＆おもちゃ！",
         release: "2024-03-24",
@@ -8,7 +144,7 @@ const vidbase = [
         duration: "01:39:02",
         country: "Japan",
         models: ["none", "Fc2 Live"],
-        imgurl: "https://momoiroadult.com/wp-content/uploads/2024/03/43379f0a1e6984c2d5d69ac3cd3e61bf.jpg",
+        imgurl: "img/live/43379f0a1e6984c2d5d69ac3cd3e61bf.jpg",
         vidurl: "https://streamtape.com/e/DkROpv3PapHwkL/",
 		star: true,
         links: [
@@ -24,8 +160,8 @@ const vidbase = [
         tags: ["SSS Class", "Big Breast", "Livecam"],
         duration: "48:23",
         country: "Japan",
-        models: ["none", "stripchat"],
-        imgurl: "https://momoiroadult.com/wp-content/uploads/2026/09/e23ccdff1510b44ac3b182d25e4c157c.jpg",
+        models: ["none"],
+        imgurl: "img/live/e23ccdff1510b44ac3b182d25e4c157c.jpg",
         vidurl: "https://streamtape.com/e/8zKPJgOO32SokoR/",
 		star: true,
         links: [
@@ -41,8 +177,8 @@ const vidbase = [
         tags: ["SSS Class", "Big Breast", "Livecam"],
         duration: "20:01",
         country: "Japan",
-        models: ["none", "stripchat"],
-        imgurl: "https://momoiroadult.com/wp-content/uploads/2026/09/4d6a93a38b94fecd41ad3f367bdb7b26.jpg",
+        models: ["none"],
+        imgurl: "img/live/4d6a93a38b94fecd41ad3f367bdb7b26.jpg",
         vidurl: "https://streamtape.com/e/bwRRWDXv41HPVav/",
 		star: true,
         links: [
@@ -58,8 +194,8 @@ const vidbase = [
         tags: ["SSS Class", "Big Breast", "Livecam"],
         duration: "01:16:33",
         country: "Japan",
-        models: ["none", "stripchat"],
-        imgurl: "https://momoiroadult.com/wp-content/uploads/2026/09/353b5848e428268995ad883a16b11943.jpg",
+        models: ["none"],
+        imgurl: "img/live/353b5848e428268995ad883a16b11943.jpg",
         vidurl: "https://streamtape.com/e/MPdWJxomDwCmgDb/",
 		star: true,
         links: [
@@ -72,16 +208,32 @@ const vidbase = [
         bio: "【丸見えエロライブチャット】キタＷ出演ＳＳＳ級黒髪＆茶髪美人ギャル御降臨エロチャット！お酒飲みながらＳＥＸ３Ｐ生配信！スタイル抜群美乳◎長時間◎横画面◎",
         release: "2026-09-13",
         category: "Full Uncensored",
-        tags: ["SSS Class", "Sex", "Crempie", "No-Masked", "Small Breast", "Livecam"],
+        tags: ["SSS Class", "Sex", "Creampie", "No-Masked", "Small Breast", "Livecam", "Real Sperm Pussy Filled"],
         duration: "01:11:34",
         country: "Japan",
-        models: ["none", "stripchat"],
-        imgurl: "https://momoiroadult.com/wp-content/uploads/2026/09/53ebefe7cf9b0fe01584a1830b2471ef.jpg",
+        models: ["Rika_secret"],
+        imgurl: "img/live/53ebefe7cf9b0fe01584a1830b2471ef.jpg",
         vidurl: "https://streamtape.com/e/gPqeKz3YVLsqwP7/",
 		star: true,
         links: [
             { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/131993" },
             { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/gPqeKz3YVLsqwP7/4123_J" }
+        ]
+    },
+    {
+        title: "StripChat replay recorded on Sunday, February 1, 2026 at 03:34 PM",
+        bio: "【りか×のあ】初💕Fカップ×Dカップレズ配信💕",
+        release: "2026-02-01",
+        category: "Full Uncensored",
+        tags: ["SSS Class", "No-Masked", "Small Breast", "Livecam"],
+        duration: "24:52",
+        country: "Japan",
+        models: ["Rika_secret"],
+        imgurl: "img/live/2026.02.01_15.07.15_rika_secret.jpg",
+        vidurl: "#",
+		star: true,
+        links: [
+            { class: "btn-dark", label: "Streamtape", url: "https://www.onscreens.me/85a67854-ff83-11f0-8870-f1341e4b6ea3/rikasecret-f-d-02-01-2026-15-34-17-stripchat" }
         ]
     },
     {
@@ -92,8 +244,8 @@ const vidbase = [
         tags: ["SSS Class", "Cute", "No-Masked", "Small Breast", "Livecam"],
         duration: "21:28",
         country: "Japan",
-        models: ["none", "stripchat"],
-        imgurl: "https://momoiroadult.com/wp-content/uploads/2026/09/75d71aa81c8a3203cfdd559b158ae0f5.jpg",
+        models: ["none"],
+        imgurl: "img/live/75d71aa81c8a3203cfdd559b158ae0f5.jpg",
         vidurl: "https://streamtape.com/e/eGD116MXQVhYRDq/",
 		star: true,
         links: [
@@ -109,8 +261,8 @@ const vidbase = [
         tags: ["SSS Class", "No-Masked", "Big Breast", "Livecam"],
         duration: "01:22:26",
         country: "Japan",
-        models: ["none", "stripchat"],
-        imgurl: "https://momoiroadult.com/wp-content/uploads/2026/09/e197a2ca75a1580d49f759e8d662e73b.jpg",
+        models: ["none"],
+        imgurl: "img/live/e197a2ca75a1580d49f759e8d662e73b.jpg",
         vidurl: "https://streamtape.com/e/W1WJ0Oe3OgFb4LK/",
 		star: true,
         links: [
@@ -126,8 +278,8 @@ const vidbase = [
         tags: ["SSS Class", "Sex", "Big Breast", "Livecam", "No-Masked"],
         duration: "01:31:17",
         country: "Japan",
-        models: ["none", "stripchat"],
-        imgurl: "https://momoiroadult.com/wp-content/uploads/2026/09/308f6772a55dd95dcb3245eba81890ff.jpg",
+        models: ["none"],
+        imgurl: "img/live/308f6772a55dd95dcb3245eba81890ff.jpg",
         vidurl: "https://streamtape.com/e/gqWv4Wz1ZpCqwl9/",
 		star: true,
         links: [
@@ -144,7 +296,7 @@ const vidbase = [
         duration: "01:20:29",
         country: "Japan",
         models: ["none", "fc2 live"],
-        imgurl: "https://momoiroadult.com/wp-content/uploads/2026/03/129d9a640bb1b60d1120f3d22ddb9107.jpg",
+        imgurl: "img/live/129d9a640bb1b60d1120f3d22ddb9107.jpg",
         vidurl: "https://streamtape.com/e/xkDaWmJJJBUkkj3/",
 		star: true,
         links: [
@@ -160,10 +312,11 @@ const vidbase = [
         tags: ["SSS Class", "G Cup", "Big Breast", "Livecam", "Un-Masked"],
         duration: "01:10:32",
         country: "Japan",
-        models: ["LOVE_MIREI_LOVE", "stripchat"],
-        imgurl: "https://momoiroadult.com/wp-content/uploads/2026/05/bc33916b5cd2170a638e6fc2464b5ad0.jpg",
+        models: ["LOVE_MIREI_LOVE"],
+        imgurl: "img/live/bc33916b5cd2170a638e6fc2464b5ad0.jpg",
         vidurl: "https://streamtape.com/e/GAoRBgRY6ATAVr/",
 		star: true,
+		watch: 1,
         links: [
             { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/128709" },
             { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/GAoRBgRY6ATAVr/3923_J" }
@@ -177,8 +330,8 @@ const vidbase = [
         tags: ["SSS Class", "G Cup", "Big Breast", "Livecam", "Un-Masked"],
         duration: "01:14:18",
         country: "Japan",
-        models: ["NOA_oO", "stripchat"],
-        imgurl: "https://momoiroadult.com/wp-content/uploads/2026/02/f307d7f2253fb141372ebf044dc927f9.jpg",
+        models: ["NOA_oO"],
+        imgurl: "img/live/f307d7f2253fb141372ebf044dc927f9.jpg",
         vidurl: "https://streamtape.com/e/Mazmed0zwrCmm9x/",
 		star: true,
         links: [
@@ -296,7 +449,7 @@ const vidbase = [
         tags: ["SSS Class", "G Cup", "Big Breast", "Livecam", "Un-Masked"],
         duration: "33:42",
         country: "Japan",
-        models: ["NOA_oO", "stripchat"],
+        models: ["NOA_oO"],
         imgurl: "https://momoiroadult.com/wp-content/uploads/2024/12/9006df9e46a3be5a9da9db46e49def57.jpg",
         vidurl: "https://streamtape.com/e/bZ6G9lkRLMcPr3r/",
 		star: true,
@@ -313,7 +466,7 @@ const vidbase = [
         tags: ["SSS Class", "G Cup", "Big Breast", "Livecam", "Un-Masked"],
         duration: "41:45",
         country: "Japan",
-        models: ["NOA_oO", "stripchat"],
+        models: ["NOA_oO"],
         imgurl: "https://momoiroadult.com/wp-content/uploads/2024/02/56902584db8aba820ca60b8465856d08.jpg",
         vidurl: "https://streamtape.com/e/p4184aRoDJCrdXP/",
 		star: true,
@@ -432,7 +585,7 @@ const vidbase = [
         tags: ["SSS Class", "Cute", "Small Breast", "Livecam"],
         duration: "52:54",
         country: "Japan",
-        models: ["none", "stripchat"],
+        models: ["none"],
         imgurl: "https://momoiroadult.com/wp-content/uploads/2024/09/8c3cef89cd67c2e32419f20a326c5ef0.jpg",
         vidurl: "https://streamtape.com/e/KX7gQPOL7Gu0YMQ/",
 		star: false,
@@ -500,7 +653,7 @@ const vidbase = [
         tags: ["SSS Class", "G Cup", "Big Breast", "Livecam"],
         duration: "49:28",
         country: "Japan",
-        models: ["none", "stripchat"],
+        models: ["none"],
         imgurl: "https://momoiroadult.com/wp-content/uploads/2024/05/b367cc50f564d3eb969377afdc68f31f.jpg",
         vidurl: "http://streamtape.com/e/92lxYAyOlXI9md/",
         links: [
@@ -516,7 +669,7 @@ const vidbase = [
         tags: ["SSS Class", "Cute", "Small Breast", "Livecam"],
         duration: "43:36",
         country: "Japan",
-        models: ["none", "stripchat"],
+        models: ["none"],
         imgurl: "https://momoiroadult.com/wp-content/uploads/2024/05/ad9f8e14bd4aad980c949233807dac21.jpg",
         vidurl: "http://streamtape.com/e/zQ61g9Yk1piYjoR/",
         links: [
@@ -532,7 +685,7 @@ const vidbase = [
         tags: ["SSS Class", "G Cup", "Big Breast", "Livecam"],
         duration: "29:11",
         country: "Japan",
-        models: ["none", "stripchat"],
+        models: ["none"],
         imgurl: "https://momoiroadult.com/wp-content/uploads/2024/10/d02a5de7cfc9073cb6ee5d3816a7449c.jpg",
         vidurl: "https://streamtape.com/e/282eQ2D4bRtzz0/",
         links: [
@@ -548,7 +701,7 @@ const vidbase = [
         tags: ["SSS Class", "Cute", "Small Breast", "Livecam"],
         duration: "50:40",
         country: "Japan",
-        models: ["none", "stripchat"],
+        models: ["none"],
         imgurl: "https://momoiroadult.com/wp-content/uploads/2025/09/eb2097f27b03a0335101041dbca2ec78.jpg",
         vidurl: "https://streamtape.com/e/JJPqblbPBXcjwJd/",
         links: [
@@ -564,7 +717,7 @@ const vidbase = [
         tags: ["SSS Class", "Cute", "Small Breast", "Livecam"],
         duration: "21:52",
         country: "Japan",
-        models: ["none", "stripchat"],
+        models: ["none"],
         imgurl: "https://momoiroadult.com/wp-content/uploads/2025/07/405124b8a79187dedec3e5599f235197.jpg",
         vidurl: "https://streamtape.com/e/3GxPxo9DRAUdP3O/",
         links: [
@@ -580,7 +733,7 @@ const vidbase = [
         tags: ["SSS Class", "Cute", "Small Breast", "Livecam"],
         duration: "32:06",
         country: "Japan",
-        models: ["none", "stripchat"],
+        models: ["none"],
         imgurl: "https://momoiroadult.com/wp-content/uploads/2023/10/0c9f839975f7901670e927c39ef90ad2.jpg",
         vidurl: "https://streamtape.com/e/wdGYAP4Xv2f6Py/2726_J",
         links: [
@@ -596,7 +749,7 @@ const vidbase = [
         tags: ["SSS Class", "Cute", "Small Breast", "Livecam"],
         duration: "39:48",
         country: "Japan",
-        models: ["none", "stripchat"],
+        models: ["none"],
         imgurl: "https://momoiroadult.com/wp-content/uploads/2024/01/f3b7ed273d32ddbc58b6db51e921e279.jpg",
         vidurl: "https://streamtape.com/e/6oYpkoM6vmsOyB/",
         links: [
@@ -612,9 +765,10 @@ const vidbase = [
         tags: ["SSS Class", "G Cup", "Big Breast", "Livecam"],
         duration: "33:32",
         country: "Japan",
-        models: ["none", "stripchat"],
-        imgurl: "https://momoiroadult.com/wp-content/uploads/2025/12/94736201dde32dfe5e4a39fa71b4327a.jpg",
+        models: ["none"],
+        imgurl: "img/live/94736201dde32dfe5e4a39fa71b4327a.jpg",
         vidurl: "https://streamtape.com/e/kwYyr74ooLIOJxj/",
+		star: true,
         links: [
             { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/124162" },
             { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/kwYyr74ooLIOJxj/3680_J" }
@@ -628,29 +782,12 @@ const vidbase = [
         tags: ["SSS Class", "Cute", "Small Breast", "Livecam"],
         duration: "47:43",
         country: "Japan",
-        models: ["none", "stripchat"],
+        models: ["none"],
         imgurl: "https://momoiroadult.com/wp-content/uploads/2023/05/af2b018dd6d0750509e93ddafca76995.jpg",
         vidurl: "https://streamtape.com/e/8vj4ygbmg3SG6A/",
         links: [
             { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/99983" },
             { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/8vj4ygbmg3SG6A/2533_J" }
-        ]
-    },
-    {
-        title: "[Completely Exposed Erotic Live Chat] Seller Removed! Two SSS-class super cute girls, one with long black/brown hair and the other with a blonde bob, appear, starting with close-ups of their panties! First half! Simultaneous dildo use by both! Horizontal screen OK",
-        bio: "【丸見えエロライブチャット】販売元削除済！パンモロ接写から始まる黒茶髪ロング＆金髪ボブＳＳＳ級激カワ女子２人組ご降臨！前半戦！ペア同時ディルド！横画面◎",
-        release: "2026-03-12",
-        category: "Full Uncensored",
-        tags: ["SSS Class", "Group", "Big Breast", "Small Breast", "Cute", "Livecam"],
-        duration: "01:22:42",
-        country: "Japan",
-        models: ["momo_love_", "stripchat"],
-        imgurl: "https://momoiroadult.com/wp-content/uploads/2026/03/f0f7e0d588a0fe8c47771a0b3e27655a.jpg",
-        vidurl: "https://streamtape.com/e/a2QvJY7k0rsxvxL/",
-		star: true,
-        links: [
-            { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/127226" },
-            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/a2QvJY7k0rsxvxL/3834_J_1" }
         ]
     },
     {
@@ -661,13 +798,16 @@ const vidbase = [
         tags: ["SSS Class", "Group", "Big Breast", "Small Breast", "Cute", "Livecam"],
         duration: "01:49:06",
         country: "Japan",
-        models: ["momo_love_", "stripchat"],
+        models: ["momo_love_", "LOVE_MOMO_LOVE"],
         imgurl: "https://momoiroadult.com/wp-content/uploads/2025/08/a18844a65d78042094dece54cc4be4e9.jpg",
         vidurl: "https://streamtape.com/e/0DMKWbVMyMFblbM/3532_J",
 		star: true,
         links: [
             { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/120609" },
-            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/0DMKWbVMyMFblbM/3532_J" }
+            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/0DMKWbVMyMFblbM/3532_J" },
+            { class: "btn-gray", label: "Camshowrecordings", url: "https://www.camshowrecordings.com/model/momo_love_" },
+            { class: "btn-gray", label: "Camshowrecordings", url: "https://www.camshowrecordings.com/model/LOVE_MOMO_LOVE" },
+            { class: "btn-yellow", label: "Archivebate", url: "https://archivebate.com/profile/LOVE_MOMO_LOVE" }
         ]
     },
     {
@@ -678,13 +818,16 @@ const vidbase = [
         tags: ["SSS Class", "Group", "Big Breast", "Livecam"],
         duration: "01:27:38",
         country: "Japan",
-        models: ["momo_love_", "stripchat"],
+        models: ["momo_love_", "LOVE_MOMO_LOVE"],
         imgurl: "https://momoiroadult.com/wp-content/uploads/2025/07/87a69c37993da3fec59fa7f914a091e9.jpg",
         vidurl: "https://streamtape.com/e/dOx8XgVj6JubK3/",
 		star: true,
         links: [
             { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/119655" },
-            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/dOx8XgVj6JubK3/679_S" }
+            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/dOx8XgVj6JubK3/679_S" },
+            { class: "btn-gray", label: "Camshowrecordings", url: "https://www.camshowrecordings.com/model/momo_love_" },
+            { class: "btn-gray", label: "Camshowrecordings", url: "https://www.camshowrecordings.com/model/LOVE_MOMO_LOVE" },
+            { class: "btn-yellow", label: "Archivebate", url: "https://archivebate.com/profile/LOVE_MOMO_LOVE" }
         ]
     },
     {
@@ -695,13 +838,16 @@ const vidbase = [
         tags: ["SSS Class", "Big Breast", "Livecam"],
         duration: "01:48:21",
         country: "Japan",
-        models: ["momo_love_", "stripchat"],
+        models: ["momo_love_", "LOVE_MOMO_LOVE"],
 		star: true,
-        imgurl: "https://momoiroadult.com/wp-content/uploads/2026/03/d0450bc7770d8f70ca64e9d85d4a61d9.jpg",
+        imgurl: "img/live/d0450bc7770d8f70ca64e9d85d4a61d9.jpg",
         vidurl: "https://streamtape.com/e/oekWB0oBy8tWYk/",
         links: [
             { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/127099" },
-            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/oekWB0oBy8tWYk/3827_J" }
+            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/oekWB0oBy8tWYk/3827_J" },
+            { class: "btn-gray", label: "Camshowrecordings", url: "https://www.camshowrecordings.com/model/momo_love_" },
+            { class: "btn-gray", label: "Camshowrecordings", url: "https://www.camshowrecordings.com/model/LOVE_MOMO_LOVE" },
+            { class: "btn-yellow", label: "Archivebate", url: "https://archivebate.com/profile/LOVE_MOMO_LOVE" }
         ]
     },
     {
@@ -712,13 +858,42 @@ const vidbase = [
         tags: ["SSS Class", "Group", "Big Breast", "Small Breast", "Cute", "Livecam"],
         duration: "41:15",
         country: "Japan",
-        models: ["momo_love_", "stripchat"],
-        imgurl: "https://momoiroadult.com/wp-content/uploads/2026/03/f037a9b6cb2a7ab6419b3a65790a002a.jpg",
+        models: ["momo_love_" , "Ri-chan" , "Momo-chan" , "LOVE_MOMO_LOVE"],
+        imgurl: "img/live/f037a9b6cb2a7ab6419b3a65790a002a.jpg",
         vidurl: "https://streamtape.com/e/QWMaJr0gBeT0aAo/",
 		star: true,
+		screenshots: [
+            "img/screenshot/Screenshot (1944).png",
+            "img/screenshot/Screenshot (1945).png",
+            "img/screenshot/Screenshot (1946).png",
+            "img/screenshot/Screenshot (1947).png"
+        ],
         links: [
             { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/127277" },
-            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/QWMaJr0gBeT0aAo/3835_J_2" }
+            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/QWMaJr0gBeT0aAo/3835_J_2" },
+            { class: "btn-gray", label: "Camshowrecordings", url: "https://www.camshowrecordings.com/model/momo_love_" },
+            { class: "btn-gray", label: "Camshowrecordings", url: "https://www.camshowrecordings.com/model/LOVE_MOMO_LOVE" },
+            { class: "btn-yellow", label: "Archivebate", url: "https://archivebate.com/profile/LOVE_MOMO_LOVE" }
+        ]
+    },
+    {
+        title: "[Completely Exposed Erotic Live Chat] Seller Removed! Two SSS-class super cute girls, one with long black/brown hair and the other with a blonde bob, appear, starting with close-ups of their panties! First half! Simultaneous dildo use by both! Horizontal screen OK",
+        bio: "【丸見えエロライブチャット】販売元削除済！パンモロ接写から始まる黒茶髪ロング＆金髪ボブＳＳＳ級激カワ女子２人組ご降臨！前半戦！ペア同時ディルド！横画面◎",
+        release: "2026-03-12",
+        category: "Full Uncensored",
+        tags: ["SSS Class", "Group", "Big Breast", "Small Breast", "Cute", "Livecam"],
+        duration: "01:22:42",
+        country: "Japan",
+        models: ["momo_love_" , "Ri-chan" , "Momo-chan" , "LOVE_MOMO_LOVE"],
+        imgurl: "img/live/f0f7e0d588a0fe8c47771a0b3e27655a.jpg",
+        vidurl: "https://streamtape.com/e/a2QvJY7k0rsxvxL/",
+		star: true,
+        links: [
+            { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/127226" },
+            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/a2QvJY7k0rsxvxL/3834_J_1" },
+            { class: "btn-gray", label: "Camshowrecordings", url: "https://www.camshowrecordings.com/model/momo_love_" },
+            { class: "btn-gray", label: "Camshowrecordings", url: "https://www.camshowrecordings.com/model/LOVE_MOMO_LOVE" },
+            { class: "btn-yellow", label: "Archivebate", url: "https://archivebate.com/profile/LOVE_MOMO_LOVE" }
         ]
     },
     {
@@ -729,9 +904,10 @@ const vidbase = [
         tags: ["SSS Class", "Cute", "Small Breast", "Livecam", "Un-Masked"],
         duration: "01:14:02",
         country: "Japan",
-        models: ["LOVE_MIREI_LOVE", "stripchat"],
-        imgurl: "https://momoiroadult.com/wp-content/uploads/2025/11/1974c8ac50500720851377198da3ce40.jpg",
+        models: ["LOVE_MIREI_LOVE"],
+        imgurl: "img/live/1974c8ac50500720851377198da3ce40.jpg",
         vidurl: "https://streamtape.com/e/YK9zmLbYMoILWo/",
+		star: true,
         links: [
             { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/123564" },
             { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/YK9zmLbYMoILWo/3656_J_1" }
@@ -745,9 +921,10 @@ const vidbase = [
         tags: ["SSS Class", "Cute", "Small Breast", "Livecam", "Un-Masked"],
         duration: "01:02:23",
         country: "Japan",
-        models: ["LOVE_MIREI_LOVE", "stripchat"],
-        imgurl: "https://momoiroadult.com/wp-content/uploads/2025/11/G6VOJ1KaIAIxdUg.jpg",
+        models: ["LOVE_MIREI_LOVE"],
+        imgurl: "img/live/G6VOJ1KaIAIxdUg.jpg",
         vidurl: "https://streamtape.com/e/myjLB3aV78Hb8QJ/",
+		star: true,
         links: [
             { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/123526" },
             { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/myjLB3aV78Hb8QJ/3656_J_2" }
@@ -762,27 +939,11 @@ const vidbase = [
         duration: "01:06:55",
         country: "Japan",
         models: ["none", "fc2ppv"],
-        imgurl: "https://momoiroadult.com/wp-content/uploads/2025/11/356ab3a2e226b40ca2b62f23440b0df1.jpg",
+        imgurl: "img/live/356ab3a2e226b40ca2b62f23440b0df1.jpg",
         vidurl: "https://streamtape.com/e/7kGe9DY82JsA6dk/",
         links: [
             { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/123748" },
             { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/7kGe9DY82JsA6dk/Ki-1313" }
-        ]
-    },
-    {
-        title: "[Completely Visible Erotic Live Chat] Super High Definition! Cute girl with long chestnut hair and a mask, dressed like a schoolgirl uniform, engages in a super long erotic chat! First half! Risky pearl-embellished underwear! Horizontal screen OK",
-        bio: "",
-        release: "2026-03-11",
-        category: "Full Uncensored",
-        tags: ["SSS Class", "Cute", "Small Breast", "Livecam"],
-        duration: "01:09:37",
-        country: "Japan",
-        models: ["none", "stripchat"],
-        imgurl: "https://momoiroadult.com/wp-content/uploads/2026/03/6fe2157bb63d6330783b7051309ff941.jpg",
-        vidurl: "https://streamtape.com/e/q7lR2V0bleCzzyW/",
-        links: [
-            { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/127159" },
-            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/q7lR2V0bleCzzyW/3830_J_1" }
         ]
     },
     {
@@ -793,7 +954,7 @@ const vidbase = [
         tags: ["SSS Class", "Cute", "Small Breast", "Livecam", "Un-Masked"],
         duration: "01:27:57",
         country: "Japan",
-        models: ["none", "stripchat"],
+        models: ["none"],
         imgurl: "https://momoiroadult.com/wp-content/uploads/2025/09/91cee5be8a6446934a51adb604a85586.jpg",
         vidurl: "https://streamtape.com/e/Bb2Jl80PLes9eM/",
         links: [
@@ -809,12 +970,30 @@ const vidbase = [
         tags: ["SSS Class", "Cute", "Small Breast", "Livecam"],
         duration: "01:13:24",
         country: "Japan",
-        models: ["none", "stripchat"],
-        imgurl: "https://momoiroadult.com/wp-content/uploads/2026/03/53613a9f2c2d3857d0b0e28f8dbeecaa.jpg",
+        models: ["none"],
+        imgurl: "img/live/53613a9f2c2d3857d0b0e28f8dbeecaa.jpg",
         vidurl: "https://streamtape.com/e/p4mQ2KK2Y3UGkq/",
+		star: true,
         links: [
             { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/127161" },
             { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/p4mQ2KK2Y3UGkq/3830_J_2" }
+        ]
+    },
+    {
+        title: "[Completely Visible Erotic Live Chat] Super High Definition! Cute girl with long chestnut hair and a mask, dressed like a schoolgirl uniform, engages in a super long erotic chat! First half! Risky pearl-embellished underwear! Horizontal screen OK",
+        bio: "",
+        release: "2026-03-11",
+        category: "Full Uncensored",
+        tags: ["SSS Class", "Cute", "Small Breast", "Livecam"],
+        duration: "01:09:37",
+        country: "Japan",
+        models: ["none"],
+        imgurl: "img/live/6fe2157bb63d6330783b7051309ff941.jpg",
+        vidurl: "https://streamtape.com/e/q7lR2V0bleCzzyW/",
+		star: true,
+        links: [
+            { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/127159" },
+            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/q7lR2V0bleCzzyW/3830_J_1" }
         ]
     },
     {
@@ -825,9 +1004,10 @@ const vidbase = [
         tags: ["SSS Class", "Cute", "Small Breast", "Livecam"],
         duration: "01:21:40",
         country: "Japan",
-        models: ["none", "stripchat"],
-        imgurl: "https://momoiroadult.com/wp-content/uploads/2026/06/af0f2cc01c374b4d128bfe23352e2c05.jpg",
+        models: ["none"],
+        imgurl: "img/live/af0f2cc01c374b4d128bfe23352e2c05.jpg",
         vidurl: "https://streamtape.com/e/8KpAZbLzowuog6K/",
+		star: true,
         links: [
             { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/129810" },
             { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/8KpAZbLzowuog6K/3987_J" }
@@ -841,9 +1021,10 @@ const vidbase = [
         tags: ["SSS Class", "Cute", "Small Breast", "Livecam", "Un-Masked"],
         duration: "02:10:09",
         country: "Japan",
-        models: ["LOVE_MIREI_LOVE", "stripchat"],
-        imgurl: "https://momoiroadult.com/wp-content/uploads/2025/11/e77112c05400496546b3a78f0ee0d163.jpg",
+        models: ["LOVE_MIREI_LOVE"],
+        imgurl: "img/live/e77112c05400496546b3a78f0ee0d163.jpg",
         vidurl: "https://streamtape.com/e/gvKoV6dwmVCq07w/",
+		star: true,
         links: [
             { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/123073" },
             { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/gvKoV6dwmVCq07w/3634_J" }
@@ -857,9 +1038,10 @@ const vidbase = [
         tags: ["SSS Class", "Cute", "Small Breast", "Livecam"],
         duration: "01:50:49",
         country: "Japan",
-        models: ["none", "stripchat"],
-        imgurl: "https://momoiroadult.com/wp-content/uploads/2026/04/f8dbaa5260101848c55e12f6975f7e38.jpg",
+        models: ["none"],
+        imgurl: "img/live//f8dbaa5260101848c55e12f6975f7e38.jpg",
         vidurl: "https://streamtape.com/e/Vr1arXZWmpTKdeM/",
+		star: true,
         links: [
             { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/128032" },
             { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/Vr1arXZWmpTKdeM/3882_J" }
@@ -873,9 +1055,10 @@ const vidbase = [
         tags: ["SSS Class", "G Cup", "Big Breast", "Livecam"],
         duration: "01:04:00",
         country: "Japan",
-        models: ["none", "stripchat"],
-        imgurl: "https://momoiroadult.com/wp-content/uploads/2026/04/874c176cec131098186ba1e00f227a67.jpg",
+        models: ["none"],
+        imgurl: "img/live/874c176cec131098186ba1e00f227a67.jpg",
         vidurl: "https://streamtape.com/e/Gv4e739pKKU11W4/",
+		star: true,
         links: [
             { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/127916" },
             { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/Gv4e739pKKU11W4/3873_J" }
@@ -889,7 +1072,7 @@ const vidbase = [
         tags: ["SSS Class", "G Cup", "Big Breast", "Livecam", "Un-Masked"],
         duration: "01:21:52",
         country: "Japan",
-        models: ["none", "stripchat"],
+        models: ["none"],
         imgurl: "https://momoiroadult.com/wp-content/uploads/2025/08/fe0a6921e9b53ef35ccaa3173ddbf4ed.jpg",
         vidurl: "https://streamtape.com/e/DQPVMjWmGGfkvyL/",
         links: [
@@ -905,8 +1088,8 @@ const vidbase = [
         tags: ["SSS Class", "G Cup", "Big Breast", "Livecam"],
         duration: "41:10",
         country: "Japan",
-        models: ["none", "stripchat"],
-        imgurl: "https://momoiroadult.com/wp-content/uploads/2026/08/677d694dd5f16074c015a57476cd4167.jpg",
+        models: ["none"],
+        imgurl: "img/live/677d694dd5f16074c015a57476cd4167.jpg",
         vidurl: "https://streamtape.com/e/zGV4ODX4Q0cY3D0/",
         star: true,
         links: [
@@ -922,7 +1105,7 @@ const vidbase = [
         tags: ["SSS Class", "G Cup", "Big Breast", "Livecam", "Un-Masked"],
         duration: "03:37:34",
         country: "Japan",
-        models: ["none", "stripchat"],
+        models: ["none"],
         imgurl: "https://momoiroadult.com/wp-content/uploads/2025/09/f36d4fe8d932ebb1d4d7c32752c75e6d.jpg",
         vidurl: "https://streamtape.com/e/dR2vly1RX1tkWRw/",
         links: [
