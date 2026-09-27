@@ -1,5 +1,382 @@
 const vidbase = [
     {
+        title: "An erotic live chat video featuring a stunningly beautiful woman with an amazing figure—anything goes, from peeing to masturbation.",
+        bio: "超スタイル抜群な美人お姉さんのおしっこにオナニーまで何でもアリなエロライブチャット動画",
+        release: "2025-04-13",
+        category: "Full Uncensored",
+        tags: ["SSS Class", "Big Breast", "Livecam"],
+        duration: "01:30:50",
+        country: "Japan",
+        models: ["Ribon_ch"],
+        imgurl: "img/live/2025100504.webp",
+        vidurl: "https://streamtape.com/v/roxeAmX2maSbVpk/enc_Ribon_ch_Stripchat_2025-04-13-22_32.mp4",
+		star: true,
+        links: [
+            { class: "btn-dark", label: "Alive-Video", url: "https://alive-video.com/livechat/erotic-live-chat-video-of-a-beautiful-woman-with-an-amazing-figure-peeing-and-masturbating/" },
+            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/roxeAmX2maSbVpk/enc_Ribon_ch_Stripchat_2025-04-13-22_32.mp4" }
+        ]
+    },
+    {
+        title: "2025100503Erotic live masturbation video of a wholesome-looking, busty beauty with thick hair growth all the way to her asshole, getting wildly aroused.",
+        bio: "ケツ穴まで剛毛な清楚系の巨乳美人ちゃんが激しく乱れるエッチなオナニーライブ動画",
+        release: "2025-04-15",
+        category: "Full Uncensored",
+        tags: ["SSS Class", "Big Breast", "Livecam"],
+        duration: "02:13:32",
+        country: "Japan",
+        models: ["JP-NAO"],
+        imgurl: "img/live/2025100503.webp",
+        vidurl: "https://streamtape.com/v/27bRazVvm0hZwv4/enc_JP-NAO_Stripchat_2025-04-15-19_42.mp4",
+		star: true,
+        links: [
+            { class: "btn-dark", label: "Alive-Video", url: "https://alive-video.com/livechat/live-video-of-a-beautiful-busty-girl-with-a-hairy-asshole-getting-wild-and-horny/" },
+            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/27bRazVvm0hZwv4/enc_JP-NAO_Stripchat_2025-04-15-19_42.mp4" }
+        ]
+    },
+    {
+        title: "An incredibly erotic live masturbation video featuring a busty beauty who squirts profusely and repeatedly while climaxing with her eyes rolling back.",
+        bio: "白目イキする巨乳美人ちゃんが連続で大量潮吹きするエロすぎオナニーライブ動画",
+        release: "2025-02-26",
+        category: "Full Uncensored",
+        tags: ["SSS Class", "Small Breast", "Livecam"],
+        duration: "01:41:35",
+        country: "Japan",
+        models: ["Sana_pipi"],
+        imgurl: "img/live/20250524.webp",
+        vidurl: "https://streamtape.com/v/41PlwyOVpgTKqBm/enc_Sana_pipi_Stripchat_2025-02-26-00_23.mp4",
+		star: true,
+        links: [
+            { class: "btn-dark", label: "Alive-Video", url: "https://alive-video.com/livechat/live-video-of-a-busty-beauty-with-her-eyes-rolled-back-in-her-head-squirting-a-huge-amount-of-cum-in-a-row-in-this-erotic-masturbation-video/" },
+            { class: "btn-blue", label: "Streamtape 1", url: "https://streamtape.com/v/41PlwyOVpgTKqBm/enc_Sana_pipi_Stripchat_2025-02-26-00_23.mp4" },
+            { class: "btn-blue", label: "Streamtape 2", url: "https://streamtape.com/v/aZo3qm6QkBixvWR/enc_Sana_pipi_Stripchat_2025-02-26-01_22.mp4" }
+        ]
+    },
+    {
+        title: "Live video of a stunningly beautiful girl with a perfect figure spreading her hairless pussy, masturbating, and peeing in full view.",
+        bio: "スタイル抜群な超美少女が無毛マンコ広げてオナニーおしっこ丸見えライブ動画",
+        release: "2024-07-12",
+        category: "Full Uncensored",
+        tags: ["SSS Class", "Big Breast", "Livecam"],
+        duration: "02:26:57",
+        country: "Japan",
+        models: ["none"],
+        imgurl: "img/live/2025072403.webp",
+        vidurl: "https://streamtape.com/v/rAAmW8xBprtbW61/enc_2024-07-12_23_05.mp4",
+		star: true,
+        links: [
+            { class: "btn-dark", label: "Alive-Video", url: "https://alive-video.com/livechat/super-beautiful-girl-with-a-great-figure-spreads-her-hairless-pussy-and-masturbates-while-peeing-in-a-live-video/" },
+            { class: "btn-blue", label: "Streamtape 1", url: "https://streamtape.com/v/rAAmW8xBprtbW61/enc_2024-07-12_23_05.mp4" },
+            { class: "btn-blue", label: "Streamtape 2", url: "https://streamtape.com/v/GXvozd91qmc1XP7/enc_2024-07-12_23_42.mp4" }
+        ]
+    },
+    {
+        title: "[Completely Exposed Erotic Live Chat] A top-tier masked beauty in a sexy, tight mini dress with bare shoulders has arrived! Beautiful buttocks in a thong, a beautiful body, and naked breasts with toys! High quality◎Long duration◎Landscape mode◎",
+        bio: "【丸見えエロライブチャット】肩出しエッロいタイトミニワンピＳＳＳ級マスク美人御降臨！美尻Ｔバック美ボディからの裸美乳おもちゃだ！高画質◎長時間◎横画面◎",
+        release: "2026-02-13",
+        category: "Full Uncensored",
+        tags: ["SSS Class", "Small Breast", "Un-Masked", "Livecam"],
+        duration: "01:16:38",
+        country: "Japan",
+        models: ["Anhan_"],
+        imgurl: "img/live/d9379c8f6d71824cfe7a8deac9f55901.jpg",
+        vidurl: "https://streamtape.com/e/pbM8dgJ389urvwO/",
+		star: false,
+        links: [
+            { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/124118" },
+            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/pbM8dgJ389urvwO/3790_J" }
+        ]
+    },
+    {
+        title: "[Completely Exposed Erotic Live Chat] Idol-level twin-tailed black-brown hair SSS-class cute round-faced girl returns for erotic chat! Close-up M-shaped spread legs & toy masturbation! Seller removed ◎Horizontal screen◎",
+        bio: "【丸見えエロライブチャット】アイドル並ツインテ黒茶髪ＳＳＳ級さいかわ丸顔女子再び降臨エロチャット！接写Ｍ字くぱぁ＆おもちゃオナだ！販売元削除済◎横画面◎",
+        release: "2026-09-26",
+        category: "Full Uncensored",
+        tags: ["SSS Class", "Small Breast", "Un-Masked", "Livecam"],
+        duration: "02:01:44",
+        country: "Japan",
+        models: ["none"],
+        imgurl: "img/live/5a0426a7ba377e40db3fbba763c6c917.jpg",
+        vidurl: "https://streamtape.com/e/2By0lZ2ORGsZ0zK/4140_J",
+		star: true,
+        links: [
+            { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/132289" },
+            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/2By0lZ2ORGsZ0zK/4140_J" }
+        ]
+    },
+    {
+        title: "[Completely Exposed Erotic Live Chat] Live broadcast from the bathroom! Naked, shaved pussy, black bob hair, SSS-class girl erotic chat! Masturbating with lots of toys! Estimated E-cup natural breasts ◎ High quality ◎ Long duration ◎ Landscape mode ◎",
+        bio: "【丸見えエロライブチャット】風呂場から生配信！裸パイパン黒髪ボブＳＳＳ級女子エロチャット！おもちゃ多用オナ！推定Ｅカップ自然乳◎高画質◎長時間◎横画面◎",
+        release: "2026-09-26",
+        category: "Full Uncensored",
+        tags: ["SSS Class", "Small Breast", "Un-Masked", "Livecam"],
+        duration: "33:51",
+        country: "Japan",
+        models: ["Anchan_"],
+        imgurl: "img/live/fe55b254155269f9a806336437654b1f.jpg",
+        vidurl: "https://streamtape.com/e/3d149gg082tdQ4m/",
+		star: false,
+        links: [
+            { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/132254" },
+            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/3d149gg082tdQ4m/4139_J" }
+        ]
+    },
+    {
+        title: "[Completely Exposed Erotic Live Chat] Two legally-aged, cute, and busty girls with estimated G and E cups have arrived for an erotic chat! They'll strip naked immediately, showing their pubic hair and pussy in full view! Live broadcast begins! Long duration ◎ Landscape mode ◎",
+        bio: "【丸見えエロライブチャット】推定Ｇ＆Ｅカップ美巨乳の合法ロリカワＷ女子ギャル降臨エロチャット！即脱ぎハダカ陰毛お○んこ丸見え生配信開始！長時間◎横画面◎",
+        release: "2026-09-27",
+        category: "Full Uncensored",
+        tags: ["SSS Class", "Big Breast", "Livecam"],
+        duration: "01:48:33",
+        country: "Japan",
+        models: ["none"],
+        imgurl: "img/live/cec23c68de817f7e22842eb78fa46c63.jpg",
+        vidurl: "https://streamtape.com/e/2V2LP24GQbfZO4z/",
+		star: false,
+        links: [
+            { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/132314" },
+            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/2V2LP24GQbfZO4z/4145_J" }
+        ]
+    },
+    {
+        title: "[Completely Exposed Erotic Live Chat] A plump, estimated G-cup busty, round-faced, cute girl appears naked in the bathroom for an erotic chat! She'll use a high-speed vibrator on her pussy and feel good! Horizontal screen OK",
+        bio: "【丸見えエロライブチャット】むっちむち推定Ｇカップ美巨乳丸顔ロリカワ女子風呂場に裸降臨エロチャット！高速バイブをアソコに当てて気持ち良くなるぞ！横画面◎",
+        release: "2026-09-27",
+        category: "Full Uncensored",
+        tags: ["SSS Class", "Big Breast", "Livecam"],
+        duration: "48:15",
+        country: "Japan",
+        models: ["none"],
+        imgurl: "img/live/a8ff5c5c1e45c9b2a727f9e7d9df3287.jpg",
+        vidurl: "https://streamtape.com/e/wG9Mw8PQ8dUJyPX/",
+		star: false,
+        links: [
+            { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/132313" },
+            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/wG9Mw8PQ8dUJyPX/4143_J" }
+        ]
+    },
+    {
+        title: "[Completely Exposed Erotic Live Chat] Smartphone in landscape mode! A long-haired, black-haired, curvy amateur girl with a mirror behind her is doing a live broadcast showing off her delicious-looking thighs and huge breasts! Her fingers can't hide her pussy!",
+        bio: "【丸見えエロライブチャット】スマホ横画面！後ろ鏡置いたロング黒髪キレムチ系素人女子が美味しそうな太ももや巨乳の裸体で生ライブだ！隠しきれない指お○んこ！",
+        release: "2024-12-11",
+        category: "Full Uncensored",
+        tags: ["SSS Class", "Big Breast", "Livecam"],
+        duration: "15:00",
+        country: "Japan",
+        models: ["JP-NAO"],
+        imgurl: "img/live/e2989e7a1218a241b16e1a69eddb7eba.jpg",
+        vidurl: "https://streamtape.com/e/vleQkbbGygc4yRW/",
+		star: false,
+        links: [
+            { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/113091" },
+            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/vleQkbbGygc4yRW/572_S" }
+        ]
+    },
+    {
+        title: "[Completely Exposed Erotic Live Chat] A super cute amateur girl with a youthful and bubbly reaction appears naked! She shows off her estimated C-cup breasts and clitoral vibrator! In the second half, she uses a dildo as well!",
+        bio: "【丸見えエロライブチャット】反応が若くてキャピ✕２してる激カワ素人女子が裸で降臨！推定Ｃカップ美乳＆Ｍ字クリ電マ当て披露！続き後半でディルドと二刀流だ！",
+        release: "2023-09-22",
+        category: "Full Uncensored",
+        tags: ["SSS Class", "Small Breast", "Livecam"],
+        duration: "14:12",
+        country: "Japan",
+        models: ["none"],
+        imgurl: "img/live/fc8e12417209f04d6a84f694d7dd6b60.jpg",
+        vidurl: "https://streamtape.com/e/DZB6vbRaBmckZwM/",
+		star: true,
+        links: [
+            { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/103282" },
+            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/DZB6vbRaBmckZwM/2704_J" }
+        ]
+    },
+    {
+        title: "A beautiful young girl with a cute, youthful loli face!! An erotic live-stream video showing her stretching open her tight pussy and thrusting deep inside for a masturbation session.",
+        bio: "ロリ系フェイスの童顔美少女！！小さいマン穴広げてズボズボ挿入オナニー見せるエロライブ動画",
+        release: "2026-09-02",
+        category: "Full Uncensored",
+        tags: ["SSS Class", "Big Breast", "Un-Masked", "Livecam"],
+        duration: "51:07",
+        country: "Japan",
+        models: ["Anchan_"],
+        imgurl: "img/live/2026090203.webp",
+        vidurl: "https://morencius.com/embed/0w4ga0rasw45",
+		star: false,
+        links: [
+            { class: "btn-dark", label: "Adult-Live", url: "https://adult-live.com/masturbation/beautiful-young-girl-with-a-cute-youthful-loli-face-an-erotic-live-stream-video-showing-her-spreading-her-tight-pussy-and-thrusting-deep-inside-for-a-masturbation-show/" },
+            { class: "btn-green", label: "Morencius", url: "https://morencius.com/embed/0w4ga0rasw45" }
+        ]
+    },
+    {
+        title: "Awesome Big Clit Beautiful Woman With Great Style Aizawa_Hikaru Squirts A Lot During Her Masturbation Live Show",
+        bio: "脅威のデカクリ！！スタイル抜群美人「Aizawa_Hikaru」大量潮吹きオナニーライブ",
+        release: "2024-11-01",
+        category: "Full Uncensored",
+        tags: ["SSS Class", "Big Breast", "Livecam"],
+        duration: "57:37",
+        country: "Japan",
+        models: ["Aizawa_Hikaru"],
+        imgurl: "img/live/2024110104.webp",
+        vidurl: "https://www.tokyomotion.net/embed/938f9b7a0695d85ca213",
+		star: true,
+        links: [
+            { class: "btn-dark", label: "Adult-Live", url: "https://adult-live.com/masturbation/awesome-big-clit-beautiful-woman-with-great-style-aizawa_hikaru-squirts-a-lot-during-her-masturbation-live-show/" },
+            { class: "btn-red", label: "Tokyomotion", url: "https://www.tokyomotion.net/embed/938f9b7a0695d85ca213" },
+            { class: "btn-orange", label: "Archivebate", url: "https://archivebate.com/profile/Aizawa_Hikaru" }
+        ]
+    },
+    {
+        title: "[Completely Exposed Erotic Live Chat] High Quality! Horizontal Screen! Estimated G-cup Bowl-shaped Beautiful Huge Breasts! SSS-class Erotic and Cute Girl in a J-style School Uniform Appears! Close-up Urination & Dildo Riding Position & Double Toy Masturbation!",
+        bio: "【丸見えエロライブチャット】高画質！横画面！推定Ｇカップお椀型美巨乳！Ｊ系制服コスＳＳＳ級エロカワ女子御降臨！接写放尿＆ディルド騎乗位＆Ｗおもちゃオナ！",
+        release: "2024-12-20",
+        category: "Full Uncensored",
+        tags: ["SSS Class", "Big Breast", "Livecam"],
+        duration: "57:37",
+        country: "Japan",
+        models: ["Aizawa_Hikaru"],
+        imgurl: "img/live/97419553df3be00e802ca3260b0d3f45.jpg",
+        vidurl: "https://streamtape.com/e/z6y7opZY0LhyOG/",
+		star: true,
+        links: [
+            { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/113485" },
+            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/z6y7opZY0LhyOG/3222_J" }
+        ]
+    },
+    {
+        title: "[Completely Exposed Erotic Live Chat] Estimated G-cup Super Beautiful Big-Breasted Long Straight Black Hair SSS-Class Beauty Appears in Erotic Chat! Excellent Figure, Shaved Pussy, Naked, Dildo Masturbation! High Quality◎Horizontal Screen◎",
+        bio: "【丸見えエロライブチャット】推定Ｇカップ超美巨乳ロングストレート黒髪ＳＳＳ級美人御降臨エロチャット！スタイル抜群パイパン裸ディルドオナ！高画質◎横画面◎",
+        release: "2026-05-21",
+        category: "Full Uncensored",
+        tags: ["SSS Class", "Big Breast", "Un-Masked", "Livecam"],
+        duration: "01:01:43",
+        country: "Japan",
+        models: ["none"],
+        imgurl: "img/live/17858f2269c94ddcdb1ef73e78a97b52.jpg",
+        vidurl: "https://streamtape.com/e/Ge4Ld79V8mIolZ/",
+		star: true,
+        links: [
+            { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/129096" },
+            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/Ge4Ld79V8mIolZ/3948_J" }
+        ]
+    },
+    {
+        title: "[Completely Exposed Erotic Live Chat] A gorgeous G-cup busty woman with an extremely erotic body appears, giving a sticky dildo blowjob in the bathroom! Don't miss the rest of the second half! Excellent figure ◎Horizontal screen◎",
+        bio: "【丸見えエロライブチャット】風呂場でベタベタディルドフェラする推定Ｇカップ美巨乳極エロボディ女子ご降臨！続き後半最後まで見逃すな！スタイル抜群◎横画面◎",
+        release: "2026-04-22",
+        category: "Full Uncensored",
+        tags: ["SSS Class", "Big Breast", "Un-Masked", "Livecam"],
+        duration: "27:06",
+        country: "Japan",
+        models: ["JP-NAO"],
+        imgurl: "img/live/59be9b0bda3325e802464777bc6e13e2.jpg",
+        vidurl: "https://streamtape.com/e/DMW2ZBgR3Kik9L6/",
+		star: true,
+        links: [
+            { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/128414" },
+            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/DMW2ZBgR3Kik9L6/3906_J" }
+        ]
+    },
+    {
+        title: "[Completely Exposed Erotic Live Chat] An erotic chat with a stunningly beautiful woman with estimated G-cup breasts and a great figure, using various dildos to simulate fellatio and insertion! Double toy moaning masturbation! SSS-class ◎Horizontal screen◎",
+        bio: "【丸見えエロライブチャット】いろんなディルド使って疑似フェラ挿入する推定Ｇカップ白巨乳スタイル抜群女子エロチャ！Ｗおもちゃ喘ぎ声オナ！ＳＳＳ級◎横画面◎",
+        release: "2026-09-27",
+        category: "Full Uncensored",
+        tags: ["SSS Class", "Big Breast", "Un-Masked", "Livecam"],
+        duration: "15:12",
+        country: "Japan",
+        models: ["none"],
+        imgurl: "img/live/ef876631200b830c3f8ab2604d9be53f.jpg",
+        vidurl: "https://streamtape.com/e/oe2OaZmVkyuWmO/",
+		star: true,
+        links: [
+            { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/132312" },
+            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/oe2OaZmVkyuWmO/4142_J" }
+        ]
+    },
+    {
+        title: "[Completely Exposed Erotic Live Chat] Seller Removed! Long Duration! Amateur girl with brown braids, naked, M-shaped pubic hair, spreads her shaved pussy wide open and inserts a dildo twice for masturbation! Estimated E-cup ◎",
+        bio: "【丸見えエロライブチャット】販売元削除済！長時間！茶髪三編み裸Ｍ字チャット素人女子がパイパンお○んこくぱぁ＆ディルド挿入ズボ✕２オナニー！推定Ｅカップ◎",
+        release: "2023-04-24",
+        category: "Full Uncensored",
+        tags: ["SSS Class", "Big Breast", "Livecam"],
+        duration: "01:16:27",
+        country: "Japan",
+        models: ["none"],
+        imgurl: "img/live/9f6af26006f00fb1355ac01de993d7e6.jpg",
+        vidurl: "https://streamtape.com/e/A6aqqrD0l0iX7r4/",
+		star: true,
+        links: [
+            { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/99198" },
+            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/A6aqqrD0l0iX7r4/2474_J" }
+        ]
+    },
+    {
+        title: "[Completely Exposed Erotic Live Chat] Seller Removed! High Definition! A cute, fluffy, twin-tailed, brown-haired amateur girl chats, spreads her legs wide, uses a vibrator, and inserts a dildo for masturbation! Simultaneous climax at the end!",
+        bio: "【丸見えエロライブチャット】販売元削除済！高精細！ゆるふわツインテ茶髪チャット素人女子がＭ字お○んこくぱぁ＆電マ当て＆ディルド挿入オナニー！最後は同時！",
+        release: "2023-08-06",
+        category: "Full Uncensored",
+        tags: ["SSS Class", "Big Breast", "Livecam"],
+        duration: "56:40",
+        country: "Japan",
+        models: ["none"],
+        imgurl: "img/live/de459634b64a5252b7a9f44bcb5c3ae8.jpg",
+        vidurl: "https://streamtape.com/e/Qrm477QPlAt8GP/",
+		star: false,
+        links: [
+            { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/101767" },
+            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/Qrm477QPlAt8GP/2636_J" }
+        ]
+    },
+    {
+        title: "[Completely Exposed Erotic Live Chat] Horizontal Screen! A cute masked girl with long brown hair is naked and engages in extreme erotic chat! Simultaneous masturbation with a vibrator and dildo begins! Estimated C-cup breasts ◎ High-pitched moans ◎",
+        bio: "丸見えエロライブチャット】横画面！ロング茶髪ハダカ姿かわいいマスク女子が過激エロチャット！電マ＆ディルド同時オナ開始！推定Ｃカップ美乳◎甲高い喘ぎ声◎",
+        release: "2025-09-18",
+        category: "Full Uncensored",
+        tags: ["SSS Class", "Small Breast", "Livecam"],
+        duration: "18:57",
+        country: "Japan",
+        models: ["none"],
+        imgurl: "img/live/3e8b64e2c3a80ec5f9a8c21fea15f36a.jpg",
+        vidurl: "https://streamtape.com/e/aGxVlZbByPhxvjO/",
+		star: true,
+        links: [
+            { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/121457" },
+            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/aGxVlZbByPhxvjO/3555_J" }
+        ]
+    },
+    {
+        title: "[Completely Exposed Erotic Live Chat] Erotic chat with a fair-skinned girl with long, middle-parted black hair, estimated B-cup breasts, and erect nipples! Shaved pussy spread wide open, using an electric vibrator, and masturbating with a dildo!",
+        bio: "【丸見えエロライブチャット】中分け黒髪ロング推定Ｂカップ勃起乳首姿の白肌女子エロチャット！パイパンＭ字剥きくぱぁ＆電動バイブ当て＆ディルド挿入オナニー！",
+        release: "2025-07-11",
+        category: "Full Uncensored",
+        tags: ["SSS Class", "Small Breast", "Livecam"],
+        duration: "27:30",
+        country: "Japan",
+        models: ["none"],
+        imgurl: "img/live/70444398ba9c582a7953cbc15af0829c.jpg",
+        vidurl: "https://streamtape.com/e/voRG4O2ADZc2gQ/",
+		star: true,
+        links: [
+            { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/119038" },
+            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/voRG4O2ADZc2gQ/661_S" }
+        ]
+    },
+    {
+        title: "[Completely Exposed Erotic Live Chat] Cute, innocent-looking girl with black and brown bob haircut in an erotic chat! From the middle of the video, she goes naked, uses a vibrator in an M-shape, and inserts a dildo for masturbation! Great moans ◎ Long duration ◎ High definition ◎ Horizontal screen ◎",
+        bio: "【丸見えエロライブチャット】黒茶髪ボブ清楚系かわいい女子エロチャット！中盤からハダカＭ字電マ当て＆ディルド挿入オナニー！喘ぎ声◎長時間◎高精細◎横画面◎",
+        release: "2026-09-27",
+        category: "Full Uncensored",
+        tags: ["SSS Class", "Small Breast", "Livecam"],
+        duration: "01:04:04",
+        country: "Japan",
+        models: ["none"],
+        imgurl: "img/live/6149224b969711e1da659cad1b0ec660.webp",
+        vidurl: "https://streamtape.com/e/YB8g83MPamivYza/",
+		star: false,
+        links: [
+            { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/132292" },
+            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/YB8g83MPamivYza/900_S" }
+        ]
+    },
+    {
         title: "【Full-view erotic live chat 】 Black hair braids estimated G cup whip beautiful big tits girl erotic chat! The second half concludes! A naked M-shaped toy masturbation that desperately tries to hide its face! Image quality ◎horizontal screen◎",
         bio: "【丸見えエロライブチャット】黒髪三つ編み推定Ｇカップムチ美巨乳女子エロチャット！続き後半完結編！顔を必死で隠そうとする裸Ｍ字おもちゃオナ！画質◎横画面◎",
         release: "2025-12-05",
@@ -341,14 +718,14 @@ const vidbase = [
     },
     {
         title: "[Completely Exposed Erotic Live Chat] Long session! Dark-skinned, SSS-class super cute beauty boldly spreads her legs in an M-shape and inserts a toy for masturbation! Part 1! Seller removed ◎ Estimated C-cup breasts ◎ Great figure ◎",
-        bio: "",
+        bio: "【丸見えエロライブチャット】長時間！浅黒肌ＳＳＳ級激カワ美人女子が大胆Ｍ字剥きクパ＆おもちゃ挿入オナ！第一弾！販売元削除済◎推定Ｃカップ美乳◎スタイル◎",
         release: "2024-12-04",
         category: "Full Uncensored",
         tags: ["SSS Class", "Cute", "Small Breast", "Livecam"],
         duration: "01:06:57",
         country: "Japan",
-        models: ["none", "fc2 live"],
-        imgurl: "https://momoiroadult.com/wp-content/uploads/2024/12/c4bc9f9ebc1e4022949b5abb7a6b6d2f.jpg",
+        models: ["none"],
+        imgurl: "img/live/c4bc9f9ebc1e4022949b5abb7a6b6d2f.jpg",
         vidurl: "https://streamtape.com/e/VPQQzv7zOgsO2B/",
 		star: true,
         links: [
@@ -358,14 +735,14 @@ const vidbase = [
     },
     {
         title: "[Completely Exposed Erotic Live Chat] SSS-class super cute beauty boldly spreads her legs in an M-shape and inserts a toy for masturbation! Part 2! Don't miss this top-notch pussy until the very end! Estimated C-cup beautiful breasts◎",
-        bio: "",
+        bio: "【丸見えエロライブチャット】ＳＳＳ級激カワ美人女子が大胆Ｍ字剥きクパ＆おもちゃ挿入オナ！第二弾！超上物のアソコを最後まで見逃すなよな！推定Ｃカップ美乳◎",
         release: "2024-12-12",
         category: "Full Uncensored",
         tags: ["SSS Class", "Cute", "Small Breast", "Livecam"],
         duration: "01:07:33",
         country: "Japan",
-        models: ["none", "fc2 live"],
-        imgurl: "https://momoiroadult.com/wp-content/uploads/2024/12/0afd9abd19bc2c6082b77b92672ae9cf.jpg",
+        models: ["none"],
+        imgurl: "img/live/0afd9abd19bc2c6082b77b92672ae9cf.jpg",
         vidurl: "https://streamtape.com/e/3oyQD4pm6kHdVgM/",
 		star: true,
         links: [

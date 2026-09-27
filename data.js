@@ -1,5 +1,51 @@
 const movieData = [
 	{
+        title: "FC2-PPV-4979341",
+        code: "Full Uncensored",
+        model: ["Petite 18-year-old Mei-chan"],
+        studio: "Fc2ppv",
+        region: "Japan",
+        releaseDate: "2026-09-22",
+        duration: "02:37:24",
+        imgurl: "img/fc2ppv/4979341.webp",
+        vidurl: "",
+        bio: "【FC2史上No.1殿堂確定美◯女。至高の初アナルドキュメント大絶叫無限の涙】誰もが恋する坂道アイドルFace148cm小柄18歳なつみちゃん20cmオーバー巨根悶絶中出し、AFは理性を焼く禁断の光景",
+        tags: ["Uncensored", "Creampie", "Small Tits"],
+		downloads: [
+            { label: "Original", url: "https://adult.contents.fc2.com/article/4979341/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Ppvdatabank", url: "https://ppvdatabank.com/article/4979341/", bgHex: "#0ca5e2", textHex: "#ffffff" },
+            { label: "123av", url: "https://123av.com/en/v/fc2-ppv-4979341", bgHex: "#e94560", textHex: "#ffffff" },
+            { label: "Javfc2", url: "https://javfc2.xyz/watch/Fc2ppv-4979341.html", bgHex: "#14f557", textHex: "#ffffff" },
+            { label: "Supjav", url: "https://supjav.com/460407.html", bgHex: "#e94560", textHex: "#ffffff" }
+        ],
+        comments: [
+            { user: "Dax", text: "", date: "now" }
+		]
+    },
+	{
+        title: "FC2-PPV-4980803",
+        code: "Full Uncensored",
+        model: ["Serika-chan"],
+        studio: "Fc2ppv",
+        region: "Japan",
+        releaseDate: "2026-09-25",
+        duration: "01:05:23",
+        imgurl: "img/fc2ppv/4980803.webp",
+        vidurl: "",
+        bio: "【無】「三穴全部に中だし！」８頭身モデル系美女なのにド変態⤴美乳美尻美脚すべてが完璧でゴックンAF中だしおま〇こ中だし全部OK！のパーフェクトガール⤴　※特典高画質",
+        tags: ["Uncensored", "Creampie", "Big Tits"],
+		downloads: [
+            { label: "Original", url: "https://adult.contents.fc2.com/article/4980803/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Ppvdatabank", url: "https://ppvdatabank.com/article/4980803/", bgHex: "#0ca5e2", textHex: "#ffffff" },
+            { label: "123av", url: "https://123av.com/en/v/fc2-ppv-4980803", bgHex: "#e94560", textHex: "#ffffff" },
+            { label: "Javfc2", url: "https://javfc2.xyz/watch/Fc2ppv-4980803.html", bgHex: "#14f557", textHex: "#ffffff" },
+            { label: "Supjav", url: "https://supjav.com/460591.html", bgHex: "#e94560", textHex: "#ffffff" }
+        ],
+        comments: [
+            { user: "Dax", text: "", date: "now" }
+		]
+    },
+	{
         title: "Busty Colombian Latina MILF POV ft. Kourtney Love",
         code: "Full Uncensored",
         model: ["yuahentai"],
