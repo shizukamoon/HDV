@@ -2817,14 +2817,14 @@ const movieData = [
         vidurl: "https://sample-1pondo.eroxjapanz.com/sample/movies/091815_155/480p.mp4",
         bio: "余裕で三連発できちゃう極上の女優 木村美羽！",
         tags: ["Uncensored", "Creampie", "Small Tits", "Real Sperm Pussy Filled"],
-		downloads: {
-            original: "https://www.1pondo.tv/movies/091815_155/",
-            alt1: "https://dream.hiyopi.com/091815_155/",
-            alt2: "https://18av.mm-cg.com/zh/uncensored_content/27767/091815_155.html",
-            alt3: "https://example.com/download/alt5-001",
-            alt4: "https://example.com/download/alt5-001",
-            alt5: "https://example.com/download/alt5-001"
-        }
+		downloads: [
+            { label: "Original", url: "https://en.1pondo.tv/movies/091815_155/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Dream Hiyopi", url: "https://dream.hiyopi.com/091815_155/", bgHex: "#e20c82", textHex: "#ffffff" },
+            { label: "123av", url: "https://123av.com/en/v/1pondo-091815_155", bgHex: "#e94560", textHex: "#ffffff" }
+        ],
+        comments: [
+            { user: "Dax", text: "3 crt", date: "now" }
+		]
     },
     {
         title: "Caribbeancom-090614-684",
