@@ -2796,14 +2796,14 @@ const movieData = [
         vidurl: "https://smovie.caribbeancom.com/sample/movies/072015-925/480p.mp4",
         bio: "視界侵入！たちまち挿入！～グラビアの撮影じゃないんですかぁ～",
         tags: ["Uncensored", "Creampie", "Small Tits", "Real Sperm Pussy Filled"],
-		downloads: {
-            original: "https://www.caribbeancom.com/moviepages/072015-925/index.html",
-            alt1: "https://caribbeancom.hiyopi.com/072015-925/",
-            alt2: "https://123av.com/en/v/caribbeancom-072015-925",
-            alt3: "https://18av.mm-cg.com/zh/chinese_content/48796/072015-925.html",
-            alt4: "https://example.com/download/alt4-001",
-            alt5: "https://example.com/download/alt5-001"
-        }
+		downloads: [
+            { label: "Original", url: "https://www.caribbeancom.com/eng/moviepages/072015-925/index.html", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Hiyopi", url: "https://caribbeancom.hiyopi.com/072015-925/", bgHex: "#0ce24c", textHex: "#ffffff" },
+            { label: "123av", url: "https://123av.com/en/v/caribbeancom-072015-925", bgHex: "#e94560", textHex: "#ffffff" }
+        ],
+        comments: [
+            { user: "Dax", text: "3 crt", date: "now" }
+		]
     },
     {
         title: "1pondo-091815_155",
