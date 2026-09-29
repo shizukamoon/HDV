@@ -10,7 +10,7 @@ const movieData = [
         imgurl: "img/fc2ppv/3106735.webp",
         vidurl: "",
         bio: "【無修正】【3回射精】【合法ろり】半年前に卒業したばかりの18歳。生々しいウブ毛の未成熟オマンコを極太チンポでネリネリと破壊！初めて開通した子宮に大量のザーメンを注入。ラストはイキ狂ってダブルピース",
-        tags: ["Uncensored", "Creampie", "Small Tits"],
+        tags: ["Uncensored", "Creampie", "Small Tits", "Real Sperm Pussy Filled"],
 		downloads: [
             { label: "Original", url: "https://adult.contents.fc2.com/article/3106735/", bgHex: "#1a1a2e", textHex: "#ffffff" },
             { label: "Ppvdatabank", url: "https://ppvdatabank.com/article/3106735/", bgHex: "#0ca5e2", textHex: "#ffffff" },
@@ -20,7 +20,7 @@ const movieData = [
             { label: "Supjav", url: "https://18av.mm-cg.com/en/uncensored_content/303800/fc2-ppv-3106735.html", bgHex: "#87CEEB", textHex: "#ffffff" }
         ],
         comments: [
-            { user: "Dax", text: "", date: "now" }
+            { user: "Dax", text: "1 crt", date: "now" }
 		]
     },
 	{
