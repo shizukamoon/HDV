@@ -2799,7 +2799,8 @@ const movieData = [
 		downloads: [
             { label: "Original", url: "https://www.caribbeancom.com/eng/moviepages/072015-925/index.html", bgHex: "#1a1a2e", textHex: "#ffffff" },
             { label: "Hiyopi", url: "https://caribbeancom.hiyopi.com/072015-925/", bgHex: "#0ce24c", textHex: "#ffffff" },
-            { label: "123av", url: "https://123av.com/en/v/caribbeancom-072015-925", bgHex: "#e94560", textHex: "#ffffff" }
+            { label: "123av", url: "https://123av.com/en/v/caribbeancom-072015-925", bgHex: "#e94560", textHex: "#ffffff" },
+            { label: "18avmm", url: "https://18h.mm-cg.com/zh/uncensored_content/27767/091815_155.html", bgHex: "#87CEEB", textHex: "#ffffff" }
         ],
         comments: [
             { user: "Dax", text: "3 crt", date: "now" }
@@ -2820,7 +2821,8 @@ const movieData = [
 		downloads: [
             { label: "Original", url: "https://en.1pondo.tv/movies/091815_155/", bgHex: "#1a1a2e", textHex: "#ffffff" },
             { label: "Dream Hiyopi", url: "https://dream.hiyopi.com/091815_155/", bgHex: "#e20c82", textHex: "#ffffff" },
-            { label: "123av", url: "https://123av.com/en/v/1pondo-091815_155", bgHex: "#e94560", textHex: "#ffffff" }
+            { label: "123av", url: "https://123av.com/en/v/1pondo-091815_155", bgHex: "#e94560", textHex: "#ffffff" },
+            { label: "18avmm", url: "https://18h.mm-cg.com/zh/uncensored_content/48796/072015-925.html", bgHex: "#87CEEB", textHex: "#ffffff" }
         ],
         comments: [
             { user: "Dax", text: "3 crt", date: "now" }
