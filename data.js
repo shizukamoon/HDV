@@ -17,7 +17,7 @@ const movieData = [
             { label: "123av", url: "https://123av.com/en/v/fc2-ppv-3241576", bgHex: "#e94560", textHex: "#ffffff" },
             { label: "Javfc2", url: "https://javfc2.xyz/watch/Fc2ppv-3241576.html", bgHex: "#14f557", textHex: "#ffffff" },
             { label: "Supjav", url: "https://supjav.com/205500.html", bgHex: "#e94560", textHex: "#ffffff" },
-            { label: "Supjav", url: "https://18av.mm-cg.com/en/uncensored_content/303800/fc2-ppv-3106735.html", bgHex: "#87CEEB", textHex: "#ffffff" }
+            { label: "18avmm", url: "https://18av.mm-cg.com/en/uncensored_content/106664/fc2-ppv-3241576.html", bgHex: "#87CEEB", textHex: "#ffffff" }
         ],
         comments: [
             { user: "Dax", text: "1 crt", date: "now" }
@@ -41,7 +41,7 @@ const movieData = [
             { label: "123av", url: "https://123av.com/en/v/fc2-ppv-3106735", bgHex: "#e94560", textHex: "#ffffff" },
             { label: "Javfc2", url: "https://javfc2.xyz/watch/Fc2ppv-3106735.html", bgHex: "#14f557", textHex: "#ffffff" },
             { label: "Supjav", url: "https://supjav.com/182348.html", bgHex: "#e94560", textHex: "#ffffff" },
-            { label: "Supjav", url: "https://18av.mm-cg.com/en/uncensored_content/303800/fc2-ppv-3106735.html", bgHex: "#87CEEB", textHex: "#ffffff" }
+            { label: "18avmm", url: "https://18av.mm-cg.com/en/uncensored_content/303800/fc2-ppv-3106735.html", bgHex: "#87CEEB", textHex: "#ffffff" }
         ],
         comments: [
             { user: "Dax", text: "1 crt", date: "now" }
