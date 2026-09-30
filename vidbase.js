@@ -1,5 +1,39 @@
 const vidbase = [
     {
+        title: "【Full-view erotic live chat 】 A beautiful model with impressive eyes and SSS-class black hair descends into erotic chat! Nipple toys & large dildo machines! The final part of the second half of the series is a dodeca dildo! Horizontal screen◎",
+        bio: "【丸見えエロライブチャット】目ヂカラ凄いモデル並ＳＳＳ級黒髪美人降臨エロチャット！乳首おもちゃ＆大型ディルド機械！続きの後半最後ドデカディルド！横画面◎",
+        release: "2026-09-30",
+        category: "Full Uncensored",
+        tags: ["SSS Class", "Big Breast", "Livecam", "Un-Masked"],
+        duration: "25:04",
+        country: "Japan",
+        models: ["R-bonbon"],
+        imgurl: "img/live/4bd05c0c9bb0f55982cb1250b1c345e4.jpg",
+        vidurl: "https://streamtape.com/e/4BldwDYaPRirJb/",
+		star: true,
+        links: [
+            { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/132389" },
+            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/4BldwDYaPRirJb/4151_J" }
+        ]
+    },
+    {
+        title: "【Full-view erotic live chat 】 Estimated F cup, beautiful breasts, long black hair, erotic body, female, erotic chat descending! Mid-sized fluffy natural pubic hair M-shaped toy! Don't miss the face-out! Long time ◎side screen◎",
+        bio: "【丸見えエロライブチャット】推定Ｆカップ美乳ロング黒髪エロボディ女子降臨エロチャット！中盤ふっさ自然陰毛Ｍ字おもちゃ！顔出し見逃すなよ！長時間◎横画面◎",
+        release: "2026-09-30",
+        category: "Full Uncensored",
+        tags: ["SSS Class", "Big Breast", "Livecam", "Un-Masked"],
+        duration: "01:16:55",
+        country: "Japan",
+        models: ["none"],
+        imgurl: "img/live/0e63cbdf1320e65ce7d552b1622fcba3.jpg",
+        vidurl: "https://streamtape.com/e/eLeBv4Yjv0Cwrk/",
+		star: true,
+        links: [
+            { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/132431" },
+            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/v/eLeBv4Yjv0Cwrk/4152_J" }
+        ]
+    },
+    {
         title: "An erotic live chat video featuring a stunningly beautiful woman with an amazing figure—anything goes, from peeing to masturbation.",
         bio: "超スタイル抜群な美人お姉さんのおしっこにオナニーまで何でもアリなエロライブチャット動画",
         release: "2025-04-13",
