@@ -1,5 +1,56 @@
 const vidbase = [
     {
+        title: "【Full-view erotic live chat 】 Black-haired ponytail girl erotic chat with puffed blouse and shoulders that show bra strings! Dressed in shiny pink underwear and naked, I guess I'll win the loincloth! Sold by ◎Extra Long Time ◎Side Screen◎",
+        bio: "【丸見えエロライブチャット】ブラ紐見える肩パフブラウス黒髪ポニテ女子エロチャット！艶ピンク下着脱ぎ裸ラブンス当てオナだ！販売元削除済◎超長時間◎横画面◎",
+        release: "2026-10-03",
+        category: "Full Uncensored",
+        tags: ["SSS Class", "Big Breast", "Livecam", "Un-Masked"],
+        duration: "02:23:35",
+        country: "Japan",
+        models: ["none"],
+        imgurl: "img/live/146b110f6e71639d88b665270f7d3354.jpg",
+        vidurl: "https://streamtape.com/e/MA1oVPaoercmXeo/",
+		star: true,
+        links: [
+            { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/132470" },
+            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/e/MA1oVPaoercmXeo/4153_J" }
+        ]
+    },
+    {
+        title: "【Full-view erotic live chat 】 Perfect looks SSS-class sexy body beauty returns to erotic chat! This is a super close-up masturbation that can't be hidden by a straw! Black knee-high ◎long time ◎ side screen◎",
+        bio: "【丸見えエロライブチャット】完璧ルックスＳＳＳ級セクシーボディ美人再降臨エロチャット！ストローじゃ隠しきれない超接写オナだ！黒ニーハイ◎長時間◎横画面◎",
+        release: "2026-10-03",
+        category: "Full Uncensored",
+        tags: ["SSS Class", "Big Breast", "Livecam", "Un-Masked"],
+        duration: "01:47:54",
+        country: "Japan",
+        models: ["none"],
+        imgurl: "img/live/cbb7c461d839c2f2cafb8e6d748a8887.jpg",
+        vidurl: "https://streamtape.com/e/qO1mj3ZLy3IzV6e/",
+		star: true,
+        links: [
+            { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/132469" },
+            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/e/qO1mj3ZLy3IzV6e/902_S" }
+        ]
+    },
+    {
+        title: "【Full-view erotic live chat 】 Plump, extremely white skin, cat ears, long black hair mask, female erotic chat! Super close-up shaved toy masturbation! Sold by ◎high definition ◎ landscape screen◎",
+        bio: "【丸見えエロライブチャット】むっちむち超白肌の猫耳ロング黒髪マスク女子エロチャット！超接写パイパンおもちゃ当てオナニーだ！販売元削除済◎高精細◎横画面◎",
+        release: "2026-10-03",
+        category: "Full Uncensored",
+        tags: ["SSS Class", "Big Breast", "Livecam"],
+        duration: "54:13",
+        country: "Japan",
+        models: ["none"],
+        imgurl: "img/live/fd770137219b8e2764884df67e15367e.jpg",
+        vidurl: "https://streamtape.com/e/74ezBP8kZLFMyP/",
+		star: true,
+        links: [
+            { class: "btn-dark", label: "Momoiroadult", url: "https://momoiroadult.com/archives/132468" },
+            { class: "btn-blue", label: "Streamtape", url: "https://streamtape.com/e/74ezBP8kZLFMyP/4152_J" }
+        ]
+    },
+    {
         title: "【Full-view erotic live chat 】 A beautiful model with impressive eyes and SSS-class black hair descends into erotic chat! Nipple toys & large dildo machines! The final part of the second half of the series is a dodeca dildo! Horizontal screen◎",
         bio: "【丸見えエロライブチャット】目ヂカラ凄いモデル並ＳＳＳ級黒髪美人降臨エロチャット！乳首おもちゃ＆大型ディルド機械！続きの後半最後ドデカディルド！横画面◎",
         release: "2026-09-30",
