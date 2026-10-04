@@ -98,7 +98,8 @@ const movieData = [
 		downloads: [
             { label: "Original", url: "https://video.dmm.co.jp/av/content/?id=1namh00068", bgHex: "#1a1a2e", textHex: "#ffffff" },
             { label: "Javct", url: "https://javct.net/v/namh-068-rm", bgHex: "#FFD700", textHex: "#000000" },
-            { label: "123av", url: "https://123av.com/en/v/namh-068-uncensored-leaked", bgHex: "#e94560", textHex: "#ffffff" }
+            { label: "123av", url: "https://123av.com/en/v/namh-068-uncensored-leaked", bgHex: "#e94560", textHex: "#ffffff" },
+            { label: "Supjav", url: "https://supjav.com/440785.html", bgHex: "#e94560", textHex: "#ffffff" }
         ],
         comments: [
             { user: "Dax", text: "", date: "now" }
