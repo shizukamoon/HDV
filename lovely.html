@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HDV.com - Single Page Application</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231a1a2e'/><text x='50%' y='57%' dominant-baseline='middle' text-anchor='middle' font-family='Poppins, sans-serif' font-weight='700' font-size='40' fill='%23e94560'>HDV</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+        * { scrollbar-width: thin; scrollbar-color: #cbd5e1 #f1f1f1; }
+
+        html, body { overflow-x: hidden; width: 100%; max-width: 100vw; }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1a1a2e;
+            padding: 15px 30px;
+            color: white;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        .nav-brand {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #e94560;
+            letter-spacing: 1px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .nav-brand span.dom { color: #fff; }
+        .nav-links { display: flex; gap: 20px; align-items: center; }
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.3s;
+            cursor: pointer;
+        }
+        .nav-links a:hover, .nav-links a.active { color: #e94560; }
+
+        .view-section { display: none; flex: 1; width: 100%; }
+        .view-section.active { display: block; }
+
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        .page-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .page-title { font-size: 1.4rem; font-weight: 700; color: #1a1a2e; }
+        .page-count { font-size: 0.9rem; color: #777; font-weight: 500; }
+
+        .model-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+            gap: 18px;
+            margin-bottom: 30px;
+        }
+        .model-img-card {
+            position: relative;
+            background: #f4f7f6;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            aspect-ratio: 3 / 4;
+            display: flex;
+            flex-direction: column;
+        }
+        .poster-area {
+            flex: 1;
+            min-height: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            container-type: size;
+            position: relative;
+            overflow: hidden;
+        }
+        .poster-bg {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+            filter: blur(18px) saturate(1.1);
+            transform: scale(1.25);
+        }
+        .card-name {
+            --bar: 34px;
+            width: 0;
+            min-width: 100%;
+            height: var(--bar);
+            line-height: var(--bar);
+            background: #000;
+            color: #fff;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-align: center;
+            padding: 0 8px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .img-wrap {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            max-width: 100cqw;
+            max-height: 100cqh;
+        }
+        .model-img-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(233,69,96,0.25);
+        }
+        .model-img-card img {
+            --bar: 34px;
+            --r: 0.75;
+            display: block;
+            height: auto;
+            width: min(100cqw, calc((100cqh - var(--bar)) * var(--r)));
+            transition: transform 0.3s ease;
+        }
+        .model-img-card:hover img { transform: scale(1.04); }
+
+        .ribbon-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 95px;
+            height: 95px;
+            overflow: hidden;
+            z-index: 10;
+            pointer-events: none;
+        }
+        .ribbon-badge {
+            position: absolute;
+            top: 17px;
+            left: -32px;
+            width: 130px;
+            padding: 4px 0;
+            background-color: #000000;
+            color: #ffffff;
+            font-size: 0.6rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 0.5px;
+            transform: rotate(-45deg);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+            text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+        .page-btn {
+            padding: 8px 14px;
+            border: 1px solid #ddd;
+            background-color: white;
+            color: #333;
+            cursor: pointer;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        .page-btn:hover:not(:disabled) { background-color: #f1f1f1; border-color: #bbb; }
+        .page-btn.active { background-color: #e94560; color: white; border-color: #e94560; }
+        .page-btn:disabled { background-color: #f9f9f9; color: #ccc; border-color: #eee; cursor: not-allowed; }
+        .page-dots { padding: 8px 6px; color: #777; font-weight: 500; }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: none;
+            border: none;
+            color: #1a1a2e;
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            padding: 8px 4px;
+            margin-bottom: 15px;
+        }
+        .back-btn:hover { color: #e94560; }
+
+        .detail-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 320px 1fr;
+            gap: 35px;
+            align-items: start;
+        }
+        .detail-photo-wrap {
+            position: relative;
+        }
+        .detail-photo {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 4px solid #e94560;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+            cursor: zoom-in;
+            background: #ddd;
+            display: block;
+        }
+        .photo-hint {
+            text-align: center;
+            font-size: 0.78rem;
+            color: #777;
+            margin-top: 6px;
+        }
+        .detail-name { font-size: 2rem; font-weight: 700; color: #1a1a2e; margin-bottom: 4px; }
+        .detail-sub { font-size: 0.95rem; color: #777; margin-bottom: 18px; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+        .chip {
+            background-color: #e94560;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 5px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        .chip.dark { background-color: #0f3460; }
+        .chip.tag { background-color: #f1f2f6; color: #1a1a2e; border-radius: 20px; padding: 5px 12px; }
+        .detail-section-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #1a1a2e;
+            border-bottom: 2px solid #f4f7f6;
+            padding-bottom: 8px;
+            margin: 22px 0 12px;
+        }
+        .detail-bio { font-size: 0.95rem; color: #555; line-height: 1.7; }
+        .data-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        .data-item {
+            background: #f8f9fa;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 10px 14px;
+        }
+        .data-label { font-size: 0.72rem; color: #888; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+        .data-value { font-size: 0.95rem; color: #1a1a2e; font-weight: 600; margin-top: 2px; word-break: break-word; }
+        .tag-wrap { display: flex; gap: 8px; flex-wrap: wrap; }
+
+        /* PENGATURAN UTAMA: Default PC (Desktop) tampil di kiri, Mobile disembunyikan total */
+        .desktop-buttons-wrap { display: block; margin-top: 15px; }
+        .mobile-buttons-wrap { display: none !important; }
+
+        #photoViewer {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.9);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 5000;
+            padding: 20px;
+        }
+        #photoViewer .viewer-content {
+            position: relative;
+            max-width: 95vw;
+            max-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #photoViewer img { max-width: 90vw; max-height: 85vh; object-fit: contain; border-radius: 8px; }
+        #photoViewer .close-btn {
+            position: absolute;
+            top: 14px;
+            right: 20px;
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 2.4rem;
+            cursor: pointer;
+            z-index: 5010;
+        }
+        .viewer-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: none;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s;
+            z-index: 5010;
+        }
+        .viewer-nav:hover { background: rgba(255, 255, 255, 0.4); }
+        .viewer-prev { left: 10px; }
+        .viewer-next { right: 10px; }
+        .viewer-counter {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            background: rgba(0,0,0,0.6);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+
+        .search-toggle {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 1.1rem;
+            cursor: pointer;
+            padding: 4px 6px;
+            transition: color 0.3s;
+        }
+        .search-toggle:hover, .search-toggle.active { color: #e94560; }
+        .search-dropdown {
+            position: absolute;
+            top: calc(100% + 8px);
+            right: 20px;
+            width: min(440px, calc(100vw - 24px));
+            background: #fff;
+            color: #333;
+            border-radius: 12px;
+            box-shadow: 0 12px 32px rgba(0,0,0,0.28);
+            display: none;
+            flex-direction: column;
+            overflow: hidden;
+            z-index: 1100;
+        }
+        .search-dropdown.open { display: flex; }
+        .search-box {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 14px;
+            border-bottom: 1px solid #eee;
+        }
+        .search-box > i { color: #999; }
+        .search-box input {
+            flex: 1;
+            min-width: 0;
+            border: none;
+            outline: none;
+            font-size: 0.95rem;
+            background: transparent;
+            color: #1a1a2e;
+        }
+        .search-clear {
+            display: none;
+            border: none;
+            background: none;
+            color: #999;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .search-clear.show { display: block; }
+        .search-clear:hover { color: #e94560; }
+        .search-results { max-height: min(60vh, 420px); overflow-y: auto; }
+        .search-msg { padding: 22px 16px; text-align: center; color: #888; font-size: 0.88rem; }
+        .search-count { padding: 8px 14px; font-size: 0.75rem; color: #888; background: #f8f9fa; font-weight: 600; }
+        .search-item {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            width: 100%;
+            padding: 10px 14px;
+            border: none;
+            border-bottom: 1px solid #f1f1f1;
+            background: #fff;
+            text-align: left;
+            cursor: pointer;
+        }
+        .search-item:hover, .search-item.active { background: #fdf0f2; }
+        .search-item img {
+            width: 44px;
+            height: 58px;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 6px;
+            background: #ddd;
+            flex-shrink: 0;
+        }
+        .search-item-text { min-width: 0; }
+        .search-item-name { font-weight: 600; font-size: 0.92rem; color: #1a1a2e; }
+        .search-item-name mark { background: #ffe1e6; color: #e94560; border-radius: 3px; padding: 0 1px; }
+        .search-item-sub { font-size: 0.78rem; color: #777; margin-top: 2px; }
+        .search-item-match { font-size: 0.72rem; color: #e94560; margin-top: 3px; }
+
+        .footer {
+            background-color: #1a1a2e;
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+            margin-top: auto;
+        }
+        .footer-logo { font-size: 1.5rem; font-weight: 700; color: #e94560; margin-bottom: 8px; }
+        .footer-logo span { color: #fff; }
+        .footer p { font-size: 0.85rem; color: #bbb; }
+
+        /* KHUSUS MODE HP (Layar <= 768px): Sembunyikan kiri, Tampilkan di bawah nama */
+        @media (max-width: 768px) {
+            .navbar { padding: 12px 16px; }
+            .nav-brand { font-size: 1.4rem; }
+            .model-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+            .detail-card { grid-template-columns: 1fr; padding: 18px; gap: 20px; }
+            .detail-photo { max-width: 300px; margin: 0 auto; display: block; }
+            .detail-name { font-size: 1.5rem; }
+            .data-grid { grid-template-columns: 1fr; }
+            .viewer-nav { width: 35px; height: 35px; font-size: 1rem; }
+
+            .desktop-buttons-wrap { display: none !important; }
+            .mobile-buttons-wrap { display: block !important; margin-top: 15px; margin-bottom: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a class="nav-brand" onclick="navigateTo('all')">HDV<span class="dom">.com</span></a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a id="nav-all" onclick="navigateTo('all')">All Models</a>
+            <a id="nav-fav" onclick="navigateTo('fav')"><i class="fa-solid fa-heart"></i> Favorites</a>
+            <button type="button" class="search-toggle" id="searchToggle" aria-label="Cari" title="Cari">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+        <div id="searchDropdown" class="search-dropdown" role="dialog" aria-label="Pencarian">
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input id="searchInput" type="text" placeholder="Cari nama, kota, studio, genre, bio..." autocomplete="off">
+                <button type="button" id="searchClear" class="search-clear" aria-label="Hapus"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="search-results" id="searchResults"></div>
+        </div>
+    </nav>
+
+    <div id="listView" class="view-section active">
+        <main class="container">
+            <div class="page-head">
+                <h2 class="page-title" id="pageTitle"></h2>
+                <span class="page-count" id="pageCount"></span>
+            </div>
+            <div class="model-grid" id="modelGrid"></div>
+            <div class="pagination" id="pagination"></div>
+        </main>
+    </div>
+
+    <div id="detailView" class="view-section">
+        <main class="container">
+            <button type="button" class="back-btn" onclick="goBack()">
+                <i class="fa-solid fa-arrow-left"></i> Kembali ke Daftar
+            </button>
+            <div class="detail-card">
+                <!-- Kolom Kiri: Foto Utama + Tombol Custom (Khusus Desktop/PC) -->
+                <div class="detail-photo-col">
+                    <div class="detail-photo-wrap">
+                        <img id="detailPhoto" class="detail-photo" src="" alt="" onclick="openPhotoViewer(currentPhotoIndex)">
+                        <div class="photo-hint" id="photoHint">Klik foto untuk melihat galeri</div>
+                    </div>
+                    <!-- Tombol Custom Desktop (di sebelah kiri, di bawah foto) -->
+                    <div class="desktop-buttons-wrap" id="desktopButtonsContainer" style="display: none;">
+                        <h3 class="detail-section-title" id="titleDesktopButtons">Links</h3>
+                        <div class="tag-wrap" id="detailButtonsDesktop" style="display: flex; gap: 10px; flex-wrap: wrap;"></div>
+                    </div>
+                </div>
+
+                <!-- Kolom Kanan: Informasi, Nama, & Bio -->
+                <div>
+                    <h1 class="detail-name" id="detailName"></h1>
+                    <div class="detail-sub" id="detailSub"></div>
+
+                    <!-- Tombol Custom Mobile (Tampil di bawah nama khusus HP) -->
+                    <div class="mobile-buttons-wrap" id="mobileButtonsContainer" style="display: none;">
+                        <h3 class="detail-section-title" style="margin-top:0; font-size:0.95rem;">Links</h3>
+                        <div class="tag-wrap" id="detailButtonsMobile" style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px;"></div>
+                    </div>
+
+                    <h3 class="detail-section-title" style="margin-top:0;">Biography</h3>
+                    <div class="detail-bio" id="detailBio"></div>
+
+                    <h3 class="detail-section-title">Profile Data</h3>
+                    <div class="data-grid" id="detailData"></div>
+
+                    <h3 class="detail-section-title">Genres</h3>
+                    <div class="tag-wrap" id="detailTags"></div>
+
+                    <h3 class="detail-section-title">Social Media</h3>
+                    <div class="data-grid" id="detailSocial"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="photoViewer" onclick="closePhotoViewer()">
+        <button type="button" class="close-btn" onclick="closePhotoViewer()" aria-label="Close">&times;</button>
+        <div class="viewer-content" onclick="event.stopPropagation()">
+            <button type="button" class="viewer-nav viewer-prev" id="prevPhotoBtn" onclick="changeViewerPhoto(-1)"><i class="fa-solid fa-chevron-left"></i></button>
+            <img id="photoViewerImg" src="" alt="">
+            <button type="button" class="viewer-nav viewer-next" id="nextPhotoBtn" onclick="changeViewerPhoto(1)"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="viewer-counter" id="viewerCounter">1 / 1</div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-logo">HDV<span>.com</span></div>
+        <p>&copy; 2026 HDV. All rights reserved.</p>
+    </footer>
+
+    <script src="lovely.js"></script>
+    <script>
+        const ROWS_PER_PAGE = 12;
+        let currentPage = 1;
+        let currentTab = 'all'; 
+        let currentModel = null;
+        let currentPhotoIndex = 0;
+
+        const modelGrid = document.getElementById('modelGrid');
+        const paginationEl = document.getElementById('pagination');
+
+        function showSection(id) {
+            document.querySelectorAll('.view-section').forEach(el => el.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function updateNavState() {
+            document.getElementById('nav-all').classList.toggle('active', currentTab === 'all' && !currentModel);
+            document.getElementById('nav-fav').classList.toggle('active', currentTab === 'fav' && !currentModel);
+        }
+
+        function navigateTo(tab, pushState = true) {
+            currentTab = tab;
+            currentModel = null;
+            currentPage = 1;
+            updateNavState();
+
+            if (pushState) {
+                const hash = tab === 'fav' ? '#favorite' : '#home';
+                history.pushState({ tab: tab }, '', hash);
+            }
+
+            renderList();
+            showSection('listView');
+        }
+
+        function getFilteredList() {
+            return currentTab === 'fav' 
+                ? modelDatabase.filter(m => m.favorite) 
+                : modelDatabase;
+        }
+
+        function getPhotoList(m) {
+            if (!m || !m.photo) return [];
+            return Array.isArray(m.photo) ? m.photo : [m.photo];
+        }
+
+        function fitPoster(img) {
+            img.style.setProperty('--r', img.naturalWidth / img.naturalHeight);
+        }
+
+        function renderList() {
+            const list = getFilteredList();
+            const total = list.length;
+            const start = (currentPage - 1) * ROWS_PER_PAGE;
+            const items = list.slice(start, start + ROWS_PER_PAGE);
+
+            if (currentTab === 'fav') {
+                document.getElementById('pageTitle').innerHTML = `<i class="fa-solid fa-heart" style="color:#e94560;"></i> Favorite Models`;
+                document.getElementById('pageCount').innerText = `${total} favorite models`;
+            } else {
+                document.getElementById('pageTitle').innerText = `All Models`;
+                document.getElementById('pageCount').innerText = `${total} models total`;
+            }
+
+            modelGrid.innerHTML = "";
+
+            if (total === 0) {
+                modelGrid.innerHTML = '<p style="grid-column:1/-1; text-align:center; color:#777; padding:40px;">Belum ada model favorit.</p>';
+                renderPagination(0);
+                return;
+            }
+
+            items.forEach(m => {
+                const card = document.createElement('div');
+                card.className = 'model-img-card';
+                card.title = m.name;
+
+                let ribbonHTML = '';
+                if (m.badge && m.badge.trim() !== '') {
+                    ribbonHTML = `
+                        <div class="ribbon-wrapper">
+                            <div class="ribbon-badge">${m.badge}</div>
+                        </div>
+                    `;
+                }
+
+                const photos = getPhotoList(m);
+                const firstPhoto = photos.length > 0 ? photos[0] : '';
+
+                card.innerHTML = `
+                    <div class="poster-area">
+                        <div class="poster-bg"></div>
+                        <div class="img-wrap">
+                            ${ribbonHTML}
+                            <img src="${firstPhoto}" alt="${m.name}" loading="lazy" onload="fitPoster(this)">
+                            <div class="card-name">${m.name}</div>
+                        </div>
+                    </div>
+                `;
+                if (firstPhoto) {
+                    card.querySelector('.poster-bg').style.backgroundImage = `url("${firstPhoto}")`;
+                }
+                card.addEventListener('click', () => openModelDetail(m.slug));
+                modelGrid.appendChild(card);
+            });
+
+            renderPagination(total);
+        }
+
+        function renderPagination(total) {
+            paginationEl.innerHTML = "";
+            const pageCount = Math.ceil(total / ROWS_PER_PAGE);
+            if (pageCount <= 1) { paginationEl.style.display = 'none'; return; }
+            paginationEl.style.display = 'flex';
+
+            const prev = document.createElement('button');
+            prev.className = 'page-btn';
+            prev.innerHTML = '<i class="fa-solid fa-chevron-left"></i>';
+            prev.disabled = currentPage === 1;
+            prev.onclick = () => goToPage(currentPage - 1);
+            paginationEl.appendChild(prev);
+
+            let pages = [];
+            if (pageCount <= 7) {
+                for (let i = 1; i <= pageCount; i++) pages.push(i);
+            } else if (currentPage <= 3) {
+                pages = [1, 2, 3, '...', pageCount - 1, pageCount];
+            } else if (currentPage >= pageCount - 2) {
+                pages = [1, 2, '...', pageCount - 2, pageCount - 1, pageCount];
+            } else {
+                pages = [1, '...', currentPage - 1, currentPage, currentPage + 1, '...', pageCount];
+            }
+
+            pages.forEach(p => {
+                if (p === '...') {
+                    const s = document.createElement('span');
+                    s.className = 'page-dots';
+                    s.innerText = '........';
+                    paginationEl.appendChild(s);
+                } else {
+                    const b = document.createElement('button');
+                    b.className = 'page-btn' + (p === currentPage ? ' active' : '');
+                    b.innerText = p;
+                    b.onclick = () => goToPage(p);
+                    paginationEl.appendChild(b);
+                }
+            });
+
+            const next = document.createElement('button');
+            next.className = 'page-btn';
+            next.innerHTML = '<i class="fa-solid fa-chevron-right"></i>';
+            next.disabled = currentPage === pageCount;
+            next.onclick = () => goToPage(currentPage + 1);
+            paginationEl.appendChild(next);
+        }
+
+        function goToPage(p) {
+            currentPage = p;
+            renderList();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function dataItem(label, value) {
+            return `<div class="data-item"><div class="data-label">${label}</div><div class="data-value">${value}</div></div>`;
+        }
+
+        function openModelDetail(slug, pushState = true) {
+            const m = modelDatabase.find(x => x.slug === slug);
+            if (!m) { navigateTo('all'); return; }
+
+            currentModel = m;
+            currentPhotoIndex = 0;
+            updateNavState();
+
+            const photos = getPhotoList(m);
+            const detailPhotoEl = document.getElementById('detailPhoto');
+            
+            if (photos.length > 0) {
+                detailPhotoEl.src = photos[0];
+                detailPhotoEl.alt = m.name;
+            }
+
+            const photoHint = document.getElementById('photoHint');
+            if (photos.length > 1) {
+                photoHint.innerText = `Klik foto untuk melihat galeri (${photos.length} foto)`;
+                photoHint.style.display = 'block';
+            } else {
+                photoHint.innerText = 'Klik foto untuk memperbesar';
+                photoHint.style.display = 'block';
+            }
+
+            document.getElementById('detailName').innerText = m.name;
+            document.getElementById('detailSub').innerHTML =
+                `<span class="chip">${m.region}</span><span class="chip dark">${m.studio}</span><span>${m.city}</span>`;
+
+            const bioContainer = document.getElementById('detailBio');
+            bioContainer.innerHTML = "";
+            if (Array.isArray(m.bio)) {
+                m.bio.forEach(paragraph => {
+                    const p = document.createElement('p');
+                    p.style.marginBottom = "10px";
+                    p.innerText = paragraph;
+                    bioContainer.appendChild(p);
+                });
+            } else if (typeof m.bio === 'string') {
+                const p = document.createElement('p');
+                p.innerText = m.bio;
+                bioContainer.appendChild(p);
+            }
+
+            document.getElementById('detailData').innerHTML = [
+                dataItem('Full Name', m.name),
+                dataItem('Age', `${m.age} years`),
+                dataItem('Birthday', m.birthday),
+                dataItem('Region / City', `${m.region} / ${m.city}`),
+                dataItem('Height', `${m.height} cm`),
+                dataItem('Weight', `${m.weight} kg`),
+                dataItem('Blood Type', m.bloodType),
+                dataItem('Languages', m.languages.join(', ')),
+                dataItem('Studio', m.studio),
+                dataItem('Debut Year', m.debutYear)
+            ].join('');
+
+            document.getElementById('detailTags').innerHTML =
+                m.tags.map(t => `<span class="chip tag">#${t}</span>`).join('');
+
+            document.getElementById('detailSocial').innerHTML = [
+                dataItem('<i class="fa-brands fa-instagram"></i> Instagram', m.social.instagram),
+                dataItem('<i class="fa-brands fa-x-twitter"></i> X (Twitter)', m.social.twitter)
+            ].join('');
+
+            // RENDER CUSTOM BUTTONS KE KEDUA KONTAINER (CSS di atas yang mengatur tampil/tidaknya berdasarkan layar)
+            const deskContainer = document.getElementById('detailButtonsDesktop');
+            const deskWrap = document.getElementById('desktopButtonsContainer');
+            const deskTitle = document.getElementById('titleDesktopButtons');
+
+            const mobContainer = document.getElementById('detailButtonsMobile');
+            const mobWrap = document.getElementById('mobileButtonsContainer');
+
+            if (m.buttons && Array.isArray(m.buttons) && m.buttons.length > 0) {
+                const buttonsHTML = m.buttons.map(btn => `
+                    <a href="${btn.link}" target="_blank" rel="noopener noreferrer" style="
+                        display: inline-block;
+                        padding: 8px 16px;
+                        background-color: ${btn.bg};
+                        color: ${btn.color};
+                        text-decoration: none;
+                        border-radius: 8px;
+                        font-weight: 600;
+                        font-size: 0.85rem;
+                        box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+                        transition: opacity 0.2s;
+                    " onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">${btn.text}</a>
+                `).join('');
+
+                deskContainer.innerHTML = buttonsHTML;
+                deskWrap.style.display = 'block';
+                deskTitle.style.display = 'block';
+
+                mobContainer.innerHTML = buttonsHTML;
+                mobWrap.style.display = ''; // Dikosongkan stylenya agar diatur sepenuhnya oleh CSS @media query
+            } else {
+                deskContainer.innerHTML = '';
+                deskWrap.style.display = 'none';
+                deskTitle.style.display = 'none';
+
+                mobContainer.innerHTML = '';
+                mobWrap.style.display = 'none';
+            }
+
+            showSection('detailView');
+
+            if (pushState) {
+                history.pushState({ model: m.slug, tab: currentTab }, '', '#model-' + m.slug);
+            }
+        }
+
+        function goBack() {
+            navigateTo(currentTab);
+        }
+
+        function routeFromHash() {
+            const hash = location.hash;
+            const modelMatch = hash.match(/^#model-([a-z0-9-]+)$/);
+
+            if (modelMatch) {
+                openModelDetail(modelMatch[1], false);
+            } else if (hash === '#favorite') {
+                navigateTo('fav', false);
+            } else {
+                navigateTo('all', false);
+            }
+        }
+
+        window.addEventListener('popstate', routeFromHash);
+
+        function openPhotoViewer(index = 0) {
+            if (!currentModel) return;
+            const photos = getPhotoList(currentModel);
+            if (photos.length === 0) return;
+
+            currentPhotoIndex = index;
+            updateViewerImage();
+            document.getElementById('photoViewer').style.display = 'flex';
+        }
+
+        function updateViewerImage() {
+            const photos = getPhotoList(currentModel);
+            if (photos.length === 0) return;
+
+            const imgEl = document.getElementById('photoViewerImg');
+            const counterEl = document.getElementById('viewerCounter');
+            const prevBtn = document.getElementById('prevPhotoBtn');
+            const nextBtn = document.getElementById('nextPhotoBtn');
+
+            imgEl.src = photos[currentPhotoIndex];
+            counterEl.innerText = `${currentPhotoIndex + 1} / ${photos.length}`;
+
+            if (photos.length <= 1) {
+                prevBtn.style.display = 'none';
+                nextBtn.style.display = 'none';
+                counterEl.style.display = 'none';
+            } else {
+                prevBtn.style.display = 'flex';
+                nextBtn.style.display = 'flex';
+                counterEl.style.display = 'block';
+            }
+        }
+
+        function changeViewerPhoto(direction) {
+            if (!currentModel) return;
+            const photos = getPhotoList(currentModel);
+            if (photos.length <= 1) return;
+
+            currentPhotoIndex += direction;
+            if (currentPhotoIndex < 0) {
+                currentPhotoIndex = photos.length - 1;
+            } else if (currentPhotoIndex >= photos.length) {
+                currentPhotoIndex = 0;
+            }
+
+            updateViewerImage();
+            document.getElementById('detailPhoto').src = photos[currentPhotoIndex];
+        }
+
+        function closePhotoViewer() {
+            document.getElementById('photoViewer').style.display = 'none';
+        }
+
+        document.addEventListener('keydown', e => { 
+            if (e.target && e.target.id === 'searchInput') return;
+            if (e.key === 'Escape') {
+                closeSearch();
+                closePhotoViewer();
+            } else if (e.key === 'ArrowRight') {
+                changeViewerPhoto(1);
+            } else if (e.key === 'ArrowLeft') {
+                changeViewerPhoto(-1);
+            }
+        });
+
+        const searchToggle = document.getElementById('searchToggle');
+        const searchDropdown = document.getElementById('searchDropdown');
+        const searchInput = document.getElementById('searchInput');
+        const searchClear = document.getElementById('searchClear');
+        const searchResults = document.getElementById('searchResults');
+        let searchIndex = null;
+        let searchHits = [];
+        let searchActive = -1;
+
+        const FIELD_LABELS = {
+            name: 'Nama', region: 'Region', city: 'Kota', studio: 'Studio', bio: 'Bio',
+            tags: 'Genre', languages: 'Bahasa', instagram: 'Instagram', twitter: 'X (Twitter)',
+            birthday: 'Ulang tahun', bloodType: 'Gol. darah', debutYear: 'Tahun debut',
+            age: 'Umur', height: 'Tinggi', weight: 'Berat', badge: 'Badge'
+        };
+        const fieldLabel = k => FIELD_LABELS[k] || k;
+        const normText = s => String(s).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+        const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+        function flattenEntries(value, key, out) {
+            if (value === null || value === undefined) return;
+            if (Array.isArray(value)) { value.forEach(v => flattenEntries(v, key, out)); return; }
+            if (typeof value === 'object') {
+                Object.keys(value).forEach(k => { if (k !== 'photo') flattenEntries(value[k], k, out); });
+                return;
+            }
+            out.push({ key, text: String(value) });
+        }
+
+        function buildSearchIndex() {
+            searchIndex = modelDatabase.map(m => {
+                const entries = [];
+                Object.keys(m).forEach(k => {
+                    if (k === 'photo' || k === 'favorite') return;
+                    flattenEntries(m[k], k, entries);
+                });
+                entries.forEach(e => { e.norm = normText(e.text); });
+                return { m, entries, blob: entries.map(e => e.norm).join(' | ') };
+            });
+        }
+
+        function highlight(text, tokens) {
+            const n = normText(text);
+            if (n.length !== text.length) return esc(text);
+            const marks = new Array(text.length).fill(false);
+            tokens.forEach(t => {
+                let p = n.indexOf(t);
+                while (p !== -1) {
+                    for (let k = p; k < p + t.length; k++) marks[k] = true;
+                    p = n.indexOf(t, p + t.length);
+                }
+            });
+            let out = '', open = false;
+            for (let k = 0; k < text.length; k++) {
+                if (marks[k] && !open) { out += '<mark>'; open = true; }
+                if (!marks[k] && open) { out += '</mark>'; open = false; }
+                out += esc(text[k]);
+            }
+            if (open) out += '</mark>';
+            return out;
+        }
+
+        function runSearch() {
+            const raw = searchInput.value;
+            searchClear.classList.toggle('show', raw.length > 0);
+            const tokens = normText(raw).split(/\s+/).filter(Boolean);
+            searchActive = -1;
+
+            if (!tokens.length) {
+                searchHits = [];
+                searchResults.innerHTML = '<div class="search-msg">Ketik kata kunci: nama, kota, studio, genre, bahasa, bio, dll.</div>';
+                return;
+            }
+            if (!searchIndex) buildSearchIndex();
+
+            const hits = searchIndex
+                .filter(i => tokens.every(t => i.blob.includes(t)))
+                .map(i => {
+                    const nameNorm = normText(i.m.name || '');
+                    return { i, score: tokens.reduce((s, t) => s + (nameNorm.includes(t) ? 2 : 0), 0) };
+                })
+                .sort((a, b) => b.score - a.score);
+            searchHits = hits.map(h => h.i);
+
+            if (!searchHits.length) {
+                searchResults.innerHTML = `<div class="search-msg">Tidak ada hasil untuk "${esc(raw)}"</div>`;
+                return;
+            }
+
+            const LIMIT = 30;
+            const items = searchHits.slice(0, LIMIT).map((i, idx) => {
+                const m = i.m;
+                const labels = [];
+                i.entries.forEach(e => {
+                    if (e.key === 'name' || e.key === 'slug') return;
+                    if (tokens.some(t => e.norm.includes(t))) {
+                        const l = fieldLabel(e.key);
+                        if (!labels.includes(l)) labels.push(l);
+                    }
+                });
+                const thumb = getPhotoList(m)[0] || '';
+                const sub = [m.region, m.studio, m.city].filter(Boolean).map(esc).join(' • ');
+                return `
+                    <button type="button" class="search-item" data-idx="${idx}" data-slug="${esc(m.slug)}">
+                        <img src="${esc(thumb)}" alt="" loading="lazy">
+                        <div class="search-item-text">
+                            <div class="search-item-name">${highlight(m.name || '', tokens)}</div>
+                            <div class="search-item-sub">${sub}</div>
+                            ${labels.length ? `<div class="search-item-match">Cocok di: ${esc(labels.join(', '))}</div>` : ''}
+                        </div>
+                    </button>`;
+            }).join('');
+
+            searchResults.innerHTML =
+                `<div class="search-count">${searchHits.length} hasil${searchHits.length > LIMIT ? ` (menampilkan ${LIMIT} teratas)` : ''}</div>` + items;
+        }
+
+        function setSearchActive(idx) {
+            const els = searchResults.querySelectorAll('.search-item');
+            if (!els.length) return;
+            searchActive = (idx + els.length) % els.length;
+            els.forEach((el, k) => el.classList.toggle('active', k === searchActive));
+            els[searchActive].scrollIntoView({ block: 'nearest' });
+        }
+
+        function openSearch() {
+            searchDropdown.classList.add('open');
+            searchToggle.classList.add('active');
+            runSearch();
+            searchInput.focus();
+        }
+
+        function closeSearch() {
+            searchDropdown.classList.remove('open');
+            searchToggle.classList.remove('active');
+        }
+
+        function selectSearchResult(slug) {
+            closeSearch();
+            openModelDetail(slug);
+        }
+
+        searchToggle.addEventListener('click', () => {
+            searchDropdown.classList.contains('open') ? closeSearch() : openSearch();
+        });
+        searchInput.addEventListener('input', runSearch);
+        searchClear.addEventListener('click', () => { searchInput.value = ''; runSearch(); searchInput.focus(); });
+        searchInput.addEventListener('keydown', e => {
+            if (e.key === 'Escape') { closeSearch(); }
+            else if (e.key === 'ArrowDown') { e.preventDefault(); setSearchActive(searchActive + 1); }
+            else if (e.key === 'ArrowUp') { e.preventDefault(); setSearchActive(searchActive - 1); }
+            else if (e.key === 'Enter') {
+                const target = searchHits[searchActive >= 0 ? searchActive : 0];
+                if (target) selectSearchResult(target.m.slug);
+            }
+        });
+        searchResults.addEventListener('click', e => {
+            const btn = e.target.closest('.search-item');
+            if (btn) selectSearchResult(btn.dataset.slug);
+        });
+        document.addEventListener('click', e => {
+            if (!searchDropdown.contains(e.target) && !searchToggle.contains(e.target)) closeSearch();
+        });
+
+        routeFromHash();
+    </script>
+</body>
+</html>

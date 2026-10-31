@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Collection - CardGallery</title>
+    
+    <!-- Favicon SVG -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%' y1='100%' x2='100%' y2='0%'><stop offset='0%' stop-color='%234f46e5'/><stop offset='100%' stop-color='%237c3aed'/></linearGradient></defs><rect width='100' height='100' rx='30' fill='url(%23g)'/><text x='50%' y='68%' font-family='Plus Jakarta Sans, sans-serif' font-weight='800' font-size='60' fill='white' text-anchor='middle'>C</text></svg>">
+
+    <!-- Font Google & Tailwind CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .ribbon-left {
+            width: 110px;
+            height: 24px;
+            position: absolute;
+            top: 15px;
+            left: -30px;
+            text-align: center;
+            line-height: 24px;
+            letter-spacing: 0.05em;
+            font-size: 9px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #ffffff;
+            background-color: #0f172a;
+            transform: rotate(-45deg);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+            z-index: 20;
+            pointer-events: none;
+        }
+        .card-img-container {
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans min-h-screen flex flex-col justify-between">
+
+    <!-- Professional Navbar -->
+    <nav class="bg-white/90 backdrop-blur-md border-b border-slate-200/80 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+            
+            <!-- Logo & Brand -->
+            <a href="#" onclick="resetAllFilters(event)" class="flex items-center gap-3 shrink-0">
+                <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-gradient-to-tr from-indigo-600 to-violet-600 flex items-center justify-center text-white font-extrabold text-lg sm:text-xl shadow-lg shadow-indigo-600/25">
+                    C
+                </div>
+                <div>
+                    <span class="font-extrabold text-slate-900 text-base sm:text-lg tracking-tight block leading-none">CardGallery</span>
+                    <span class="text-[10px] sm:text-[11px] font-medium text-slate-400">Professional Index System</span>
+                </div>
+            </a>
+
+            <!-- Navigation Menu (Desktop) -->
+            <div class="hidden lg:flex items-center gap-1 relative">
+                <a href="#" onclick="resetAllFilters(event)" class="px-4 py-2 rounded-xl text-xs font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all">Home</a>
+                
+                <a href="#" onclick="showFavoritesView(event)" id="nav-favorite-btn" class="px-4 py-2 rounded-xl text-xs font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center gap-1.5">
+                    <span>Favorite</span>
+                    <span id="nav-favorite-count" class="bg-rose-100 text-rose-600 text-[10px] font-extrabold px-1.5 py-0.5 rounded-full">0</span>
+                </a>
+                
+                <div class="relative group">
+                    <button class="flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold text-indigo-600 bg-indigo-50/85 hover:bg-indigo-100 transition-all">
+                        <span>Characters</span>
+                        <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+
+                    <div class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-[480px] bg-white border border-slate-200 rounded-2xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 p-4 z-50">
+                        <div class="text-[10px] uppercase font-extrabold tracking-wider text-slate-400 mb-3 px-1">
+                            Most Frequent Characters
+                        </div>
+                        
+                        <div id="top-characters-grid" class="grid grid-cols-3 gap-2 mb-3">
+                            <!-- Populated via JS -->
+                        </div>
+
+                        <div class="pt-3 border-t border-slate-100 flex justify-between items-center px-1">
+                            <span class="text-[11px] text-slate-400">Browse directory</span>
+                            <a href="#" onclick="showAllCharactersView(event)" class="text-xs font-bold text-indigo-600 hover:text-indigo-700 hover:underline flex items-center gap-1">
+                                <span>See All Characters (SPA)</span>
+                                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="px-4 py-2 rounded-xl text-xs font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all">About</a>
+            </div>
+
+            <!-- Search Bar & Hamburger Trigger -->
+            <div class="flex items-center gap-3">
+                <div class="w-36 sm:w-64 lg:w-72">
+                    <div class="relative">
+                        <span class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                            </svg>
+                        </span>
+                        <input type="text" id="search-input" placeholder="Search & Enter..." class="w-full pl-9 pr-3 py-2 bg-slate-100/80 border border-slate-200 rounded-xl text-xs focus:outline-none focus:bg-white focus:border-indigo-600 focus:ring-2 focus:ring-indigo-600/10 transition-all shadow-inner">
+                    </div>
+                </div>
+
+                <button onclick="toggleMobileMenu()" class="lg:hidden p-2.5 rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200 focus:outline-none transition-colors">
+                    <svg id="hamburger-icon" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-4 shadow-lg transition-all">
+            <div class="flex flex-col space-y-2">
+                <a href="#" onclick="resetAllFilters(event); toggleMobileMenu();" class="px-3 py-2 rounded-xl text-xs font-semibold text-slate-700 hover:bg-slate-100">Home</a>
+                <a href="#" onclick="showFavoritesView(event); toggleMobileMenu();" class="px-3 py-2 rounded-xl text-xs font-semibold text-rose-600 bg-rose-50 flex items-center justify-between">
+                    <span>Favorite Cards</span>
+                    <span id="mobile-favorite-count" class="bg-rose-100 text-rose-600 text-[10px] font-extrabold px-1.5 py-0.5 rounded-full">0</span>
+                </a>
+                <a href="#" onclick="showAllCharactersView(event); toggleMobileMenu();" class="px-3 py-2 rounded-xl text-xs font-bold text-indigo-600 bg-indigo-50">See All Characters (SPA)</a>
+                <a href="#" class="px-3 py-2 rounded-xl text-xs font-semibold text-slate-700 hover:bg-slate-100">About</a>
+            </div>
+            
+            <div class="pt-3 border-t border-slate-100">
+                <span class="text-[10px] uppercase font-bold text-slate-400 block mb-2">Popular Characters</span>
+                <div id="mobile-top-characters" class="flex flex-wrap gap-1.5">
+                    <!-- Populated via JS -->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full flex-grow">
+        
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
+            <div>
+                <div class="flex flex-wrap items-center gap-2">
+                    <h2 id="page-title" class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">Featured Characters</h2>
+                    <button id="clear-filter-btn" onclick="resetAllFilters(event)" class="hidden text-xs bg-rose-50 text-rose-600 hover:bg-rose-100 px-3 py-1 rounded-full font-bold transition-all border border-rose-200 flex items-center gap-1">
+                        <span>✕ Reset View</span>
+                    </button>
+                </div>
+                <p id="page-subtitle" class="text-xs sm:text-sm text-slate-500 mt-1">Showing 8 items per page dynamically from database content.</p>
+            </div>
+            <div id="data-counter" class="text-xs font-semibold bg-white border border-slate-200 px-4 py-2 rounded-xl shadow-xs text-slate-600 self-start sm:self-auto">
+                <!-- Info jumlah data -->
+            </div>
+        </div>
+
+        <!-- CONTAINER 1: Grid Cards View -->
+        <div id="cards-view">
+            <div id="card-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-12">
+                <!-- Cards rendered via JS -->
+            </div>
+
+            <div class="flex justify-center overflow-x-auto py-2">
+                <nav id="pagination-container" class="inline-flex items-center gap-1.5 p-2 bg-white border border-slate-200 rounded-2xl shadow-sm">
+                    <!-- Pagination buttons rendered via JS -->
+                </nav>
+            </div>
+        </div>
+
+        <!-- CONTAINER 2: SPA Character List Only View -->
+        <div id="character-list-view" class="hidden">
+            <div id="character-list-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <!-- Character list rendered via JS -->
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Modal Image Viewer -->
+    <div id="image-modal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm hidden items-center justify-center p-4 transition-all">
+        <div class="relative max-w-4xl w-full max-h-[90vh] flex flex-col items-center">
+            <!-- Close Button -->
+            <button onclick="closeImageModal()" class="absolute -top-12 right-0 bg-white/10 hover:bg-white/20 text-white p-2.5 rounded-full transition-colors focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+            <!-- Modal Image Preview Container -->
+            <img id="modal-img" src="" alt="Full View" class="max-w-full max-h-[80vh] object-contain rounded-2xl shadow-2xl bg-black">
+            <p id="modal-caption" class="text-white text-sm font-semibold mt-3 text-center"></p>
+        </div>
+    </div>
+
+    <!-- Professional Footer -->
+    <footer class="bg-white border-t border-slate-200 text-slate-500 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+                <div class="space-y-3">
+                    <div class="flex items-center gap-2">
+                        <div class="w-8 h-8 rounded-xl bg-indigo-600 flex items-center justify-center text-white font-bold text-sm">C</div>
+                        <span class="font-extrabold text-slate-900 text-base">CardGallery</span>
+                    </div>
+                    <p class="text-slate-400 leading-relaxed text-xs">
+                        An advanced and modern web index pagination card system built for high performance and clean UI/UX layout.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-900 text-sm mb-3 tracking-wide uppercase">Navigation</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#" onclick="resetAllFilters(event)" class="hover:text-indigo-600 transition-colors">Home Dashboard</a></li>
+                        <li><a href="#" onclick="showFavoritesView(event)" class="hover:text-indigo-600 transition-colors">Favorite Cards</a></li>
+                        <li><a href="#" onclick="showAllCharactersView(event)" class="hover:text-indigo-600 transition-colors">See All Characters</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-900 text-sm mb-3 tracking-wide uppercase">Resources</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#" class="hover:text-indigo-600 transition-colors">Documentation</a></li>
+                        <li><a href="#" class="hover:text-indigo-600 transition-colors">API Integration</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-900 text-sm mb-3 tracking-wide uppercase">Connect</h4>
+                    <p class="text-slate-400 mb-3 text-xs">Subscribe to get updates on new content additions.</p>
+                    <div class="flex gap-2">
+                        <input type="email" placeholder="Enter email" class="bg-slate-100 border border-slate-200 px-3 py-2 rounded-xl text-xs w-full focus:outline-none focus:border-indigo-600">
+                        <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-4 py-2 rounded-xl transition-all">Join</button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-slate-100 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-400 text-[11px]">
+                <p>&copy; 2026 CardGallery Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Panggil Data JS -->
+    <script src="data/content.js"></script>
+
+    <!-- Script Logic -->
+    <script>
+        const itemsPerPage = 8;
+        let currentPage = 1;
+        let searchQuery = '';
+        let selectedCharacter = null;
+        let isFavoriteView = false;
+        let isCharacterListView = false;
+
+        const data = typeof contents !== 'undefined' ? contents : [];
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Fungsi Modal Image Viewer
+        function openImageModal(imgSrc, title) {
+            const modal = document.getElementById('image-modal');
+            const modalImg = document.getElementById('modal-img');
+            const modalCaption = document.getElementById('modal-caption');
+
+            modalImg.src = imgSrc;
+            modalCaption.innerText = title;
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden'; // Disable background scroll
+        }
+
+        function closeImageModal() {
+            const modal = document.getElementById('image-modal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto'; // Restore background scroll
+        }
+
+        // Tutup modal jika klik di area luar gambar
+        document.getElementById('image-modal').addEventListener('click', (e) => {
+            if (e.target.id === 'image-modal') {
+                closeImageModal();
+            }
+        });
+
+        // Tutup modal saat tombol Escape ditekan
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeImageModal();
+            }
+        });
+
+        function updateFavoriteCount() {
+            const favCount = data.filter(item => item.favorite).length;
+            document.getElementById('nav-favorite-count').innerText = favCount;
+            document.getElementById('mobile-favorite-count').innerText = favCount;
+        }
+
+        function getAllCharactersWithCount() {
+            const counts = {};
+            data.forEach(item => {
+                if (item.characters) {
+                    item.characters.forEach(char => {
+                        counts[char] = (counts[char] || 0) + 1;
+                    });
+                }
+            });
+            return Object.entries(counts).sort((a, b) => b[1] - a[1]);
+        }
+
+        function renderNavbarCharacters() {
+            const gridContainer = document.getElementById('top-characters-grid');
+            gridContainer.innerHTML = '';
+
+            const mobileContainer = document.getElementById('mobile-top-characters');
+            mobileContainer.innerHTML = '';
+
+            const topChars = getAllCharactersWithCount().slice(0, 6);
+            topChars.forEach(([charName, count]) => {
+                const btn = document.createElement('button');
+                btn.onclick = (e) => {
+                    e.preventDefault();
+                    filterByCharacter(charName);
+                };
+                btn.className = 'flex flex-col justify-center p-2.5 bg-slate-50 hover:bg-indigo-50 border border-slate-200/80 hover:border-indigo-200 rounded-xl transition-all text-left group';
+                btn.innerHTML = `
+                    <span class="text-xs font-bold text-slate-800 group-hover:text-indigo-600 truncate">${charName}</span>
+                    <span class="text-[10px] text-slate-400 font-medium">${count} Cards</span>
+                `;
+                gridContainer.appendChild(btn);
+
+                const mobBtn = document.createElement('button');
+                mobBtn.onclick = (e) => {
+                    e.preventDefault();
+                    filterByCharacter(charName);
+                    toggleMobileMenu();
+                };
+                mobBtn.className = 'text-xs bg-slate-100 hover:bg-indigo-50 text-slate-700 hover:text-indigo-600 px-3 py-1.5 rounded-lg font-medium transition-colors border border-slate-200';
+                mobBtn.innerText = `${charName} (${count})`;
+                mobileContainer.appendChild(mobBtn);
+            });
+        }
+
+        function showFavoritesView(e) {
+            if (e) e.preventDefault();
+            isFavoriteView = true;
+            isCharacterListView = false;
+            selectedCharacter = null;
+            searchQuery = '';
+            document.getElementById('search-input').value = '';
+            currentPage = 1;
+
+            document.getElementById('character-list-view').classList.add('hidden');
+            document.getElementById('cards-view').classList.remove('hidden');
+
+            document.getElementById('page-title').innerText = `Favorite Cards`;
+            document.getElementById('page-subtitle').innerText = `Showing all saved favorite cards.`;
+            document.getElementById('clear-filter-btn').classList.remove('hidden');
+
+            init(true);
+        }
+
+        function showAllCharactersView(e) {
+            if (e) e.preventDefault();
+            isCharacterListView = true;
+            isFavoriteView = false;
+            selectedCharacter = null;
+            searchQuery = '';
+            document.getElementById('search-input').value = '';
+
+            document.getElementById('cards-view').classList.add('hidden');
+            document.getElementById('character-list-view').classList.remove('hidden');
+
+            document.getElementById('page-title').innerText = `All Character Directory (SPA)`;
+            document.getElementById('page-subtitle').innerText = `Select any character below to view associated cards.`;
+            document.getElementById('clear-filter-btn').classList.remove('hidden');
+
+            renderCharacterListOnly();
+        }
+
+        function renderCharacterListOnly() {
+            const container = document.getElementById('character-list-container');
+            container.innerHTML = '';
+
+            const allChars = getAllCharactersWithCount();
+            document.getElementById('data-counter').innerText = `Total Characters: ${allChars.length}`;
+
+            allChars.forEach(([charName, count]) => {
+                const charCard = document.createElement('div');
+                charCard.className = 'group bg-white border border-slate-200 hover:border-indigo-500/50 rounded-2xl p-5 transition-all duration-200 hover:-translate-y-1 hover:shadow-lg hover:shadow-indigo-500/5 flex items-center justify-between cursor-pointer';
+                charCard.onclick = () => filterByCharacter(charName);
+
+                charCard.innerHTML = `
+                    <div class="flex items-center gap-3.5">
+                        <div class="w-10 h-10 rounded-xl bg-indigo-50 group-hover:bg-indigo-600 text-indigo-600 group-hover:text-white flex items-center justify-center font-bold text-sm transition-colors shrink-0">
+                            ${charName.charAt(0)}
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-slate-800 group-hover:text-indigo-600 transition-colors">${charName}</h4>
+                            <p class="text-xs text-slate-400 font-medium">${count} ${count === 1 ? 'card' : 'cards'} available</p>
+                        </div>
+                    </div>
+                    <div class="w-8 h-8 rounded-full bg-slate-100 group-hover:bg-indigo-50 text-slate-400 group-hover:text-indigo-600 flex items-center justify-center transition-colors shrink-0">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </div>
+                `;
+                container.appendChild(charCard);
+            });
+        }
+
+        function filterByCharacter(charName) {
+            isCharacterListView = false;
+            isFavoriteView = false;
+            selectedCharacter = charName;
+            searchQuery = '';
+            document.getElementById('search-input').value = '';
+            currentPage = 1;
+
+            document.getElementById('character-list-view').classList.add('hidden');
+            document.getElementById('cards-view').classList.remove('hidden');
+
+            document.getElementById('page-title').innerText = `Character: ${charName}`;
+            document.getElementById('page-subtitle').innerText = `Showing cards featuring the character "${charName}".`;
+            document.getElementById('clear-filter-btn').classList.remove('hidden');
+
+            init(true);
+        }
+
+        function resetAllFilters(e) {
+            if (e) e.preventDefault();
+            isCharacterListView = false;
+            isFavoriteView = false;
+            selectedCharacter = null;
+            searchQuery = '';
+            document.getElementById('search-input').value = '';
+            currentPage = 1;
+
+            document.getElementById('character-list-view').classList.add('hidden');
+            document.getElementById('cards-view').classList.remove('hidden');
+
+            document.getElementById('page-title').innerText = `Featured Characters`;
+            document.getElementById('page-subtitle').innerText = `Showing 8 items per page dynamically from database content.`;
+            document.getElementById('clear-filter-btn').classList.add('hidden');
+
+            init(true);
+        }
+
+        function generateRatingAndStatsHTML(rate, watch, likes) {
+            const maxStars = 5;
+            const normalizedRate = rate / 2;
+            let starsHtml = '';
+
+            for (let i = 1; i <= maxStars; i++) {
+                if (i <= Math.floor(normalizedRate)) {
+                    starsHtml += `<svg class="w-4 h-4 text-amber-400 fill-amber-400 shrink-0" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>`;
+                } else if (i === Math.ceil(normalizedRate) && normalizedRate % 1 !== 0) {
+                    const uniqueId = 'half-star-' + Math.random().toString(36).substring(2, 9);
+                    starsHtml += `
+                        <svg class="w-4 h-4 text-amber-400 shrink-0" viewBox="0 0 24 24">
+                            <defs>
+                                <linearGradient id="${uniqueId}">
+                                    <stop offset="50%" stop-color="currentColor" />
+                                    <stop offset="50%" stop-color="#cbd5e1" />
+                                </linearGradient>
+                            </defs>
+                            <path fill="url(#${uniqueId})" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                        </svg>`;
+                } else {
+                    starsHtml += `<svg class="w-4 h-4 text-slate-300 fill-slate-300 shrink-0" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>`;
+                }
+            }
+
+            const formattedWatch = watch ? watch.toLocaleString() : '0';
+
+            const likeColor = likes === true ? 'text-rose-500 fill-rose-500' : 'text-slate-300 fill-transparent';
+            const dislikeColor = likes === false ? 'text-rose-500 fill-rose-500' : 'text-slate-300 fill-transparent';
+
+            return `
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-1.5">
+                        <div class="flex items-center gap-0.5">${starsHtml}</div>
+                        <span class="text-xs font-bold text-slate-600">(${rate}/10)</span>
+                    </div>
+
+                    <div class="flex items-center gap-2.5">
+                        <div class="flex items-center gap-1.5">
+                            <svg class="w-4 h-4 ${likeColor} transition-colors shrink-0" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"/>
+                            </svg>
+                            <svg class="w-4 h-4 ${dislikeColor} transition-colors shrink-0" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M10 14H5.236a2 2 0 01-1.789-2.894l3.5-7A2 2 0 018.737 3h4.018c.163 0 .326.02.485.06L17 4m-7 10v5a2 2 0 002 2h.095c.5 0 .905-.405.905-.905 0-.714.211-1.412.608-2.006L17 13V4m-7 10h2m5-10h2a2 2 0 012 2v6a2 2 0 01-2 2h-2.5"/>
+                            </svg>
+                        </div>
+                        <div class="flex items-center gap-1 text-slate-400 text-xs font-medium">
+                            <svg class="w-4 h-4 text-slate-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                            </svg>
+                            <span>${formattedWatch}</span>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function getFilteredData() {
+            let result = data;
+
+            if (isFavoriteView) {
+                result = result.filter(item => item.favorite === true);
+            }
+
+            if (selectedCharacter) {
+                result = result.filter(item => item.characters && item.characters.includes(selectedCharacter));
+            }
+
+            if (searchQuery) {
+                const query = searchQuery.toLowerCase().trim();
+                result = result.filter(item => {
+                    const matchTitle = item.title.toLowerCase().includes(query);
+                    const matchBio = item.bio.toLowerCase().includes(query);
+                    const matchTags = item.tags && item.tags.some(tag => tag.toLowerCase().includes(query));
+                    const matchChars = item.characters && item.characters.some(char => char.toLowerCase().includes(query));
+                    
+                    return matchTitle || matchBio || matchTags || matchChars;
+                });
+            }
+
+            return result;
+        }
+
+        function displayCards(page) {
+            const container = document.getElementById('card-container');
+            container.innerHTML = '';
+
+            const filteredData = getFilteredData();
+            const start = (page - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const pageData = filteredData.slice(start, end);
+
+            const counterEl = document.getElementById('data-counter');
+            if (filteredData.length === 0) {
+                counterEl.innerText = `Showing 0 of 0 items`;
+                container.innerHTML = `<div class="col-span-full text-center py-16 text-slate-400">No matching cards found.</div>`;
+                return;
+            }
+
+            const showingStart = start + 1;
+            const showingEnd = Math.min(end, filteredData.length);
+            counterEl.innerText = `Showing ${showingStart}-${showingEnd} of ${filteredData.length} items`;
+
+            pageData.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'group relative bg-white border border-slate-200/80 hover:border-indigo-300 rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-indigo-500/5';
+
+                const ribbonHtml = item.favorite ? `<div class="ribbon-left">Favorite</div>` : '';
+
+                const charsHtml = item.characters ? item.characters.map(char => 
+                    `<button onclick="event.preventDefault(); filterByCharacter('${char}')" class="text-xs font-medium bg-slate-100 hover:bg-indigo-100 hover:text-indigo-700 text-slate-600 border border-slate-200/60 hover:border-indigo-200 px-2.5 py-1 rounded-lg transition-colors">${char}</button>`
+                ).join(' ') : '';
+
+                const ratingAndStatsHtml = generateRatingAndStatsHTML(item.rate, item.watch, item.likes);
+
+                card.innerHTML = `
+                    <div class="relative overflow-hidden">
+                        ${ribbonHtml}
+                        <!-- Gambar diklik membuka Modal Image Viewer -->
+                        <div onclick="openImageModal('${item.img}', '${item.title.replace(/'/g, "\\'")}')" class="relative h-64 sm:h-48 w-full card-img-container flex items-center justify-center overflow-hidden cursor-pointer group/img">
+                            <img src="${item.img}" alt="${item.title}" class="w-full h-full object-contain group-hover/img:scale-105 transition-transform duration-500 ease-out" loading="lazy">
+                            <div class="absolute inset-0 bg-black/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                                <span class="bg-black/60 text-white text-[10px] font-bold px-2.5 py-1 rounded-full backdrop-blur-sm">🔍 Click to zoom</span>
+                            </div>
+                        </div>
+
+                        <div class="p-5">
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-indigo-600 transition-colors duration-200 mb-1.5 line-clamp-1">
+                                ${item.title}
+                            </h3>
+
+                            <div class="mb-3">
+                                ${ratingAndStatsHtml}
+                            </div>
+
+                            <p class="text-xs text-slate-500 leading-relaxed mb-4 line-clamp-2">
+                                ${item.bio}
+                            </p>
+
+                            <div class="pt-3 border-t border-slate-100">
+                                <span class="text-[10px] uppercase font-bold tracking-widest text-slate-400 block mb-2">Characters</span>
+                                <div class="flex flex-wrap gap-1.5">
+                                    ${charsHtml}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-5 pt-0">
+                        <a href="${item.link}" class="flex items-center justify-center gap-2 w-full bg-slate-100 hover:bg-indigo-600 text-slate-700 hover:text-white font-semibold text-xs py-2.5 px-4 rounded-xl transition-all duration-200 group/btn border border-slate-200/80 hover:border-indigo-600">
+                            <span>View Detail</span>
+                            <svg class="w-3.5 h-3.5 transform group-hover/btn:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                            </svg>
+                        </a>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function setupPagination() {
+            const paginationContainer = document.getElementById('pagination-container');
+            paginationContainer.innerHTML = '';
+
+            const filteredData = getFilteredData();
+            const totalPages = Math.ceil(filteredData.length / itemsPerPage);
+            if (totalPages <= 1) return;
+
+            const prevBtn = document.createElement('button');
+            prevBtn.innerHTML = `<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>`;
+            prevBtn.className = `p-2 rounded-xl text-sm font-medium transition-all ${currentPage === 1 ? 'text-slate-300 cursor-not-allowed' : 'text-slate-600 hover:bg-slate-100 hover:text-slate-900'}`;
+            prevBtn.disabled = currentPage === 1;
+            prevBtn.onclick = () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    init(false);
+                }
+            };
+            paginationContainer.appendChild(prevBtn);
+
+            for (let i = 1; i <= totalPages; i++) {
+                const pageBtn = document.createElement('button');
+                pageBtn.innerText = i;
+                pageBtn.className = `min-w-[36px] h-9 px-3 rounded-xl text-xs font-bold transition-all ${currentPage === i ? 'bg-indigo-600 text-white shadow-md shadow-indigo-600/20' : 'text-slate-600 hover:bg-slate-100 hover:text-slate-900'}`;
+                pageBtn.onclick = () => {
+                    currentPage = i;
+                    init(false);
+                };
+                paginationContainer.appendChild(pageBtn);
+            }
+
+            const nextBtn = document.createElement('button');
+            nextBtn.innerHTML = `<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>`;
+            nextBtn.className = `p-2 rounded-xl text-sm font-medium transition-all ${currentPage === totalPages ? 'text-slate-300 cursor-not-allowed' : 'text-slate-600 hover:bg-slate-100 hover:text-slate-900'}`;
+            nextBtn.disabled = currentPage === totalPages;
+            nextBtn.onclick = () => {
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    init(false);
+                }
+            };
+            paginationContainer.appendChild(nextBtn);
+        }
+
+        function init(scrollToTop = true) {
+            displayCards(currentPage);
+            setupPagination();
+            if (scrollToTop) {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+
+        document.getElementById('search-input').addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                searchQuery = e.target.value;
+                currentPage = 1;
+
+                if (isCharacterListView || isFavoriteView) {
+                    isCharacterListView = false;
+                    isFavoriteView = false;
+                    document.getElementById('character-list-view').classList.add('hidden');
+                    document.getElementById('cards-view').classList.remove('hidden');
+                }
+
+                document.getElementById('page-title').innerText = `Search Results`;
+                document.getElementById('page-subtitle').innerText = `Showing matching cards for "${searchQuery}".`;
+
+                if (searchQuery) {
+                    document.getElementById('clear-filter-btn').classList.remove('hidden');
+                }
+                init(false);
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            updateFavoriteCount();
+            renderNavbarCharacters();
+            init(true);
+        });
+    </script>
+</body>
+</html>
