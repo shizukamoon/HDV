@@ -26,6 +26,33 @@ const modelProfiles = {
         ],
         bio: ["No biography available for this model."]
     },
+    "R-bonbon": {
+        photo: "img/japan/00/R-bonbon.jpg",
+		photos: [	"img/japan/00/0000000000.webp",
+					"img/japan/00/0000000000-2.webp",
+					"img/japan/00/0000000000-3.webp"],
+        region: "Japan",
+        altName: "-",
+        birthday: "", birthdayIcon: "fa-solid fa-birthday-cake",
+        traits: [
+            { text: "Favorite", icon: "fa-solid fa-venus", bgHex: "#ffffff", textHex: "#e94560" },
+            { text: "D-Cup B83/W55/H85", icon: "img/svg/bra.svg", bgHex: "#ffffff", textHex: "#e94560" },
+            { text: "158cm", icon: "img/svg/high-heels.svg", bgHex: "#ffffff", textHex: "#e94560" }
+        ],
+        socials: {
+            x: "https://x.com/username",
+            instagram: "https://instagram.com/username",
+            tiktok: "https://tiktok.com/@username",
+            facebook: "https://facebook.com/username"
+        },
+        customButtons: [
+            { label: "Stripchat", url: "https://stripchat.com/R-bonbon", icon: "fa-solid fa-earth-asia", bgHex: "#ff0000", textHex: "#ffffff" },
+            { label: "Livecamrips", url: "https://livecamrips.to/model/409474/R-bonbon", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Camshowrecordings", url: "https://www.camshowrecordings.com/model/r-bonbon", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Archivebate", url: "https://archivebate.com/profile/R-bonbon", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" }
+        ],
+        bio: ["No biography available for this model."]
+    },
     "新ありな Arina Arata": {
         photo: "img/japan/00/新ありな Arina Arata.jpg",
 		photos: [	"img/japan/00/新ありな Arina Arata.webp",
