@@ -38,7 +38,7 @@ const modelProfiles = {
             { text: "Lovely", icon: "fa-solid fa-venus", bgHex: "#ffffff", textHex: "#e94560" }
         ],
         socials: {
-            x: "https://x.com/username"
+            x: "https://x.com/r_bonbon_"
         },
         customButtons: [
             { label: "Stripchat", url: "https://stripchat.com/R-bonbon", icon: "fa-solid fa-earth-asia", bgHex: "#ff0000", textHex: "#ffffff" },
