@@ -35,15 +35,10 @@ const modelProfiles = {
         altName: "-",
         birthday: "", birthdayIcon: "fa-solid fa-birthday-cake",
         traits: [
-            { text: "Favorite", icon: "fa-solid fa-venus", bgHex: "#ffffff", textHex: "#e94560" },
-            { text: "D-Cup B83/W55/H85", icon: "img/svg/bra.svg", bgHex: "#ffffff", textHex: "#e94560" },
-            { text: "158cm", icon: "img/svg/high-heels.svg", bgHex: "#ffffff", textHex: "#e94560" }
+            { text: "Lovely", icon: "fa-solid fa-venus", bgHex: "#ffffff", textHex: "#e94560" }
         ],
         socials: {
-            x: "https://x.com/username",
-            instagram: "https://instagram.com/username",
-            tiktok: "https://tiktok.com/@username",
-            facebook: "https://facebook.com/username"
+            x: "https://x.com/username"
         },
         customButtons: [
             { label: "Stripchat", url: "https://stripchat.com/R-bonbon", icon: "fa-solid fa-earth-asia", bgHex: "#ff0000", textHex: "#ffffff" },
