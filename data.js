@@ -24,6 +24,30 @@ const movieData = [
 		]
     },
 	{
+        title: "FC2-PPV-4999482",
+        code: "Uncensored",
+        model: ["Sakuragi Nagisa"],
+        studio: "Fc2ppv",
+        region: "Japan",
+        releaseDate: "2026-10-28",
+        duration: "01:31:26",
+		water: 1,
+        imgurl: "img/japan/01/fc2ppv/4999482.webp",
+        vidurl: "",
+        bio: "【初撮り】清楚に見えてチンポ挿入で肉食系に変貌するスタイル抜群なスレンダー美女。可愛い顔とは裏腹にどスケベ、弓なりに反りまくってイキまくる若さあふれる美ボディに大量中出し！",
+        tags: ["Uncensored", "Creampie", "Small Tits", "Real Sperm Pussy Filled"],
+		downloads: [
+            { label: "Original", url: "https://adult.contents.fc2.com/article/4999482/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Ppvdatabank", url: "https://ppvdatabank.com/article/4999482/", bgHex: "#0ca5e2", textHex: "#ffffff" },
+            { label: "123av", url: "https://123av.com/en/v/fc2-ppv-4999482", bgHex: "#e94560", textHex: "#ffffff" },
+            { label: "Javfc2", url: "https://javfc2.xyz/watch/Fc2ppv-4999482.html", bgHex: "#14f557", textHex: "#ffffff" },
+            { label: "Supjav", url: "https://supjav.com/468530.html", bgHex: "#e94560", textHex: "#ffffff" }
+        ],
+        comments: [
+            { user: "Dax", text: "", date: "now" }
+		]
+    },
+	{
         title: "NAMH-061",
         code: "Uncensored",
         model: "由良かな Yura Kana",
