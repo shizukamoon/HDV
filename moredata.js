@@ -43,14 +43,15 @@ const modelProfiles = {
         },
         customButtons: [
             { label: "Javdatabase", url: "https://www.javdatabase.com/idols/mitsuha-ashitaba/", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
-            { label: "Av-Wiki", url: "https://av-wiki.net/av-actress/yukimura-itsuki/", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
-            { label: "Erodougazo", url: "https://erodougazo.com/actress/av/%E5%B9%B8%E6%9D%91%E6%B3%89%E5%B8%8C/", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
-            { label: "Sumomo-ch", url: "http://sumomo-ch.com/blog-entry-14965.html", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
-            { label: "Javrate", url: "https://www.javrate.com/actor/detail/f7d26161-db0a-4d81-a192-3b13b359c678.html", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" }
+            { label: "Av-Wiki", url: "https://av-wiki.net/av-actress/ashitaba-mitsuha/", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Erodougazo", url: "https://erodougazo.com/actress/av/%E6%98%8E%E6%97%A5%E8%91%89%E3%81%BF%E3%81%A4%E3%81%AF/", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Sumomo-ch", url: "http://sumomo-ch.com/blog-entry-13042.html", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Javrate", url: "https://www.javrate.com/actor/detail/9e29be01-8162-4cb8-ba43-7a7982d1a8a9.html", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" }
         ],
         bio: [
-				"",
-				""
+				"Ashitaba Mitsuha adalah seorang aktris AV cantik yang bertubuh tinggi. Dengan rambut hitam panjang dan paras yang anggun serta bersih, ia memiliki tubuh ramping dan jenjang setinggi 175 cm dengan kulit putih yang sangat indah. Wajahnya yang rupawan—layaknya seorang aktris—memancarkan aura yang jernih dan menawan. Tubuhnya yang tinggi dengan lengan dan kaki yang ramping menyerupai proporsi seorang model. Ia juga memiliki payudara berukuran cup F yang berbentuk sangat indah. Kulit putihnya yang halus dan mulus benar-benar merupakan tubuh yang sangat cantik.",
+				"Dia berasal dari wilayah Tohoku dan memiliki logat Tohoku yang terdengar manis. Meski tampak keren, cara bicaranya sebenarnya manis dan penuh pesona.",
+				"Pada bulan Juli 2023, ia melakukan debut AV sebagai aktris eksklusif S1"
 		]
     },
     "幸村泉希 Itsuki Yukimura": {
