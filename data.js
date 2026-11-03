@@ -219,6 +219,7 @@ const movieData = [
         releaseDate: "2026-02-28",
         duration: "56:37",
 		water: 2,
+		recomended: true,
         imgurl: "img/japan/01/caribbeancom/022826-001.webp",
         vidurl: "https://smovie.caribbeancom.com/sample/movies/022826-001/480p.mp4",
         bio: "セクシーバニーの誘惑",
