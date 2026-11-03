@@ -30,7 +30,7 @@ const vidbase = [
         tags: ["Stripchat", "No-Masked", "Beauty Pussy", "Nice Breast", "Lovely"],
         duration: "31:41",
         country: "Japan",
-        models: [""],
+        models: ["R-bonbon"],
         imgurl: "img/japan/03/2026/momoiro-2026-10-30.jpg",
         vidurl: "https://streamtape.com/e/gLxLwkR3GZcqyxP/4199_J",
 		star: true,
