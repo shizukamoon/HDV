@@ -97,6 +97,29 @@ const movieData = [
 		]
     },
 	{
+        title: "IPZZ-950",
+        code: "Uncensored-Leaks",
+        model: "明日葉みつは Mitsuha Ashitaba",
+        studio: "独占素人",
+        region: "Japan",
+        releaseDate: "2026-10-02",
+        duration: "02:17:46",
+		water: 0,
+        imgurl: "img/japan/02/ideapocket/ipzz00950.webp",
+        vidurl: "https://cc3001.dmm.co.jp/pv/PCgNIBYREoDUEu7NHfagSXECDRoKLnKWOQN5CLS7qc_OK_5qR7m4ytOnRXsdLr/ipzz00950mhb.mp4",
+        bio: "身動き取れない無抵抗状態かつ 焦らしと追撃がループする等速ピストンにより 絶倫美女、ギブアップ。 明日葉みつは",
+        tags: ["Uncensored-Leaks", "Creampie", "Small Tits"],
+		downloads: [
+            { label: "Original", url: "https://video.dmm.co.jp/av/content/?id=ipzz00950", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "123av", url: "https://123av.com/en/v/ipzz-950-uncensored-leaked", bgHex: "#e94560", textHex: "#ffffff" },
+            { label: "Javct", url: "https://javct.net/v/ipzz-950-rm", bgHex: "#FFA500", textHex: "#ffffff" },
+            { label: "Sextb", url: "https://sextb.net/ipzz-950-rm", bgHex: "#CC9900", textHex: "#ffffff" }
+        ],
+        comments: [
+            { user: "Dax", text: "", date: "now" }
+		]
+    },
+	{
         title: "DSAM-017",
         code: "Uncensored-Leaks",
         model: "小島みこ Miko Kojima",
