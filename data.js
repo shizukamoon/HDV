@@ -56,6 +56,7 @@ const movieData = [
         releaseDate: "2026-04-06",
         duration: "02:21:11",
 		water: 0,
+		recomended: true,
         imgurl: "img/japan/02/namanama/1namh00061.webp",
         vidurl: "https://cc3001.dmm.co.jp/pv/Ji4aHQAX_iShSsOho5-87nfGzo8OZkHPrMeIboHsK8GxozgPHU7ctPI-nwyi3Tv9/1namh00061mhb.mp4",
         bio: "至高の膣内射精アングル25発 ロリ王女ニコニコ笑顔抜き 由良かな",
@@ -68,6 +69,30 @@ const movieData = [
             { label: "123av", url: "http://123av.com/en/v/namh-061-uncensored-leaked", bgHex: "#e94560", textHex: "#ffffff" },
             { label: "Javct", url: "https://javct.net/v/namh-061-rm", bgHex: "#FFA500", textHex: "#ffffff" },
             { label: "Sextb", url: "https://sextb.net/namh-061-rm", bgHex: "#CC9900", textHex: "#ffffff" }
+        ],
+        comments: [
+            { user: "Dax", text: "", date: "now" }
+		]
+    },
+	{
+        title: "326FCT-205",
+        code: "Uncensored-Leaks",
+        model: "幸村泉希 Itsuki Yukimura",
+        studio: "MOON FORCE 2nd",
+        region: "Japan",
+        releaseDate: "2026-10-06",
+        duration: "01:39:06",
+		water: 3,
+		recomended: true,
+        imgurl: "img/japan/02/moonforce/mfcs-227.webp",
+        vidurl: "https://sample.mgstage.com/sample/doc/mfcs/227/mfcs-227_20260917T190002.mp4",
+        bio: "いつき",
+        tags: ["Uncensored-Leaks", "Creampie", "Big Tits"],
+		downloads: [
+            { label: "Original", url: "https://www.mgstage.com/product/product_detail/326FCT-205/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "123av", url: "https://123av.com/en/v/326fct-205-uncensored-leaked", bgHex: "#e94560", textHex: "#ffffff" },
+            { label: "Javct", url: "https://javct.net/v/326fct-205-rm", bgHex: "#FFA500", textHex: "#ffffff" },
+            { label: "Sextb", url: "https://sextb.net/326fct-205-rm", bgHex: "#CC9900", textHex: "#ffffff" }
         ],
         comments: [
             { user: "Dax", text: "", date: "now" }
