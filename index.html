@@ -573,6 +573,23 @@
         .card.is-completed .card-completed-badge {
             display: flex;
         }
+				
+		.card-recommended-badge {
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			background-color: #1a1a2e; /* Warna hitam/gelap senada dengan tema */
+			color: white;
+			font-size: 0.7rem;
+			font-weight: 700;
+			padding: 3px 8px;
+			border-radius: 4px;
+			display: flex;
+			align-items: center;
+			gap: 4px;
+			box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+			z-index: 2;
+		}
 
         .card-content {
             padding: 15px;
@@ -2868,61 +2885,65 @@
             paginatedItems.forEach(movie => renderCardItem(movie, wrapper, ratingsMap));
         }
 
-        function renderCardItem(movie, wrapper, ratingsMap) {
-            const card = document.createElement('div');
-            card.classList.add('card');
-            
-            const flagSrc = regionFlags[movie.region] || 'img/japan.png';
-            let currentRating = ratingsMap[movie.title] !== undefined ? ratingsMap[movie.title] : 0.0;
-            
-            const completedList = getStoredCompleted();
-            const isCompleted = completedList.includes(movie.title);
-            if (isCompleted) {
-                card.classList.add('is-completed');
-            }
+		function renderCardItem(movie, wrapper, ratingsMap) {
+			const card = document.createElement('div');
+			card.classList.add('card');
+			
+			const flagSrc = regionFlags[movie.region] || 'img/japan.png';
+			let currentRating = ratingsMap[movie.title] !== undefined ? ratingsMap[movie.title] : 0.0;
+			
+			const completedList = getStoredCompleted();
+			const isCompleted = completedList.includes(movie.title);
+			if (isCompleted) {
+				card.classList.add('is-completed');
+			}
 
-            card.addEventListener('click', (e) => {
-                let recent = JSON.parse(localStorage.getItem('recentWatch')) || [];
-                recent = recent.filter(t => t !== movie.title);
-                recent.unshift(movie.title);
-                localStorage.setItem('recentWatch', JSON.stringify(recent));
+			card.addEventListener('click', (e) => {
+				let recent = JSON.parse(localStorage.getItem('recentWatch')) || [];
+				recent = recent.filter(t => t !== movie.title);
+				recent.unshift(movie.title);
+				localStorage.setItem('recentWatch', JSON.stringify(recent));
 
-                switchView('player', movie.title);
-            });
+				switchView('player', movie.title);
+			});
 
-            card.innerHTML = `
-                <div class="card-image-wrapper">
-                    <span class="card-completed-badge"><i class="fa-solid fa-check"></i> Completed</span>
-                    <img src="${movie.imgurl}" alt="" aria-hidden="true" class="card-image-bg" loading="lazy">
-                    <img src="${movie.imgurl}" alt="${movie.title}" class="card-image" loading="lazy">
-                </div>
-                <div class="card-content">
-                    <div class="card-tags">
-                        <span class="tag" style="background:#0f3460">${movie.code}</span>
-                        <span class="tag-region"><img src="${flagSrc}" class="flag-icon" style="width:14px; height:10px;"> ${movie.region}</span>
-                    </div>
-                    <h3 class="card-title">${movie.title}</h3>
-                    <div class="card-meta">
-                        <span><i class="fa-regular fa-calendar"></i> ${movie.releaseDate}</span>
-                        <span><i class="fa-regular fa-clock"></i> ${movie.duration} Min</span>
-                        ${getWaterHtml(movie)}
-                        <span class="card-rating"><i class="fa-solid fa-star"></i> ${Number(currentRating).toFixed(1)}</span>
-                    </div>
-                    <p class="card-bio">${movie.bio}</p>
-                </div>
-            `;
+			// Tambahkan logika pengecekan recommended di sini
+			const recommendedHtml = movie.recommended ? `<span class="card-recommended-badge"><i class="fa-solid fa-thumbs-up"></i> Recommended</span>` : '';
 
-            const cardImgEl = card.querySelector('.card-image');
-            if (cardImgEl) {
-                cardImgEl.style.cursor = 'zoom-in';
-                cardImgEl.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    openImageViewer(movie.imgurl, movie.title);
-                });
-            }
+			card.innerHTML = `
+				<div class="card-image-wrapper">
+					${recommendedHtml}
+					<span class="card-completed-badge"><i class="fa-solid fa-check"></i> Completed</span>
+					<img src="${movie.imgurl}" alt="" aria-hidden="true" class="card-image-bg" loading="lazy">
+					<img src="${movie.imgurl}" alt="${movie.title}" class="card-image" loading="lazy">
+				</div>
+				<div class="card-content">
+					<div class="card-tags">
+						<span class="tag" style="background:#0f3460">${movie.code}</span>
+						<span class="tag-region"><img src="${flagSrc}" class="flag-icon" style="width:14px; height:10px;"> ${movie.region}</span>
+					</div>
+					<h3 class="card-title">${movie.title}</h3>
+					<div class="card-meta">
+						<span><i class="fa-regular fa-calendar"></i> ${movie.releaseDate}</span>
+						<span><i class="fa-regular fa-clock"></i> ${movie.duration} Min</span>
+						${getWaterHtml(movie)}
+						<span class="card-rating"><i class="fa-solid fa-star"></i> ${Number(currentRating).toFixed(1)}</span>
+					</div>
+					<p class="card-bio">${movie.bio}</p>
+				</div>
+			`;
 
-            wrapper.appendChild(card);
-        }
+			const cardImgEl = card.querySelector('.card-image');
+			if (cardImgEl) {
+				cardImgEl.style.cursor = 'zoom-in';
+				cardImgEl.addEventListener('click', (e) => {
+					e.stopPropagation();
+					openImageViewer(movie.imgurl, movie.title);
+				});
+			}
+
+			wrapper.appendChild(card);
+		}
 
         let viewerImages = [];
         let viewerIndex = 0;
