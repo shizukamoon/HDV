@@ -576,17 +576,16 @@
 				
 		.card-recommended-badge {
 			position: absolute;
-			top: 10px;
-			left: 10px;
-			background-color: #1a1a2e; /* Warna hitam/gelap senada dengan tema */
+			top: 20px;
+			left: -35px;
+			width: 130px;
+			background-color: #1a1a2e; /* Warna pita hitam/gelap */
 			color: white;
-			font-size: 0.7rem;
+			font-size: 0.5rem;
 			font-weight: 700;
-			padding: 3px 8px;
-			border-radius: 4px;
-			display: flex;
-			align-items: center;
-			gap: 4px;
+			text-align: center;
+			padding: 2px 0;
+			transform: rotate(-45deg);
 			box-shadow: 0 2px 6px rgba(0,0,0,0.4);
 			z-index: 2;
 		}
@@ -2908,8 +2907,10 @@
 			});
 
 			// Tambahkan logika pengecekan recommended di sini
-			const recommendedHtml = movie.recommended ? `<span class="card-recommended-badge"><i class="fa-solid fa-thumbs-up"></i> Recommended</span>` : '';
-
+			// Pengecekan ini bakal ngebaca m-nya satu atau dua, dan ngebaca boolean true atau string "true"
+			const isRecommended = movie.recommended === true || movie.recomended === true || movie.recommended === "true" || movie.recomended === "true";
+			const recommendedHtml = isRecommended ? `<div class="card-recommended-badge">Recommended</div>` : '';
+			
 			card.innerHTML = `
 				<div class="card-image-wrapper">
 					${recommendedHtml}
