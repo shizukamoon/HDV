@@ -39,13 +39,13 @@ const modelProfiles = {
             { text: "156cm", icon: "img/svg/high-heels.svg", bgHex: "#ffffff", textHex: "#e94560" }
         ],
         socials: {
-            x: "https://x.com/kojima_35"
+            x: "https://x.com/ituki_yukimura"
         },
         customButtons: [
             { label: "Javdatabase", url: "https://www.javdatabase.com/idols/itsuki-yukimura/", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
             { label: "Av-Wiki", url: "https://av-wiki.net/av-actress/yukimura-itsuki/", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
-            { label: "Erodougazo", url: "https://erodougazo.com/actress/av/%E5%B0%8F%E5%B3%B6%E3%81%BF%E3%81%93/", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
-            { label: "Sumomo-ch", url: "http://sumomo-ch.com/blog-entry-13485.html", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Erodougazo", url: "https://erodougazo.com/actress/av/%E5%B9%B8%E6%9D%91%E6%B3%89%E5%B8%8C/", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Sumomo-ch", url: "http://sumomo-ch.com/blog-entry-14965.html", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
             { label: "Javrate", url: "https://www.javrate.com/actor/detail/f7d26161-db0a-4d81-a192-3b13b359c678.html", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" }
         ],
         bio: [
