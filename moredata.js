@@ -49,8 +49,9 @@ const modelProfiles = {
             { label: "Javrate", url: "https://www.javrate.com/actor/detail/f7d26161-db0a-4d81-a192-3b13b359c678.html", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" }
         ],
         bio: [
-				"Miko Kojima adalah aktris film dewasa (AV) yang manis. Ia memiliki paras cantik dengan rambut hitam yang indah, serta tubuh ramping berkulit putih mulus yang proporsional. Payudaranya berukuran cup B yang mungil dan menawan. Meski tubuhnya ramping, bagian tubuh bawahnya justru berisi dan sintal, dengan bokong besar yang bulat dan sangat menggairahkan.",
-				"Pada Maret 2023, ia melakukan debut AV melalui SOD Create. Saat ini, ia aktif berkarier sebagai aktris yang tampil dalam proyek-proyek khusus (solois)."
+				"Yukimura Itsuki adalah seorang aktris AV cantik dengan tubuh ramping. Ia memiliki paras yang anggun dan menawan, serta tubuh ramping dengan lekuk yang indah. Payudaranya berukuran kecil namun sangat cantik. Pinggangnya yang ramping dan melengkung, dipadukan dengan lekuk pinggul yang feminin, membuatnya tampak seksi. Ia memiliki lengan dan kaki yang jenjang, serta kulit putih mulus dengan tekstur yang halus.",
+				"Dia adalah seorang wanita cantik yang bekerja sebagai petugas lift di sebuah menara pemancar di suatu tempat di Tokyo. Kepribadiannya pemalu, tetapi katanya dia akan menjadi sangat cerewet begitu sudah merasa akrab.",
+				"Pada bulan September 2025, ia melakukan debut AV sebagai aktris eksklusif MOODYZ."
 		]
     },
     "小島みこ Miko Kojima": {
