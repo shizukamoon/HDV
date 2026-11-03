@@ -1,7 +1,7 @@
 const vidbase = [
     {
         title: "[Completely Exposed Erotic Chat] Black-haired, long-haired, fair-skinned, erotic-bodied SSS-class beautiful girl has arrived! Extreme close-up of her shaved pussy, octopus-patterned dildo, and face reveal while masturbating! Estimated E-cup white breasts ◎Seller removed◎Horizontal screen◎",
-        bio: "",
+        bio: "【丸見えエロチャット】黒髪ロング白肌エロボディＳＳＳ級キレイ系女子降臨！超接写パイパン蛸柄ディルド顔出しオナ！推定Ｅカップ白美乳◎販売元削除済◎横画面◎",
         release: "2026-10-30",
         category: "Full",
         tags: ["SSS Class"],
@@ -12,7 +12,7 @@ const vidbase = [
         vidurl: "https://streamtape.com/e/gLxLwkR3GZcqyxP/4199_J",
 		star: true,
 		screenshots: [
-            "img/screenshot/.png",
+            "img/japan/screenshot/momoiro-2026-10-30 (1).png",
             "img/screenshot/.png"
         ],
         links: [
