@@ -40,19 +40,19 @@ const modelProfiles = {
             { text: "155cm", icon: "img/svg/high-heels.svg", bgHex: "#ffffff", textHex: "#e94560" }
         ],
         socials: {
-            x: "https://x.com/username",
-            instagram: "https://instagram.com/username",
-            tiktok: "https://tiktok.com/@username",
-            facebook: "https://facebook.com/username"
+            x: "https://x.com/kojima_35"
         },
         customButtons: [
             { label: "Javdatabase", url: "https://www.javdatabase.com/idols/miko-kojima/", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
             { label: "Av-Wiki", url: "https://av-wiki.net/av-actress/kojima-miko/", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
             { label: "Erodougazo", url: "", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
-            { label: "Sumomo-ch", url: "", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Sumomo-ch", url: "http://sumomo-ch.com/blog-entry-13485.html", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
             { label: "Javrate", url: "", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" }
         ],
-        bio: ["No biography available for this model."]
+        bio: [
+				"Miko Kojima adalah aktris film dewasa (AV) yang manis. Ia memiliki paras cantik dengan rambut hitam yang indah, serta tubuh ramping berkulit putih mulus yang proporsional. Payudaranya berukuran cup B yang mungil dan menawan. Meski tubuhnya ramping, bagian tubuh bawahnya justru berisi dan sintal, dengan bokong besar yang bulat dan sangat menggairahkan.",
+				"Pada Maret 2023, ia melakukan debut AV melalui SOD Create. Saat ini, ia aktif berkarier sebagai aktris yang tampil dalam proyek-proyek khusus (solois)."
+		]
     },
     "R-bonbon": {
         photo: "img/japan/00/R-bonbon.jpg",
