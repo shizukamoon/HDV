@@ -74,6 +74,29 @@ const movieData = [
 		]
     },
 	{
+        title: "MFCS-227",
+        code: "Uncensored-Leaks",
+        model: "幸村泉希 Itsuki Yukimura",
+        studio: "MOON FORCE 2nd",
+        region: "Japan",
+        releaseDate: "2026-10-06",
+        duration: "01:11:02",
+		water: 0,
+        imgurl: "img/japan/02/moonforce/mfcs-227.webp",
+        vidurl: "https://sample.mgstage.com/sample/doc/mfcs/227/mfcs-227_20260917T190002.mp4",
+        bio: "いつき",
+        tags: ["Uncensored-Leaks", "Creampie", "Small Tits"],
+		downloads: [
+            { label: "Original", url: "https://www.mgstage.com/product/product_detail/MFCS-227/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "123av", url: "https://123av.com/en/v/mfcs-227-uncensored-leaked", bgHex: "#e94560", textHex: "#ffffff" },
+            { label: "Javct", url: "https://javct.net/v/mfcs-227-rm", bgHex: "#FFA500", textHex: "#ffffff" },
+            { label: "Sextb", url: "https://sextb.net/mfcs-227-rm", bgHex: "#CC9900", textHex: "#ffffff" }
+        ],
+        comments: [
+            { user: "Dax", text: "", date: "now" }
+		]
+    },
+	{
         title: "DSAM-017",
         code: "Uncensored-Leaks",
         model: "小島みこ Miko Kojima",
