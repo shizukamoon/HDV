@@ -45,9 +45,9 @@ const modelProfiles = {
         customButtons: [
             { label: "Javdatabase", url: "https://www.javdatabase.com/idols/miko-kojima/", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
             { label: "Av-Wiki", url: "https://av-wiki.net/av-actress/kojima-miko/", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
-            { label: "Erodougazo", url: "", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Erodougazo", url: "https://erodougazo.com/actress/av/%E5%B0%8F%E5%B3%B6%E3%81%BF%E3%81%93/", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
             { label: "Sumomo-ch", url: "http://sumomo-ch.com/blog-entry-13485.html", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
-            { label: "Javrate", url: "", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" }
+            { label: "Javrate", url: "https://www.javrate.com/actor/detail/c9a9e305-2f07-4714-b389-e7032e46f658.html", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" }
         ],
         bio: [
 				"Miko Kojima adalah aktris film dewasa (AV) yang manis. Ia memiliki paras cantik dengan rambut hitam yang indah, serta tubuh ramping berkulit putih mulus yang proporsional. Payudaranya berukuran cup B yang mungil dan menawan. Meski tubuhnya ramping, bagian tubuh bawahnya justru berisi dan sintal, dengan bokong besar yang bulat dan sangat menggairahkan.",
