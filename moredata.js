@@ -26,6 +26,35 @@ const modelProfiles = {
         ],
         bio: ["No biography available for this model."]
     },
+    "弥生みづき Mizuki Yayoi": {
+        photo: "img/japan/00/弥生みづき Mizuki Yayoi.jpg",
+		photos: [	"img/japan/00/弥生みづき Mizuki Yayoi.webp",
+					"img/japan/00/弥生みづき Mizuki Yayoi-2.webp",
+					"img/japan/00/弥生みづき Mizuki Yayoi-3.webp"],
+        region: "Japan",
+        altName: "-",
+        birthday: "1998-12-07", birthdayIcon: "fa-solid fa-birthday-cake",
+        traits: [
+            { text: "Favorite", icon: "fa-solid fa-venus", bgHex: "#ffffff", textHex: "#e94560" },
+            { text: "G-Cup B82/W58/H90", icon: "img/svg/bra.svg", bgHex: "#ffffff", textHex: "#e94560" },
+            { text: "162cm", icon: "img/svg/high-heels.svg", bgHex: "#ffffff", textHex: "#e94560" }
+        ],
+        socials: {
+            x: "https://x.com/y_mizuki127",
+            instagram: "https://www.instagram.com/mizuki_yayoi"
+        },
+        customButtons: [
+            { label: "Javdatabase", url: "https://www.javdatabase.com/idols/mizuki-yayoi/", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Av-Wiki", url: "https://av-wiki.net/av-actress/yayoi-mizuki/", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Erodougazo", url: "https://erodougazo.com/actress/av/%E5%BC%A5%E7%94%9F%E3%81%BF%E3%81%A5%E3%81%8D/", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Sumomo-ch", url: "http://sumomo-ch.com/blog-entry-11919.html", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Javrate", url: "https://www.javrate.com/actor/detail/0b7ee7a5-f225-4ff9-b070-71c3e43a7f95.html", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" }
+        ],
+        bio: [
+				"Mizuki Yayoi adalah seorang aktris film dewasa (AV) yang dikenal memiliki bokong yang sangat besar. Ia memiliki paras cantik yang tampak manis dan polos, serta tubuh ramping berkulit putih yang menawan. Perpaduan antara tubuh yang ramping dengan payudara besar yang indah serta bokong besar yang memukau menciptakan daya tarik erotis yang kontras. Tampaknya banyak penggemar yang secara khusus menyukai bokong besarnya.",
+				"Yayoi Mizuki melakukan debut AV melalui MOODYZ pada bulan Agustus 2019. Ia telah tampil dalam banyak karya AV dan aktif berkarier sebagai aktris yang membintangi berbagai judul, baik sebagai pemeran tunggal maupun bagian dari proyek kolaborasi."
+		]
+    },
     "明日葉みつは Mitsuha Ashitaba": {
         photo: "img/japan/00/明日葉みつは Mitsuha Ashitaba.jpg",
 		photos: [	"img/japan/00/明日葉みつは Mitsuha Ashitaba.webp",
