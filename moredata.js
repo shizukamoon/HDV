@@ -29,8 +29,7 @@ const modelProfiles = {
     "幸村泉希 Itsuki Yukimura": {
         photo: "img/japan/00/幸村泉希 Itsuki Yukimura.jpg",
 		photos: [	"img/japan/00/幸村泉希 Itsuki Yukimura.webp",
-					"img/japan/00/幸村泉希 Itsuki Yukimura-2.webp",
-					"img/japan/00/幸村泉希 Itsuki Yukimura-3.webp"],
+					"img/japan/00/幸村泉希 Itsuki Yukimura-2.webp"],
         region: "Japan",
         altName: "-",
         birthday: "2000-12-28", birthdayIcon: "fa-solid fa-birthday-cake",
@@ -47,7 +46,7 @@ const modelProfiles = {
             { label: "Av-Wiki", url: "https://av-wiki.net/av-actress/yukimura-itsuki/", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
             { label: "Erodougazo", url: "https://erodougazo.com/actress/av/%E5%B0%8F%E5%B3%B6%E3%81%BF%E3%81%93/", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
             { label: "Sumomo-ch", url: "http://sumomo-ch.com/blog-entry-13485.html", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
-            { label: "Javrate", url: "https://www.javrate.com/actor/detail/c9a9e305-2f07-4714-b389-e7032e46f658.html", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" }
+            { label: "Javrate", url: "https://www.javrate.com/actor/detail/f7d26161-db0a-4d81-a192-3b13b359c678.html", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" }
         ],
         bio: [
 				"Miko Kojima adalah aktris film dewasa (AV) yang manis. Ia memiliki paras cantik dengan rambut hitam yang indah, serta tubuh ramping berkulit putih mulus yang proporsional. Payudaranya berukuran cup B yang mungil dan menawan. Meski tubuhnya ramping, bagian tubuh bawahnya justru berisi dan sintal, dengan bokong besar yang bulat dan sangat menggairahkan.",
