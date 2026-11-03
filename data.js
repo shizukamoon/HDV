@@ -77,7 +77,7 @@ const movieData = [
 	{
         title: "326FCT-205",
         code: "Uncensored-Leaks",
-        model: "幸村泉希 Itsuki Yukimura",
+        model: "弥生みづき Mizuki Yayoi",
         studio: "Black Ships",
         region: "Japan",
         releaseDate: "2025-12-20",
@@ -90,6 +90,8 @@ const movieData = [
         tags: ["Uncensored-Leaks", "Creampie", "Big Tits"],
 		downloads: [
             { label: "Original", url: "https://www.mgstage.com/product/product_detail/326FCT-205/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Shiroutowiki", url: "https://shiroutowiki.work/mgs/326fct-205/", bgHex: "#14f557", textHex: "#ffffff" },
+            { label: "Jav24", url: "https://www.jav24.com/watch/www.mgstage.com/product/product_detail/326FCT-205/", bgHex: "#14f557", textHex: "#ffffff" },
             { label: "123av", url: "https://123av.com/en/v/326fct-205-uncensored-leaked", bgHex: "#e94560", textHex: "#ffffff" },
             { label: "Javct", url: "https://javct.net/v/326fct-205-rm", bgHex: "#FFA500", textHex: "#ffffff" },
             { label: "Sextb", url: "https://sextb.net/326fct-205-rm", bgHex: "#CC9900", textHex: "#ffffff" }
