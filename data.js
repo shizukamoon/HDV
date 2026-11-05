@@ -15,9 +15,10 @@ const movieData = [
 		downloads: [
             { label: "Original", url: "https://adult.contents.fc2.com/article/4828968/", bgHex: "#1a1a2e", textHex: "#ffffff" },
             { label: "Ppvdatabank", url: "https://ppvdatabank.com/article/4828968/", bgHex: "#0ca5e2", textHex: "#ffffff" },
+            { label: "7mmtv", url: "https://7mmtv.sx/ja/uncensored_content/58890/fc2-ppv-4828968.html", bgHex: "#1a1a2e", textHex: "#e94560" },
             { label: "123av", url: "https://123av.com/en/v/fc2-ppv-4828968", bgHex: "#e94560", textHex: "#ffffff" },
             { label: "Javfc2", url: "https://javfc2.xyz/watch/Fc2ppv-4828968.html", bgHex: "#14f557", textHex: "#ffffff" },
-            { label: "Supjav", url: "https://supjav.com/469203.html", bgHex: "#e94560", textHex: "#ffffff" }
+            { label: "Supjav", url: "https://supjav.com/398839.html", bgHex: "#e94560", textHex: "#ffffff" }
         ],
 	{
         comments: [
