@@ -8,7 +8,7 @@ const modelProfiles = {
         altName: "-",
         birthday: "", birthdayIcon: "fa-solid fa-birthday-cake",
         traits: [
-            { text: "Favorite", icon: "fa-solid fa-venus", bgHex: "#ffffff", textHex: "#e94560" },
+            { text: "Lovely", icon: "fa-solid fa-venus", bgHex: "#ffffff", textHex: "#e94560" },
             { text: "D-Cup B83/W55/H85", icon: "img/svg/bra.svg", bgHex: "#ffffff", textHex: "#e94560" },
             { text: "158cm", icon: "img/svg/high-heels.svg", bgHex: "#ffffff", textHex: "#e94560" }
         ],
@@ -34,7 +34,7 @@ const modelProfiles = {
         altName: "-",
         birthday: "2003-10-30", birthdayIcon: "fa-solid fa-birthday-cake",
         traits: [
-            { text: "Favorite", icon: "fa-solid fa-venus", bgHex: "#ffffff", textHex: "#e94560" },
+            { text: "Lovely", icon: "fa-solid fa-venus", bgHex: "#ffffff", textHex: "#e94560" },
             { text: "D-Cup B86/W51/H81", icon: "img/svg/bra.svg", bgHex: "#ffffff", textHex: "#e94560" },
             { text: "148cm", icon: "img/svg/high-heels.svg", bgHex: "#ffffff", textHex: "#e94560" }
         ],
