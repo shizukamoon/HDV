@@ -26,6 +26,33 @@ const modelProfiles = {
         ],
         bio: ["No biography available for this model."]
     },
+    "宮瀬もも Momo Miyase": {
+        photo: "img/japan/00/0000000000.jpg",
+		photos: [	"img/japan/00/0000000000.webp",
+					"img/japan/00/0000000000-2.webp",
+					"img/japan/00/0000000000-3.webp"],
+        region: "Japan",
+        altName: "-",
+        birthday: "", birthdayIcon: "fa-solid fa-birthday-cake",
+        traits: [
+            { text: "Favorite", icon: "fa-solid fa-venus", bgHex: "#ffffff", textHex: "#e94560" },
+            { text: "D-Cup B83/W55/H85", icon: "img/svg/bra.svg", bgHex: "#ffffff", textHex: "#e94560" },
+            { text: "158cm", icon: "img/svg/high-heels.svg", bgHex: "#ffffff", textHex: "#e94560" }
+        ],
+        socials: {
+            x: "https://x.com/username",
+            instagram: "https://instagram.com/username",
+            tiktok: "https://tiktok.com/@username",
+            facebook: "https://facebook.com/username"
+        },
+        customButtons: [
+            { label: "Javdatabase", url: "https://www.javdatabase.com/idols/momo-miyase/", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Erodougazo", url: "", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Sumomo-ch", url: "", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Javrate", url: "", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" }
+        ],
+        bio: ["No biography available for this model."]
+    },
     "弥生みづき Mizuki Yayoi": {
         photo: "img/japan/00/弥生みづき Mizuki Yayoi.jpg",
 		photos: [	"img/japan/00/弥生みづき Mizuki Yayoi.webp",
