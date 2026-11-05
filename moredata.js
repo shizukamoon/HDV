@@ -27,31 +27,30 @@ const modelProfiles = {
         bio: ["No biography available for this model."]
     },
     "宮瀬もも Momo Miyase": {
-        photo: "img/japan/00/0000000000.jpg",
-		photos: [	"img/japan/00/0000000000.webp",
-					"img/japan/00/0000000000-2.webp",
-					"img/japan/00/0000000000-3.webp"],
+        photo: "img/japan/00/宮瀬もも Momo Miyase.webp",
+		photos: [	"img/japan/00/宮瀬もも Momo Miyase.jpg",
+					"img/japan/00/宮瀬もも Momo Miyase-2.webp"],
         region: "Japan",
         altName: "-",
-        birthday: "", birthdayIcon: "fa-solid fa-birthday-cake",
+        birthday: "2003-10-30", birthdayIcon: "fa-solid fa-birthday-cake",
         traits: [
             { text: "Favorite", icon: "fa-solid fa-venus", bgHex: "#ffffff", textHex: "#e94560" },
-            { text: "D-Cup B83/W55/H85", icon: "img/svg/bra.svg", bgHex: "#ffffff", textHex: "#e94560" },
-            { text: "158cm", icon: "img/svg/high-heels.svg", bgHex: "#ffffff", textHex: "#e94560" }
+            { text: "D-Cup B86/W51/H81", icon: "img/svg/bra.svg", bgHex: "#ffffff", textHex: "#e94560" },
+            { text: "148cm", icon: "img/svg/high-heels.svg", bgHex: "#ffffff", textHex: "#e94560" }
         ],
-        socials: {
-            x: "https://x.com/username",
-            instagram: "https://instagram.com/username",
-            tiktok: "https://tiktok.com/@username",
-            facebook: "https://facebook.com/username"
-        },
         customButtons: [
             { label: "Javdatabase", url: "https://www.javdatabase.com/idols/momo-miyase/", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
-            { label: "Erodougazo", url: "", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
-            { label: "Sumomo-ch", url: "", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
-            { label: "Javrate", url: "", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" }
+            { label: "Av-Wiki", url: "https://av-wiki.net/av-actress/miyase-momo/", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Erodougazo", url: "https://erodougazo.com/actress/av/%E5%AE%AE%E7%80%AC%E3%82%82%E3%82%82/", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Sumomo-ch", url: "http://sumomo-ch.com/blog-entry-15408.html", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Javrate", url: "https://www.javrate.com/actor/movie/b69bab52-aa50-40a3-b3cd-f8c0f9887678.html", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" }
         ],
-        bio: ["No biography available for this model."]
+        bio: [
+				"Miyase Momo adalah seorang aktris AV dengan tubuh yang ramping dan mungil. Ia memiliki ciri khas berupa wajah yang manis dengan gaya rambut kuncir dua (twin tail) serta tubuh yang ramping dan semampai. Payudaranya berukuran kecil dan indah, dengan puting yang juga mungil. Pinggangnya yang ramping serta kakinya yang putih mulus terlihat sangat seksi.",
+				"Dia adalah seorang gadis yang bekerja di kedai crêpe. Orangnya sangat manis dan sedikit polos (agak 'lemot' yang menggemaskan). Dia juga naif, punya imajinasi aneh, dan diam-diam memiliki sisi mesum. Konon, dia belum pernah punya pacar seumur hidupnya. Saat ini, dia sedang mencari pacar. Demi menyenangkan calon pacarnya kelak, dia pun debut di film dewasa (AV) dengan fokus pada adegan menelan sperma—semua itu dilakukan demi mengumpulkan banyak pengalaman!",
+				"Pada bulan Maret 2026, ia melakukan debut AV melalui MOODYZ dalam judul Malaikat yang Menelan Sperma Habis-habisan! Gadis Polos nan Menggemaskan yang Bekerja di Kedai Crêpe Ini Melakukan Oral Seks dengan Penuh Dedikasi dan Kerja Keras hingga Menelannya Semua! – Momo Miyase.",
+				"Dia tidak takut melakukan adegan ejakulasi didalam vaginanya secara langsung tanpa editan real sperm di FC2PPV."
+		]
     },
     "弥生みづき Mizuki Yayoi": {
         photo: "img/japan/00/弥生みづき Mizuki Yayoi.jpg",

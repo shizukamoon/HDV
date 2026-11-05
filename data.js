@@ -8,6 +8,7 @@ const movieData = [
         releaseDate: "2026-01-10",
         duration: "01:03:22",
 		water: 7,
+		recomended: true,
         imgurl: "img/japan/01/fc2ppv/4828968.webp",
         vidurl: "",
         bio: "最終章【連続中出し】まりんちゃんオ.ナホ.堕/ち。何度もちんぽで喉奥を.突.かれて恍惚な表情を浮かべる。M才脳。潮吹き。髪コキ。",
@@ -20,7 +21,6 @@ const movieData = [
             { label: "Javfc2", url: "https://javfc2.xyz/watch/Fc2ppv-4828968.html", bgHex: "#14f557", textHex: "#ffffff" },
             { label: "Supjav", url: "https://supjav.com/398839.html", bgHex: "#e94560", textHex: "#ffffff" }
         ],
-	{
         comments: [
             { user: "Dax", text: "", date: "now" }
 		]
