@@ -229,6 +229,43 @@
             gap: 15px;
         }
 
+        .cart-link-btn {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s, background 0.3s;
+            flex-shrink: 0;
+        }
+        .cart-link-btn:hover {
+            color: #e94560;
+            background-color: rgba(255,255,255,0.08);
+        }
+
+        .hot-link-btn {
+            display: flex;
+            align-items: center;
+            height: 38px;
+            padding: 0 6px;
+            color: #e94560;
+            font-weight: 700;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+            text-decoration: none;
+            transition: color 0.3s;
+            flex-shrink: 0;
+        }
+        .hot-link-btn:hover,
+        .hot-link-btn.active {
+            color: #fff;
+        }
+
         .search-group {
             display: flex;
             align-items: center;
@@ -1388,7 +1425,16 @@
             text-decoration: none;
         }
 
+        .mobile-cart-link,
+        .mobile-hot-link {
+            display: none;
+        }
+
         @media (max-width: 1024px) {
+            .mobile-cart-link,
+            .mobile-hot-link {
+                display: flex;
+            }
             .navbar {
                 flex-wrap: wrap;
                 padding: 12px 20px;
@@ -1623,6 +1669,8 @@
 
         <div class="nav-right-group">
             <div class="nav-actions">
+                <a href="best.html" class="hot-link-btn" title="Hot">Hot</a>
+                <a href="cart.html" class="cart-link-btn" title="Cart"><i class="fa-solid fa-cart-shopping"></i></a>
                 <form class="search-group" id="searchForm">
                     <div class="search-container">
                         <input type="text" id="searchInput" placeholder="Search">
@@ -1631,6 +1679,9 @@
                     <button type="submit" id="searchIconBtn" class="search-btn" title="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
             </div>
+
+            <a href="best.html" class="hot-link-btn mobile-hot-link" title="Hot">Hot</a>
+            <a href="cart.html" class="cart-link-btn mobile-cart-link" title="Cart"><i class="fa-solid fa-cart-shopping"></i></a>
 
             <button class="mobile-icon-btn" id="mobileSearchToggle" title="Search">
                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -1647,6 +1698,7 @@
                     <li><a href="#" onclick="filterByRegion('China')"><img src="img/flag-china.png" class="flag-icon"> China</a></li>
                     <li><a href="#" onclick="filterByRegion('Korea')"><img src="img/flag-south-korea.png" class="flag-icon"> Korea</a></li>
                     <li><a href="#" onclick="filterByRegion('Indonesia')"><img src="img/flag-indonesia.png" class="flag-icon"> Indonesia</a></li>
+                    <li><a href="#" onclick="filterByRegion('Russian')"><img src="img/flag-russian.png" class="flag-icon"> Russian</a></li>
                 </ul>
             </div>
 
@@ -2120,7 +2172,8 @@
             'Japan': 'img/flag-japan.png',
             'China': 'img/flag-china.png',
             'Korea': 'img/flag-south-korea.png',
-            'Indonesia': 'img/flag-indonesia.png'
+            'Indonesia': 'img/flag-indonesia.png',
+            'Russian': 'img/flag-russian.png'
         };
         
         function triggerImportData() {

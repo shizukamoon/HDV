@@ -26,6 +26,127 @@ const modelProfiles = {
         ],
         bio: ["No biography available for this model."]
     },
+    "田中莉乃 Rino Tanaka": {
+        photo: "img/japan/00/田中莉乃 Rino Tanaka.jpg",
+		photos: [	"img/japan/00/田中莉乃 Rino Tanaka-2.webp",
+					"img/japan/00/田中莉乃 Rino Tanaka-3.webp"],
+        region: "Japan",
+        altName: "-",
+        birthday: "1995-01-30", birthdayIcon: "fa-solid fa-birthday-cake",
+        traits: [
+            { text: "Favorite", icon: "fa-solid fa-venus", bgHex: "#ffffff", textHex: "#e94560" },
+            { text: "F-Cup", icon: "img/svg/bra.svg", bgHex: "#ffffff", textHex: "#e94560" },
+            { text: "-", icon: "img/svg/high-heels.svg", bgHex: "#ffffff", textHex: "#e94560" }
+        ],
+        socials: {
+            x: "",
+            instagram: "",
+            tiktok: "",
+            facebook: ""
+        },
+        customButtons: [
+            { label: "Caribbeancom.com", url: "https://www.caribbeancom.com/search_act/8837/1.html", bgHex: "#228B22", textHex: "#ffffff" },
+            { label: "1pondo.tv", url: "https://www.1pondo.tv/search/?a=8963", bgHex: "#FF1493", textHex: "#ffffff" },
+            { label: "Javdatabase", url: "http://javdatabase.com/idols/rino-tanaka/", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" }
+        ],
+        bio: ["No biography available for this model."]
+    },
+    "Cocoamilk18": {
+        photo: "img/japan/03/Cocoamilk18/Cocoamilk18.webp",
+		photos: [	"img/japan/03/Cocoamilk18/2026-11-10_1.png",
+					"img/japan/03/Cocoamilk18/2026-11-10_2.png"],
+        region: "Japan",
+        altName: "-",
+        birthday: "", birthdayIcon: "fa-solid fa-birthday-cake",
+        traits: [
+            { text: "Lovely", icon: "fa-solid fa-venus", bgHex: "#ffffff", textHex: "#e94560" }
+        ],
+        socials: {
+            x: ""
+        },
+        customButtons: [
+            { label: "Stripchat", url: "https://stripchat.com/Cocoamilk18", bgHex: "#880000", textHex: "#ffffff" }
+        ],
+        bio: ["No biography available for this model."]
+    },
+    "斑斑": {
+        photo: "img/china/00/斑斑.jpg",
+		photos: [	"img/china/00/斑斑-1.jpg",
+					"img/china/00/斑斑-2.jpg",
+					"img/china/00/斑斑-3.jpg"],
+        region: "China",
+        altName: "Ban Ban",
+        birthday: "", birthdayIcon: "fa-solid fa-birthday-cake",
+        traits: [
+            { text: "Lovely", icon: "fa-solid fa-venus", bgHex: "#ffffff", textHex: "#e94560" },
+            { text: "D-Cup", icon: "img/svg/bra.svg", bgHex: "#ffffff", textHex: "#e94560" },
+            { text: "153cm", icon: "img/svg/high-heels.svg", bgHex: "#ffffff", textHex: "#e94560" }
+        ],
+        socials: {
+            x: ""
+        },
+        customButtons: [
+            { label: "Javdatabase", url: "", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Erodougazo", url: "", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Sumomo-ch", url: "", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Javrate", url: "", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" }
+        ],
+        bio: ["No biography available for this model."]
+    },
+    "苏小涵": {
+        photo: "img/china/00/苏小涵.jpg",
+		photos: [	"img/china/00/苏小涵-1.jpg",
+					"img/china/00/苏小涵-2.webp",
+					"img/china/00/苏小涵-3.webp"],
+        region: "China",
+        altName: "Suxiaohan",
+        birthday: "", birthdayIcon: "fa-solid fa-birthday-cake",
+        traits: [
+            { text: "Lovely", icon: "fa-solid fa-venus", bgHex: "#ffffff", textHex: "#e94560" }
+        ],
+        socials: {
+            x: "https://x.com/Suxiaohan000"
+        },
+        customButtons: [
+            { label: "Javdatabase", url: "", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Erodougazo", url: "", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Sumomo-ch", url: "", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Javrate", url: "", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" }
+        ],
+        bio: ["No biography available for this model."]
+    },
+    "羽川るる Ruru Ukawa": {
+        photo: "img/japan/00/羽川るる Ruru Ukawa.jpg",
+		photos: [	"img/japan/00/羽川るる Ruru Ukawa.png",
+					"img/japan/00/羽川るる Ruru Ukawa-2.png",
+					"img/japan/00/羽川るる Ruru Ukawa-3.png",
+					"img/japan/00/羽川るる Ruru Ukawa-4.png",
+					"img/japan/00/羽川るる Ruru Ukawa-2.webp",
+					"img/japan/00/羽川るる Ruru Ukawa-3.webp"],
+        region: "Japan",
+        altName: "Ruru Hanekawa",
+        birthday: "2004-10-09", birthdayIcon: "fa-solid fa-birthday-cake",
+        traits: [
+            { text: "Lovely", icon: "fa-solid fa-venus", bgHex: "#ffffff", textHex: "#e94560" },
+            { text: "G-Cup B94/W60/H96", icon: "img/svg/bra.svg", bgHex: "#ffffff", textHex: "#e94560" },
+            { text: "165cm", icon: "img/svg/high-heels.svg", bgHex: "#ffffff", textHex: "#e94560" }
+        ],
+        socials: {
+            x: "https://x.com/ruru_ukawa109"
+        },
+        customButtons: [
+            { label: "Javdatabase", url: "https://www.javdatabase.com/idols/ruru-ukawa/", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Av-Wiki", url: "https://av-wiki.net/av-actress/ukawa-ruru/", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Erodougazo", url: "https://erodougazo.com/actress/av/%E7%BE%BD%E5%B7%9D%E3%82%8B%E3%82%8B/", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Sumomo-ch", url: "http://sumomo-ch.com/blog-entry-15911.html", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Javrate", url: "https://www.javrate.com/actor/detail/7fcf9723-2a8f-496e-b002-46d9d2f15cc6.html", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" }
+        ],
+        bio: [
+				"Ruru Ukawa adalah aktris AV berkulit putih dengan payudara besar yang indah. Ia memiliki ciri khas berupa wajah yang manis serta tubuh berisi dan lembut dengan payudara ukuran G-cup. Payudaranya indah, lengkap dengan puting berwarna merah muda. Ia juga memiliki bokong yang bulat, besar, dan menawan, serta paha yang sintal dan kaki yang indah. Dengan tinggi badan 165 cm, ia memiliki kulit putih yang halus dan mulus. Senyumnya yang ramah—yang memancarkan kepribadian baik—menjadi daya tarik tersendiri.",
+				"Beralih dari seorang mahasiswi yang merupakan mantan atlet bola voli menjadi pemeran film dewasa (AV). Pada Desember 2025, ia memulai debutnya di industri AV sebagai aktris eksklusif MOODYZ. Saat ini, ia aktif berkarier sebagai aktris AV untuk proyek-proyek tunggal (lepas).",
+				"Dia tidak takut melakukan adegan ejakulasi didalam vaginanya secara langsung tanpa editan real sperm di Namanama."
+		]
+    },
     "宮瀬もも Momo Miyase": {
         photo: "img/japan/00/宮瀬もも Momo Miyase.webp",
 		photos: [	"img/japan/00/宮瀬もも Momo Miyase.jpg",
@@ -244,6 +365,76 @@ const modelProfiles = {
 			"Karena minim pengalaman seksual dan ingin menjadi seperti aktris idola yang dilihatnya di media sosial, ia mendaftar untuk tampil dalam film dewasa (AV). Meski berasal dari keluarga terpandang, ia sangat tertarik dan menyukai hal-hal berbau seksual; kabarnya, ia sering memuaskan diri sendiri (masturbasi) secara diam-diam tanpa sepengetahuan keluarganya.",
 			"Pada November 2026, ia melakukan debut AV sebagai aktris eksklusif FALENO melalui karya berjudul Cinderella Pendiam dengan Jam Malam Pukul 6 Sore: Debut AV Mahasiswi dari Keluarga Kaya – Sena Hashimoto"
 		]
+    },
+    "青山茉悠 Mayu Aoyama": {
+        photo: "img/japan/00/青山茉悠 Mayu Aoyama.jpg",
+		photos: [	"img/japan/00/青山茉悠 Mayu Aoyama-2.jpg",
+					"img/japan/00/青山茉悠 Mayu Aoyama-3.jpg"],
+        region: "Japan",
+        altName: "-",
+        birthday: "", birthdayIcon: "fa-solid fa-birthday-cake",
+        traits: [
+            { text: "Favorite", icon: "fa-solid fa-venus", bgHex: "#ffffff", textHex: "#e94560" }
+        ],
+        socials: {
+            x: "",
+            instagram: "",
+            tiktok: "",
+            facebook: ""
+        },
+        customButtons: [
+            { label: "Caribbeancom.com", url: "https://www.caribbeancom.com/search_act/8656/1.html", bgHex: "#228B22", textHex: "#ffffff" },
+            { label: "1pondo.tv", url: "https://www.1pondo.tv/search/?a=6964", bgHex: "#FF1493", textHex: "#ffffff" },
+            { label: "Javdatabase", url: "https://www.javdatabase.com/idols/mayu-aoyama/", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" }
+        ],
+        bio: ["No biography available for this model."]
+    },
+    "最上もも Momo Mogami": {
+        photo: "img/japan/00/最上もも Momo Mogami.jpg",
+		photos: [	"img/japan/00/最上もも Momo Mogami-3.jpg",
+					"img/japan/00/最上もも Momo Mogami-2.jpg",
+					"img/japan/00/最上もも Momo Mogami-4.jpg"],
+        region: "Japan",
+        altName: "-",
+        birthday: "", birthdayIcon: "fa-solid fa-birthday-cake",
+        traits: [
+            { text: "Favorite", icon: "fa-solid fa-venus", bgHex: "#ffffff", textHex: "#e94560" }
+        ],
+        socials: {
+            x: "",
+            instagram: "",
+            tiktok: "",
+            facebook: ""
+        },
+        customButtons: [
+            { label: "Caribbeancom.com", url: "https://www.caribbeancom.com/search_act/8745/1.html", bgHex: "#228B22", textHex: "#ffffff" },
+            { label: "1pondo.tv", url: "https://www.1pondo.tv/search/?a=8877", bgHex: "#FF1493", textHex: "#ffffff" },
+            { label: "Javdatabase", url: "https://www.javdatabase.com/idols/momo-mogami/", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" }
+        ],
+        bio: ["No biography available for this model."]
+    },
+    "白咲雪乃 Shirasaki Yukino": {
+        photo: "img/japan/00/白咲雪乃 Shirasaki Yukino.jpg",
+		photos: [	"img/japan/00/白咲雪乃 Shirasaki Yukino-2.jpg",
+					"img/japan/00/白咲雪乃 Shirasaki Yukino-3.jpg"],
+        region: "Japan",
+        altName: "-",
+        birthday: "", birthdayIcon: "fa-solid fa-birthday-cake",
+        traits: [
+            { text: "Favorite", icon: "fa-solid fa-venus", bgHex: "#ffffff", textHex: "#e94560" }
+        ],
+        socials: {
+            x: "",
+            instagram: "",
+            tiktok: "",
+            facebook: ""
+        },
+        customButtons: [
+            { label: "Caribbeancom.com", url: "https://www.caribbeancom.com/search_act/8919/1.html", bgHex: "#228B22", textHex: "#ffffff" },
+            { label: "1pondo.tv", url: "https://www.1pondo.tv/search/?a=9045", bgHex: "#FF1493", textHex: "#ffffff" },
+            { label: "Javdatabase", url: "https://www.javdatabase.com/idols/shirasaki-yukino/", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" }
+        ],
+        bio: ["No biography available for this model."]
     },
     "桜井ひな Sakurai Hina": {
         photo: "img/japan/00/桜井ひな Sakurai Hina.jpg",

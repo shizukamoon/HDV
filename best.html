@@ -1,0 +1,3552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best - HDV.com</title>
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231a1a2e'/><text x='50%' y='57%' dominant-baseline='middle' text-anchor='middle' font-family='Poppins, sans-serif' font-weight='700' font-size='40' fill='%23e94560'>HDV</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Custom Scrollbar Modern untuk Seluruh Browser */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+        * {
+            scrollbar-width: thin;
+            scrollbar-color: #cbd5e1 #f1f1f1;
+        }
+
+        html, body {
+            overflow-x: hidden !important;
+            width: 100% !important;
+            max-width: 100vw !important;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        #authOverlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #1a1a2e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+        .auth-container {
+            background: #16213e;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+            width: 100%;
+            max-width: 400px;
+            color: #fff;
+        }
+        .auth-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #e94560;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px 15px;
+            border: 1px solid #30475e;
+            background: #0f3460;
+            color: #fff;
+            border-radius: 6px;
+            outline: none;
+            font-size: 0.95rem;
+        }
+        .form-group input:focus {
+            border-color: #e94560;
+        }
+        .auth-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #e94560;
+            border: none;
+            color: white;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-top: 10px;
+        }
+        .auth-btn:hover {
+            background-color: #d63853;
+        }
+        .toggle-link {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 0.85rem;
+            color: #aaa;
+        }
+        .toggle-link span {
+            color: #e94560;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        .toggle-link span:hover {
+            text-decoration: underline;
+        }
+        .alert {
+            padding: 10px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            font-size: 0.85rem;
+            display: none;
+            text-align: center;
+        }
+        .alert.error {
+            background: rgba(233, 69, 96, 0.2);
+            color: #e94560;
+            border: 1px solid #e94560;
+        }
+        .alert.success {
+            background: rgba(46, 204, 113, 0.2);
+            color: #2ecc71;
+            border: 1px solid #2ecc71;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1a1a2e;
+            padding: 15px 30px;
+            color: white;
+            position: sticky;
+            top: 0;
+            left: 0;
+            width: 100%;
+            min-width: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            flex-wrap: nowrap;
+        }
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #e94560;
+            letter-spacing: 1px;
+            cursor: pointer;
+            flex-shrink: 0;
+            text-decoration: none;
+        }
+
+        .nav-brand-domain {
+            color: #fff;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .nav-menu > li > a, .nav-menu > li > button {
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            background: none;
+            border: none;
+            cursor: pointer;
+            transition: color 0.3s ease;
+            display: inline-block;
+            padding: 10px 0;
+        }
+
+        .nav-menu > li > a:hover, .nav-menu > li > button:hover {
+            color: #e94560;
+        }
+
+        .nav-right-group {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            position: relative;
+            z-index: 1002;
+        }
+
+        .mobile-icon-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.1rem;
+            cursor: pointer;
+            display: none;
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .cart-link-btn {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s, background 0.3s;
+            flex-shrink: 0;
+        }
+        .cart-link-btn:hover {
+            color: #e94560;
+            background-color: rgba(255,255,255,0.08);
+        }
+
+        .hot-link-btn {
+            display: flex;
+            align-items: center;
+            height: 38px;
+            padding: 0 6px;
+            color: #e94560;
+            font-weight: 700;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+            text-decoration: none;
+            transition: color 0.3s;
+            flex-shrink: 0;
+        }
+        .hot-link-btn:hover,
+        .hot-link-btn.active {
+            color: #fff;
+        }
+
+        .search-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .search-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .search-container input {
+            padding: 8px 35px 8px 15px;
+            width: 180px;
+            border: none;
+            border-radius: 20px;
+            outline: none;
+            font-size: 0.9rem;
+            background-color: #f4f7f6;
+            color: #333;
+            pointer-events: auto !important;
+            position: relative;
+            z-index: 1003;
+        }
+
+        .clear-search-btn {
+            position: absolute;
+            right: 12px;
+            background: none;
+            border: none;
+            color: #888;
+            cursor: pointer;
+            font-size: 0.9rem;
+            display: none;
+            z-index: 1004;
+        }
+
+        .clear-search-btn:hover {
+            color: #e94560;
+        }
+
+        .search-btn {
+            background-color: #e94560;
+            color: white;
+            border: none;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s, transform 0.2s;
+            z-index: 1003;
+        }
+
+        .search-btn:hover {
+            background-color: #d63853;
+            transform: scale(1.05);
+        }
+
+        .mobile-search-modal {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background-color: #1a1a2e;
+            padding: 15px 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            z-index: 1005;
+            box-sizing: border-box;
+        }
+
+        .mobile-search-modal.active {
+            display: flex;
+            gap: 10px;
+        }
+
+        .mobile-search-modal input {
+            flex: 1 1 auto;
+            min-width: 0;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 20px;
+            outline: none;
+            font-size: 0.95rem;
+            background-color: #fff;
+            color: #333;
+            pointer-events: auto !important;
+        }
+
+        .mobile-search-modal button {
+            background-color: #e94560;
+            color: white;
+            border: none;
+            padding: 0 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            flex-shrink: 0;
+            white-space: nowrap;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbtn {
+            background-color: transparent;
+            color: white;
+            padding: 10px 0;
+            font-size: 0.95rem;
+            font-weight: 500;
+            border: none;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .dropbtn:hover {
+            color: #e94560;
+        }
+
+        .flag-btn {
+            padding: 6px 10px;
+            border: none;
+            background-color: transparent;
+            color: white;
+            font-size: 0.9rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .flag-icon {
+            width: 20px;
+            height: 14px;
+            object-fit: cover;
+            border-radius: 2px;
+        }
+
+        .dots-btn {
+            background-color: transparent;
+            color: white;
+            border: none;
+            width: 38px;
+            height: 38px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            left: 0;
+            background-color: #fff;
+            width: 280px;
+            max-height: 350px;
+            overflow-y: auto;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            border-radius: 8px;
+            z-index: 101;
+            list-style: none;
+            padding: 10px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 6px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: grid;
+        }
+
+        .dropdown.right-align .dropdown-content {
+            left: auto;
+            right: 0;
+            width: 180px;
+            display: none;
+            grid-template-columns: 1fr;
+        }
+        .dropdown.right-align:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown.profile-menu .dropdown-content {
+            width: 190px;
+            padding: 6px;
+        }
+
+        .dropdown-content li {
+            width: 100%;
+        }
+
+        .dropdown-content li a, .dropdown-content li button {
+            color: #333;
+            padding: 8px 10px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            background-color: #f8f9fa;
+            border-radius: 6px;
+            width: 100%;
+            border: none;
+            cursor: pointer;
+            text-align: left;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .dropdown-content li a:hover, .dropdown-content li button:hover {
+            background-color: #e94560;
+            color: white;
+        }
+
+        .dropdown-content li.see-all-item {
+            grid-column: span 2;
+        }
+
+        .dropdown-content li.see-all-item a {
+            background-color: #1a1a2e;
+            color: white;
+            font-weight: 600;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .view-section {
+            display: none;
+            flex: 1;
+            width: 100%;
+        }
+        .view-section.active {
+            display: block;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+            width: 100%;
+            min-width: 0;
+        }
+
+        .search-info {
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: #555;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-image-wrapper {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            aspect-ratio: 16 / 9;
+            background-color: #ddd;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+
+        /* Lapisan belakang: gambar yang sama di-blur, mengisi sisi kiri/kanan */
+        .card-image-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: blur(18px) brightness(0.9);
+            transform: scale(1.3);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* Gambar utama: tampil utuh tanpa terpotong */
+        .card-image {
+            position: relative;
+            z-index: 1;
+            display: block;
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 16 / 9;
+            object-fit: contain;
+            object-position: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover .card-image {
+            transform: scale(1.03);
+        }
+
+        .card-completed-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #2ecc71;
+            color: white;
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 4px;
+            display: none;
+            align-items: center;
+            gap: 4px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            z-index: 2;
+        }
+        .card.is-completed .card-completed-badge {
+            display: flex;
+        }
+				
+		.card-recommended-badge {
+			position: absolute;
+			top: 20px;
+			left: -35px;
+			width: 130px;
+			background-color: #1a1a2e; /* Warna pita hitam/gelap */
+			color: white;
+			font-size: 0.5rem;
+			font-weight: 700;
+			text-align: center;
+			padding: 2px 0;
+			transform: rotate(-45deg);
+			box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+			z-index: 2;
+		}
+
+        .card-content {
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            margin-top: -10px;
+        }
+
+        .card-tags {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .tag {
+            background-color: #e94560;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 5px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .tag:hover {
+            opacity: 0.85;
+        }
+
+        .tag-region {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            background-color: #333;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 5px;
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+
+        .card-title {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #1a1a2e;
+        }
+
+        .card-meta {
+            font-size: clamp(0.65rem, 2.6vw, 0.8rem);
+            color: #777;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: nowrap;
+            gap: 6px;
+            white-space: nowrap;
+        }
+
+        .card-meta > span {
+            display: inline-flex;
+            align-items: center;
+            gap: 3px;
+            flex-shrink: 1;
+            min-width: 0;
+        }
+
+        @media (min-width: 640px) {
+            .card-meta {
+                font-size: 0.78rem;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .card-meta {
+                gap: 4px;
+            }
+        }
+
+        .water-badge {
+            color: #3498db;
+            display: inline-flex;
+            align-items: center;
+            gap: 2px;
+        }
+
+        .card-rating {
+            color: #f39c12;
+            font-weight: 600;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .card-bio {
+            font-size: 0.85rem;
+            color: #555;
+            line-height: 1.4;
+            margin-top: auto;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .categories-grid-container {
+            display: none;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+            margin-bottom: 30px;
+        }
+        .categories-grid-container.active {
+            display: block;
+        }
+        .categories-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #f4f7f6;
+            padding-bottom: 10px;
+        }
+        .tags-button-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .tag-filter-btn {
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            color: #333;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .tag-filter-btn:hover {
+            background-color: #e94560;
+            color: white;
+            border-color: #e94560;
+        }
+
+        .model-card-item {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .model-card-item:hover {
+            transform: translateY(-5px);
+        }
+        .model-card-img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 3px solid #e94560;
+        }
+        .model-card-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            margin-bottom: 8px;
+        }
+        .model-card-bio {
+            font-size: 0.8rem;
+            color: #666;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .model-profile-header {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        .model-profile-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #e94560;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .model-profile-info {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .model-profile-name {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1a1a2e;
+        }
+        .model-profile-bio {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.6;
+        }
+        .model-profile-bio p { margin-bottom: 10px; }
+        .model-profile-bio p:last-child { margin-bottom: 0; }
+        .model-meta-row { display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; gap: 10px; }
+        .model-alt-name { font-size: 0.9rem; color: #888; font-weight: 500; }
+        .model-attr-row { display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
+        .model-traits { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
+        .model-birthday { display: inline-flex; align-items: center; gap: 6px; font-size: 0.9rem; color: #555; font-weight: 500; }
+        .model-birthday i { color: #e94560; }
+        .model-trait { display: inline-flex; align-items: center; gap: 6px; font-size: 0.8rem; font-weight: 600; padding: 4px 12px; border-radius: 20px; background: #f1f2f6; color: #555; }
+        .model-trait i { color: inherit; }
+        .model-custom-buttons a .attr-icon { width: 16px; height: 16px; }
+        .attr-icon { width: 18px; height: 18px; object-fit: contain; flex-shrink: 0; }
+        .model-links-row { display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 5px; }
+        .model-links-row:empty { display: none; }
+        .model-links-row .model-socials, .model-links-row .model-custom-buttons { margin-top: 0; }
+        .model-links-row { max-width: 100%; }
+        .model-custom-buttons { max-width: 100%; min-width: 0; }
+        .model-custom-buttons a, .model-socials a { max-width: 100%; min-width: 0; white-space: normal; word-break: break-word; line-height: 1.3; }
+        .bio-more { display: none; }
+        .bio-more.open { display: block; }
+        .bio-toggle-btn { background: none; border: none; color: #e94560; font-weight: 600; font-size: 0.9rem; cursor: pointer; padding: 4px 0; }
+        .bio-toggle-btn:hover { text-decoration: underline; }
+        .model-region-badge { display: inline-flex; align-items: center; gap: 6px; background: #333; color: #fff; padding: 3px 10px; border-radius: 5px; font-size: 0.75rem; font-weight: 600; width: fit-content; }
+        .model-socials { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 5px; }
+        .model-socials a { display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 6px; color: #fff; text-decoration: none; font-size: 0.85rem; font-weight: 600; transition: opacity .2s; }
+        .model-socials a:hover { opacity: .85; }
+        .soc-x { background: #000; }
+        .soc-instagram { background: #e1306c; }
+        .soc-tiktok { background: #010101; }
+        .soc-facebook { background: #1877f2; }
+        .model-custom-buttons { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 5px; }
+        .model-custom-buttons a { display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 6px; background: #1a1a2e; color: #fff; text-decoration: none; font-size: 0.85rem; font-weight: 600; transition: opacity .2s; }
+        .model-custom-buttons a:hover { opacity: .85; }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+
+        .page-btn {
+            padding: 8px 14px;
+            border: 1px solid #ddd;
+            background-color: white;
+            color: #333;
+            cursor: pointer;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .page-btn:hover:not(:disabled) {
+            background-color: #f1f1f1;
+            border-color: #bbb;
+        }
+
+        .page-btn.active {
+            background-color: #e94560;
+            color: white;
+            border-color: #e94560;
+        }
+
+        .page-dots {
+            padding: 8px 6px;
+            color: #777;
+            font-weight: 500;
+        }
+
+        .page-btn:disabled {
+            background-color: #f9f9f9;
+            color: #ccc;
+            border-color: #eee;
+            cursor: not-allowed;
+        }
+
+        .watch-container {
+            max-width: 1300px;
+            margin: 30px auto;
+            padding: 0 20px;
+            width: 100%;
+            min-width: 0;
+        }
+
+        .watch-layout {
+            display: grid;
+            grid-template-columns: 1fr 360px;
+            gap: 25px;
+            align-items: start;
+        }
+
+        .player-wrapper {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            padding: 20px;
+        }
+
+        .watch-back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: none;
+            border: none;
+            color: #1a1a2e;
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            padding: 8px 4px;
+            margin-bottom: 10px;
+        }
+        .watch-back-btn:hover {
+            color: #e94560;
+        }
+
+        .video-box {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%;
+            background-color: #000;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .video-box video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .video-details {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .video-header-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .video-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .action-btns-group {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .fav-action-btn, .completed-action-btn {
+            background: #f8f9fa;
+            border: 1px solid #ddd;
+            padding: 6px 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #555;
+        }
+        .fav-action-btn.favorited {
+            background-color: #ffe3e6;
+            color: #e94560;
+            border-color: #ff8787;
+        }
+        .completed-action-btn.completed {
+            background-color: #e8f8f0;
+            color: #2ecc71;
+            border-color: #a3e4d7;
+        }
+
+        .video-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1a1a2e;
+        }
+
+        .video-meta {
+            font-size: 0.9rem;
+            color: #777;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .rating-widget {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: #f8f9fa;
+            padding: 4px 10px;
+            border-radius: 6px;
+            border: 1px solid #eee;
+        }
+
+        .stars-container {
+            display: flex;
+            gap: 2px;
+            cursor: pointer;
+        }
+
+        .stars-container i {
+            color: #ccc;
+            font-size: 0.95rem;
+        }
+
+        .stars-container i.rated {
+            color: #f39c12;
+        }
+
+        .video-bio {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.6;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+
+        .video-hashtags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 5px;
+        }
+
+        .hashtag-link {
+            font-size: 0.8rem;
+            color: #1a1a2e;
+            text-decoration: none;
+            font-weight: 600;
+            cursor: pointer;
+            background-color: #f1f2f6;
+            padding: 5px 12px;
+            border-radius: 20px;
+        }
+        .hashtag-link::before {
+            content: "#";
+        }
+        .hashtag-link:hover {
+            background-color: #e94560;
+            color: white;
+        }
+
+        .download-section {
+            margin-top: 15px;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+
+        .download-title {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            margin-bottom: 10px;
+        }
+
+        .download-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+        .download-btn:hover {
+            opacity: 0.85;
+        }
+
+        .comments-section {
+            margin-top: 25px;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
+        .comments-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .comment-input-box {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .comment-input-box input {
+            flex: 1;
+            min-width: 0;
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            outline: none;
+            font-size: 0.9rem;
+        }
+
+        .comment-submit-btn {
+            background-color: #e94560;
+            color: white;
+            border: none;
+            padding: 0 18px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .comments-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .comment-item {
+            background-color: #f8f9fa;
+            padding: 12px 15px;
+            border-radius: 8px;
+            border: 1px solid #eee;
+            word-break: break-word;
+        }
+
+        .comment-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .comment-author {
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: #1a1a2e;
+        }
+
+        .comment-date {
+            font-size: 0.75rem;
+            color: #888;
+        }
+
+        .comment-text {
+            font-size: 0.9rem;
+            color: #444;
+            line-height: 1.4;
+        }
+
+        .related-section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            width: 100%;
+        }
+
+        .related-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f4f7f6;
+        }
+
+        .related-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .related-card {
+            display: flex;
+            gap: 12px;
+            text-decoration: none;
+            background: #f8f9fa;
+            border-radius: 8px;
+            overflow: hidden;
+            padding: 6px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .related-thumb {
+            width: 110px;
+            height: 70px;
+            object-fit: cover;
+            border-radius: 6px;
+            flex-shrink: 0;
+            background-color: #ddd;
+        }
+
+        .related-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 4px;
+            overflow: hidden;
+            flex: 1;
+        }
+
+        .related-card-title {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .related-card-meta {
+            font-size: 0.75rem;
+            color: #777;
+        }
+
+        .view-more-btn {
+            width: 100%;
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #1a1a2e;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+        }
+
+        .footer {
+            background-color: #1a1a2e;
+            color: #fff;
+            padding: 40px 20px 20px;
+            text-align: center;
+            margin-top: auto;
+            min-width: 0;
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .footer-logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #e94560;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .footer-logo-domain {
+            color: #fff;
+        }
+
+        /* ===== Model profile layout ===== */
+        /* Desktop: foto selalu di kiri, info di kanan */
+        .model-profile-header {
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+            justify-content: flex-start;
+            text-align: left;
+        }
+        .model-profile-img {
+            flex-shrink: 0;
+            cursor: zoom-in;
+        }
+        .model-profile-info {
+            min-width: 0;
+            flex: 1 1 0;
+            align-items: flex-start;
+        }
+        .model-meta-row, .model-socials, .model-attr-row, .model-links-row {
+            justify-content: flex-start;
+        }
+
+        /* Mobile: foto di tengah, info di bawah foto */
+        @media (max-width: 768px) {
+            .model-profile-header {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                padding: 20px;
+            }
+            .model-profile-info {
+                width: 100%;
+                flex: none;
+                align-items: center;
+            }
+            .model-profile-name {
+                text-align: center;
+                font-size: 1.6rem;
+            }
+            .model-meta-row, .model-socials, .model-attr-row, .model-links-row, .model-traits {
+                justify-content: center;
+            }
+            .model-links-row {
+                width: 100%;
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .model-socials {
+                width: 100%;
+            }
+            .model-custom-buttons {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 8px;
+            }
+            .model-custom-buttons a {
+                flex: 1 1 calc(50% - 8px);
+                justify-content: center;
+                text-align: center;
+                padding: 9px 10px;
+            }
+            .model-profile-bio {
+                text-align: left;
+                width: 100%;
+            }
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 42px;
+            height: 42px;
+            background-color: rgba(255, 255, 255, 0.08);
+            color: #fff;
+            border-radius: 50%;
+            font-size: 1.1rem;
+            text-decoration: none;
+        }
+
+        .mobile-cart-link,
+        .mobile-hot-link {
+            display: none;
+        }
+
+        @media (max-width: 1024px) {
+            .mobile-cart-link,
+            .mobile-hot-link {
+                display: flex;
+            }
+            .navbar {
+                flex-wrap: wrap;
+                padding: 12px 20px;
+            }
+            .mobile-icon-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .nav-actions {
+                display: none; 
+            }
+            .nav-right-group {
+                gap: 8px;
+            }
+            .nav-brand {
+                font-size: 1.4rem;
+            }
+            .nav-menu {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+                order: 3;
+                margin-top: 15px;
+                padding-top: 15px;
+                border-top: 1px solid rgba(255,255,255,0.1);
+            }
+            .navbar.active .nav-menu {
+                display: flex;
+            }
+            .nav-menu .dropdown {
+                width: 100%;
+            }
+            .nav-menu .dropbtn {
+                width: 100%;
+                text-align: left;
+            }
+            .nav-menu .dropdown-content {
+                position: static;
+                display: none;
+                width: 100%;
+                max-width: 100%;
+                max-height: none;
+                grid-template-columns: 1fr;
+                box-shadow: none;
+                margin-top: 8px;
+            }
+            .nav-menu .dropdown:hover .dropdown-content {
+                display: grid;
+            }
+
+            .watch-container {
+                width: 100% !important;
+                max-width: 100% !important;
+                padding: 0 8px !important;
+                margin: 10px auto !important;
+                overflow-x: hidden !important;
+            }
+
+            .watch-layout {
+                display: flex !important;
+                flex-direction: column !important;
+                width: 100% !important;
+                gap: 15px !important;
+            }
+
+            .player-wrapper {
+                width: 100% !important;
+                max-width: 100% !important;
+                padding: 12px !important;
+                box-sizing: border-box !important;
+                overflow-x: hidden !important;
+            }
+
+            .video-box {
+                position: relative !important;
+                width: 100% !important;
+                height: 0 !important;
+                padding-top: 56.25% !important;
+                background-color: #000 !important;
+                border-radius: 8px !important;
+                overflow: hidden !important;
+                margin-bottom: 15px !important;
+            }
+
+            .video-box video {
+                position: absolute !important;
+                top: 0 !important;
+                left: 0 !important;
+                width: 100% !important;
+                height: 100% !important;
+                object-fit: cover !important;
+            }
+
+            .video-header-flex {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 10px;
+            }
+
+            .action-btns-group {
+                width: 100% !important;
+                display: flex !important;
+                gap: 8px !important;
+            }
+
+            .fav-action-btn, .completed-action-btn {
+                flex: 1 !important;
+                min-width: 0 !important;
+                justify-content: center !important;
+                padding: 8px 4px !important;
+                font-size: 0.75rem !important;
+                white-space: nowrap !important;
+            }
+
+            .video-title {
+                font-size: 1.2rem !important;
+            }
+
+            .video-meta {
+                gap: 10px !important;
+                font-size: 0.85rem !important;
+            }
+
+            .comment-input-box {
+                display: flex !important;
+                width: 100% !important;
+                gap: 8px !important;
+            }
+
+            .comment-input-box input {
+                flex: 1 !important;
+                min-width: 0 !important;
+            }
+
+            .comment-submit-btn {
+                padding: 0 12px !important;
+                font-size: 0.85rem !important;
+            }
+
+            .related-section {
+                width: 100% !important;
+                max-width: 100% !important;
+                padding: 15px !important;
+                box-sizing: border-box !important;
+            }
+
+            .related-card {
+                width: 100% !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- AUTH OVERLAY (LOGIN & REGISTER SPA) -->
+    <div id="authOverlay">
+        <div class="auth-container">
+            <div id="loginBox">
+                <h2>Login HDV</h2>
+                <div id="loginAlert" class="alert"></div>
+                <form id="loginForm" onsubmit="handleLogin(event)">
+                    <div class="form-group">
+                        <label>Username</label>
+                        <input type="text" id="loginUser" required placeholder="Input username">
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" id="loginPass" required placeholder="Input password">
+                    </div>
+                    <button type="submit" class="auth-btn">Login</button>
+                </form>
+                <div class="toggle-link">
+                    Not have account? <span onclick="switchAuthMode('register')">Register here</span>
+                </div>
+            </div>
+
+            <div id="registerBox" style="display: none;">
+                <h2>Register Account</h2>
+                <div id="regAlert" class="alert"></div>
+                <form id="registerForm" onsubmit="handleRegister(event)">
+                    <div class="form-group">
+                        <label>New Username</label>
+                        <input type="text" id="regUser" required placeholder="Create username">
+                    </div>
+                    <div class="form-group">
+                        <label>New Password</label>
+                        <input type="password" id="regPass" required placeholder="Create password">
+                    </div>
+                    <div class="form-group" id="tokenGroup">
+                        <label id="tokenLabel">Master Token</label>
+                        <input type="text" id="regToken" placeholder="Input token master">
+                        <small id="tokenInfo" style="color: #888; font-size: 0.75rem; display: block; margin-top: 4px;"></small>
+                    </div>
+                    <button type="submit" class="auth-btn">Create Now</button>
+                </form>
+                <div class="toggle-link">
+                    Have any account? <span onclick="switchAuthMode('login')">Login here</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <a class="nav-brand" href="index.html">
+            <span>HDV</span><span class="nav-brand-domain">.com</span>
+        </a>
+        
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            
+            <li class="dropdown">
+                <button class="dropbtn">Categories</button>
+                <ul class="dropdown-content" id="categoriesDropdown"></ul>
+            </li>
+
+            <li class="dropdown">
+                <button class="dropbtn">Studio</button>
+                <ul class="dropdown-content" id="studioDropdown"></ul>
+            </li>
+
+            <li class="dropdown">
+                <button class="dropbtn">Model</button>
+                <ul class="dropdown-content" id="modelDropdown"></ul>
+            </li>
+
+            <li><a href="live.html">Live Cam Sex</a></li>
+            <li><a href="lovely.html">AV Star</a></li>
+        </ul>
+
+        <div class="nav-right-group">
+            <div class="nav-actions">
+                <a href="best.html" class="hot-link-btn active" title="Hot">Hot</a>
+                <a href="cart.html" class="cart-link-btn" title="Cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                <form class="search-group" id="searchForm">
+                    <div class="search-container">
+                        <input type="text" id="searchInput" placeholder="Search">
+                        <button type="button" id="clearSearchBtn" class="clear-search-btn" title="Clear search"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <button type="submit" id="searchIconBtn" class="search-btn" title="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+
+            <a href="best.html" class="hot-link-btn active mobile-hot-link" title="Hot">Hot</a>
+            <a href="cart.html" class="cart-link-btn mobile-cart-link" title="Cart"><i class="fa-solid fa-cart-shopping"></i></a>
+
+            <button class="mobile-icon-btn" id="mobileSearchToggle" title="Search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <div class="dropdown right-align">
+                <button class="flag-btn region-all" id="flagBtn">
+                    <img src="img/all.png" alt="Regions" class="flag-icon" id="currentFlag" style="display:none;"> 
+                    <span id="currentRegionText">All</span>
+                </button>
+                <ul class="dropdown-content">
+                    <li><a href="#" onclick="filterByRegion('All')">All</a></li>
+                    <li><a href="#" onclick="filterByRegion('Japan')"><img src="img/flag-japan.png" class="flag-icon"> Japan</a></li>
+                    <li><a href="#" onclick="filterByRegion('China')"><img src="img/flag-china.png" class="flag-icon"> China</a></li>
+                    <li><a href="#" onclick="filterByRegion('Korea')"><img src="img/flag-south-korea.png" class="flag-icon"> Korea</a></li>
+                    <li><a href="#" onclick="filterByRegion('Indonesia')"><img src="img/flag-indonesia.png" class="flag-icon"> Indonesia</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown right-align profile-menu">
+                <button class="dots-btn" title="More Menu">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </button>
+                <ul class="dropdown-content">
+                    <li><a href="#" onclick="switchView('home', 'All')"><i class="fa-solid fa-user"></i> <span id="welcomeUserText">Welcome</span></a></li>
+                    <li id="masterTokenMenu" style="display: none;"><button type="button" onclick="showMasterTokenModal()"><i class="fa-solid fa-key"></i> Generate Token</button></li>
+                    <li><button type="button" onclick="filterView('favorites')"><i class="fa-solid fa-heart"></i> My Favorites</button></li>
+                    <li><button type="button" onclick="filterView('recent')"><i class="fa-solid fa-clock-rotate-left"></i> Recent Watch</button></li>
+                    <li><button type="button" onclick="exportUserData()"><i class="fa-solid fa-file-arrow-down"></i> Export Data</button></li>
+                    <li><button type="button" onclick="triggerImportData()"><i class="fa-solid fa-file-arrow-up"></i> Import Data</button></li>
+                    <li><button type="button" onclick="openLocalStorageEditorModal()"><i class="fa-solid fa-database"></i> Editor LocalStorage</button></li>
+                    <li><a href="notepad.html"><i class="fa-solid fa-note-sticky"></i> Buka Notepad</a></li>
+					<li><a href="#" onclick="logoutUser()" style="color: #e94560;"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+                </ul>
+            </div>
+
+            <input type="file" id="importFileinput" accept=".json" style="display: none;" onchange="importUserData(event)">
+
+            <button class="mobile-icon-btn" id="menuToggle" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <form class="mobile-search-modal" id="mobileSearchModal">
+            <input type="text" id="mobileSearchInput" placeholder="Search">
+            <button type="submit" id="mobileSearchSubmitBtn">Search</button>
+        </form>
+    </nav>
+
+    <div id="homeView" class="view-section active">
+        <main class="container">
+            <div class="categories-grid-container" id="allCategoriesBox">
+                <h3 class="categories-title" id="filterBoxTitle">All Categories / Tags</h3>
+                <div class="tags-button-grid" id="tagsButtonGrid"></div>
+            </div>
+
+            <div class="search-info" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+                <span id="searchInfoText"></span>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <button id="resetFilterBtn" style="display:none; background:#e94560; color:white; border:none; padding:5px 10px; border-radius:4px; cursor:pointer;" onclick="filterView('all')">Show All</button>
+                    <div style="display: flex; align-items: center; gap: 5px; background: white; padding: 4px 8px; border-radius: 6px; border: 1px solid #ddd; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+                        <span style="font-size: 0.85rem; font-weight: 600; color: #555;"><i class="fa-solid fa-sort"></i> Sort:</span>
+                        <select id="sortSelect" onchange="handleSortChange()" style="border: none; background: transparent; font-size: 0.85rem; font-weight: 600; color: #1a1a2e; outline: none; cursor: pointer;">
+                            <option value="rank" selected>Rank</option>
+                            <option value="new">New</option>
+                            <option value="older">Older</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-grid" id="cardContainer"></div>
+            <div class="pagination" id="paginationContainer"></div>
+        </main>
+    </div>
+
+    <!-- See All Models View (Directory) -->
+    <div id="allModelsView" class="view-section">
+        <main class="container">
+            <div class="search-info">
+                <span id="allModelsSearchInfoText">Showing All Models</span>
+                <button style="background:#e94560; color:white; border:none; padding:5px 10px; border-radius:4px; cursor:pointer;" onclick="switchView('home', 'All')">Back to Home</button>
+            </div>
+            <div class="card-grid" id="allModelsCardContainer"></div>
+            <div class="pagination" id="modelPaginationContainer" style="margin-top: 30px;"></div>
+        </main>
+    </div>
+
+    <!-- Single Model Detail View -->
+    <div id="modelView" class="view-section">
+        <main class="container">
+            <div class="model-profile-header" id="modelProfileHeader">
+                <img src="" alt="Model Photo" class="model-profile-img" id="modelProfileImg">
+                <div class="model-profile-info">
+                    <h2 class="model-profile-name" id="modelProfileName">Model Name</h2>
+                    <div class="model-meta-row">
+                        <div class="model-region-badge" id="modelProfileRegion" style="display:none;"></div>
+                        <div class="model-alt-name" id="modelProfileAlt" style="display:none;"></div>
+                    </div>
+                    <div class="model-attr-row" id="modelProfileAttrs" style="display:none;">
+                        <div class="model-birthday" id="modelProfileBirthday" style="display:none;"></div>
+                        <div class="model-traits" id="modelProfileTraits"></div>
+                    </div>
+                    <div class="model-links-row" id="modelProfileLinks">
+                        <div class="model-socials" id="modelProfileSocials"></div>
+                        <div class="model-custom-buttons" id="modelProfileCustomButtons"></div>
+                    </div>
+                    <div class="model-profile-bio" id="modelProfileBio"></div>
+                </div>
+            </div>
+            <div class="search-info">
+                <span id="modelSearchInfoText">Videos featuring this model</span>
+                <button style="background:#1a1a2e; color:white; border:none; padding:5px 10px; border-radius:4px; cursor:pointer;" onclick="showAllModelsDirectory()">Back to All Models</button>
+            </div>
+            <div class="card-grid" id="modelCardContainer"></div>
+        </main>
+    </div>
+
+    <div id="playerView" class="view-section">
+        <div class="watch-container">
+            <div class="watch-layout">
+                <div class="player-wrapper">
+                    <button type="button" class="watch-back-btn" onclick="goBackFromPlayer()">
+                        <i class="fa-solid fa-arrow-left"></i> Back
+                    </button>
+                    <div class="video-box">
+                        <video id="mainVideo" controls poster="">
+                            <source id="videoSource" src="" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-details">
+                        <div class="video-header-flex">
+                            <div class="video-tags" id="videoTagsContainer"></div>
+                            <div class="action-btns-group">
+                                <button type="button" id="completedBtn" class="completed-action-btn">
+                                    <i class="fa-regular fa-circle-check" id="completedIcon"></i> <span id="completedText">Mark Completed</span>
+                                </button>
+                                <button type="button" id="favBtn" class="fav-action-btn">
+                                    <i class="fa-regular fa-heart" id="favIcon"></i> <span id="favText">Save to Favorites</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <h1 class="video-title" id="videoTitle">Loading...</h1>
+                        
+                        <div class="video-meta">
+                            <span><i class="fa-regular fa-calendar"></i> <span id="videoDate">----</span></span>
+                            <span><i class="fa-regular fa-clock"></i> <span id="videoDuration">--</span> Min</span>
+                            <span id="videoWater"></span>
+                            
+                            <div class="rating-widget">
+                                <div class="stars-container" id="starContainer"></div>
+                                <span id="ratingScoreText" style="font-size: 0.85rem; font-weight: 600; color: #333;">0.0</span>
+                            </div>
+                        </div>
+
+                        <p class="video-bio" id="videoBio">Loading description...</p>
+                        
+                        <div class="video-hashtags" id="hashtagContainer"></div>
+
+                        <div class="download-section">
+                            <div class="download-title"><i class="fa-solid fa-download"></i> Download Links</div>
+                            <div class="download-buttons" id="downloadButtonsContainer"></div>
+
+                            <div class="comments-section">
+                                <div class="comments-title">
+                                    <i class="fa-solid fa-comments"></i> Comments (<span id="commentCount">0</span>)
+                                </div>
+                                
+                                <div class="comment-input-box">
+                                    <input type="text" id="commentInput" placeholder="Write a comment...">
+                                    <button type="button" class="comment-submit-btn" id="commentSubmitBtn">Send</button>
+                                </div>
+
+                                <div class="comments-list" id="commentsList"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="related-section">
+                    <h3 class="related-title">Related Videos</h3>
+                    <div class="related-list" id="relatedListContainer"></div>
+                    <button type="button" id="viewMoreBtn" class="view-more-btn">View More</button>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL NOTEPAD EDITOR LOCALSTORAGE (LATAR LIGHT) -->
+    <div id="localStorageEditorModal" class="fixed inset-0 z-[99999] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4" style="display: none;">
+        <div class="bg-white border border-gray-300 w-full max-w-3xl rounded-xl shadow-2xl flex flex-col overflow-hidden">
+            <div class="bg-slate-100 px-6 py-4 border-b border-gray-200 flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <span class="w-3 h-3 bg-red-400 rounded-full inline-block"></span>
+                    <span class="w-3 h-3 bg-yellow-400 rounded-full inline-block"></span>
+                    <span class="w-3 h-3 bg-green-400 rounded-full inline-block"></span>
+                    <span class="text-sm font-semibold text-slate-700 ml-2">Notepad LocalStorage Editor</span>
+                </div>
+                <button type="button" onclick="closeLocalStorageEditorModal()" class="text-slate-400 hover:text-slate-700 text-xl font-bold">&times;</button>
+            </div>
+
+            <div class="p-6 flex-1 flex flex-col space-y-4 bg-white">
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
+                    <div class="w-full sm:w-auto flex-1">
+                        <label class="block text-xs font-semibold text-slate-600 mb-1">Pilih Key LocalStorage:</label>
+                        <select id="localStorageKeySelect" onchange="loadLocalStorageKeyContent()" class="w-full bg-slate-50 text-slate-800 border border-slate-300 rounded-lg p-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        </select>
+                    </div>
+                    <span id="lsStatusBadge" class="text-xs px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-700 font-medium self-end sm:self-center">Format Valid</span>
+                </div>
+
+                <div class="flex flex-col flex-1">
+                    <label class="block text-xs font-semibold text-slate-600 mb-1">Isi Data (Format JSON):</label>
+                    <textarea 
+                        id="localStorageTextarea" 
+                        oninput="validateLocalStorageInput()"
+                        class="w-full h-72 bg-slate-50 text-slate-900 font-mono text-sm p-4 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 resize-none shadow-inner"
+                        placeholder="Data localStorage..."></textarea>
+                    <p id="lsErrorMsg" class="text-xs text-red-500 mt-2 font-medium" style="display: none;"></p>
+                </div>
+            </div>
+
+            <div class="bg-slate-100 px-6 py-4 border-t border-gray-200 flex justify-end space-x-3">
+                <button type="button" onclick="closeLocalStorageEditorModal()" class="px-4 py-2 bg-slate-200 hover:bg-slate-300 text-slate-700 text-sm font-medium rounded-lg transition">Batal</button>
+                <button type="button" id="saveLsBtn" onclick="saveLocalStorageChanges()" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-medium rounded-lg transition shadow cursor-pointer">Simpan ke LocalStorage</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- IMAGE VIEWER MODAL -->
+    <div id="imageViewerModal" class="fixed inset-0 z-[100001] flex-col items-center justify-center bg-black/85 backdrop-blur-sm p-4" style="display: none;" onclick="closeImageViewer()">
+        <button type="button" onclick="closeImageViewer()" class="absolute top-4 right-5 text-white text-4xl font-bold leading-none hover:text-red-400" style="z-index:3;" aria-label="Close">&times;</button>
+        <button type="button" id="imageViewerPrev" onclick="event.stopPropagation(); prevViewerImage()" class="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/15 hover:bg-[#e94560] text-white flex items-center justify-center transition" style="display:none; z-index:3;" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+        <button type="button" id="imageViewerNext" onclick="event.stopPropagation(); nextViewerImage()" class="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/15 hover:bg-[#e94560] text-white flex items-center justify-center transition" style="display:none; z-index:3;" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+        <img id="imageViewerImg" src="" alt="" class="rounded-lg shadow-2xl" style="max-width: 95vw; max-height: 85vh; object-fit: contain;" onclick="event.stopPropagation()">
+        <p id="imageViewerCaption" class="text-white text-sm mt-3 text-center max-w-3xl"></p>
+        <p id="imageViewerCounter" class="text-white/70 text-xs mt-1 text-center" style="display:none;"></p>
+    </div>
+
+    <!-- CUSTOM ALERT MODAL -->
+    <div id="customAlertModal" class="fixed inset-0 z-[100000] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4" style="display: none;">
+        <div class="bg-white border border-gray-300 w-full max-w-sm rounded-xl shadow-2xl flex flex-col overflow-hidden text-center p-6">
+            <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
+                <i class="fa-solid fa-circle-info"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-800 mb-2">Informasi</h3>
+            <p id="customAlertMessage" class="text-sm text-slate-600 mb-6 leading-relaxed">Pesan notifikasi...</p>
+            <button type="button" onclick="closeCustomAlert()" class="w-full py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-sm rounded-lg transition shadow">OK</button>
+        </div>
+    </div>
+
+    <!-- CUSTOM PROMPT MODAL -->
+    <div id="customPromptModal" class="fixed inset-0 z-[100000] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4" style="display: none;">
+        <div class="bg-white border border-gray-300 w-full max-w-sm rounded-xl shadow-2xl flex flex-col p-6">
+            <h3 id="customPromptTitle" class="text-base font-bold text-slate-800 mb-2">Masukkan Nilai</h3>
+            <p id="customPromptMessage" class="text-xs text-slate-500 mb-4 leading-relaxed"></p>
+            <input type="text" id="customPromptInput" class="w-full bg-slate-50 text-slate-900 border border-slate-300 rounded-lg p-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 mb-6" placeholder="Ketik di sini...">
+            <div class="flex justify-end space-x-2">
+                <button type="button" onclick="resolveCustomPrompt(false)" class="px-4 py-2 bg-slate-200 hover:bg-slate-300 text-slate-700 text-sm font-medium rounded-lg transition">Batal</button>
+                <button type="button" onclick="resolveCustomPrompt(true)" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-medium rounded-lg transition shadow">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">HDV<span class="footer-logo-domain">.com</span></div>
+            <p class="footer-desc">Your ultimate video and movie gallery platform. Easily discover exciting content from various regions, categories, and exclusive studios.</p>
+            <br>
+            
+            <div class="social-icons">
+                <a href="#" title="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+
+            <hr class="footer-divider">
+            <p class="footer-copyright">&copy; 2026 HDV. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="moredata.js"></script>
+    <script src="best.js"></script>
+    <script>
+        // Ambil data lengkap dari data.js berdasarkan title di best.js, urut sesuai rank
+        const bestList = (typeof bestData !== 'undefined' && typeof movieData !== 'undefined')
+            ? bestData.map(b => {
+                const key = String(b.title || '').trim().toLowerCase();
+                const m = movieData.find(x => String(x.title || '').trim().toLowerCase() === key);
+                if (!m) { console.warn('best.js: title tidak ditemukan di data.js ->', b.title); return null; }
+                return Object.assign({}, m, { rank: b.rank });
+            }).filter(Boolean).sort((a, b) => a.rank - b.rank)
+            : [];
+    </script>
+
+    <script>
+        let currentWatchingMovie = null;
+
+        let promptCallback = null;
+
+        function showCustomAlert(message) {
+            document.getElementById('customAlertMessage').innerText = message;
+            document.getElementById('customAlertModal').style.display = 'flex';
+        }
+
+        function closeCustomAlert() {
+            document.getElementById('customAlertModal').style.display = 'none';
+        }
+
+        function showCustomPrompt(title, message, defaultValue = "", callback) {
+            document.getElementById('customPromptTitle').innerText = title;
+            document.getElementById('customPromptMessage').innerText = message;
+            const inputEl = document.getElementById('customPromptInput');
+            inputEl.value = defaultValue;
+            document.getElementById('customPromptModal').style.display = 'flex';
+            inputEl.focus();
+            promptCallback = callback;
+        }
+
+        function resolveCustomPrompt(isConfirm) {
+            const val = document.getElementById('customPromptInput').value;
+            document.getElementById('customPromptModal').style.display = 'none';
+            if (promptCallback) {
+                promptCallback(isConfirm ? val : null);
+                promptCallback = null;
+            }
+        }
+
+        document.getElementById('customPromptInput').addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') resolveCustomPrompt(true);
+            if (e.key === 'Escape') resolveCustomPrompt(false);
+        });
+
+        function getUsers() {
+            return JSON.parse(localStorage.getItem('hdv_users')) || [];
+        }
+
+        function updateLoginUI() {
+            const session = JSON.parse(localStorage.getItem('hdv_logged_in'));
+            const authOverlay = document.getElementById('authOverlay');
+            const welcomeUserText = document.getElementById('welcomeUserText');
+            const masterTokenMenu = document.getElementById('masterTokenMenu');
+
+            if (session) {
+                authOverlay.style.display = 'none';
+                if (welcomeUserText) {
+                    welcomeUserText.innerText = `Welcome, ${session.username}`;
+                }
+                if (masterTokenMenu) {
+                    masterTokenMenu.style.display = session.role === 'master' ? 'block' : 'none';
+                }
+            } else {
+                authOverlay.style.display = 'flex';
+                checkMasterStatus();
+            }
+        }
+
+        function checkMasterStatus() {
+            const users = getUsers();
+            const tokenGroup = document.getElementById('tokenGroup');
+            const tokenInput = document.getElementById('regToken');
+            const tokenInfo = document.getElementById('tokenInfo');
+
+            if (users.length === 0) {
+                tokenGroup.style.display = 'none';
+                tokenInput.removeAttribute('required');
+                tokenInfo.innerText = "*No 1 account automatic change to master.";
+            } else {
+                tokenGroup.style.display = 'block';
+                tokenInput.setAttribute('required', 'true');
+                tokenInfo.innerText = "*Master token required.";
+            }
+        }
+
+        function switchAuthMode(mode) {
+            if (mode === 'register') {
+                document.getElementById('loginBox').style.display = 'none';
+                document.getElementById('registerBox').style.display = 'block';
+                checkMasterStatus();
+            } else {
+                document.getElementById('registerBox').style.display = 'none';
+                document.getElementById('loginBox').style.display = 'block';
+            }
+            clearAuthAlerts();
+        }
+
+        function showAuthAlert(boxId, message, type) {
+            const alertEl = document.getElementById(boxId);
+            alertEl.innerText = message;
+            alertEl.className = `alert ${type}`;
+            alertEl.style.display = 'block';
+        }
+
+        function clearAuthAlerts() {
+            document.querySelectorAll('.alert').forEach(el => el.style.display = 'none');
+        }
+
+        function handleRegister(e) {
+            e.preventDefault();
+            const username = document.getElementById('regUser').value.trim();
+            const password = document.getElementById('regPass').value.trim();
+            const tokenInput = document.getElementById('regToken').value.trim();
+
+            let users = getUsers();
+
+            if (users.some(u => u.username === username)) {
+                showAuthAlert('regAlert', 'Username not ready!', 'error');
+                return;
+            }
+
+            let role = 'member';
+
+            if (users.length === 0) {
+                role = 'master';
+                localStorage.setItem('hdv_master_token', 'MASTERKEY123');
+            } else {
+                const savedToken = localStorage.getItem('hdv_master_token') || 'MASTERKEY123';
+                if (tokenInput !== savedToken) {
+                    showAuthAlert('regAlert', 'Master Token Not Ready!', 'error');
+                    return;
+                }
+            }
+
+            users.push({ username, password, role });
+            localStorage.setItem('hdv_users', JSON.stringify(users));
+
+            showAuthAlert('regAlert', `Register Succesfull! (${role === 'master' ? 'Master Account' : 'Member Account'}). Please login.`, 'success');
+            document.getElementById('registerForm').reset();
+            setTimeout(() => switchAuthMode('login'), 1500);
+        }
+
+        function handleLogin(e) {
+            e.preventDefault();
+            const username = document.getElementById('loginUser').value.trim();
+            const password = document.getElementById('loginPass').value.trim();
+
+            const users = getUsers();
+            const validUser = users.find(u => u.username === username && u.password === password);
+
+            if (validUser) {
+                localStorage.setItem('hdv_logged_in', JSON.stringify({
+                    username: validUser.username,
+                    role: validUser.role
+                }));
+                document.getElementById('loginForm').reset();
+                updateLoginUI();
+                init();
+            } else {
+                showAuthAlert('loginAlert', 'Incorrect username or password!', 'error');
+            }
+        }
+
+        function logoutUser() {
+            localStorage.removeItem('hdv_logged_in');
+            updateLoginUI();
+        }
+
+        function showMasterTokenModal() {
+            let currentToken = localStorage.getItem('hdv_master_token') || 'MASTERKEY123';
+            showCustomPrompt("Pengaturan Master Token", `Token Saat Ini: [ ${currentToken} ]\nMasukkan token baru jika ingin mengubahnya:`, currentToken, (newVal) => {
+                if (newVal !== null && newVal.trim() !== "") {
+                    localStorage.setItem('hdv_master_token', newVal.trim());
+                    showCustomAlert(`Master Token berhasil diperbarui ke: ${newVal.trim()}`);
+                }
+            });
+        }
+
+        const menuToggle = document.getElementById('menuToggle');
+        const navbar = document.getElementById('navbar');
+        const mobileSearchModal = document.getElementById('mobileSearchModal');
+        const mobileSearchToggle = document.getElementById('mobileSearchToggle');
+
+        menuToggle.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+            mobileSearchModal.classList.remove('active');
+            const icon = menuToggle.querySelector('i');
+            if (navbar.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        mobileSearchToggle.addEventListener('click', () => {
+            mobileSearchModal.classList.toggle('active');
+            navbar.classList.remove('active');
+            const barIcon = menuToggle.querySelector('i');
+            barIcon.classList.remove('fa-xmark');
+            barIcon.classList.add('fa-bars');
+        });
+
+        const regionFlags = {
+            'Japan': 'img/flag-japan.png',
+            'China': 'img/flag-china.png',
+            'Korea': 'img/flag-south-korea.png',
+            'Indonesia': 'img/flag-indonesia.png'
+        };
+        
+        function triggerImportData() {
+            const fileInput = document.getElementById('importFileinput');
+            if (fileInput) fileInput.click();
+        }
+
+        function exportUserData() {
+            try {
+                const userData = {
+                    favorites: JSON.parse(localStorage.getItem('favorites')) || [],
+                    completedVideos: JSON.parse(localStorage.getItem('completedVideos')) || [],
+                    recentWatch: JSON.parse(localStorage.getItem('recentWatch')) || [],
+                    movieRatings: JSON.parse(localStorage.getItem('movieRatings')) || {}
+                };
+
+                const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(userData, null, 2));
+                const downloadAnchor = document.createElement('a');
+                downloadAnchor.setAttribute("href", dataStr);
+                downloadAnchor.setAttribute("download", `hdv_backup_${new Date().toISOString().slice(0, 10)}.json`);
+                document.body.appendChild(downloadAnchor);
+                downloadAnchor.click();
+                downloadAnchor.remove();
+            } catch (error) {
+                console.error("Failed to export data:", error);
+                showCustomAlert("Terjadi kesalahan saat mengekspor data.");
+            }
+        }
+
+        function importUserData(event) {
+            const fileReader = new FileReader();
+            if (event.target.files && event.target.files[0]) {
+                fileReader.readAsText(event.target.files[0], "UTF-8");
+                fileReader.onload = (e) => {
+                    try {
+                        const parsedData = JSON.parse(e.target.result);
+                        if (parsedData.favorites && Array.isArray(parsedData.favorites)) {
+                            localStorage.setItem('favorites', JSON.stringify(parsedData.favorites));
+                        }
+                        if (parsedData.completedVideos && Array.isArray(parsedData.completedVideos)) {
+                            localStorage.setItem('completedVideos', JSON.stringify(parsedData.completedVideos));
+                        }
+                        if (parsedData.recentWatch && Array.isArray(parsedData.recentWatch)) {
+                            localStorage.setItem('recentWatch', JSON.stringify(parsedData.recentWatch));
+                        }
+                        if (parsedData.movieRatings && typeof parsedData.movieRatings === 'object') {
+                            localStorage.setItem('movieRatings', JSON.stringify(parsedData.movieRatings));
+                        }
+
+                        showCustomAlert("Data berhasil diimpor! Halaman akan dimuat ulang.");
+                        setTimeout(() => window.location.reload(), 1500);
+                    } catch (error) {
+                        console.error("Failed to parse JSON file:", error);
+                        showCustomAlert("Format file tidak valid atau rusak.");
+                    }
+                };
+            }
+        }
+
+        function openLocalStorageEditorModal() {
+            const modal = document.getElementById('localStorageEditorModal');
+            const selectEl = document.getElementById('localStorageKeySelect');
+            
+            selectEl.innerHTML = "";
+            let keys = [];
+            for (let i = 0; i < localStorage.length; i++) {
+                keys.push(localStorage.key(i));
+            }
+
+            if (keys.length === 0) {
+                keys = ['favorites', 'completedVideos', 'recentWatch', 'movieRatings'];
+            }
+
+            keys.forEach(k => {
+                let opt = document.createElement('option');
+                opt.value = k;
+                opt.innerText = k;
+                selectEl.appendChild(opt);
+            });
+
+            modal.style.display = 'flex';
+            loadLocalStorageKeyContent();
+        }
+
+        function closeLocalStorageEditorModal() {
+            document.getElementById('localStorageEditorModal').style.display = 'none';
+        }
+
+        function loadLocalStorageKeyContent() {
+            const selectEl = document.getElementById('localStorageKeySelect');
+            const textarea = document.getElementById('localStorageTextarea');
+            const selectedKey = selectEl.value;
+
+            const rawVal = localStorage.getItem(selectedKey);
+            if (rawVal !== null) {
+                try {
+                    const parsed = JSON.parse(rawVal);
+                    textarea.value = JSON.stringify(parsed, null, 4);
+                } catch (e) {
+                    textarea.value = rawVal;
+                }
+            } else {
+                textarea.value = "[]";
+            }
+            validateLocalStorageInput();
+        }
+
+        function validateLocalStorageInput() {
+            const textarea = document.getElementById('localStorageTextarea');
+            const badge = document.getElementById('lsStatusBadge');
+            const errorMsg = document.getElementById('lsErrorMsg');
+            const saveBtn = document.getElementById('saveLsBtn');
+
+            try {
+                JSON.parse(textarea.value);
+                badge.innerText = "Format Valid";
+                badge.className = "text-xs px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-700 font-medium self-end sm:self-center";
+                errorMsg.style.display = 'none';
+                saveBtn.disabled = false;
+                saveBtn.className = "px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-medium rounded-lg transition shadow cursor-pointer";
+            } catch (e) {
+                badge.innerText = "Format Tidak Valid";
+                badge.className = "text-xs px-2.5 py-1 rounded-full bg-red-100 text-red-700 font-medium self-end sm:self-center";
+                errorMsg.innerText = "Kesalahan Sintaks JSON: " + e.message;
+                errorMsg.style.display = 'block';
+                saveBtn.disabled = true;
+                saveBtn.className = "px-4 py-2 bg-slate-300 text-slate-500 text-sm font-medium rounded-lg transition shadow cursor-not-allowed";
+            }
+        }
+
+        function saveLocalStorageChanges() {
+            const selectEl = document.getElementById('localStorageKeySelect');
+            const textarea = document.getElementById('localStorageTextarea');
+            const selectedKey = selectEl.value;
+
+            try {
+                const parsedData = JSON.parse(textarea.value);
+                localStorage.setItem(selectedKey, JSON.stringify(parsedData));
+                closeLocalStorageEditorModal();
+                showCustomAlert(`Key "${selectedKey}" berhasil disimpan ke LocalStorage! Halaman akan dimuat ulang.`);
+                setTimeout(() => window.location.reload(), 1500);
+            } catch (e) {
+                showCustomAlert("Gagal menyimpan, pastikan format JSON valid.");
+            }
+        }
+
+        let current_page = 1;
+        let model_current_page = 1;
+        const rows_per_page = 12;
+        let filteredData = typeof bestList !== 'undefined' ? bestList : [];
+
+        const cardContainer = document.getElementById('cardContainer');
+        const paginationContainer = document.getElementById('paginationContainer');
+        const searchInput = document.getElementById('searchInput');
+        const clearSearchBtn = document.getElementById('clearSearchBtn');
+        const searchIconBtn = document.getElementById('searchIconBtn');
+        const mobileSearchInput = document.getElementById('mobileSearchInput');
+        const mobileSearchSubmitBtn = document.getElementById('mobileSearchSubmitBtn');
+        const currentFlag = document.getElementById('currentFlag');
+        const flagBtn = document.getElementById('flagBtn');
+        const currentRegionText = document.getElementById('currentRegionText');
+        const searchInfoText = document.getElementById('searchInfoText');
+        const resetFilterBtn = document.getElementById('resetFilterBtn');
+        const allCategoriesBox = document.getElementById('allCategoriesBox');
+        const tagsButtonGrid = document.getElementById('tagsButtonGrid');
+        const filterBoxTitle = document.getElementById('filterBoxTitle');
+
+        function getStoredRatings() {
+            return JSON.parse(localStorage.getItem('movieRatings')) || {};
+        }
+
+        function getStoredCompleted() {
+            return JSON.parse(localStorage.getItem('completedVideos')) || [];
+        }
+
+        function getPaginatedData(data, page, rowsPerPage) {
+            let start = rowsPerPage * (page - 1);
+            let end = start + rowsPerPage;
+            return data.slice(start, end);
+        }
+
+        function getWaterHtml(movie) {
+            const level = parseInt(movie.water, 10);
+            if (!level || level < 1) return "";
+            return `<span class="water-badge" title="Water ${level}"><i class="fa-solid fa-droplet"></i>${level}</span>`;
+        }
+
+        function getMovieModels(movie) {
+            let rawModels = movie.models || movie.model;
+            if (!rawModels) return [];
+            if (Array.isArray(rawModels)) {
+                return rawModels.map(m => m.trim()).filter(m => m !== "" && m.toLowerCase() !== "general");
+            }
+            if (typeof rawModels === 'string') {
+                return rawModels.split(',').map(m => m.trim()).filter(m => m !== "" && m.toLowerCase() !== "general");
+            }
+            return [];
+        }
+
+        function generateNavigationMenus() {
+            if (typeof bestList === 'undefined') return;
+            const categoriesDropdown = document.getElementById('categoriesDropdown');
+            let tagCounts = {};
+            bestList.forEach(movie => {
+                if (movie.tags && Array.isArray(movie.tags)) {
+                    movie.tags.forEach(tag => {
+                        if (tag.toLowerCase() !== 'general') {
+                            tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+                        }
+                    });
+                }
+            });
+            let sortedTags = Object.keys(tagCounts).sort((a, b) => tagCounts[b] - tagCounts[a]);
+
+            categoriesDropdown.innerHTML = "";
+            let top4Tags = sortedTags.slice(0, 4);
+            top4Tags.forEach(tag => {
+                let li = document.createElement('li');
+                li.innerHTML = `<a href="#" onclick="filterByCategory('${tag}')">${tag}</a>`;
+                categoriesDropdown.appendChild(li);
+            });
+            let seeAllCats = document.createElement('li');
+            seeAllCats.className = "see-all-item";
+            seeAllCats.innerHTML = `<a href="#" onclick="showAllFilterView('category')">See All</a>`;
+            categoriesDropdown.appendChild(seeAllCats);
+
+            const studioDropdown = document.getElementById('studioDropdown');
+            let studioCounts = {};
+            bestList.forEach(movie => {
+                let studioName = movie.studio ? movie.studio.trim() : 'Unknown';
+                studioCounts[studioName] = (studioCounts[studioName] || 0) + 1;
+            });
+            let sortedStudios = Object.keys(studioCounts).sort((a, b) => studioCounts[b] - studioCounts[a]);
+
+            studioDropdown.innerHTML = "";
+            let top4Studios = sortedStudios.slice(0, 4);
+            top4Studios.forEach(studio => {
+                let li = document.createElement('li');
+                li.innerHTML = `<a href="#" onclick="filterByStudio('${studio}')">${studio}</a>`;
+                studioDropdown.appendChild(li);
+            });
+            let seeAllStudios = document.createElement('li');
+            seeAllStudios.className = "see-all-item";
+            seeAllStudios.innerHTML = `<a href="#" onclick="showAllFilterView('studio')">See All</a>`;
+            studioDropdown.appendChild(seeAllStudios);
+
+            const modelDropdown = document.getElementById('modelDropdown');
+            let modelCounts = {};
+            bestList.forEach(movie => {
+                let models = getMovieModels(movie);
+                models.forEach(modelName => {
+                    modelCounts[modelName] = (modelCounts[modelName] || 0) + 1;
+                });
+            });
+            let sortedModels = Object.keys(modelCounts).sort((a, b) => modelCounts[b] - modelCounts[a]);
+
+            modelDropdown.innerHTML = "";
+            let top4Models = sortedModels.slice(0, 4);
+            top4Models.forEach(modelName => {
+                let li = document.createElement('li');
+                li.innerHTML = `<a href="#" onclick="filterByModel('${modelName}')">${modelName}</a>`;
+                modelDropdown.appendChild(li);
+            });
+            let seeAllModels = document.createElement('li');
+            seeAllModels.className = "see-all-item";
+            seeAllModels.innerHTML = `<a href="#" onclick="showAllModelsDirectory()">See All Models</a>`;
+            modelDropdown.appendChild(seeAllModels);
+        }
+
+        function showAllFilterView(type) {
+            switchView('home');
+            allCategoriesBox.classList.add('active');
+            tagsButtonGrid.innerHTML = "";
+
+            if (type === 'category') {
+                filterBoxTitle.innerText = "All Categories / Tags";
+                let tagCounts = {};
+                bestList.forEach(m => m.tags?.forEach(t => {
+                    if (t.toLowerCase() !== 'general') {
+                        tagCounts[t] = (tagCounts[t] || 0) + 1;
+                    }
+                }));
+                let sortedTags = Object.keys(tagCounts).sort((a, b) => tagCounts[b] - tagCounts[a]);
+
+                let allBtn = document.createElement('button');
+                allBtn.className = "tag-filter-btn";
+                allBtn.innerText = "All Categories";
+                allBtn.onclick = () => filterByCategory('All');
+                tagsButtonGrid.appendChild(allBtn);
+
+                sortedTags.forEach(tag => {
+                    let btn = document.createElement('button');
+                    btn.className = "tag-filter-btn";
+                    btn.innerText = tag;
+                    btn.onclick = () => filterByCategory(tag);
+                    tagsButtonGrid.appendChild(btn);
+                });
+            } else if (type === 'studio') {
+                filterBoxTitle.innerText = "All Studios";
+                let studioCounts = {};
+                bestList.forEach(m => {
+                    let s = m.studio ? m.studio.trim() : 'Unknown';
+                    studioCounts[s] = (studioCounts[s] || 0) + 1;
+                });
+                let sortedStudios = Object.keys(studioCounts).sort((a, b) => studioCounts[b] - studioCounts[a]);
+
+                let allBtn = document.createElement('button');
+                allBtn.className = "tag-filter-btn";
+                allBtn.innerText = "All Studios";
+                allBtn.onclick = () => filterByStudio('All');
+                tagsButtonGrid.appendChild(allBtn);
+
+                sortedStudios.forEach(studio => {
+                    let btn = document.createElement('button');
+                    btn.className = "tag-filter-btn";
+                    btn.innerText = studio;
+                    btn.onclick = () => filterByStudio(studio);
+                    tagsButtonGrid.appendChild(btn);
+                });
+            }
+
+            searchInfoText.innerHTML = `Showing All <strong>${type.toUpperCase()}</strong>`;
+            resetFilterBtn.style.display = "block";
+            cardContainer.innerHTML = "";
+            paginationContainer.style.display = "none";
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function showAllModelsDirectory(page = 1) {
+            model_current_page = page;
+            document.querySelectorAll('.view-section').forEach(el => el.classList.remove('active'));
+            document.getElementById('allModelsView').classList.add('active');
+            
+            const allModelsCardContainer = document.getElementById('allModelsCardContainer');
+            allModelsCardContainer.innerHTML = "";
+
+            let modelCounts = {};
+            bestList.forEach(movie => {
+                let models = getMovieModels(movie);
+                models.forEach(modelName => {
+                    modelCounts[modelName] = (modelCounts[modelName] || 0) + 1;
+                });
+            });
+            let sortedModels = Object.keys(modelCounts).sort((a, b) => modelCounts[b] - modelCounts[a]);
+
+            let paginatedModels = getPaginatedData(sortedModels, model_current_page, rows_per_page);
+
+            if (paginatedModels.length === 0) {
+                allModelsCardContainer.innerHTML = `<p style="grid-column: 1/-1; text-align:center; color:#777; padding:40px;">No models found.</p>`;
+                return;
+            }
+
+            paginatedModels.forEach(modelName => {
+                let profileInfo = (typeof modelProfiles !== 'undefined' && modelProfiles[modelName])
+                    ? modelProfiles[modelName]
+                    : { photo: "img/unknown.webp", bio: "No biography available." };
+
+                let modelCard = document.createElement('div');
+                modelCard.className = "model-card-item";
+                modelCard.onclick = () => filterByModel(modelName);
+
+                modelCard.innerHTML = `
+                    <img src="${[].concat(profileInfo.photo || "img/unknown.webp")[0]}" alt="${modelName}" class="model-card-img" loading="lazy">
+                    <h3 class="model-card-name">${modelName}</h3>
+                    <p class="model-card-bio">${bioFirstParagraph(profileInfo.bio)}</p>
+                `;
+                allModelsCardContainer.appendChild(modelCard);
+            });
+
+            renderModelPagination(sortedModels);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function renderModelPagination(modelsArray) {
+            let modelPaginationContainer = document.getElementById('modelPaginationContainer');
+            if (!modelPaginationContainer) return;
+
+            modelPaginationContainer.innerHTML = "";
+            let pageCount = Math.ceil(modelsArray.length / rows_per_page);
+
+            if (pageCount <= 1) return;
+
+            let prevBtn = document.createElement('button');
+            prevBtn.innerHTML = '<i class="fa-solid fa-chevron-left"></i>';
+            prevBtn.classList.add('page-btn');
+            prevBtn.disabled = model_current_page === 1;
+            prevBtn.addEventListener('click', () => {
+                if (model_current_page > 1) showAllModelsDirectory(model_current_page - 1);
+            });
+            modelPaginationContainer.appendChild(prevBtn);
+
+            for (let i = 1; i <= pageCount; i++) {
+                let btn = document.createElement('button');
+                btn.innerText = i;
+                btn.classList.add('page-btn');
+                if (model_current_page === i) btn.classList.add('active');
+                btn.addEventListener('click', () => showAllModelsDirectory(i));
+                modelPaginationContainer.appendChild(btn);
+            }
+
+            let nextBtn = document.createElement('button');
+            nextBtn.innerHTML = '<i class="fa-solid fa-chevron-right"></i>';
+            nextBtn.classList.add('page-btn');
+            nextBtn.disabled = model_current_page === pageCount;
+            nextBtn.addEventListener('click', () => {
+                if (model_current_page < pageCount) showAllModelsDirectory(model_current_page + 1);
+            });
+            modelPaginationContainer.appendChild(nextBtn);
+        }
+
+        function filterByModel(modelName) {
+            allCategoriesBox.classList.remove('active');
+            switchView('model', modelName);
+        }
+
+        function sortByCurrentSort(dataArray) {
+            const sortSelectEl = document.getElementById('sortSelect');
+            const sortValue = sortSelectEl ? sortSelectEl.value : 'rank';
+            if (sortValue === 'rank') return [...dataArray].sort((a, b) => (a.rank || 9999) - (b.rank || 9999));
+            return [...dataArray].sort((a, b) => {
+                let dateA = new Date(a.releaseDate || '2020-01-01');
+                let dateB = new Date(b.releaseDate || '2020-01-01');
+                return sortValue === 'new' ? dateB - dateA : dateA - dateB;
+            });
+        }
+
+        function filterByCategory(categoryName) {
+            current_page = 1;
+            allCategoriesBox.classList.remove('active');
+            
+            if (categoryName === 'All' || !categoryName) {
+                filteredData = bestList;
+                searchInfoText.innerHTML = `Showing all items`;
+            } else {
+                filteredData = bestList.filter(movie => movie.tags && movie.tags.includes(categoryName));
+                searchInfoText.innerHTML = `Showing items for category: "<strong>${categoryName}</strong>"`;
+            }
+            filteredData = sortByCurrentSort(filteredData);
+            
+            document.querySelectorAll('.view-section').forEach(el => el.classList.remove('active'));
+            document.getElementById('homeView').classList.add('active');
+            
+            resetFilterBtn.style.display = "block";
+            displayCards(filteredData, cardContainer, rows_per_page, current_page, "", 'category');
+            setupPagination(filteredData, paginationContainer, rows_per_page, "");
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function filterByStudio(studioName) {
+            current_page = 1;
+            allCategoriesBox.classList.remove('active');
+            
+            if (studioName === 'All' || !studioName) {
+                filteredData = bestList;
+                searchInfoText.innerHTML = `Showing all items`;
+            } else {
+                filteredData = bestList.filter(movie => {
+                    let movieStudio = movie.studio ? movie.studio.trim().toLowerCase() : '';
+                    return movieStudio === studioName.trim().toLowerCase();
+                });
+                searchInfoText.innerHTML = `Showing items for studio: "<strong>${studioName}</strong>"`;
+            }
+            filteredData = sortByCurrentSort(filteredData);
+            
+            document.querySelectorAll('.view-section').forEach(el => el.classList.remove('active'));
+            document.getElementById('homeView').classList.add('active');
+            
+            resetFilterBtn.style.display = "block";
+            displayCards(filteredData, cardContainer, rows_per_page, current_page, "", 'studio');
+            setupPagination(filteredData, paginationContainer, rows_per_page, "");
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function filterByRegion(regionName) {
+            current_page = 1;
+            allCategoriesBox.classList.remove('active');
+            
+            if (regionName === 'All') {
+                filteredData = bestList;
+                currentRegionText.innerText = "All";
+                currentFlag.style.display = "none";
+                flagBtn.classList.add('region-all');
+                searchInfoText.innerHTML = `Showing all items`;
+            } else {
+                filteredData = bestList.filter(movie => movie.region && movie.region.toLowerCase() === regionName.toLowerCase());
+                currentRegionText.innerText = regionName;
+                currentFlag.src = regionFlags[regionName] || 'img/japan.png';
+                currentFlag.style.display = "";
+                flagBtn.classList.remove('region-all');
+                searchInfoText.innerHTML = `Showing items for region: "<strong>${regionName}</strong>"`;
+            }
+            filteredData = sortByCurrentSort(filteredData);
+
+            searchInput.value = "";
+            mobileSearchInput.value = "";
+            clearSearchBtn.style.display = "none";
+            
+            document.querySelectorAll('.view-section').forEach(el => el.classList.remove('active'));
+            document.getElementById('homeView').classList.add('active');
+            
+            resetFilterBtn.style.display = "block";
+            displayCards(filteredData, cardContainer, rows_per_page, current_page, "", 'all');
+            setupPagination(filteredData, paginationContainer, rows_per_page, "");
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        let currentView = { name: 'home', param: 'All' };
+        let previousView = null;
+
+        function switchView(viewName, param = null, isBack = false) {
+            if (!isBack) {
+                previousView = { name: currentView.name, param: currentView.param };
+            }
+            currentView = { name: viewName, param: param };
+
+            document.querySelectorAll('.view-section').forEach(el => el.classList.remove('active'));
+            
+            if (viewName === 'home') {
+                document.getElementById('homeView').classList.add('active');
+                if (param === 'All' || !param) {
+                    allCategoriesBox.classList.remove('active');
+                    filteredData = sortByCurrentSort(bestList);
+                    displayCards(filteredData, cardContainer, rows_per_page, current_page, "", 'all');
+                    setupPagination(filteredData, paginationContainer, rows_per_page, "");
+                }
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            } else if (viewName === 'model') {
+                document.getElementById('modelView').classList.add('active');
+                loadModelProfile(param);
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            } else if (viewName === 'player') {
+                allCategoriesBox.classList.remove('active');
+                document.getElementById('playerView').classList.add('active');
+                loadPlayer(param);
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                if (!isBack) {
+                    history.pushState({ hdvPlayer: true }, '', '#watch');
+                }
+            }
+        }
+
+        function goBackFromPlayer() {
+            if (previousView && previousView.name !== 'player') {
+                switchView(previousView.name, previousView.param, true);
+            } else {
+                switchView('home', 'All', true);
+            }
+        }
+
+        window.addEventListener('popstate', () => {
+            if (document.getElementById('playerView').classList.contains('active')) {
+                goBackFromPlayer();
+            }
+        });
+
+        function escapeHtml(str) {
+            return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        }
+
+        function bioToHtml(bio) {
+            const arr = (Array.isArray(bio) ? bio : [bio || "No biography available."])
+                .filter(p => p && String(p).trim());
+            if (arr.length === 0) return "";
+            const first = `<p>${escapeHtml(arr[0])}</p>`;
+            if (arr.length === 1) return first;
+            const rest = arr.slice(1).map(p => `<p>${escapeHtml(p)}</p>`).join("");
+            return `${first}<div class="bio-more">${rest}</div><button type="button" class="bio-toggle-btn" onclick="toggleBioMore(this)">Read more</button>`;
+        }
+
+        function toggleBioMore(btn) {
+            const more = btn.previousElementSibling;
+            if (!more) return;
+            const open = more.classList.toggle('open');
+            btn.innerText = open ? 'Read less' : 'Read more';
+        }
+
+        function calculateAge(birthday) {
+            if (!birthday) return null;
+            const m = String(birthday).trim().match(/^(\d{4})-(\d{2})-(\d{2})$/);
+            if (!m) return null;
+            const by = parseInt(m[1], 10), bm = parseInt(m[2], 10), bd = parseInt(m[3], 10);
+            const today = new Date();
+            let age = today.getFullYear() - by;
+            const monthDiff = (today.getMonth() + 1) - bm;
+            if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < bd)) age--;
+            return age >= 0 ? age : null;
+        }
+
+        function formatBirthday(birthday) {
+            const m = String(birthday).trim().match(/^(\d{4})-(\d{2})-(\d{2})$/);
+            if (!m) return birthday;
+            const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+            return `${parseInt(m[3], 10)} ${months[parseInt(m[2], 10) - 1]} ${m[1]}`;
+        }
+
+        function bioFirstParagraph(bio) {
+            const first = Array.isArray(bio) ? (bio[0] || "") : (bio || "");
+            return escapeHtml(first);
+        }
+
+        function socialsToHtml(s) {
+            if (!s) return "";
+            const defs = [
+                ['x', 'soc-x', 'fa-brands fa-x-twitter', 'Twitter'],
+                ['instagram', 'soc-instagram', 'fa-brands fa-instagram', 'Instagram'],
+                ['tiktok', 'soc-tiktok', 'fa-brands fa-tiktok', 'TikTok'],
+                ['facebook', 'soc-facebook', 'fa-brands fa-facebook-f', 'Facebook']
+            ];
+            return defs.filter(d => s[d[0]] && String(s[d[0]]).trim())
+                .map(d => `<a href="${s[d[0]].trim()}" target="_blank" rel="noopener noreferrer" class="${d[1]}"><i class="${d[2]}"></i> ${d[3]}</a>`)
+                .join("");
+        }
+
+        function isSafeUrl(u) {
+            return /^(https?:\/\/|\/|\.\/|#|mailto:)/i.test(String(u).trim());
+        }
+
+        function safeColor(c) {
+            return /^[#a-zA-Z0-9(),.%\s]+$/.test(String(c || '')) ? String(c).trim() : '';
+        }
+
+        // Render ikon: path file (svg/png/webp/jpg) -> <img>, selain itu dianggap class FontAwesome
+        function attrIconHtml(icon, fallbackFa) {
+            const ic = String(icon || '').trim();
+            if (ic && /\.(svg|png|webp|jpg|jpeg|gif)$/i.test(ic) && !/^\s*(javascript|vbscript):/i.test(ic)) {
+                return `<img src="${escapeHtml(ic).replace(/"/g, '&quot;')}" class="attr-icon" alt="">`;
+            }
+            if (ic && /^[a-z0-9\- ]+$/i.test(ic)) return `<i class="${ic}"></i>`;
+            return fallbackFa ? `<i class="${fallbackFa}"></i>` : '';
+        }
+
+        function traitsToHtml(list) {
+            if (!Array.isArray(list)) return "";
+            return list
+                .map(t => (typeof t === 'string' ? { text: t } : t))
+                .filter(t => t && (t.text || t.label))
+                .map(t => {
+                    const bg = safeColor(t.bgHex);
+                    const fg = safeColor(t.textHex);
+                    const style = (bg ? `background:${bg};` : '') + (fg ? `color:${fg};` : '');
+                    return `<span class="model-trait" style="${style}">${attrIconHtml(t.icon)}${escapeHtml(t.text || t.label)}</span>`;
+                })
+                .join("");
+        }
+
+        function customButtonsToHtml(list) {
+            if (!Array.isArray(list)) return "";
+            return list
+                .filter(b => b && b.url && isSafeUrl(b.url))
+                .map(b => {
+                    const bg = safeColor(b.bgHex);
+                    const fg = safeColor(b.textHex);
+                    const style = (bg ? `background:${bg};` : '') + (fg ? `color:${fg};` : '');
+                    return `<a href="${escapeHtml(String(b.url).trim()).replace(/"/g, '&quot;')}" target="_blank" rel="noopener noreferrer" style="${style}">${attrIconHtml(b.icon)}${escapeHtml(b.label || 'Link')}</a>`;
+                })
+                .join("");
+        }
+
+        function loadModelProfile(modelName) {
+            const modelCardContainer = document.getElementById('modelCardContainer');
+
+            let modelDataInfo = (typeof modelProfiles !== 'undefined' && modelProfiles[modelName]) 
+                ? modelProfiles[modelName] 
+                : { photo: "img/unknown.webp", bio: "No biography available for this model." };
+
+            document.getElementById('modelProfileName').innerText = modelDataInfo.name || modelName;
+            const modelImgEl = document.getElementById('modelProfileImg');
+            const modelPhotos = [].concat(modelDataInfo.photo || [], modelDataInfo.photos || [])
+                .map(p => String(p || '').trim()).filter(Boolean)
+                .filter((p, i, arr) => arr.indexOf(p) === i);
+            if (modelPhotos.length === 0) modelPhotos.push("img/unknown.webp");
+            modelImgEl.src = modelPhotos[0];
+            modelImgEl.onclick = () => openImageViewer(modelPhotos, modelDataInfo.name || modelName, 0);
+            document.getElementById('modelProfileBio').innerHTML = bioToHtml(modelDataInfo.bio);
+            document.getElementById('modelProfileSocials').innerHTML = socialsToHtml(modelDataInfo.socials);
+            document.getElementById('modelProfileCustomButtons').innerHTML = customButtonsToHtml(modelDataInfo.customButtons);
+
+            const altEl = document.getElementById('modelProfileAlt');
+            const alts = Array.isArray(modelDataInfo.altName)
+                ? modelDataInfo.altName.filter(Boolean)
+                : (modelDataInfo.altName ? [modelDataInfo.altName] : []);
+            altEl.innerText = alts.length ? "Alt name: " + alts.join(", ") : "";
+            altEl.style.display = alts.length ? "block" : "none";
+
+            const bdayEl = document.getElementById('modelProfileBirthday');
+            const attrsEl = document.getElementById('modelProfileAttrs');
+            const traitsEl = document.getElementById('modelProfileTraits');
+            const age = calculateAge(modelDataInfo.birthday);
+            if (age !== null) {
+                bdayEl.innerHTML = `${attrIconHtml(modelDataInfo.birthdayIcon, 'fa-solid fa-cake-candles')}${formatBirthday(modelDataInfo.birthday)} (${age} yrs)`;
+                bdayEl.style.display = "inline-flex";
+            } else {
+                bdayEl.style.display = "none";
+            }
+            traitsEl.innerHTML = traitsToHtml(modelDataInfo.traits);
+            attrsEl.style.display = (age !== null || traitsEl.innerHTML) ? "flex" : "none";
+
+            const regEl = document.getElementById('modelProfileRegion');
+            if (modelDataInfo.region) {
+                const flag = regionFlags[modelDataInfo.region] ? `<img src="${regionFlags[modelDataInfo.region]}" class="flag-icon">` : "";
+                regEl.innerHTML = `${flag} ${modelDataInfo.region}`;
+                regEl.style.display = "inline-flex";
+            } else {
+                regEl.style.display = "none";
+            }
+
+            let matchingMovies = sortByCurrentSort(bestList.filter(m => {
+                let models = getMovieModels(m);
+                return models.some(mod => mod.toLowerCase() === modelName.trim().toLowerCase());
+            }));
+            modelCardContainer.innerHTML = "";
+            const ratingsMap = getStoredRatings();
+
+            if (matchingMovies.length === 0) {
+                modelCardContainer.innerHTML = `<p style="grid-column: 1/-1; text-align:center; color:#777; padding:40px;">No videos found for this model.</p>`;
+                return;
+            }
+
+            matchingMovies.forEach(movie => {
+                renderCardItem(movie, modelCardContainer, ratingsMap);
+            });
+        }
+
+        function displayCards(data, wrapper, rowsPerPage, page, searchTerm = "", viewMode = 'all') {
+            wrapper.innerHTML = "";
+            const ratingsMap = getStoredRatings();
+            
+            if (viewMode === 'favorites') {
+                allCategoriesBox.classList.remove('active');
+                searchInfoText.innerHTML = `Showing <strong>Favorite</strong> videos (${data.length} items)`;
+                resetFilterBtn.style.display = "block";
+                paginationContainer.style.display = "flex";
+            } else if (viewMode === 'recent') {
+                allCategoriesBox.classList.remove('active');
+                searchInfoText.innerHTML = `Showing <strong>Recent Watch</strong> history (${data.length} items)`;
+                resetFilterBtn.style.display = "block";
+                paginationContainer.style.display = "flex";
+            } else if (viewMode === 'category' || viewMode === 'studio') {
+                paginationContainer.style.display = "flex";
+            } else {
+                resetFilterBtn.style.display = "none";
+                paginationContainer.style.display = "flex";
+                if (searchTerm !== "") {
+                    if (data.length === 0) {
+                        searchInfoText.innerHTML = `Sorry, no results found for keyword: "<strong>${searchTerm}</strong>"`;
+                    } else {
+                        searchInfoText.innerHTML = `Showing ${data.length} items from search: "<strong>${searchTerm}</strong>"`;
+                    }
+                } else if (viewMode === 'all') {
+                    searchInfoText.innerHTML = `Showing all ${data.length} items in total`;
+                }
+            }
+
+            let paginatedItems = getPaginatedData(data, page, rowsPerPage);
+
+            if (paginatedItems.length === 0) {
+                wrapper.innerHTML = `<p style="grid-column: 1/-1; text-align:center; color:#777; padding:40px;">No items found in this section.</p>`;
+                paginationContainer.style.display = "none";
+                return;
+            }
+
+            paginatedItems.forEach(movie => renderCardItem(movie, wrapper, ratingsMap));
+        }
+
+		function renderCardItem(movie, wrapper, ratingsMap) {
+			const card = document.createElement('div');
+			card.classList.add('card');
+			
+			const flagSrc = regionFlags[movie.region] || 'img/japan.png';
+			let currentRating = ratingsMap[movie.title] !== undefined ? ratingsMap[movie.title] : 0.0;
+			
+			const completedList = getStoredCompleted();
+			const isCompleted = completedList.includes(movie.title);
+			if (isCompleted) {
+				card.classList.add('is-completed');
+			}
+
+			card.addEventListener('click', (e) => {
+				let recent = JSON.parse(localStorage.getItem('recentWatch')) || [];
+				recent = recent.filter(t => t !== movie.title);
+				recent.unshift(movie.title);
+				localStorage.setItem('recentWatch', JSON.stringify(recent));
+
+				switchView('player', movie.title);
+			});
+
+			// Tambahkan logika pengecekan recommended di sini
+			// Pengecekan ini bakal ngebaca m-nya satu atau dua, dan ngebaca boolean true atau string "true"
+			const isRecommended = movie.recommended === true || movie.recomended === true || movie.recommended === "true" || movie.recomended === "true";
+			const recommendedHtml = isRecommended ? `<div class="card-recommended-badge">Recommended</div>` : '';
+			
+			card.innerHTML = `
+				<div class="card-image-wrapper">
+					${recommendedHtml}
+					<span class="card-completed-badge"><i class="fa-solid fa-check"></i> Completed</span>
+					<img src="${movie.imgurl}" alt="" aria-hidden="true" class="card-image-bg" loading="lazy">
+					<img src="${movie.imgurl}" alt="${movie.title}" class="card-image" loading="lazy">
+				</div>
+				<div class="card-content">
+					<div class="card-tags">
+						${movie.rank ? `<span class="tag" style="background:#f39c12">#${movie.rank}</span>` : ''}
+						<span class="tag" style="background:#0f3460">${movie.code}</span>
+						<span class="tag-region"><img src="${flagSrc}" class="flag-icon" style="width:14px; height:10px;"> ${movie.region}</span>
+					</div>
+					<h3 class="card-title">${movie.title}</h3>
+					<div class="card-meta">
+						<span><i class="fa-regular fa-calendar"></i> ${movie.releaseDate}</span>
+						<span><i class="fa-regular fa-clock"></i> ${movie.duration} Min</span>
+						${getWaterHtml(movie)}
+						<span class="card-rating"><i class="fa-solid fa-star"></i> ${Number(currentRating).toFixed(1)}</span>
+					</div>
+					<p class="card-bio">${movie.bio}</p>
+				</div>
+			`;
+
+			const cardImgEl = card.querySelector('.card-image');
+			if (cardImgEl) {
+				cardImgEl.style.cursor = 'zoom-in';
+				cardImgEl.addEventListener('click', (e) => {
+					e.stopPropagation();
+					openImageViewer(movie.imgurl, movie.title);
+				});
+			}
+
+			wrapper.appendChild(card);
+		}
+
+        let viewerImages = [];
+        let viewerIndex = 0;
+        let viewerTitle = '';
+
+        function openImageViewer(src, title, startIndex = 0) {
+            viewerImages = (Array.isArray(src) ? src : [src]).filter(Boolean);
+            if (viewerImages.length === 0) return;
+            viewerTitle = title || '';
+            viewerIndex = Math.min(Math.max(startIndex, 0), viewerImages.length - 1);
+            document.getElementById('imageViewerModal').style.display = 'flex';
+            renderViewerImage();
+        }
+
+        function renderViewerImage() {
+            const img = document.getElementById('imageViewerImg');
+            img.src = viewerImages[viewerIndex];
+            img.alt = viewerTitle;
+            document.getElementById('imageViewerCaption').innerText = viewerTitle;
+
+            const multi = viewerImages.length > 1;
+            document.getElementById('imageViewerPrev').style.display = multi ? 'flex' : 'none';
+            document.getElementById('imageViewerNext').style.display = multi ? 'flex' : 'none';
+            const counter = document.getElementById('imageViewerCounter');
+            counter.style.display = multi ? 'block' : 'none';
+            counter.innerText = `${viewerIndex + 1} / ${viewerImages.length}`;
+        }
+
+        function nextViewerImage() {
+            if (viewerImages.length < 2) return;
+            viewerIndex = (viewerIndex + 1) % viewerImages.length;
+            renderViewerImage();
+        }
+
+        function prevViewerImage() {
+            if (viewerImages.length < 2) return;
+            viewerIndex = (viewerIndex - 1 + viewerImages.length) % viewerImages.length;
+            renderViewerImage();
+        }
+
+        function closeImageViewer() {
+            document.getElementById('imageViewerModal').style.display = 'none';
+            document.getElementById('imageViewerImg').src = '';
+            viewerImages = [];
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (document.getElementById('imageViewerModal').style.display !== 'flex') return;
+            if (e.key === 'Escape') closeImageViewer();
+            else if (e.key === 'ArrowRight') nextViewerImage();
+            else if (e.key === 'ArrowLeft') prevViewerImage();
+        });
+
+        (function setupViewerSwipe() {
+            const modal = document.getElementById('imageViewerModal');
+            let startX = null;
+            modal.addEventListener('touchstart', (e) => { startX = e.touches[0].clientX; }, { passive: true });
+            modal.addEventListener('touchend', (e) => {
+                if (startX === null) return;
+                const dx = e.changedTouches[0].clientX - startX;
+                startX = null;
+                if (Math.abs(dx) > 50) { dx < 0 ? nextViewerImage() : prevViewerImage(); }
+            }, { passive: true });
+        })();
+
+        function setupPagination(data, wrapper, rowsPerPage, searchTerm = "", viewMode = 'all') {
+            wrapper.innerHTML = "";
+            let pageCount = Math.ceil(data.length / rowsPerPage);
+
+            if (pageCount <= 1) {
+                wrapper.style.display = "none";
+                return;
+            }
+            wrapper.style.display = "flex";
+
+            let prevBtn = document.createElement('button');
+            prevBtn.innerHTML = '<i class="fa-solid fa-chevron-left"></i>';
+            prevBtn.classList.add('page-btn');
+            prevBtn.disabled = current_page === 1;
+            prevBtn.addEventListener('click', () => {
+                if (current_page > 1) goToPage(current_page - 1, data, searchTerm, viewMode);
+            });
+            wrapper.appendChild(prevBtn);
+
+            let pagesToShow = [];
+            if (pageCount <= 7) {
+                for (let i = 1; i <= pageCount; i++) pagesToShow.push(i);
+            } else {
+                if (current_page <= 3) {
+                    pagesToShow = [1, 2, 3, '...', pageCount - 1, pageCount];
+                } else if (current_page >= pageCount - 2) {
+                    pagesToShow = [1, 2, '...', pageCount - 2, pageCount - 1, pageCount];
+                } else {
+                    pagesToShow = [1, '...', current_page - 1, current_page, current_page + 1, '...', pageCount];
+                }
+            }
+
+            pagesToShow.forEach(p => {
+                if (p === '...') {
+                    let span = document.createElement('span');
+                    span.innerText = "........";
+                    span.classList.add('page-dots');
+                    wrapper.appendChild(span);
+                } else {
+                    let btn = document.createElement('button');
+                    btn.innerText = p;
+                    btn.classList.add('page-btn');
+                    if (current_page === p) btn.classList.add('active');
+                    btn.addEventListener('click', () => goToPage(p, data, searchTerm, viewMode));
+                    wrapper.appendChild(btn);
+                }
+            });
+
+            let nextBtn = document.createElement('button');
+            nextBtn.innerHTML = '<i class="fa-solid fa-chevron-right"></i>';
+            nextBtn.classList.add('page-btn');
+            nextBtn.disabled = current_page === pageCount;
+            nextBtn.addEventListener('click', () => {
+                if (current_page < pageCount) goToPage(current_page + 1, data, searchTerm, viewMode);
+            });
+            wrapper.appendChild(nextBtn);
+        }
+
+        function goToPage(pageNumber, data, searchTerm, viewMode = 'all') {
+            current_page = pageNumber;
+            displayCards(data, cardContainer, rows_per_page, current_page, searchTerm, viewMode);
+            setupPagination(data, paginationContainer, rows_per_page, searchTerm, viewMode);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function filterView(type) {
+            switchView('home');
+            current_page = 1;
+            if (type === 'favorites') {
+                const favs = JSON.parse(localStorage.getItem('favorites')) || [];
+                filteredData = bestList.filter(m => favs.includes(m.title));
+                displayCards(filteredData, cardContainer, rows_per_page, current_page, "", 'favorites');
+                setupPagination(filteredData, paginationContainer, rows_per_page, "", 'favorites');
+            } else if (type === 'recent') {
+                const recent = JSON.parse(localStorage.getItem('recentWatch')) || [];
+                filteredData = recent.map(title => bestList.find(m => m.title === title)).filter(Boolean);
+                displayCards(filteredData, cardContainer, rows_per_page, current_page, "", 'recent');
+                setupPagination(filteredData, paginationContainer, rows_per_page, "", 'recent');
+            } else {
+                allCategoriesBox.classList.remove('active');
+                filteredData = sortByCurrentSort(bestList);
+                displayCards(filteredData, cardContainer, rows_per_page, current_page, "", 'all');
+                setupPagination(filteredData, paginationContainer, rows_per_page, "", 'all');
+            }
+        }
+
+        const searchForm = document.getElementById('searchForm');
+        searchForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            executeSearch(searchInput.value);
+        });
+
+        mobileSearchModal.addEventListener('submit', (e) => {
+            e.preventDefault();
+            executeSearch(mobileSearchInput.value);
+            mobileSearchModal.classList.remove('active');
+        });
+
+        function executeSearch(query) {
+            const searchString = query.toLowerCase().trim();
+            switchView('home');
+            allCategoriesBox.classList.remove('active');
+            if (searchString === "") {
+                filteredData = sortByCurrentSort(bestList);
+                clearSearchBtn.style.display = "none";
+            } else {
+                filteredData = sortByCurrentSort(bestList.filter(movie => {
+                    let models = getMovieModels(movie);
+                    let matchModel = models.some(m => m.toLowerCase().includes(searchString));
+                    let matchTags = movie.tags && movie.tags.some(t => t.toLowerCase().includes(searchString));
+
+                    return (
+                        movie.title.toLowerCase().includes(searchString) ||
+                        movie.code.toLowerCase().includes(searchString) ||
+                        matchModel ||
+                        matchTags ||
+                        movie.region.toLowerCase().includes(searchString) ||
+                        (movie.studio && movie.studio.toLowerCase().includes(searchString))
+                    );
+                }));
+                clearSearchBtn.style.display = "block";
+            }
+
+            current_page = 1;
+            displayCards(filteredData, cardContainer, rows_per_page, current_page, searchString, 'all');
+            setupPagination(filteredData, paginationContainer, rows_per_page, searchString, 'all');
+        }
+
+        clearSearchBtn.addEventListener('click', () => {
+            searchInput.value = "";
+            mobileSearchInput.value = "";
+            clearSearchBtn.style.display = "none";
+            filteredData = sortByCurrentSort(bestList);
+            current_page = 1;
+            displayCards(filteredData, cardContainer, rows_per_page, current_page, "", 'all');
+            setupPagination(filteredData, paginationContainer, rows_per_page, "", 'all');
+            searchInput.focus();
+        });
+
+        function renderComments(movie) {
+            currentWatchingMovie = movie;
+            const commentsContainer = document.getElementById('commentsList');
+            const commentCountEl = document.getElementById('commentCount');
+            
+            if (!movie.comments) {
+                movie.comments = [];
+            }
+
+            commentCountEl.innerText = movie.comments.length;
+            commentsContainer.innerHTML = "";
+
+            if (movie.comments.length === 0) {
+                commentsContainer.innerHTML = `<p style="font-size: 0.85rem; color: #888;">No comments yet.</p>`;
+                return;
+            }
+
+            movie.comments.forEach(c => {
+                const item = document.createElement('div');
+                item.className = "comment-item";
+                item.innerHTML = `
+                    <div class="comment-header">
+                        <span class="comment-author">${c.user}</span>
+                        <span class="comment-date">${c.date || 'Just now'}</span>
+                    </div>
+                    <div class="comment-text">${c.text}</div>
+                `;
+                commentsContainer.appendChild(item);
+            });
+        }
+
+        function addComment() {
+            const input = document.getElementById('commentInput');
+            const text = input.value.trim();
+
+            if (!text) return;
+
+            const session = JSON.parse(localStorage.getItem('hdv_logged_in'));
+            const currentUser = session ? session.username : 'User';
+
+            if (currentWatchingMovie) {
+                if (!currentWatchingMovie.comments) {
+                    currentWatchingMovie.comments = [];
+                }
+
+                currentWatchingMovie.comments.unshift({
+                    user: currentUser,
+                    text: text,
+                    date: "Just now"
+                });
+
+                input.value = "";
+                renderComments(currentWatchingMovie);
+            }
+        }
+
+        document.getElementById('commentSubmitBtn').onclick = addComment;
+        document.getElementById('commentInput').addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') addComment();
+        });
+
+        function loadPlayer(title) {
+            let currentMovie = bestList.find(m => m.title === title) || bestList[0];
+
+            let recent = JSON.parse(localStorage.getItem('recentWatch')) || [];
+            recent = recent.filter(t => t !== currentMovie.title);
+            recent.unshift(currentMovie.title);
+            localStorage.setItem('recentWatch', JSON.stringify(recent));
+
+            document.getElementById('videoTitle').innerText = currentMovie.title;
+            document.getElementById('videoBio').innerText = currentMovie.bio;
+            document.getElementById('videoDate').innerText = currentMovie.releaseDate;
+            document.getElementById('videoDuration').innerText = currentMovie.duration;
+            document.getElementById('videoWater').innerHTML = getWaterHtml(currentMovie);
+            
+            const mainVideo = document.getElementById('mainVideo');
+            const videoSource = document.getElementById('videoSource');
+            mainVideo.poster = currentMovie.imgurl;
+            videoSource.src = currentMovie.vidurl;
+            mainVideo.load();
+
+            let models = getMovieModels(currentMovie);
+            let modelTagsHtml = "";
+            models.forEach(modelName => {
+                modelTagsHtml += `<span class="tag" style="cursor:pointer;" onclick="filterByModel('${modelName}')">${modelName}</span> `;
+            });
+
+            document.getElementById('videoTagsContainer').innerHTML = `
+                ${modelTagsHtml}
+                <span class="tag" style="background:#0f3460">${currentMovie.code}</span>
+                ${currentMovie.studio ? `<span class="tag" style="background:#555; cursor:pointer;" onclick="filterByStudio('${currentMovie.studio}')">${currentMovie.studio}</span>` : ''}
+                ${currentMovie.region ? `<span class="tag" style="background:#16213e; cursor:pointer; display:inline-flex; align-items:center; gap:5px;" onclick="filterByRegion('${currentMovie.region}')">${regionFlags[currentMovie.region] ? `<img src="${regionFlags[currentMovie.region]}" style="width:14px;height:10px;object-fit:cover;border-radius:2px;">` : ''} ${currentMovie.region}</span>` : ''}
+            `;
+
+            const hashtagContainer = document.getElementById('hashtagContainer');
+            hashtagContainer.innerHTML = "";
+            if (currentMovie.tags) {
+                currentMovie.tags.forEach(tag => {
+                    const a = document.createElement('a');
+                    a.className = "hashtag-link";
+                    a.innerText = tag;
+                    a.addEventListener('click', () => filterByCategory(tag));
+                    hashtagContainer.appendChild(a);
+                });
+            }
+
+            const downloadContainer = document.getElementById('downloadButtonsContainer');
+            downloadContainer.innerHTML = "";
+
+            if (currentMovie.downloads && Array.isArray(currentMovie.downloads)) {
+                currentMovie.downloads.forEach(dl => {
+                    const a = document.createElement('a');
+                    a.href = dl.url || '#';
+                    a.className = `download-btn ${dl.btnClass || 'bg-black'} ${dl.textClass || 'text-white'}`;
+                    if(dl.bgHex) a.style.backgroundColor = dl.bgHex;
+                    if(dl.textHex) a.style.color = dl.textHex;
+                    a.target = "_blank";
+                    a.textContent = dl.label || 'Download';
+                    downloadContainer.appendChild(a);
+                });
+            } else {
+                downloadContainer.innerHTML = `<span style="font-size: 0.85rem; color: #777;">Download link not available.</span>`;
+            }
+
+            renderComments(currentMovie);
+
+            const completedBtn = document.getElementById('completedBtn');
+            const completedIcon = document.getElementById('completedIcon');
+            const completedText = document.getElementById('completedText');
+
+            function checkCompletedStatus() {
+                let completedList = getStoredCompleted();
+                if (completedList.includes(currentMovie.title)) {
+                    completedBtn.classList.add('completed');
+                    completedIcon.className = "fa-solid fa-circle-check";
+                    completedText.innerText = "Completed";
+                } else {
+                    completedBtn.classList.remove('completed');
+                    completedIcon.className = "fa-regular fa-circle-check";
+                    completedText.innerText = "Mark Completed";
+                }
+            }
+
+            completedBtn.onclick = () => {
+                let completedList = getStoredCompleted();
+                let index = completedList.indexOf(currentMovie.title);
+                if (index > -1) {
+                    completedList.splice(index, 1);
+                } else {
+                    completedList.push(currentMovie.title);
+                }
+                localStorage.setItem('completedVideos', JSON.stringify(completedList));
+                checkCompletedStatus();
+            };
+            checkCompletedStatus();
+
+            const favBtn = document.getElementById('favBtn');
+            const favIcon = document.getElementById('favIcon');
+            const favText = document.getElementById('favText');
+
+            function checkFavoriteStatus() {
+                let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+                if (favorites.includes(currentMovie.title)) {
+                    favBtn.classList.add('favorited');
+                    favIcon.className = "fa-solid fa-heart";
+                    favText.innerText = "Saved to Favorites";
+                } else {
+                    favBtn.classList.remove('favorited');
+                    favIcon.className = "fa-regular fa-heart";
+                    favText.innerText = "Save to Favorites";
+                }
+            }
+
+            favBtn.onclick = () => {
+                let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+                let index = favorites.indexOf(currentMovie.title);
+                if (index > -1) {
+                    favorites.splice(index, 1);
+                } else {
+                    favorites.push(currentMovie.title);
+                }
+                localStorage.setItem('favorites', JSON.stringify(favorites));
+                checkFavoriteStatus();
+            };
+            checkFavoriteStatus();
+
+            const starContainerEl = document.getElementById('starContainer');
+            const ratingScoreText = document.getElementById('ratingScoreText');
+
+            starContainerEl.innerHTML = `
+                <i class="fa-solid fa-star" data-value="1"></i>
+                <i class="fa-solid fa-star" data-value="2"></i>
+                <i class="fa-solid fa-star" data-value="3"></i>
+                <i class="fa-solid fa-star" data-value="4"></i>
+                <i class="fa-solid fa-star" data-value="5"></i>
+            `;
+
+            function getActiveMovieScore() {
+                const ratingsMap = getStoredRatings();
+                return ratingsMap[currentMovie.title] !== undefined ? ratingsMap[currentMovie.title] : 0.0;
+            }
+
+            function updateStarDisplay(score) {
+                const numScore = Number(score) || 0;
+                const starValue = numScore / 2;
+                
+                ratingScoreText.innerText = `${numScore.toFixed(1)} / 10`;
+
+                const stars = starContainerEl.querySelectorAll('i');
+                stars.forEach((star, index) => {
+                    const starNum = index + 1;
+                    star.className = "";
+
+                    if (starValue >= starNum) {
+                        star.className = "fa-solid fa-star rated";
+                    } else if (starValue >= starNum - 0.5) {
+                        star.className = "fa-solid fa-star-half-stroke rated";
+                    } else {
+                        star.className = "fa-regular fa-star";
+                    }
+                });
+            }
+
+            updateStarDisplay(getActiveMovieScore());
+
+            const activeStars = starContainerEl.querySelectorAll('i');
+
+            activeStars.forEach((star, index) => {
+                const starNum = index + 1;
+
+                star.addEventListener('mousemove', (e) => {
+                    const rect = star.getBoundingClientRect();
+                    const isLeftHalf = (e.clientX - rect.left) < (rect.width / 2);
+                    const hoverScore = isLeftHalf ? (starNum * 2 - 1) : (starNum * 2);
+                    updateStarDisplay(hoverScore);
+                });
+
+                star.addEventListener('click', (e) => {
+                    const rect = star.getBoundingClientRect();
+                    const isLeftHalf = (e.clientX - rect.left) < (rect.width / 2);
+                    const userRating = isLeftHalf ? (starNum * 2 - 1) : (starNum * 2);
+                    
+                    let currentRatingsMap = getStoredRatings();
+                    currentRatingsMap[currentMovie.title] = userRating;
+                    localStorage.setItem('movieRatings', JSON.stringify(currentRatingsMap));
+                    
+                    updateStarDisplay(userRating);
+                });
+            });
+
+            starContainerEl.addEventListener('mouseleave', () => {
+                updateStarDisplay(getActiveMovieScore());
+            });
+
+            let currentModels = getMovieModels(currentMovie);
+            let relatedData = bestList.filter(m => {
+                let mModels = getMovieModels(m);
+                let hasCommonModel = mModels.some(mod => currentModels.includes(mod));
+                return hasCommonModel && m.title !== currentMovie.title;
+            });
+            
+            if (relatedData.length < 5) {
+                const extraData = bestList.filter(m => m.title !== currentMovie.title && !relatedData.includes(m));
+                relatedData = [...relatedData, ...extraData];
+            }
+
+            let visibleCount = 5;
+            const relatedListContainer = document.getElementById('relatedListContainer');
+            const viewMoreBtn = document.getElementById('viewMoreBtn');
+
+            function renderRelatedVideos() {
+                relatedListContainer.innerHTML = "";
+                const itemsToShow = relatedData.slice(0, visibleCount);
+
+                if (itemsToShow.length === 0) {
+                    relatedListContainer.innerHTML = `<p style="font-size: 0.85rem; color: #888;">No related videos.</p>`;
+                    viewMoreBtn.style.display = "none";
+                    return;
+                }
+
+                itemsToShow.forEach(video => {
+                    const rCard = document.createElement('div');
+                    rCard.classList.add('related-card');
+                    rCard.addEventListener('click', () => {
+                        loadPlayer(video.title);
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                    });
+                    rCard.innerHTML = `
+                        <img src="${video.imgurl}" alt="${video.title}" class="related-thumb" loading="lazy">
+                        <div class="related-info">
+                            <h4 class="related-card-title">${video.title}</h4>
+                            <div class="related-card-meta">
+                                <span><i class="fa-regular fa-clock"></i> ${video.duration} Min</span>
+                            </div>
+                        </div>
+                    `;
+                    relatedListContainer.appendChild(rCard);
+                });
+
+                viewMoreBtn.style.display = visibleCount >= relatedData.length ? "none" : "block";
+            }
+
+            viewMoreBtn.onclick = () => {
+                visibleCount += 5;
+                renderRelatedVideos();
+            };
+
+            renderRelatedVideos();
+        }
+
+        function handleSortChange() {
+            filteredData = sortByCurrentSort(filteredData);
+            current_page = 1;
+            displayCards(filteredData, cardContainer, rows_per_page, current_page, "", 'all');
+            setupPagination(filteredData, paginationContainer, rows_per_page, "", 'all');
+        }
+
+        function init() {
+            if (typeof bestList !== 'undefined' && bestList.length > 0) {
+                generateNavigationMenus();
+                filteredData = sortByCurrentSort(bestList);
+                displayCards(filteredData, cardContainer, rows_per_page, current_page, "", 'all');
+                setupPagination(filteredData, paginationContainer, rows_per_page, "", 'all');
+            } else {
+                cardContainer.innerHTML = `<p style="grid-column: 1/-1; text-align:center; color:#777; padding:40px;">Movie data not found.</p>`;
+            }
+        }
+
+        updateLoginUI();
+        if (localStorage.getItem('hdv_logged_in')) {
+            init();
+        }
+    </script>
+</body>
+</html>
