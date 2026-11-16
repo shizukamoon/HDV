@@ -88,7 +88,8 @@ const movieData = [
         bio: "Gカップ健康ボディに13発 優しいお姉さん真正中出し解禁 羽川るる",
         tags: ["Uncensored-Leaks", "Creampie", "Big Tits", "Real Sperm Pussy Filled"],
 		downloads: [
-            { label: "Original", url: "https://video.dmm.co.jp/av/content/?id=1namh00075", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Original", url: "https://nama2.net/works/namh-075/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Sales", url: "https://video.dmm.co.jp/av/content/?id=1namh00075", bgHex: "#1a1a2e", textHex: "#ffffff" },
             { label: "Javtrailers", url: "https://javtrailers.com/video/1namh00075", bgHex: "#e94560", textHex: "#ffffff" },
             { label: "Shiroutowiki", url: "https://shiroutowiki.work/fanza-video/1namh00075/", bgHex: "#14f557", textHex: "#ffffff" },
             { label: "Jav24", url: "https://www.jav24.com/watch/video.dmm.co.jp/av/content/?id=1namh00075", bgHex: "#14f557", textHex: "#ffffff" },
@@ -115,13 +116,43 @@ const movieData = [
         bio: "至高の膣内射精アングル25発 ロリ王女ニコニコ笑顔抜き 由良かな",
         tags: ["Uncensored-Leaks", "Creampie", "Small Tits", "Real Sperm Pussy Filled"],
 		downloads: [
-            { label: "Original", url: "https://video.dmm.co.jp/av/content/?id=1namh00061", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Original", url: "https://nama2.net/works/namh-061/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Sales", url: "https://video.dmm.co.jp/av/content/?id=1namh00061", bgHex: "#1a1a2e", textHex: "#ffffff" },
             { label: "Javtrailers", url: "https://javtrailers.com/video/1namh00061", bgHex: "#e94560", textHex: "#ffffff" },
             { label: "Shiroutowiki", url: "https://shiroutowiki.work/fanza-video/1namh00061/", bgHex: "#14f557", textHex: "#ffffff" },
             { label: "Jav24", url: "https://www.jav24.com/watch/video.dmm.co.jp/av/content/?id=1namh00061", bgHex: "#14f557", textHex: "#ffffff" },
             { label: "123av", url: "http://123av.com/en/v/namh-061-uncensored-leaked", bgHex: "#e94560", textHex: "#ffffff" },
             { label: "Javct", url: "https://javct.net/v/namh-061-rm", bgHex: "#FFA500", textHex: "#ffffff" },
             { label: "Sextb", url: "https://sextb.net/namh-061-rm", bgHex: "#CC9900", textHex: "#ffffff" }
+        ],
+        comments: [
+            { user: "Dax", text: "", date: "now" }
+		]
+    },
+	{
+        title: "NAMH-052",
+        code: "Uncensored-Leaks",
+        model: "十束るう Ruu Totsuka",
+        studio: "namanama",
+        region: "Japan",
+        releaseDate: "2026-01-05",
+        duration: "01:47:11",
+		water: 1,
+		recomended: true,
+        imgurl: "img/japan/02/namanama/1namh00052.webp",
+        vidurl: "https://tencc3001.dmm.co.jp/pv/I3I5ORclZ5pLDAN_qi2q2GKcn474aRHdjTvPJkHMDK_Qgd93xN-Kyh8qui54h/1namh052mhb.mp4",
+        bio: "元子役のパイパン膣に13発 明るいお姉さん真正中出し解禁 RUU",
+        tags: ["Uncensored-Leaks", "Creampie", "Small Tits", "Real Sperm Pussy Filled"],
+		downloads: [
+            { label: "Original", url: "https://nama2.net/works/namh-052/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Sales", url: "https://video.dmm.co.jp/av/content/?id=1namh00052", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Javtrailers", url: "https://javtrailers.com/video/1namh00052", bgHex: "#e94560", textHex: "#ffffff" },
+            { label: "Shiroutowiki", url: "https://shiroutowiki.work/fanza-video/1namh00052/", bgHex: "#14f557", textHex: "#ffffff" },
+            { label: "Jav24", url: "https://www.jav24.com/watch/video.dmm.co.jp/av/content/?id=1namh00052", bgHex: "#14f557", textHex: "#ffffff" },
+            { label: "123av", url: "http://123av.com/en/v/namh-052-uncensored-leaked", bgHex: "#e94560", textHex: "#ffffff" },
+            { label: "Javct", url: "https://javct.net/v/namh-052-rm", bgHex: "#FFA500", textHex: "#ffffff" },
+            { label: "Sextb", url: "https://sextb.net/namh-052-rm", bgHex: "#CC9900", textHex: "#ffffff" },
+            { label: "7mmtv", url: "https://7mmtv.sx/ja/reducing-mosaic_content/79067/NAMH-052.html", bgHex: "#e94560", textHex: "#ffffff" }
         ],
         comments: [
             { user: "Dax", text: "", date: "now" }
@@ -171,6 +202,30 @@ const movieData = [
             { label: "123av", url: "https://123av.com/en/v/mfcs-227-uncensored-leaked", bgHex: "#e94560", textHex: "#ffffff" },
             { label: "Javct", url: "https://javct.net/v/mfcs-227-rm", bgHex: "#FFA500", textHex: "#ffffff" },
             { label: "Sextb", url: "https://sextb.net/mfcs-227-rm", bgHex: "#CC9900", textHex: "#ffffff" }
+        ],
+        comments: [
+            { user: "Dax", text: "", date: "now" }
+		]
+    },
+	{
+        title: "SODAH-012",
+        code: "Uncensored-Leaks",
+        model: "彩月七緒 Nao Satsuki",
+        studio: "青春リクリエイター",
+        region: "Japan",
+        releaseDate: "2026-11-10",
+        duration: "02:52:49",
+		water: 0,
+		recomended: true,
+        imgurl: "img/japan/02/more/sodah012.webp",
+        vidurl: "https://tencc3001.dmm.co.jp/pv/JhAhPWMT_WhH0wTgr6x-Uivgcr4Fij-98Y97SpeL-4oYZlBGV9fnTDzViQVEA7zf/sodah00012mhb.mp4",
+        bio: "【完全主観ASMR】あの夏、フェス帰りのラブホテル。ピュアなクラスの女子と終電を逃して…不慣れなキスから体力の限界まで生ハメ中出しし合った、僕たちの最高に淫らで愛おしい青春イチャラブ記録。 彩月七緒",
+        tags: ["Uncensored-Leaks", "Creampie", "Big Tits"],
+		downloads: [
+            { label: "Original", url: "https://www.dmm.co.jp/mono/dvd/-/detail/=/cid=sodah012/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "123av", url: "https://123av.com/en/v/sodah-012-uncensored-leaked", bgHex: "#e94560", textHex: "#ffffff" },
+            { label: "Javct", url: "https://javct.net/v/sodah-012-rm", bgHex: "#FFA500", textHex: "#ffffff" },
+            { label: "Sextb", url: "https://sextb.net/sodah-012-rm", bgHex: "#CC9900", textHex: "#ffffff" }
         ],
         comments: [
             { user: "Dax", text: "", date: "now" }
@@ -447,6 +502,29 @@ const movieData = [
             { label: "Original", url: "https://www.caribbeancom.com/moviepages/022826-001/index.html", bgHex: "#1a1a2e", textHex: "#ffffff" },
             { label: "Hiyopi", url: "https://caribbeancom.hiyopi.com/022826-001/", bgHex: "#e94560", textHex: "#ffffff" },
             { label: "123av", url: "https://123av.com/en/v/caribbeancom-022826-001", bgHex: "#e94560", textHex: "#ffffff" }
+        ],
+        comments: [
+            { user: "Dax", text: "", date: "now" }
+		]
+    },
+	{
+        title: "Caribbeancom-101313-454",
+        code: "Uncensored",
+        model: ["黒崎セシル Cecil Kurokawa", "愛花紗也 Saya Aika"],
+        studio: "Caribbeancom",
+        region: "Japan",
+        releaseDate: "2013-10-13",
+        duration: "01:07:00",
+		water: 3,
+		recomended: true,
+        imgurl: "img/japan/01/caribbeancom/101313-454.webp",
+        vidurl: "https://smovie.caribbeancom.com/sample/movies/101313-454/480p.mp4",
+        bio: "二段ベッドで姉妹丼",
+        tags: ["Uncensored", "Creampie", "Big Tits", "Small Tits", "Real Sperm Pussy Filled"],
+		downloads: [
+            { label: "Original", url: "https://www.caribbeancom.com/moviepages/101313-454/index.html", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Hiyopi", url: "https://caribbeancom.hiyopi.com/101313-454/", bgHex: "#e94560", textHex: "#ffffff" },
+            { label: "123av", url: "https://123av.com/en/v/caribbeancom-101313-454", bgHex: "#e94560", textHex: "#ffffff" }
         ],
         comments: [
             { user: "Dax", text: "", date: "now" }

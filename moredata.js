@@ -129,7 +129,8 @@ const modelProfiles = {
         traits: [
             { text: "Lovely", icon: "fa-solid fa-venus", bgHex: "#ffffff", textHex: "#e94560" },
             { text: "G-Cup B94/W60/H96", icon: "img/svg/bra.svg", bgHex: "#ffffff", textHex: "#e94560" },
-            { text: "165cm", icon: "img/svg/high-heels.svg", bgHex: "#ffffff", textHex: "#e94560" }
+            { text: "165cm", icon: "img/svg/high-heels.svg", bgHex: "#ffffff", textHex: "#e94560" },
+            { text: "本物の中出しがある", bgHex: "#1a1a2e", textHex: "#ffffff" }
         ],
         socials: {
             x: "https://x.com/ruru_ukawa109"
@@ -147,6 +148,41 @@ const modelProfiles = {
 				"Dia tidak takut melakukan adegan ejakulasi didalam vaginanya secara langsung tanpa editan real sperm di Namanama."
 		]
     },
+    "十束るう Ruu Totsuka": {
+        photo: "img/japan/00/十束るう Ruu Totsuka.jpg",
+		photos: [	"img/japan/00/十束るう Ruu Totsuka.webp",
+					"img/japan/00/十束るう Ruu Totsuka-2.webp",
+					"img/japan/00/十束るう Ruu Totsuka-3.webp",
+					"img/japan/00/十束るう Ruu Totsuka-4.webp",
+					"img/japan/00/十束るう Ruu Totsuka.png"],
+        region: "Japan",
+        altName: "Shiho Nagisa",
+        birthday: "1997-06-24", birthdayIcon: "fa-solid fa-birthday-cake",
+        traits: [
+            { text: "Lovely", icon: "fa-solid fa-venus", bgHex: "#ffffff", textHex: "#e94560" },
+            { text: "D-Cup B81/W58/H85", icon: "img/svg/bra.svg", bgHex: "#ffffff", textHex: "#e94560" },
+            { text: "157cm", icon: "img/svg/high-heels.svg", bgHex: "#ffffff", textHex: "#e94560" },
+            { text: "本物の中出しがある", bgHex: "#1a1a2e", textHex: "#ffffff" }
+        ],
+        socials: {
+            x: "https://x.com/Totsuka_ruu",
+            instagram: "https://www.instagram.com/totsuka_ruu/"
+        },
+        customButtons: [
+            { label: "Javdatabase", url: "https://www.javdatabase.com/idols/ruu-totsuka/", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Av-Wiki", url: "https://av-wiki.net/av-actress/totsuka-ruu/", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Erodougazo", url: "https://erodougazo.com/actress/av/%E5%8D%81%E6%9D%9F%E3%82%8B%E3%81%86/", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Sumomo-ch", url: "http://sumomo-ch.com/blog-entry-13221.html", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Javrate", url: "https://www.javrate.com/actor/movie/506afb5c-e99d-46fa-984e-757d9c91c9fe.html", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" }
+        ],
+        bio: [
+				"Ruu Totsuka adalah seorang *gravure idol* sekaligus aktris film dewasa (AV) yang masih aktif. Ia memiliki ciri khas berupa penampilan gadis cantik yang tampak polos dengan rambut hitam, serta tubuh ramping berkulit putih mulus. Ukuran payudaranya adalah *cup* D—tergolong mungil. Tubuhnya yang berkulit putih tampak segar dan indah.",
+				"Ia telah berkecimpung di dunia hiburan sejak usia 6 tahun. Sebagai seorang *gravure idol* yang masih aktif, ia telah berkarier di berbagai bidang, mulai dari menjadi pemeran cilik, pengisi suara, hingga aktris. Berasal dari Prefektur Kumamoto. Hobinya adalah latihan beban dan berkeliling mengunjungi kedai es serut.",
+				"Aktif dengan nama Shiho Nagisa. Pada Januari 2022, ia mulai tampil dalam video citra (*image video*) dengan nama Ruu Totsuka. Pada Juli 2022, ia merilis karya *gravure* tanpa busana. Sejak saat itu, ia terus tampil dalam berbagai video citra.",
+				"Pada bulan September 2023, ia melakukan debut AV sebagai aktris eksklusif SODstar (di bawah naungan SOD Create) melalui karya berjudul Keputusan untuk Tampil Telanjang Bulat, Lalu Membuka Diri untuk Adegan Seks: Debut AV Model Gravure Aktif, Ruu Totsuka",
+				"Dia tidak takut melakukan adegan ejakulasi didalam vaginanya secara langsung tanpa editan real sperm di Namanama."
+		]
+    },
     "宮瀬もも Momo Miyase": {
         photo: "img/japan/00/宮瀬もも Momo Miyase.webp",
 		photos: [	"img/japan/00/宮瀬もも Momo Miyase.jpg",
@@ -157,7 +193,8 @@ const modelProfiles = {
         traits: [
             { text: "Lovely", icon: "fa-solid fa-venus", bgHex: "#ffffff", textHex: "#e94560" },
             { text: "D-Cup B86/W51/H81", icon: "img/svg/bra.svg", bgHex: "#ffffff", textHex: "#e94560" },
-            { text: "148cm", icon: "img/svg/high-heels.svg", bgHex: "#ffffff", textHex: "#e94560" }
+            { text: "148cm", icon: "img/svg/high-heels.svg", bgHex: "#ffffff", textHex: "#e94560" },
+            { text: "本物の中出しがある", bgHex: "#1a1a2e", textHex: "#ffffff" }
         ],
         customButtons: [
             { label: "Javdatabase", url: "https://www.javdatabase.com/idols/momo-miyase/", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" },
