@@ -26,6 +26,114 @@ const modelProfiles = {
         ],
         bio: ["No biography available for this model."]
     },
+    "楓ゆうか Kaede Yuuka": {
+        photo: "img/japan/00/楓ゆうか Kaede Yuuka.jpg",
+		photos: [	"img/japan/00/楓ゆうか Kaede Yuuka-2.webp",
+					"img/japan/00/楓ゆうか Kaede Yuuka-3.webp",
+					"img/japan/00/楓ゆうか Kaede Yuuka-4.webp"],
+        region: "Japan",
+        altName: "-",
+        birthday: "", birthdayIcon: "fa-solid fa-birthday-cake",
+        traits: [
+            { text: "Favorite", icon: "fa-solid fa-venus", bgHex: "#ffffff", textHex: "#e94560" },
+            { text: "本物の中出しがある", bgHex: "#1a1a2e", textHex: "#ffffff" }
+        ],
+        socials: {
+            x: "",
+            instagram: "",
+            tiktok: "",
+            facebook: ""
+        },
+        customButtons: [
+            { label: "Caribbeancom.com", url: "https://www.caribbeancom.com/search_act/6912/1.html", bgHex: "#228B22", textHex: "#ffffff" },
+            { label: "1pondo.tv", url: "https://www.1pondo.tv/search/?a=1956", bgHex: "#FF1493", textHex: "#ffffff" },
+            { label: "Javdatabase", url: "https://www.javdatabase.com/idols/yuuka-kaede/", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" }
+        ],
+        bio: ["No biography available for this model."]
+    },
+    "藤野りん Rin Fujino": {
+        photo: "img/japan/00/藤野りん Rin Fujino.jpg",
+		photos: [	"img/japan/00/藤野りん Rin Fujino-2.webp",
+					"img/japan/00/藤野りん Rin Fujino-3.webp",
+					"img/japan/00/藤野りん Rin Fujino-4.webp",
+					"img/japan/00/藤野りん Rin Fujino-5.webp",
+					"img/japan/00/藤野りん Rin Fujino-7.webp",
+					"img/japan/00/藤野りん Rin Fujino-6.webp"],
+        region: "Japan",
+        altName: "Riko Fujibayashi, Ringo Fujii",
+        birthday: "1995-11-28", birthdayIcon: "fa-solid fa-birthday-cake",
+        traits: [
+            { text: "Lovely", icon: "fa-solid fa-venus", bgHex: "#ffffff", textHex: "#e94560" },
+            { text: "C-Cup B76/W58/H93", icon: "img/svg/bra.svg", bgHex: "#ffffff", textHex: "#e94560" },
+            { text: "150cm", icon: "img/svg/high-heels.svg", bgHex: "#ffffff", textHex: "#e94560" },
+            { text: "本物の中出しがある", bgHex: "#1a1a2e", textHex: "#ffffff" }
+        ],
+        socials: {
+            x: "",
+            instagram: "",
+            tiktok: "",
+            facebook: ""
+        },
+        customButtons: [
+            { label: "Caribbeancom.com", url: "https://www.caribbeancom.com/search_act/8746/1.html", bgHex: "#228B22", textHex: "#ffffff" },
+            { label: "1pondo.tv", url: "https://www.1pondo.tv/search/?a=8878", bgHex: "#FF1493", textHex: "#ffffff" },
+            { label: "Javdatabase", url: "https://www.javdatabase.com/idols/rin-fujino/", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" }
+        ],
+        bio: ["No biography available for this model."]
+    },
+    "木村美羽 Miu Kimura": {
+        photo: "img/japan/00/木村美羽 Miu Kimura.jpg",
+		photos: [	"img/japan/00/木村美羽 Miu Kimura-2.webp",
+					"img/japan/00/木村美羽 Miu Kimura-3.webp",
+					"img/japan/00/木村美羽 Miu Kimura-4.webp"],
+        region: "Japan",
+        altName: "-",
+        birthday: "1993-11-30", birthdayIcon: "fa-solid fa-birthday-cake",
+        traits: [
+            { text: "Lovely", icon: "fa-solid fa-venus", bgHex: "#ffffff", textHex: "#e94560" },
+            { text: "E-Cup B86/W58/H88", icon: "img/svg/bra.svg", bgHex: "#ffffff", textHex: "#e94560" },
+            { text: "168cm", icon: "img/svg/high-heels.svg", bgHex: "#ffffff", textHex: "#e94560" },
+            { text: "本物の中出しがある", bgHex: "#1a1a2e", textHex: "#ffffff" }
+        ],
+        socials: {
+            x: "",
+            instagram: "",
+            tiktok: "",
+            facebook: ""
+        },
+        customButtons: [
+            { label: "Caribbeancom.com", url: "https://www.caribbeancom.com/search_act/6851/1.html", bgHex: "#228B22", textHex: "#ffffff" },
+            { label: "1pondo.tv", url: "https://www.1pondo.tv/search/?a=1934", bgHex: "#FF1493", textHex: "#ffffff" },
+            { label: "Javdatabase", url: "https://www.javdatabase.com/idols/miu-kimura/", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" }
+        ],
+        bio: ["No biography available for this model."]
+    },
+    "堺希美 Nozomi Sakai": {
+        photo: "img/japan/00/堺希美 Nozomi Sakai.jpg",
+		photos: [	"img/japan/00/堺希美 Nozomi Sakai-2.webp",
+					"img/japan/00/堺希美 Nozomi Sakai-3.webp",
+					"img/japan/00/堺希美 Nozomi Sakai-4.webp"],
+        region: "Japan",
+        altName: "-",
+        birthday: "1996-11-30", birthdayIcon: "fa-solid fa-birthday-cake",
+        traits: [
+            { text: "Lovely", icon: "fa-solid fa-venus", bgHex: "#ffffff", textHex: "#e94560" },
+            { text: "H-Cup B94/W59/H89", icon: "img/svg/bra.svg", bgHex: "#ffffff", textHex: "#e94560" },
+            { text: "158cm", icon: "img/svg/high-heels.svg", bgHex: "#ffffff", textHex: "#e94560" }
+        ],
+        socials: {
+            x: "",
+            instagram: "",
+            tiktok: "",
+            facebook: ""
+        },
+        customButtons: [
+            { label: "Caribbeancom.com", url: "https://www.caribbeancom.com/search_act/8787/1.html", bgHex: "#228B22", textHex: "#ffffff" },
+            { label: "1pondo.tv", url: "https://www.1pondo.tv/search/?a=8918", bgHex: "#FF1493", textHex: "#ffffff" },
+            { label: "Javdatabase", url: "https://www.javdatabase.com/idols/nozomi-sakai/", icon: "fa-solid fa-earth-asia", bgHex: "#1a1a2e", textHex: "#ffffff" }
+        ],
+        bio: ["No biography available for this model."]
+    },
     "田中莉乃 Rino Tanaka": {
         photo: "img/japan/00/田中莉乃 Rino Tanaka.jpg",
 		photos: [	"img/japan/00/田中莉乃 Rino Tanaka-2.webp",
@@ -36,7 +144,8 @@ const modelProfiles = {
         traits: [
             { text: "Favorite", icon: "fa-solid fa-venus", bgHex: "#ffffff", textHex: "#e94560" },
             { text: "F-Cup", icon: "img/svg/bra.svg", bgHex: "#ffffff", textHex: "#e94560" },
-            { text: "-", icon: "img/svg/high-heels.svg", bgHex: "#ffffff", textHex: "#e94560" }
+            { text: "-", icon: "img/svg/high-heels.svg", bgHex: "#ffffff", textHex: "#e94560" },
+            { text: "本物の中出しがある", bgHex: "#1a1a2e", textHex: "#ffffff" }
         ],
         socials: {
             x: "",
