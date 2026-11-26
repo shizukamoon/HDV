@@ -1,5 +1,81 @@
 const movieData = [
 	{
+        title: "FC2-PPV-5014413",
+        code: "Uncensored",
+        model:	"",
+        studio: "Fc2ppv",
+        region: "Japan",
+        releaseDate: "2026-11-26",
+        duration: "01:55:46",
+		water: 0,
+		recomended: true,
+        imgurl: "img/japan/01/fc2ppv/5014413.webp",
+        vidurl: "",
+        bio: "無【初撮りFC2デビュー┃12/3まで82%割引】彼氏とも生でしていないFカップSSS級清楚が家賃のために初P活「外に出すから」と人生初の生ハメ⋯最後は裏切りの種付け中出し※特典高画質＆潮吹きオナニー",
+        tags: ["Uncensored", "Creampie", "Small Tits", "Real Sperm Pussy Filled"],
+		downloads: [
+            { label: "Original", url: "https://adult.contents.fc2.com/article/5014413/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Ppvdatabank", url: "https://ppvdatabank.com/article/5014413/", bgHex: "#0ca5e2", textHex: "#ffffff" },
+            { label: "123av", url: "https://123av.com/en/v/fc2-ppv-5014413", bgHex: "#e94560", textHex: "#ffffff" },
+            { label: "Javfc2", url: "https://javfc2.xyz/watch/Fc2ppv-5014413.html", bgHex: "#14f557", textHex: "#ffffff" },
+            { label: "Supjav", url: "https://supjav.com/475501.html", bgHex: "#e94560", textHex: "#ffffff" }
+        ],
+        comments: [
+            { user: "Dax", text: "", date: "now" }
+		]
+    },
+	{
+        title: "FC2-PPV-4412869",
+        code: "Uncensored",
+        model:	"",
+        studio: "Fc2ppv",
+        region: "Japan",
+        releaseDate: "2024-05-01",
+        duration: "01:19:27",
+		water: 0,
+		recomended: true,
+        imgurl: "img/japan/01/fc2ppv/4412869.webp",
+        vidurl: "",
+        bio: "※限定公開3日限定1980pt無修正！【男性経験0！】立○大学に通う18歳新入生。初心で大人しい彼女の性の卒業式。清らかで未境のﾒﾘﾒﾘ処○膜を破り大量中出し。",
+        tags: ["Uncensored", "Creampie", "Small Tits", "Real Sperm Pussy Filled"],
+		downloads: [
+            { label: "Original", url: "https://adult.contents.fc2.com/article/4412869/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Ppvdatabank", url: "https://ppvdatabank.com/article/4412869/", bgHex: "#0ca5e2", textHex: "#ffffff" },
+            { label: "7mmtv", url: "https://7mmtv.sx/en/uncensored_content/48353/fc2-ppv-4412869.html", bgHex: "#1a1a2e", textHex: "#e94560" },
+            { label: "123av", url: "https://123av.com/en/v/fc2-ppv-4412869", bgHex: "#e94560", textHex: "#ffffff" },
+            { label: "Javfc2", url: "https://javfc2.xyz/watch/Fc2ppv-4412869.html", bgHex: "#14f557", textHex: "#ffffff" }
+        ],
+        comments: [
+            { user: "Dax", text: "", date: "now" }
+		]
+    },
+	{
+        title: "FC2-PPV-4440630",
+        code: "Uncensored",
+        model:	"",
+        studio: "Fc2ppv",
+        region: "Japan",
+        releaseDate: "2024-05-20",
+        duration: "35:14",
+		water: 0,
+		recomended: true,
+        imgurl: "img/japan/01/fc2ppv/4440630.webp",
+        vidurl: "",
+        bio: "初撮影・顔出し！！3日間限定！！恥ずかしがり屋だけど欲しがりでごめんなさい・・・理性が崩壊し絶叫と共に快楽に堕ちて行く性欲に貪欲で超敏感な身体に2回中出し＆口内射精！！",
+        tags: ["Uncensored", "Creampie", "Small Tits"],
+		downloads: [
+            { label: "Original", url: "https://adult.contents.fc2.com/article/4440630/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Ppvdatabank", url: "https://ppvdatabank.com/article/4440630/", bgHex: "#0ca5e2", textHex: "#ffffff" },
+            { label: "7mmtv", url: "https://7mmtv.sx/en/uncensored_content/48577/fc2-ppv-4440630.html", bgHex: "#1a1a2e", textHex: "#e94560" },
+            { label: "123av", url: "https://123av.com/en/v/fc2-ppv-4440630", bgHex: "#e94560", textHex: "#ffffff" },
+            { label: "Javfc2", url: "https://javfc2.xyz/watch/Fc2ppv-4440630.html", bgHex: "#14f557", textHex: "#ffffff" },
+            { label: "Supjav", url: "https://supjav.com/274774.html", bgHex: "#e94560", textHex: "#ffffff" }
+        ],
+        comments: [
+            { user: "Dax", text: "", date: "now" }
+		]
+    },
+	{
         title: "FC2-PPV-4828968",
         code: "Uncensored",
         model: ["Marin-chan", "宮瀬もも Momo Miyase"],
@@ -34,6 +110,7 @@ const movieData = [
         releaseDate: "2026-10-30",
         duration: "53:42",
 		water: 0,
+		recomended: true,
         imgurl: "img/japan/01/fc2ppv/5000983.webp",
         vidurl: "",
         bio: "【無修正ｘ個人撮影】ハロウィンだけにサキュバ風衣装を着ちゃった、みよなちゃん再び！巨大おちんぽから出たザーメンが中からたっぷりと流れ出ちゃいましたｗ",
@@ -58,6 +135,7 @@ const movieData = [
         releaseDate: "2026-10-28",
         duration: "01:31:26",
 		water: 0,
+		recomended: true,
         imgurl: "img/japan/01/fc2ppv/4999482.webp",
         vidurl: "",
         bio: "【初撮り】清楚に見えてチンポ挿入で肉食系に変貌するスタイル抜群なスレンダー美女。可愛い顔とは裏腹にどスケベ、弓なりに反りまくってイキまくる若さあふれる美ボディに大量中出し！",
@@ -208,6 +286,54 @@ const movieData = [
 		]
     },
 	{
+        title: "ABF-379",
+        code: "Uncensored-Leaks",
+        model: "三佳詩 Uta Miyoshi",
+        studio: "Prestige",
+        region: "Japan",
+        releaseDate: "2026-09-04",
+        duration: "02:16:25",
+		water: 1,
+		recomended: true,
+        imgurl: "img/japan/02/prestige/abf379.webp",
+        vidurl: "https://tencc3001.dmm.co.jp/pv/Ny1_RQwiNj60_F61pK2jbKBj5QWZDwINSIyEgl8Cb2P-BZZUCLczygchYWqu4E/118abf379mhb.mp4",
+        bio: "三佳詩 なまなかだし",
+        tags: ["Uncensored-Leaks", "Creampie", "Big Tits"],
+		downloads: [
+            { label: "Original", url: "https://www.dmm.co.jp/mono/dvd/-/detail/=/cid=118abf379/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "123av", url: "https://123av.com/en/v/abf-379-uncensored-leaked", bgHex: "#e94560", textHex: "#ffffff" },
+            { label: "Javct", url: "https://javct.net/v/abf-379-rm", bgHex: "#FFA500", textHex: "#ffffff" },
+            { label: "Sextb", url: "https://sextb.net/abf-379-rm", bgHex: "#CC9900", textHex: "#ffffff" }
+        ],
+        comments: [
+            { user: "Dax", text: "", date: "now" }
+		]
+    },
+	{
+        title: "MIDA-844",
+        code: "Uncensored-Leaks",
+        model: "井上もも Momo Inoue",
+        studio: "Moodyz",
+        region: "Japan",
+        releaseDate: "2026-11-03",
+        duration: "01:59:11",
+		water: 0,
+		recomended: true,
+        imgurl: "img/japan/02/moodyz/mida844.webp",
+        vidurl: "https://tencc3001.dmm.co.jp/pv/LDcgAAMRUpiuPuiDKJvnD0UHjekWWaHOan8UMchaN159AconfEddEW69tOFBiO/mida00844mhb.mp4",
+        bio: "アナタと一緒にきもちくなりたい 囁き甘えんぼ淫語とあざと可愛いフェラで優しく責めてくれる癒しの脳トロオナサポ 井上もも",
+        tags: ["Uncensored-Leaks", "Cumshot", "Small Tits"],
+		downloads: [
+            { label: "Original", url: "https://www.dmm.co.jp/mono/dvd/-/detail/=/cid=mida844/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "123av", url: "https://123av.com/en/v/mida-844-uncensored-leaked", bgHex: "#e94560", textHex: "#ffffff" },
+            { label: "Javct", url: "https://javct.net/v/mida-844-rm", bgHex: "#FFA500", textHex: "#ffffff" },
+            { label: "Sextb", url: "https://sextb.net/mida-844-rm", bgHex: "#CC9900", textHex: "#ffffff" }
+        ],
+        comments: [
+            { user: "Dax", text: "", date: "now" }
+		]
+    },
+	{
         title: "SODAH-012",
         code: "Uncensored-Leaks",
         model: "彩月七緒 Nao Satsuki",
@@ -318,6 +444,29 @@ const movieData = [
             { label: "123av", url: "https://123av.com/en/v/mida-473-uncensored-leaked", bgHex: "#e94560", textHex: "#ffffff" },
             { label: "Javct", url: "https://javct.net/v/mida-473-rm", bgHex: "#FFA500", textHex: "#ffffff" },
             { label: "Sextb", url: "https://sextb.net/mida-473-rm", bgHex: "#CC9900", textHex: "#ffffff" }
+        ],
+        comments: [
+            { user: "Dax", text: "", date: "now" }
+		]
+    },
+	{
+        title: "1pondo-112626_001",
+        code: "Uncensored",
+        model: "綾野はるか Ayano Haruka",
+        studio: "1pondo",
+        region: "Japan",
+        releaseDate: "2026-11-26",
+        duration: "26:57",
+		water: 1,
+		recomended: true,
+        imgurl: "img/japan/01/1pondo/112626_001.webp",
+        vidurl: "https://smovie.1pondo.tv/sample/movies/112626_001/480p.mp4",
+        bio: "騎乗位タイムトライアル！ 綾野はるか",
+        tags: ["Uncensored", "Creampie", "Big Tits"],
+		downloads: [
+            { label: "Original", url: "https://www.1pondo.tv/movies/112626_001/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Hiyopi", url: "https://dream.hiyopi.com/112626_001/", bgHex: "#e94560", textHex: "#ffffff" },
+            { label: "123av", url: "https://123av.com/en/v/1pondo-112626_001", bgHex: "#e94560", textHex: "#ffffff" }
         ],
         comments: [
             { user: "Dax", text: "", date: "now" }
