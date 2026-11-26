@@ -229,7 +229,7 @@
             box-shadow: 0 4px 12px rgba(0,0,0,0.08);
             padding: 30px;
             display: grid;
-            grid-template-columns: 320px 1fr;
+            grid-template-columns: 320px minmax(0, 1fr);
             gap: 35px;
             align-items: start;
         }
@@ -252,7 +252,11 @@
             color: #777;
             margin-top: 6px;
         }
-        .detail-name { font-size: 2rem; font-weight: 700; color: #1a1a2e; margin-bottom: 4px; }
+        .detail-name-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 4px; }
+        .detail-name { font-size: 2rem; font-weight: 700; color: #1a1a2e; margin-bottom: 0; }
+        .detail-altname { font-size: 0.95rem; color: #888; font-weight: 500; margin-bottom: 10px; }
+        .detail-altname:empty { display: none; }
+        .chip.badge-black { background-color: #000; color: #fff; }
         .detail-sub { font-size: 0.95rem; color: #777; margin-bottom: 18px; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
         .chip {
             background-color: #e94560;
@@ -449,12 +453,99 @@
         .footer-logo span { color: #fff; }
         .footer p { font-size: 0.85rem; color: #bbb; }
 
+        /* TABEL DATA */
+        .detail-card > div { min-width: 0; }
+        .table-controls { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 10px; }
+        .table-controls label { display: flex; align-items: center; gap: 8px; font-size: 0.82rem; font-weight: 500; color: #666; }
+        .table-controls select {
+            padding: 6px 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            background: #fff;
+            color: #1a1a2e;
+            font-size: 0.82rem;
+            cursor: pointer;
+        }
+        .table-controls select:focus { outline: 2px solid #e94560; outline-offset: 1px; }
+        .table-footer { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+        .table-info { font-size: 0.8rem; color: #777; }
+        .table-footer .pagination { margin-bottom: 0; }
+        .table-wrap { overflow-x: auto; border: 1px solid #eee; border-radius: 8px; }
+        .data-table { width: 100%; min-width: 640px; border-collapse: collapse; font-size: 0.85rem; }
+        .data-table th {
+            background: #1a1a2e;
+            color: #fff;
+            font-size: 0.72rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            text-align: left;
+            padding: 10px 12px;
+            white-space: nowrap;
+        }
+        .data-table td { padding: 10px 12px; border-top: 1px solid #eee; vertical-align: middle; color: #444; }
+        .data-table tbody tr:nth-child(even) { background: #f8f9fa; }
+        .data-table .col-no { width: 48px; text-align: center; }
+        .data-table .col-code { font-weight: 600; color: #1a1a2e; white-space: nowrap; }
+        .data-table .col-date { white-space: nowrap; }
+        .table-img-cell { display: flex; align-items: center; gap: 8px; }
+        .table-thumb-btn { border: none; background: none; padding: 0; cursor: zoom-in; flex-shrink: 0; }
+        .table-thumb { display: block; width: 90px; height: auto; border-radius: 6px; }
+        .table-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            border-radius: 6px;
+            background: #e94560;
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.8rem;
+            flex-shrink: 0;
+            transition: opacity 0.2s;
+        }
+        .table-link:hover { opacity: 0.85; }
+
+        /* VIEWER MINI (khusus gambar tabel) */
+        #miniViewer {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.55);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 5000;
+            padding: 20px;
+        }
+        .mini-box {
+            position: relative;
+            background: #fff;
+            border-radius: 12px;
+            padding: 10px;
+            box-shadow: 0 12px 32px rgba(0,0,0,0.35);
+        }
+        .mini-box img { display: block; max-width: min(320px, calc(100vw - 60px)); max-height: 60vh; border-radius: 8px; }
+        .mini-close {
+            position: absolute;
+            top: -12px;
+            right: -12px;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: none;
+            background: #e94560;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
         /* KHUSUS MODE HP (Layar <= 768px): Sembunyikan kiri, Tampilkan di bawah nama */
         @media (max-width: 768px) {
             .navbar { padding: 12px 16px; }
             .nav-brand { font-size: 1.4rem; }
             .model-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-            .detail-card { grid-template-columns: 1fr; padding: 18px; gap: 20px; }
+            .detail-card { grid-template-columns: minmax(0, 1fr); padding: 18px; gap: 20px; }
             .detail-photo { max-width: 300px; margin: 0 auto; display: block; }
             .detail-name { font-size: 1.5rem; }
             .data-grid { grid-template-columns: 1fr; }
@@ -520,7 +611,11 @@
 
                 <!-- Kolom Kanan: Informasi, Nama, & Bio -->
                 <div>
-                    <h1 class="detail-name" id="detailName"></h1>
+                    <div class="detail-name-row">
+                        <h1 class="detail-name" id="detailName"></h1>
+                        <span class="chip badge-black" id="detailBadge" style="display:none;"></span>
+                    </div>
+                    <div class="detail-altname" id="detailAltName"></div>
                     <div class="detail-sub" id="detailSub"></div>
 
                     <!-- Tombol Custom Mobile (Tampil di bawah nama khusus HP) -->
@@ -540,6 +635,46 @@
 
                     <h3 class="detail-section-title">Social Media</h3>
                     <div class="data-grid" id="detailSocial"></div>
+
+                    <!-- Tabel Data (diisi dari dataTable di lovely.js) -->
+                    <div id="detailTableSection" style="display: none;">
+                        <h3 class="detail-section-title">Data Table</h3>
+                        <div class="table-controls">
+                            <label>Urutkan
+                                <select id="tableSort">
+                                    <option value="newest">Newest</option>
+                                    <option value="oldest">Oldest</option>
+                                </select>
+                            </label>
+                            <label>Tampilkan
+                                <select id="tablePerPage">
+                                    <option value="5">5</option>
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                </select>
+                                per halaman
+                            </label>
+                        </div>
+                        <div class="table-wrap">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-no">No</th>
+                                        <th>Img</th>
+                                        <th>Code</th>
+                                        <th>Date</th>
+                                        <th>Deskripsi</th>
+                                        <th>Ket</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="detailTableBody"></tbody>
+                            </table>
+                        </div>
+                        <div class="table-footer">
+                            <span class="table-info" id="tableInfo"></span>
+                            <div class="pagination" id="tablePagination"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
@@ -552,6 +687,13 @@
             <img id="photoViewerImg" src="" alt="">
             <button type="button" class="viewer-nav viewer-next" id="nextPhotoBtn" onclick="changeViewerPhoto(1)"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="viewer-counter" id="viewerCounter">1 / 1</div>
+        </div>
+    </div>
+
+    <div id="miniViewer" onclick="closeMiniViewer()">
+        <div class="mini-box" onclick="event.stopPropagation()">
+            <button type="button" class="mini-close" onclick="closeMiniViewer()" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+            <img id="miniViewerImg" src="" alt="">
         </div>
     </div>
 
@@ -572,6 +714,7 @@
         const paginationEl = document.getElementById('pagination');
 
         function showSection(id) {
+            closeMiniViewer();
             document.querySelectorAll('.view-section').forEach(el => el.classList.remove('active'));
             document.getElementById(id).classList.add('active');
             window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -672,27 +815,31 @@
         }
 
         function renderPagination(total) {
-            paginationEl.innerHTML = "";
-            const pageCount = Math.ceil(total / ROWS_PER_PAGE);
-            if (pageCount <= 1) { paginationEl.style.display = 'none'; return; }
-            paginationEl.style.display = 'flex';
+            buildPagination(paginationEl, Math.ceil(total / ROWS_PER_PAGE), currentPage, goToPage);
+        }
+
+        function buildPagination(container, pageCount, activePage, onSelect) {
+            container.innerHTML = "";
+            if (pageCount <= 1) { container.style.display = 'none'; return; }
+            container.style.display = 'flex';
 
             const prev = document.createElement('button');
+            prev.type = 'button';
             prev.className = 'page-btn';
             prev.innerHTML = '<i class="fa-solid fa-chevron-left"></i>';
-            prev.disabled = currentPage === 1;
-            prev.onclick = () => goToPage(currentPage - 1);
-            paginationEl.appendChild(prev);
+            prev.disabled = activePage === 1;
+            prev.onclick = () => onSelect(activePage - 1);
+            container.appendChild(prev);
 
             let pages = [];
             if (pageCount <= 7) {
                 for (let i = 1; i <= pageCount; i++) pages.push(i);
-            } else if (currentPage <= 3) {
+            } else if (activePage <= 3) {
                 pages = [1, 2, 3, '...', pageCount - 1, pageCount];
-            } else if (currentPage >= pageCount - 2) {
+            } else if (activePage >= pageCount - 2) {
                 pages = [1, 2, '...', pageCount - 2, pageCount - 1, pageCount];
             } else {
-                pages = [1, '...', currentPage - 1, currentPage, currentPage + 1, '...', pageCount];
+                pages = [1, '...', activePage - 1, activePage, activePage + 1, '...', pageCount];
             }
 
             pages.forEach(p => {
@@ -700,22 +847,22 @@
                     const s = document.createElement('span');
                     s.className = 'page-dots';
                     s.innerText = '........';
-                    paginationEl.appendChild(s);
+                    container.appendChild(s);
                 } else {
                     const b = document.createElement('button');
-                    b.className = 'page-btn' + (p === currentPage ? ' active' : '');
+                    b.className = 'page-btn' + (p === activePage ? ' active' : '');
                     b.innerText = p;
-                    b.onclick = () => goToPage(p);
-                    paginationEl.appendChild(b);
+                    b.onclick = () => onSelect(p);
+                    container.appendChild(b);
                 }
             });
 
             const next = document.createElement('button');
             next.className = 'page-btn';
             next.innerHTML = '<i class="fa-solid fa-chevron-right"></i>';
-            next.disabled = currentPage === pageCount;
-            next.onclick = () => goToPage(currentPage + 1);
-            paginationEl.appendChild(next);
+            next.disabled = activePage === pageCount;
+            next.onclick = () => onSelect(activePage + 1);
+            container.appendChild(next);
         }
 
         function goToPage(p) {
@@ -754,8 +901,23 @@
             }
 
             document.getElementById('detailName').innerText = m.name;
+            const altNameEl = document.getElementById('detailAltName');
+            const altName = Array.isArray(m.altName) ? m.altName.join(' / ') : (m.altName || '');
+            altNameEl.innerText = altName ? `a.k.a. ${altName}` : '';
+
+            const badgeEl = document.getElementById('detailBadge');
+            if (m.badge && String(m.badge).trim() !== '') {
+                badgeEl.innerText = m.badge;
+                badgeEl.style.display = '';
+            } else {
+                badgeEl.innerText = '';
+                badgeEl.style.display = 'none';
+            }
+
+            const studioBadgeHTML = (m.studioBadge && String(m.studioBadge).trim() !== '')
+                ? `<span class="chip badge-black">${m.studioBadge}</span>` : '';
             document.getElementById('detailSub').innerHTML =
-                `<span class="chip">${m.region}</span><span class="chip dark">${m.studio}</span><span>${m.city}</span>`;
+                `<span class="chip">${m.region}</span><span class="chip dark">${m.studio}</span>${studioBadgeHTML}<span>${m.city}</span>`;
 
             const bioContainer = document.getElementById('detailBio');
             bioContainer.innerHTML = "";
@@ -779,6 +941,8 @@
                 dataItem('Region / City', `${m.region} / ${m.city}`),
                 dataItem('Height', `${m.height} cm`),
                 dataItem('Weight', `${m.weight} kg`),
+                dataItem('Measurements', m.measurements || '-'),
+                dataItem('Cup Size', m.cupSize || '-'),
                 dataItem('Blood Type', m.bloodType),
                 dataItem('Languages', m.languages.join(', ')),
                 dataItem('Studio', m.studio),
@@ -792,6 +956,9 @@
                 dataItem('<i class="fa-brands fa-instagram"></i> Instagram', m.social.instagram),
                 dataItem('<i class="fa-brands fa-x-twitter"></i> X (Twitter)', m.social.twitter)
             ].join('');
+
+            tablePage = 1;
+            renderDataTable(m);
 
             // RENDER CUSTOM BUTTONS KE KEDUA KONTAINER (CSS di atas yang mengatur tampil/tidaknya berdasarkan layar)
             const deskContainer = document.getElementById('detailButtonsDesktop');
@@ -838,6 +1005,93 @@
                 history.pushState({ model: m.slug, tab: currentTab }, '', '#model-' + m.slug);
             }
         }
+
+        // Terima format YYYY-MM-DD atau DD-MM-YYYY (pemisah - atau /)
+        function dateValue(text) {
+            const t = String(text || '').trim();
+            let p = t.match(/^(\d{4})[-/](\d{1,2})[-/](\d{1,2})$/);
+            if (p) return Date.UTC(p[1], p[2] - 1, p[3]);
+            p = t.match(/^(\d{1,2})[-/](\d{1,2})[-/](\d{4})$/);
+            if (p) return Date.UTC(p[3], p[2] - 1, p[1]);
+            return null;
+        }
+
+        let tableSort = 'newest';
+        let tablePerPage = 5;
+        let tablePage = 1;
+
+        // Tanpa tanggal selalu ditaruh paling bawah, apa pun urutannya
+        function compareByDate(a, b) {
+            const x = dateValue(a.date), y = dateValue(b.date);
+            if (x === null || y === null) return (x === null) - (y === null);
+            return tableSort === 'newest' ? y - x : x - y;
+        }
+
+        function renderDataTable(m) {
+            const all = Array.isArray(m.dataTable) ? [...m.dataTable].sort(compareByDate) : [];
+            document.getElementById('detailTableSection').style.display = all.length ? 'block' : 'none';
+
+            const pageCount = Math.max(1, Math.ceil(all.length / tablePerPage));
+            tablePage = Math.min(tablePage, pageCount);
+            const start = (tablePage - 1) * tablePerPage;
+            const rows = all.slice(start, start + tablePerPage);
+
+            document.getElementById('tableInfo').innerText =
+                all.length ? `Menampilkan ${start + 1}-${start + rows.length} dari ${all.length} data` : '';
+            buildPagination(document.getElementById('tablePagination'), pageCount, tablePage, p => {
+                tablePage = p;
+                renderDataTable(m);
+            });
+
+            document.getElementById('detailTableBody').innerHTML = rows.map((row, i) => {
+                const thumb = row.img
+                    ? `<button type="button" class="table-thumb-btn" data-img="${esc(row.img)}" data-alt="${esc(row.code || '')}" aria-label="Lihat gambar">
+                           <img class="table-thumb" src="${esc(row.img)}" alt="${esc(row.code || '')}" loading="lazy">
+                       </button>`
+                    : '<span>-</span>';
+                const link = row.link
+                    ? `<a class="table-link" href="${esc(row.link)}" target="_blank" rel="noopener noreferrer" title="Buka link" aria-label="Buka link">
+                           <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                       </a>`
+                    : '';
+                return `
+                    <tr>
+                        <td class="col-no">${start + i + 1}</td>
+                        <td><div class="table-img-cell">${thumb}${link}</div></td>
+                        <td class="col-code">${esc(row.code || '-')}</td>
+                        <td class="col-date">${esc(row.date || '-')}</td>
+                        <td>${esc(row.deskripsi || '-')}</td>
+                        <td>${esc(row.ket || '-')}</td>
+                    </tr>`;
+            }).join('');
+        }
+
+        function openMiniViewer(src, alt) {
+            const img = document.getElementById('miniViewerImg');
+            img.src = src;
+            img.alt = alt;
+            document.getElementById('miniViewer').style.display = 'flex';
+        }
+
+        function closeMiniViewer() {
+            document.getElementById('miniViewer').style.display = 'none';
+        }
+
+        document.getElementById('detailTableBody').addEventListener('click', e => {
+            const btn = e.target.closest('.table-thumb-btn');
+            if (btn) openMiniViewer(btn.dataset.img, btn.dataset.alt);
+        });
+
+        document.getElementById('tableSort').addEventListener('change', e => {
+            tableSort = e.target.value;
+            tablePage = 1;
+            if (currentModel) renderDataTable(currentModel);
+        });
+        document.getElementById('tablePerPage').addEventListener('change', e => {
+            tablePerPage = Number(e.target.value);
+            tablePage = 1;
+            if (currentModel) renderDataTable(currentModel);
+        });
 
         function goBack() {
             navigateTo(currentTab);
@@ -912,7 +1166,11 @@
         }
 
         document.addEventListener('keydown', e => { 
-            if (e.target && e.target.id === 'searchInput') return;
+            if (e.target && (e.target.id === 'searchInput' || e.target.tagName === 'SELECT')) return;
+            if (document.getElementById('miniViewer').style.display === 'flex') {
+                if (e.key === 'Escape') closeMiniViewer();
+                return;
+            }
             if (e.key === 'Escape') {
                 closeSearch();
                 closePhotoViewer();
@@ -936,7 +1194,8 @@
             name: 'Nama', region: 'Region', city: 'Kota', studio: 'Studio', bio: 'Bio',
             tags: 'Genre', languages: 'Bahasa', instagram: 'Instagram', twitter: 'X (Twitter)',
             birthday: 'Ulang tahun', bloodType: 'Gol. darah', debutYear: 'Tahun debut',
-            age: 'Umur', height: 'Tinggi', weight: 'Berat', badge: 'Badge'
+            age: 'Umur', height: 'Tinggi', weight: 'Berat', badge: 'Badge',
+            altName: 'Nama alternatif', code: 'Code', date: 'Date', deskripsi: 'Deskripsi', ket: 'Ket', measurements: 'Ukuran', cupSize: 'Cup size', studioBadge: 'Badge studio'
         };
         const fieldLabel = k => FIELD_LABELS[k] || k;
         const normText = s => String(s).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
@@ -957,7 +1216,11 @@
                 const entries = [];
                 Object.keys(m).forEach(k => {
                     if (k === 'photo' || k === 'favorite') return;
-                    flattenEntries(m[k], k, entries);
+                    // Dari tabel, hanya code, date, deskripsi, dan ket yang ikut dicari (URL tidak)
+                    const value = k === 'dataTable' && Array.isArray(m[k])
+                        ? m[k].map(({ code, date, deskripsi, ket }) => ({ code, date, deskripsi, ket }))
+                        : m[k];
+                    flattenEntries(value, k, entries);
                 });
                 entries.forEach(e => { e.norm = normText(e.text); });
                 return { m, entries, blob: entries.map(e => e.norm).join(' | ') };
@@ -1087,6 +1350,8 @@
             if (!searchDropdown.contains(e.target) && !searchToggle.contains(e.target)) closeSearch();
         });
 
+        document.getElementById('tableSort').value = tableSort;
+        document.getElementById('tablePerPage').value = tablePerPage;
         routeFromHash();
     </script>
 </body>
