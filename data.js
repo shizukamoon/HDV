@@ -25,6 +25,32 @@ const movieData = [
 		]
     },
 	{
+        title: "FC2-PPV-5013090",
+        code: "Uncensored",
+        model:	"Serika-chan",
+        studio: "Fc2ppv",
+        region: "Japan",
+        releaseDate: "2026-11-23",
+        duration: "01:21:45",
+		water: 1,
+		recomended: true,
+        imgurl: "img/japan/01/fc2ppv/5013090.webp",
+        vidurl: "",
+        bio: "【無】八頭身爆乳変態美女と潮吹き対決！「男性のこんなに大量の潮吹き見た事ない！」っとビックリしながらも顔面でしっかり受け止め髪までビショビショ…、顔射ゴックン中だし四発※特典高画質",
+        tags: ["Uncensored", "Creampie", "Big Tits", "Real Sperm Pussy Filled"],
+		downloads: [
+            { label: "Original", url: "https://adult.contents.fc2.com/article/5013090/", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Ppvdatabank", url: "https://ppvdatabank.com/article/5013090/", bgHex: "#0ca5e2", textHex: "#ffffff" },
+            { label: "7mmtv", url: "https://7mmtv.sx/en/uncensored_content/63435/fc2-ppv-5013090.html", bgHex: "#1a1a2e", textHex: "#e94560" },
+            { label: "123av", url: "https://123av.com/en/v/fc2-ppv-5013090", bgHex: "#e94560", textHex: "#ffffff" },
+            { label: "Javfc2", url: "https://javfc2.xyz/watch/Fc2ppv-5013090.html", bgHex: "#14f557", textHex: "#ffffff" },
+            { label: "Supjav", url: "https://supjav.com/475501.html", bgHex: "#e94560", textHex: "#ffffff" }
+        ],
+        comments: [
+            { user: "Dax", text: "", date: "now" }
+		]
+    },
+	{
         title: "FC2-PPV-4412869",
         code: "Uncensored",
         model:	"",
@@ -1018,6 +1044,87 @@ const movieData = [
         tags: ["Uncensored", "Livecam", "Big Tits"],
 		downloads: [
             { label: "Livecamrips", url: "https://livecamrips.to/index.php/video/16697528", bgHex: "#1a1a2e", textHex: "#ffffff" }
+        ],
+        comments: [
+            { user: "Dax", text: "", date: "now" }
+		]
+    },
+	{
+        title: "Ribon_ch-2025-06-12-02",
+        code: "Uncensored",
+        model: "Ribon_ch",
+        studio: "Stripchat",
+        region: "Japan",
+        releaseDate: "2025-06-12",
+        duration: "34:35",
+		water: 0,
+        imgurl: "img/japan/03/Ribon_ch/2025-06-12-02.png",
+        vidurl: "",
+        bio: "Ribon_ch - Stripchat - 2025-06-12 Part 2 TicketShow",
+        tags: ["Uncensored", "Livecam", "Big Tits"],
+		downloads: [
+            { label: "Camwhores", url: "https://www.camwhores.tv/videos/16592295/ribon-ticket-2/", bgHex: "#1a1a2e", textHex: "#ffffff" }
+        ],
+        comments: [
+            { user: "Dax", text: "", date: "now" }
+		]
+    },
+	{
+        title: "Ribon_ch-2025-06-12-01",
+        code: "Uncensored",
+        model: "Ribon_ch",
+        studio: "Stripchat",
+        region: "Japan",
+        releaseDate: "2025-06-12",
+        duration: "10:21",
+		water: 0,
+        imgurl: "img/japan/03/Ribon_ch/2025-06-12-01.webp",
+        vidurl: "",
+        bio: "Ribon_ch - Stripchat - 2025-06-12 Part 1 TicketShow",
+        tags: ["Uncensored", "Livecam", "Big Tits"],
+		downloads: [
+            { label: "Camwhores", url: "https://www.camwhores.tv/videos/16591837/ribon-ticket-1/", bgHex: "#1a1a2e", textHex: "#ffffff" }
+        ],
+        comments: [
+            { user: "Dax", text: "", date: "now" }
+		]
+    },
+	{
+        title: "Ribon_ch",
+        code: "Uncensored",
+        model: "Ribon_ch",
+        studio: "Stripchat",
+        region: "Japan",
+        releaseDate: "2025-06-10",
+        duration: "02:00",
+		water: 0,
+        imgurl: "img/japan/03/Ribon_ch/Ribon_ch.webp",
+        vidurl: "",
+        bio: "Ribon_ch - Stripchat",
+        tags: ["Uncensored", "Livecam", "Big Tits"],
+		downloads: [
+            { label: "Camwhores", url: "https://www.camwhores.tv/videos/16879900/ribon-ch/", bgHex: "#1a1a2e", textHex: "#ffffff" }
+        ],
+        comments: [
+            { user: "Dax", text: "", date: "now" }
+		]
+    },
+	{
+        title: "Ribon_ch-2025-04-13",
+        code: "Uncensored",
+        model: "Ribon_ch",
+        studio: "Stripchat",
+        region: "Japan",
+        releaseDate: "2025-04-13",
+        duration: "01:30:50",
+		water: 0,
+        imgurl: "img/japan/03/Ribon_ch/2025-04-13.webp",
+        vidurl: "",
+        bio: "超スタイル抜群な美人お姉さんのおしっこにオナニーまで何でもアリなエロライブチャット動画",
+        tags: ["Uncensored", "Livecam", "Big Tits"],
+		downloads: [
+            { label: "Streamtape", url: "https://streamtape.com/v/roxeAmX2maSbVpk/enc_Ribon_ch_Stripchat_2025-04-13-22_32.mp4", bgHex: "#1a1a2e", textHex: "#ffffff" },
+            { label: "Alive-Video", url: "https://alive-video.com/livechat/erotic-live-chat-video-of-a-beautiful-woman-with-an-amazing-figure-peeing-and-masturbating/", bgHex: "#1a1a2e", textHex: "#ffffff" }
         ],
         comments: [
             { user: "Dax", text: "", date: "now" }
